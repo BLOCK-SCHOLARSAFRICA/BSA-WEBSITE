@@ -36,6 +36,7 @@ const Header = () => {
             {[
               { to: "home", label: "Home" },
               { to: "about-us", label: "About Us" },
+              { to: "events", label: "Events" },
               { to: "contact-us", label: "Contact Us" },
               { to: "testimonies", label: "Testimonies" },
               { to: "sponsors", label: "Sponsors" },
@@ -59,86 +60,7 @@ const Header = () => {
               </li>
             ))}
 
-            {/* <li>
-              <link
-                to="home"
-                smooth={true}
-                duration={500}
-                className="hover:text-[#720034]"
-              >
-                Home
-              </link>
-            </li>
-            <li>
-              <link
-                to="about-us"
-                smooth={true}
-                duration={500}
-                className="hover:text-[#720034]"
-              >
-                About Us
-              </link>
-            </li>
-            <li>
-              <link
-                to="contact-us"
-                smooth={true}
-                duration={500}
-                className="hover:text-[#720034]"
-              >
-                Contact Us
-              </link>
-            </li>
-            <li>
-              <link
-                to="testimonies"
-                smooth={true}
-                duration={500}
-                className="hover:text-[#720034]"
-              >
-                Testimonies
-              </link>
-            </li>
-            <li>
-              <link
-                to="sponsors"
-                smooth={true}
-                duration={500}
-                className="hover:text-[#720034]"
-              >
-                Sponsors
-              </link>
-            </li>
-            <li>
-              <link
-                to="faq"
-                smooth={true}
-                duration={500}
-                className="hover:text-[#720034]"
-              >
-                FAQ
-              </link>
-            </li>
-            <li>
-              <link
-                to="partners"
-                smooth={true}
-                duration={500}
-                className="hover:text-[#720034]"
-              >
-                Partners
-              </link>
-            </li>
-            <li>
-              <link
-                to="register"
-                smooth={true}
-                duration={500}
-                className="bg-[#720034] text-white px-4 py-1  rounded  hover:bg-[#470020]"
-              >
-                Register
-              </link>
-            </li> */}
+           
           </ul>
         </nav>
       </div>

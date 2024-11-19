@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import heroImage from "../assets/heroImage.png"; 
+import heroImage from "../assets/heroImage.png";
 
 const HeroSection = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -45,7 +45,7 @@ const HeroSection = () => {
               </a>
               <hr />
               <a
-                href="https://t.me/YourGroupLink"
+                href="https://t.me/Block_Scholars_Africa"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block px-4 py-3 text-[#720034] hover:bg-[#720034] hover:text-white"

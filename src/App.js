@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import {
   HeroSection,
   AboutSection,
+  EventSection,
   ContactSection,
   TestimoniesSection,
   SponsorsSection,
@@ -19,6 +20,7 @@ function App() {
       <Header />
       <HeroSection />
       <AboutSection />
+      <EventSection />
       <ContactSection />
       <TestimoniesSection />
       <SponsorsSection />
