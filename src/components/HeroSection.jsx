@@ -22,7 +22,11 @@ const HeroSection = () => {
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
           Empowering decentralized leaders of tomorrow through Blockchain
         </h1>
-
+        <p className="mt-5">
+          Join Block Scholars Academy and unlock opportunities in blockchain!
+          <br /> Access exclusive scholarships, internships, and top jobs. Start your
+          journey today!
+        </p>
         {/* Join Our Community Button */}
         <div className="relative mt-6">
           <button

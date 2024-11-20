@@ -23,7 +23,7 @@ const isInView = useInView(ref, { once: true });
         <img
           src={aboutImage2}
           alt="Objectives"
-          className="w-full md:w-[85%] lg:w-[75%] h-auto object-cover"
+          className="w-full md:w-[85%] lg:w-[75%] h-auto object-cover rounded-[40px]"
         />
       </div>
 
@@ -40,7 +40,7 @@ const isInView = useInView(ref, { once: true });
         )}
         <button
           onClick={() => setShowAllObjectives(!showAllObjectives)}
-          className="mt-4 px-6 py-2 bg-[#720034] text-white font-semibold rounded hover:bg-[#470020]"
+          className="mt-4 px-6 py-2 bg-[#720034] text-white font-semibold rounded-lg hover:bg-[#470020]"
         >
           {showAllObjectives ? "Show Less" : "Read More"}
         </button>

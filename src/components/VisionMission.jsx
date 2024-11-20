@@ -37,7 +37,7 @@ const VisionMission = () => {
         <img
           src={aboutImage}
           alt="About Us"
-          className="w-full md:w-[85%] lg:w-[75%] h-auto object-cover"
+          className="w-full md:w-[85%] lg:w-[75%] h-auto object-cover rounded-[40px]"
         />
       </div>
     </div>

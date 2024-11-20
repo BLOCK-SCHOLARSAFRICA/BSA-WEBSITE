@@ -3,6 +3,11 @@ import coreValueImage from "../assets/coreValue.png";
 
 const CoreValues = () => {
   const [showAllCoreValues, setShowAllCoreValues] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen((prev) => !prev);
+  };
 
   const coreValues = [
     "B - Brilliance: Embracing curiosity and creativity to achieve academic excellence.",
@@ -33,12 +38,45 @@ const CoreValues = () => {
               ))}
             </ul>
           )}
-          <button
-            onClick={() => setShowAllCoreValues(!showAllCoreValues)}
-            className="mt-4 px-6 py-2 bg-[#720034] text-white font-semibold rounded hover:bg-[#470020]"
-          >
-            {showAllCoreValues ? "Show Less" : "Read More"}
-          </button>
+          <div className="flex items-center space-x-4 mt-4">
+            <button
+              onClick={() => setShowAllCoreValues(!showAllCoreValues)}
+              className="px-6 py-2 bg-[#720034] text-white font-semibold rounded-lg hover:bg-[#470020]"
+            >
+              {showAllCoreValues ? "Show Less" : "Read More"}
+            </button>
+            <div className="relative">
+              <button
+                onClick={toggleDropdown}
+                className="px-6 py-2 bg-[#720034] rounded-lg text-white font-semibold hover:bg-[#5a0028]"
+              >
+                Become a member
+              </button>
+
+              {/* Dropdown Menu */}
+              {isDropdownOpen && (
+                <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 bg-white shadow-lg rounded-lg w-52">
+                  <a
+                    href="https://chat.whatsapp.com/FukMsAyCYLo6oryVEdQMTP"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block px-4 py-2 text-[#720034] hover:bg-[#720034] hover:text-white"
+                  >
+                    Join WhatsApp Group
+                  </a>
+                  <hr />
+                  <a
+                    href="https://t.me/Block_Scholars_Africa"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block px-4 py-2 text-[#720034] hover:bg-[#720034] hover:text-white"
+                  >
+                    Join Telegram Group
+                  </a>
+                </div>
+              )}
+            </div>
+          </div>
         </div>
       </div>
 
@@ -47,7 +85,7 @@ const CoreValues = () => {
         <img
           src={coreValueImage}
           alt="Core Values"
-          className="w-full md:w-[85%] lg:w-[75%] h-auto object-cover"
+          className="w-full md:w-[85%] lg:w-[75%] h-auto object-cover rounded-[40px]"
         />
       </div>
     </div>

@@ -2,7 +2,10 @@ import React from "react";
 
 const ContactSection = () => {
   return (
-    <section id="contact-us" className="py-10 px-6 md:px-14 bg-[#FBFBFB]">
+    <section
+      id="contact-us"
+      className="py-20 px-6 mx-10 my-20 md:px-14 bg-[#FBFBFB] border border-[#720034] rounded-[40px] "
+    >
       <h2 className="text-3xl text-[#720034] font-bold mb-6">Contact Us</h2>
       <form
         action="#"
