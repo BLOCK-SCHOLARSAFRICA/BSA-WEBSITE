@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Header from "./components/Header";
 import {
   HeroSection,
@@ -7,12 +7,12 @@ import {
   ContactSection,
   TestimoniesSection,
   SponsorsSection,
-  FAQSection,
   PartnersSection,
+  FAQSection,
   RegisterSection,
 } from "./components/Section";
 
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
@@ -24,8 +24,8 @@ function App() {
       <ContactSection />
       <TestimoniesSection />
       <SponsorsSection />
-      <FAQSection />
       <PartnersSection />
+      <FAQSection />
       <RegisterSection />
     </div>
   );

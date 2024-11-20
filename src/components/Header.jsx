@@ -40,8 +40,9 @@ const Header = () => {
               { to: "contact-us", label: "Contact Us" },
               { to: "testimonies", label: "Testimonies" },
               { to: "sponsors", label: "Sponsors" },
-              { to: "faq", label: "FAQ" },
               { to: "partners", label: "Partners" },
+              { to: "faq", label: "FAQ" },
+
               { to: "register", label: "Register" },
             ].map(({ to, label }) => (
               <li key={to}>
@@ -59,8 +60,6 @@ const Header = () => {
                 </Link>
               </li>
             ))}
-
-           
           </ul>
         </nav>
       </div>
