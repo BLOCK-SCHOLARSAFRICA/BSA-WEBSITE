@@ -1,8 +1,11 @@
 import React from "react";
+import IBA from "../assets/IBA logo 1.png";
+import MIBT from "../assets/MIBTLogo.png";
+import Optimus from "../assets/OptimusLogo.png";
 
 const PartnersSection = () => {
   return (
-    <section id="partners" className="py-20 px-6 bg-gray-100">
+    <section id="partners" className="py-20 px-6 bg-white">
       <div className="text-center mb-10 bg-[#720034] py-5 w-full">
         <h1 className="text-2xl md:text-4xl text-white font-bold mb-2">
           Partners
@@ -10,24 +13,19 @@ const PartnersSection = () => {
 
         <div className="flex flex-col md:flex-row gap-6 items-center justify-center">
           <img
-            src="../assets/iba.JPG"
+            src={IBA}
             alt="IBA"
-            className="w-1/2 md:w-1/4 lg:w-1/6 h-auto object-cover rounded-[20px] shadow-md"
+            className="w-16 h-auto object-contain rounded-[10px] shadow-md"
           />
           <img
-            src="../assets/mibt.JPG"
+            src={MIBT}
             alt="MIBT"
-            className="w-1/2 md:w-1/4 lg:w-1/6 h-auto object-cover rounded-[20px] shadow-md"
+            className="w-16 h-auto object-contain rounded-[10px] shadow-md"
           />
           <img
-            src="../assets/diditalSouth.JPG"
-            alt="Digital South"
-            className="w-1/2 md:w-1/4 lg:w-1/6 h-auto object-cover rounded-[20px] shadow-md"
-          />
-          <img
-            src="../assets/optimus.JPG"
+            src={Optimus}
             alt="Optimus"
-            className="w-1/2 md:w-1/4 lg:w-1/6 h-auto object-cover rounded-[20px] shadow-md"
+            className="w-16 h-auto object-contain rounded-[10px] shadow-md"
           />
         </div>
       </div>
