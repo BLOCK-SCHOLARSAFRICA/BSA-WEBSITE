@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import coreValueImage from "../assets/coreValue.png";
+import coreValueImage from "../assets/coreValue.png";
 
 const CoreValues = () => {
   const [showAllCoreValues, setShowAllCoreValues] = useState(false);
@@ -83,7 +83,7 @@ const CoreValues = () => {
       {/* Image */}
       <div className="md:w-1/2 flex justify-center md:justify-end mb-6 md:mb-0">
         <img
-          src="/public/assets/coreValue.png"
+          src={coreValueImage}
           alt="Core Values"
           className="w-full md:w-[85%] lg:w-[75%] h-auto object-cover rounded-[40px]"
         />

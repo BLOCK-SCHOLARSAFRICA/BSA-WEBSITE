@@ -42,8 +42,7 @@ const Header = () => {
               { to: "sponsors", label: "Sponsors" },
               { to: "partners", label: "Partners" },
               { to: "faq", label: "FAQ" },
-
-              { to: "register", label: "Register" },
+              { to: "community", label: "Join Community" },
             ].map(({ to, label }) => (
               <li key={to}>
                 <Link
@@ -51,7 +50,7 @@ const Header = () => {
                   smooth={true}
                   duration={500}
                   className={`${
-                    label === "Register"
+                    label === "Join Community"
                       ? "bg-[#720034] text-white px-4 py-1 rounded-md hover:bg-[#470020]"
                       : "hover:text-[#720034]"
                   }`}

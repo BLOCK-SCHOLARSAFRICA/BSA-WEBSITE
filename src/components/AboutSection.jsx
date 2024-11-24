@@ -5,7 +5,7 @@ import CoreValues from "./CoreValues";
 
 const AboutSection = () => {
   return (
-    <section id="about-us" className="py-10 px-6 md:px-14 bg-white">
+    <section id="about-us" className="py-10 px-6 md:px-14 bg-white mt-20">
       <h2 className="text-3xl text-[#720034] font-bold">who We Are</h2>
       <p className="mt-6 text-[16px]">
         Block-Scholars Africa is a pioneering organization dedicated to

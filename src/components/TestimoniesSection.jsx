@@ -86,7 +86,7 @@ const TestimoniesSection = () => {
   }, [isTransitioning]);
 
   return (
-    <section id="testimonies" className="py-20   md:px-10 px-0">
+    <section id="testimonies" className="py-20   md:px-10 px-0 ">
       <div className="text-center mb-10  bg-[#720034] py-5 w-full ">
         <h1 className="text-2xl md:text-4xl text-white font-bold mb-2">
           Testimonies

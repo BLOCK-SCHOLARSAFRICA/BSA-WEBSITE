@@ -3,7 +3,7 @@ import aboutImage from "../assets/aboutImage.png";
 
 const VisionMission = () => {
   return (
-    <div className="flex flex-col-reverse md:flex-row items-center mt-10">
+    <div className="flex flex-col-reverse md:flex-row items-center mt-20">
       <div className="md:w-1/2 space-y-10">
         {/* Vision */}
         <div>

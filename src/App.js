@@ -9,9 +9,9 @@ import {
   SponsorsSection,
   PartnersSection,
   FAQSection,
-  RegisterSection,
+  CommunitySection,
+  Footer
 } from "./components/Section";
-
 import "./App.css";
 
 function App() {
@@ -26,7 +26,8 @@ function App() {
       <SponsorsSection />
       <PartnersSection />
       <FAQSection />
-      <RegisterSection />
+      <CommunitySection />
+      <Footer />
     </div>
   );
 }

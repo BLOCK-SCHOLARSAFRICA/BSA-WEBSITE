@@ -5,7 +5,7 @@ import Optimus from "../assets/OptimusLogo.png";
 
 const PartnersSection = () => {
   return (
-    <section id="partners" className="py-20 px-6 bg-white">
+    <section id="partners" className="py-20 px-6 bg-white mt-20">
       <div className="text-center mb-10 bg-[#720034] py-5 w-full">
         <h1 className="text-2xl md:text-4xl text-white font-bold mb-2">
           Partners
