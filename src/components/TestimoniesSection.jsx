@@ -89,9 +89,9 @@ const TestimoniesSection = () => {
     <section id="testimonies" className="py-20   md:px-10 px-0 ">
       <div className="text-center mb-10  bg-[#720034] py-5 w-full ">
         <h1 className="text-2xl md:text-4xl text-white font-bold mb-2">
-          Testimonies
+          Reviews
         </h1>
-        <p className="text-sm md:text-lg text-[#fcf5f5] ">
+        <p className="text-lg md:text-lg text-[#fcf5f5] ">
           What People Say About Us
         </p>
       </div>

@@ -12,11 +12,11 @@ const PartnersSection = () => {
         </h1>
 
         <div className="flex flex-col md:flex-row gap-6 items-center justify-center">
-          <img
+          {/* <img
             src={IBA}
             alt="IBA"
             className="w-16 h-auto object-contain rounded-[10px] shadow-md"
-          />
+          /> */}
           <img
             src={MIBT}
             alt="MIBT"
