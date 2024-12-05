@@ -1,5 +1,5 @@
 import React from "react";
-import IBA from "../assets/IBA logo 1.png";
+import DigitalSouth from "../assets/digital 1.png";
 import MIBT from "../assets/MIBTLogo.png";
 import Optimus from "../assets/OptimusLogo.png";
 
@@ -12,11 +12,11 @@ const PartnersSection = () => {
         </h1>
 
         <div className="flex flex-col md:flex-row gap-6 items-center justify-center">
-          {/* <img
-            src={IBA}
+          <img
+            src={DigitalSouth}
             alt="IBA"
             className="w-16 h-auto object-contain rounded-[10px] shadow-md"
-          /> */}
+          />
           <img
             src={MIBT}
             alt="MIBT"

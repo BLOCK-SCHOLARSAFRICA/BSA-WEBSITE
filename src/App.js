@@ -4,13 +4,15 @@ import {
   HeroSection,
   AboutSection,
   EventSection,
+  Community,
   ContactSection,
+  Partnership,
   TestimoniesSection,
   SponsorsSection,
   PartnersSection,
   FAQSection,
-  CommunitySection,
-  Footer
+  RegisterSection,
+  Footer,
 } from "./components/Section";
 import "./App.css";
 
@@ -21,12 +23,14 @@ function App() {
       <HeroSection />
       <AboutSection />
       <EventSection />
+      <Community />
       <ContactSection />
+      <Partnership />
       <TestimoniesSection />
       <SponsorsSection />
       <PartnersSection />
       <FAQSection />
-      <CommunitySection />
+      <RegisterSection />
       <Footer />
     </div>
   );
