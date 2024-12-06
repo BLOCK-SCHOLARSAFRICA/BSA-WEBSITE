@@ -10,7 +10,7 @@ class BrevoEmailService {
     return {
       sender: {
         name: "New Email- BSA AFRICA",
-        email: "farmilyemail@gmail.com",
+        email: "Hello@block-scholars.africa",
       },
       to: [
         {

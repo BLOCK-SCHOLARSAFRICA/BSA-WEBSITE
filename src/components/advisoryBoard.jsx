@@ -3,6 +3,7 @@ import board1 from "../assets/board1.png";
 import board2 from "../assets/board2.png";
 import board3 from "../assets/board3.png";
 import board4 from "../assets/board4.png";
+import board5 from "../assets/board5.png";
 import In from "../assets/In.png"; 
 const AdvisoryBoard = () => {
   const boardMembers = [
@@ -29,6 +30,12 @@ const AdvisoryBoard = () => {
       name: "Dr. Tammy Francis",
       role: "Education & Training Advisor ",
       linkedin: "https://www.linkedin.com/in/drtammyfrancis/",
+    },
+    {
+      image: board5,
+      name: "Rev. Bethel Nwakaku",
+      role: "Community Development ",
+      linkedin: "",
     },
   ];
 

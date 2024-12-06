@@ -10,13 +10,13 @@ const EventSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); // Change every 5 seconds
+    }, 8000); // Change every 8 seconds
     return () => clearInterval(interval); // Cleanup on unmount
   }, [images.length]);
 
   return (
     <section id="events" className="py-10 px-6 md:px-14 bg-white mt-20">
-      <h2 className="text-3xl text-[#720034] font-bold mb-6 text-center">
+      <h2 className="text-4xl text-[#720034] font-bold mb-6 text-center">
         Events
       </h2>
 

@@ -5,13 +5,13 @@ const Community = () => {
   const stats = [
     { label: "Our Reach So Far", value: null, isHeader: true },
     { label: "Blockchain Cohorts", value: 1 },
-    { label: "Community Members", value: 4000 },
+    { label: "Community Members", value: 5000 },
     { label: "Scholarships Awarded", value: 200 },
     { label: "African Countries", value: 4 },
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center py-20 px-6 bg-[#720034]">
+    <div className="flex flex-col items-center justify-center py-20 px-6 mt-32 bg-[#720034]">
       {/* Stats Section */}
       <div className="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-20 w-full max-w-4xl">
         {stats.map((stat, index) => (

@@ -1,12 +1,13 @@
 import React from "react";
 import team1 from "../assets/team1.png";
 import team3 from "../assets/team2.png";
-import team6 from "../assets/team3.png";
+import team9 from "../assets/team3.png";
 import team2 from "../assets/team4.png";
 import team7 from "../assets/team5.png";
 import team4 from "../assets/team6.png";
 import team5 from "../assets/team7.png";
 import team8 from "../assets/team8.png";
+import team6 from "../assets/team9.png";
 import In from "../assets/In.png"; 
 import AdvisoryBoard from "../components/advisoryBoard";
 
@@ -20,7 +21,7 @@ const Team = () => {
     },
     {
       image: team2,
-      name: "Onyewe Annastessia ",
+      name: "Onyenwe Annastessia ",
       role: "Board Secretary/CFO",
       linkedin: "https://www.linkedin.com/in/annastessia-c/",
     },
@@ -45,10 +46,11 @@ const Team = () => {
     },
     {
       image: team6,
-      name: "Olaniran Samad B.",
-      role: "Frontend Developer",
-      linkedin: "https://www.linkedin.com/in/samad-olaniran-208b57335/",
+      name: "Osawaru Josephine O.",
+      role: "Head Of Creativity & design",
+      linkedin: "https://www.linkedin.com/in/osarumen-henry-398773336/",
     },
+
     {
       image: team7,
       name: "Odion Emmanuel",
@@ -60,6 +62,12 @@ const Team = () => {
       name: "Ufere Stephen U.",
       role: "Graphics Designer",
       linkedin: "https://www.linkedin.com/in/stephen-ugochukwu-008913203/",
+    },
+    {
+      image: team9,
+      name: "Olaniran Samad B.",
+      role: "Frontend Developer",
+      linkedin: "https://www.linkedin.com/in/samad-olaniran-208b57335/",
     },
   ];
 

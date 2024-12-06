@@ -25,6 +25,12 @@ const Partnership = () => {
             and mission. Together, let's empower the next generation of tech
             leaders and shape a brighter future.
           </p>
+          <a
+            href="mailto:partnership@block-scholars.africa"
+            className="inline-block px-6 py-3 bg-[#720034] rounded-lg text-white font-semibold hover:bg-[#5a0028] mt-5"
+          >
+            Partner With Us
+          </a>
         </div>
       </div>
     </section>
