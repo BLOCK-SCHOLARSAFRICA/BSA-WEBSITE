@@ -23,7 +23,7 @@ const HeroSection = () => {
           Empowering decentralized leaders of tomorrow through Blockchain
         </h1>
         <p className="mt-5">
-          Join Block Scholars Academy and unlock opportunities in blockchain!
+          Join Block Scholars Africa and unlock opportunities in blockchain!
           <br /> Access exclusive scholarships, internships, and top jobs. Start your
           journey today!
         </p>
