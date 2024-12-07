@@ -14,7 +14,7 @@ class BrevoEmailService {
       },
       to: [
         {
-          email: "",
+          email: "recipientEmail",
           // name: receiverName,
         },
       ],
@@ -23,8 +23,8 @@ class BrevoEmailService {
     };
   }
 
-  async sendMail(subject, templateName) {
-    const emailPayload = this.createPayload(subject, templateName);
+  async sendMail(subject, templateName, recipientEmail) {
+    const emailPayload = this.createPayload(subject, templateName, recipientEmail);
     console.log("Payload::", emailPayload);
 
     try {
@@ -35,6 +35,7 @@ class BrevoEmailService {
           "content-type": "application/json",
         },
       });
+      
 
       return response;
     } catch (error) {

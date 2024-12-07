@@ -20,44 +20,41 @@ const ContactSection = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const emailData = {
-      sender: {
-        email: formData.email,
-        name: `${formData.firstName} ${formData.lastName}`,
-      },
-      to: [{ email: "Hello@block-scholars.africa", name: "Family" }],
-      subject: "Contact Form Submission",
-      htmlContent: `
-        <p><strong>First Name:</strong> ${formData.firstName}</p>
-        <p><strong>Last Name:</strong> ${formData.lastName}</p>
-        <p><strong>Phone:</strong> ${formData.phone}</p>
-        <p><strong>Message:</strong></p>
-        <p>${formData.message}</p>
-      `,
+    const contactData = {
+      email: formData.email,
+      name: `${formData.firstName} ${formData.lastName}`,
+      phone: formData.phone,
+      message: formData.message,
     };
 
     try {
-      await axios.post("https://api.brevo.com/v3/smtp/email", emailData, {
-        headers: {
-          "Content-Type": "application/json",
-          "api-key": process.env.BREVO_API_KEY,
-        },
-      });
-      setStatusMessage("Your message has been sent successfully!");
-      setFormData({
-        firstName: "",
-        lastName: "",
-        phone: "",
-        email: "",
-        message: "",
-      });
+      // Send POST request to the new API endpoint
+      const response = await axios.post(
+        " https://api-bsa.onrender.com/api/contact-us",
+        contactData,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      if (response.status === 200 || response.status === 201) {
+         console.log("Server Response:", response.data);
+        setStatusMessage("Your message has been sent successfully!");
+        setFormData({
+          firstName: "",
+          lastName: "",
+          phone: "",
+          email: "",
+          message: "",
+        });
+      }
     } catch (error) {
-      console.error("Error sending email:", error);
+      console.error("Error sending message:", error);
       setStatusMessage("Failed to send the message. Please try again later.");
     }
   };
-
-
 
   return (
     <section
