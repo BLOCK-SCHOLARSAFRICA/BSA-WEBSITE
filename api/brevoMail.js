@@ -14,7 +14,7 @@ class BrevoEmailService {
       },
       to: [
         {
-          email: "",
+          email: "blockscholarsafrica@gmail.com",
           // name: receiverName,
         },
       ],
@@ -25,7 +25,6 @@ class BrevoEmailService {
 
   async sendMail(subject, templateName) {
     const emailPayload = this.createPayload(subject, templateName);
-    console.log("Payload::", emailPayload);
 
     try {
       const response = await axios.post(this.apiUrl, emailPayload, {
