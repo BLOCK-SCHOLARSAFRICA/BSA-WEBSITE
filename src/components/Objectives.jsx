@@ -1,11 +1,8 @@
 import React, { useState } from "react";
-import { motion, useInView } from "framer-motion";
 import aboutImage2 from "../assets/aboutImage2.png";
-import { useRef } from "react";
+
 const Objectives = () => {
-  const [showAllObjectives, setShowAllObjectives] = useState(false);
-const ref = useRef(null);
-const isInView = useInView(ref, { once: true });
+  const [visibleObjectives, setVisibleObjectives] = useState(1);
 
   const objectives = [
     "To provide world-class education and training programs in distributed ledger systems, Web3, and emerging technologies, empowering individuals and organizations with cutting-edge knowledge and skills.",
@@ -15,6 +12,23 @@ const isInView = useInView(ref, { once: true });
     "To facilitate collaboration and networking among enthusiasts and professionals in the decentralized tech space, encouraging knowledge sharing, partnerships, and the development of forward-thinking solutions.",
     "To drive positive social and economic impact by leveraging decentralized technologies and digital innovations for initiatives that foster community development, financial inclusion, and sustainable growth.",
   ];
+
+  const handleButtonClick = () => {
+    if (visibleObjectives < objectives.length) {
+      const timer = setInterval(() => {
+        setVisibleObjectives((prev) => {
+          if (prev < objectives.length) {
+            return prev + 1;
+          } else {
+            clearInterval(timer); // Stop the timer when all objectives are visible
+            return prev;
+          }
+        });
+      }, 500); // Adjust the delay for displaying each item
+    } else {
+      setVisibleObjectives(1); // Reset to show only the first objective
+    }
+  };
 
   return (
     <div className="flex flex-col md:flex-row items-center mt-10">
@@ -30,19 +44,16 @@ const isInView = useInView(ref, { once: true });
       {/* Objectives */}
       <div className="md:w-1/2 md:pl-10 space-y-6">
         <h2 className="text-3xl text-[#720034] font-bold">Objectives</h2>
-        <p className="mt-4">{objectives[0]}</p>
-        {showAllObjectives && (
-          <ul className="list-decimal pl-5 space-y-4">
-            {objectives.slice(1).map((objective, index) => (
-              <li key={index}>{objective}</li>
-            ))}
-          </ul>
-        )}
+        <ul className="list-decimal pl-5 space-y-4">
+          {objectives.slice(0, visibleObjectives).map((objective, index) => (
+            <li key={index}>{objective}</li>
+          ))}
+        </ul>
         <button
-          onClick={() => setShowAllObjectives(!showAllObjectives)}
+          onClick={handleButtonClick}
           className="mt-4 px-6 py-2 bg-[#720034] text-white font-semibold rounded-lg hover:bg-[#470020]"
         >
-          {showAllObjectives ? "Show Less" : "Read More"}
+          {visibleObjectives < objectives.length ? "Read More" : "Show Less"}
         </button>
       </div>
     </div>

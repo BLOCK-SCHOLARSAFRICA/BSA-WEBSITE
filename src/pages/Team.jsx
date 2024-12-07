@@ -8,6 +8,7 @@ import team4 from "../assets/team6.png";
 import team5 from "../assets/team7.png";
 import team8 from "../assets/team8.png";
 import team6 from "../assets/team9.png";
+import team10 from "../assets/team10.png";
 import In from "../assets/In.png"; 
 import AdvisoryBoard from "../components/advisoryBoard";
 
@@ -70,10 +71,10 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/samad-olaniran-208b57335/",
     },
     {
-      image: team9,
+      image: team10,
       name: "Dickson Goodness.",
       role: "Graphic Designer",
-      linkedin: "https://www.linkedin.com/in//",
+      linkedin: "https://www.linkedin.com/in/goodnessosei/",
     },
   ];
 
@@ -87,7 +88,7 @@ const Team = () => {
           Executive Board
         </h1>
         <p className="text-center mt-5">
-          Our members of the Management and Staff.
+          Meet the Management and Staff of BSA.
         </p>
       </div>
       <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">

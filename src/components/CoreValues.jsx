@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import coreValueImage from "../assets/coreValue.png";
 
 const CoreValues = () => {
-  const [showAllCoreValues, setShowAllCoreValues] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(1); // Tracks how many core values are visible
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -25,26 +25,60 @@ const CoreValues = () => {
     "S - Success: Celebrating achievements and progress along the academic journey.",
   ];
 
+  const handleReadMore = () => {
+    if (visibleCount < coreValues.length) {
+      const timer = setInterval(() => {
+        setVisibleCount((prev) => {
+          if (prev < coreValues.length) {
+            return prev + 1;
+          } else {
+            clearInterval(timer); // Stop when all values are visible
+            return prev;
+          }
+        });
+      }, 300); // Adjust delay for each item (in milliseconds)
+    }
+  };
+
+  const handleShowLess = () => {
+    setVisibleCount(1); // Reset to show only the first core value
+  };
+
   return (
     <div className="flex flex-col-reverse md:flex-row items-center mt-10">
       <div className="md:w-1/2 space-y-10">
         <div>
           <h2 className="text-3xl text-[#720034] font-bold">Core Values</h2>
-          <p className="mt-5">{coreValues[0]}</p>
-          {showAllCoreValues && (
-            <ul className="list-disc pl-5 mt-4 space-y-2">
-              {coreValues.slice(1).map((value, index) => (
-                <li key={index}>{value}</li>
-              ))}
-            </ul>
-          )}
+          <ul className="list-disc pl-5 mt-4 space-y-4">
+            {coreValues.slice(0, visibleCount).map((value, index) => {
+              const firstLetter = value.charAt(0); // Extract the first letter
+              const restOfText = value.slice(1); // Extract the rest of the text
+              return (
+                <li key={index} className="flex items-center">
+                  <span className="text-2xl text-[#720034] font-bold">
+                    {firstLetter}
+                  </span>
+                  <span className="ml-2 text-lg text-justify  leading-6">{restOfText}</span>
+                </li>
+              );
+            })}
+          </ul>
           <div className="flex items-center space-x-4 mt-4">
-            <button
-              onClick={() => setShowAllCoreValues(!showAllCoreValues)}
-              className="px-6 py-2 bg-[#720034] text-white font-semibold rounded-lg hover:bg-[#470020]"
-            >
-              {showAllCoreValues ? "Show Less" : "Read More"}
-            </button>
+            {visibleCount < coreValues.length ? (
+              <button
+                onClick={handleReadMore}
+                className="px-6 py-2 bg-[#720034] text-white font-semibold rounded-lg hover:bg-[#470020]"
+              >
+                Read More
+              </button>
+            ) : (
+              <button
+                onClick={handleShowLess}
+                className="px-6 py-2 bg-[#720034] text-white font-semibold rounded-lg hover:bg-[#470020]"
+              >
+                Show Less
+              </button>
+            )}
             <div className="relative">
               <button
                 onClick={toggleDropdown}

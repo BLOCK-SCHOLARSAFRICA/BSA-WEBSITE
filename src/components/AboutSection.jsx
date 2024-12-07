@@ -5,26 +5,23 @@ import CoreValues from "./CoreValues";
 
 const AboutSection = () => {
   const fullText =
-    "Block-Scholars Africa is a pioneering organization dedicated to revolutionizing education and innovation in Africa through the power of blockchain, Web3, emerging technologies, and artificial intelligence. We aim to create a continent-wide ecosystem of experts, entrepreneurs, and innovators who can harness these technologies to drive sustainable development, economic growth, and social impact.";
-
-  const [displayedText, setDisplayedText] = useState("");
+    "Block-Scholars Africa is a pioneering organization dedicated to revolutionizing education and innovation in Africa through the power of blockchain, Web3, emerging technologies, and artificial intelligence. We aim to create a continent-wide ecosystem of experts, entrepreneurs, and innovators who can harness these technologies to drive sustainable development, economic growth, and social impact."
+   const [displayedText, setDisplayedText] = useState("");
 
   useEffect(() => {
-    const words = fullText.trim().split(/\s+/);
+    const words = fullText.split(" ");
     let index = 0;
 
     const interval = setInterval(() => {
       if (index < words.length) {
-        setDisplayedText((prev) =>
-          prev ? `${prev} ${words[index]}` : words[index]
-        );
+        setDisplayedText((prev) => `${prev} ${words[index]}`.trim());
         index++;
       } else {
-        clearInterval(interval); 
+        clearInterval(interval); // Stop the interval once the full text is displayed
       }
-    }, 200); 
+    }, 200); // Adjust typing speed here
 
-    return () => clearInterval(interval); 
+    return () => clearInterval(interval); // Cleanup interval on component unmount
   }, []);
 
   return (
