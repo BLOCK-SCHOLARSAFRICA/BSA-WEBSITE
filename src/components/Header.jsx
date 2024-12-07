@@ -7,9 +7,9 @@ import closeIcon from "../assets/closeIcon.png";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const location = useLocation(); // Get the current location
+  const location = useLocation();
 
-  const isTeamPage = location.pathname === "/team"; // Check if on the Team page
+  const isTeamPage = location.pathname === "/team"; 
 
   return (
     <header className="bg-white">
@@ -35,7 +35,7 @@ const Header = () => {
         <nav
           className={`${
             menuOpen ? "block" : "hidden"
-          } md:flex md:items-center md:space-x-6 text-sm`}
+          } md:flex md:items-center md:space-x-6 text-sm cursor-pointer`}
         >
           <ul className="flex flex-col md:flex-row md:space-x-6">
             {/* Main Page Links */}
@@ -84,7 +84,7 @@ const Header = () => {
               <NavLink
                 to="/team"
                 className="hover:text-[#720034]"
-                onClick={() => setMenuOpen(false)} // Close menu after navigation
+                onClick={() => setMenuOpen(false)} 
               >
                 Team
               </NavLink>

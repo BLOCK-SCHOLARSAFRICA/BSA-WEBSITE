@@ -4,27 +4,54 @@ const helpAndFAQs = [
   {
     title: "What is Block-Scholars Africa?",
     description:
-      "Block-Scholars Africa is a pioneering organization dedicated to revolutionizing education and innovation in Africa through the power of blockchain, Web3, emerging technologies, and artificial intelligence. We aim to create a continent-wide ecosystem of experts, entrepreneurs, and innovators who can harness these technologies to drive sustainable development, economic growth, and social impact.",
+      "Block-Scholars Africa is a blockchain education and training program designed for African students and young professionals. The program aims to equip participants with the knowledge and skills needed to build a successful career in blockchain technology.",
   },
   {
-    title: "Who can apply for Block-Scholars Africa programs?",
-    description: "abcd.",
+    title: "Who is eligible to apply for Block-Scholars Africa programs?",
+    description:
+      "Students and young professionals interested in blockchain technology can apply for the Block-Scholars Africa program. This includes university students, recent graduates, and young professionals looking to transition into a blockchain career.",
+  },
+  {
+    title: "Can I participate in the program remotely?",
+    description:
+      "Yes, our program is designed to be flexible and can be completed remotely.",
+  },
+  {
+    title: "Do I need prior knowledge to join Block-Scholars Africa?",
+    description:
+      "No, prior knowledge of blockchain technology is not required to join Block-Scholars Africa. The program is designed to take participants from beginner to advanced levels, covering the fundamentals of blockchain technology and its applications.",
   },
   {
     title:
-      "Do I need prior blockchain knowledge to join Block-Scholars Africa?",
-    description: "abcd.",
+      "What kind of support does Block-Scholars Africa provide after the training?",
+    description: [
+      "Block-Scholars Africa provides ongoing support to alumni, including:",
+      "Access to resources and tools",
+      "Mentorship and coaching",
+      "Networking opportunities with industry professionals",
+      "Job placement assistance",
+      "Community engagement and support",
+    ],
   },
   {
-    title:
-      "What kind of support does Block-Scholars Africa provide after training?",
-    description: "abcd.",
+    title: "Is there certification after the program?",
+    description:
+      "Yes, participants who complete the program will receive a certificate.",
+  },
+  {
+    title: "How long does the program take?",
+    description:
+      "The duration of the Block-Scholars Africa program varies depending on the specific program. However, most programs typically last 4 weeks or 6 months.",
+  },
+  {
+    title: "How do I apply for Block-Scholars Africa program?",
+    description: "You can apply through our website.",
   },
   {
     title: "How do the bootcamps work and who can attend?",
-    description: "abcd.",
+    description:
+      "The bootcamps are intensive training programs that cover various aspects of blockchain technology, including development, architecture, and innovation. The bootcamps are open to selected applicants who have gone through the application process.",
   },
-  
 ];
 
 const FAQSection = () => {
@@ -75,9 +102,20 @@ const FAQSection = () => {
             </div>
 
             {expandedIndex === index && (
-              <p className="mt-3 md:mt-5 text-lightGray font-normal text-sm md:text-base">
-                {term.description}
-              </p>
+              <div className="mt-3 md:mt-5 text-lightGray font-normal text-sm md:text-base">
+                {Array.isArray(term.description) ? (
+                  <>
+                    <p className="mb-3">{term.description[0]}</p>
+                    <ul className="list-disc ml-5">
+                      {term.description.slice(1).map((item, i) => (
+                        <li key={i}>{item}</li>
+                      ))}
+                    </ul>
+                  </>
+                ) : (
+                  <p>{term.description}</p>
+                )}
+              </div>
             )}
           </div>
         ))}
@@ -87,4 +125,3 @@ const FAQSection = () => {
 };
 
 export default FAQSection;
-

@@ -69,6 +69,12 @@ const Team = () => {
       role: "Frontend Developer",
       linkedin: "https://www.linkedin.com/in/samad-olaniran-208b57335/",
     },
+    {
+      image: team9,
+      name: "Dickson Goodness.",
+      role: "Graphic Designer",
+      linkedin: "https://www.linkedin.com/in//",
+    },
   ];
 
   return (
