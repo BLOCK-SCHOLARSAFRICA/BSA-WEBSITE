@@ -6,10 +6,10 @@ class BrevoEmailService {
     this.apiKey = process.env.BREVO_API_KEY;
   }
 
-  createPayload(subject, templateName) {
+  createPayload(templateName) {
     return {
       sender: {
-        name: "New Email- BSA AFRICA",
+        name: "New Email- Block Scholars AFRICA",
         email: "blockscholarsafrica@gmail.com",
       },
       to: [
