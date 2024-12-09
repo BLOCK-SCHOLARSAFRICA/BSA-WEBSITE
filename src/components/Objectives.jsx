@@ -15,23 +15,34 @@ const Objectives = () => {
 
   const handleButtonClick = () => {
     if (visibleObjectives < objectives.length) {
+      // Gradually add objectives
       const timer = setInterval(() => {
         setVisibleObjectives((prev) => {
           if (prev < objectives.length) {
             return prev + 1;
           } else {
-            clearInterval(timer); // Stop the timer when all objectives are visible
+            clearInterval(timer);
             return prev;
           }
         });
-      }, 500); // Adjust the delay for displaying each item
+      }, 500); // Adjust the delay for adding each item
     } else {
-      setVisibleObjectives(1); // Reset to show only the first objective
+      // Gradually remove objectives
+      const timer = setInterval(() => {
+        setVisibleObjectives((prev) => {
+          if (prev > 1) {
+            return prev - 1;
+          } else {
+            clearInterval(timer);
+            return prev;
+          }
+        });
+      }, 500); // Adjust the delay for removing each item
     }
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-center mt-10">
+    <div className="flex flex-col md:flex-row items-center mt-32">
       {/* Image Section */}
       <div className="md:w-1/2 flex justify-center md:justify-start mb-6 md:mb-0">
         <img
@@ -41,7 +52,7 @@ const Objectives = () => {
         />
       </div>
 
-      {/* Objectives */}
+      {/* Objectives Section */}
       <div className="md:w-1/2 md:pl-10 space-y-6">
         <h2 className="text-3xl text-[#720034] font-bold">Objectives</h2>
         <ul className="list-decimal pl-5 space-y-4">

@@ -30,7 +30,7 @@ const ContactSection = () => {
     try {
       // Send POST request to the new API endpoint
       const response = await axios.post(
-        " https://api-bsa.onrender.com/api/contact-us",
+        "https://api-bsa.onrender.com/api/contact-us",
         contactData,
         {
           headers: {
@@ -51,7 +51,7 @@ const ContactSection = () => {
         });
       }
     } catch (error) {
-      console.error("Error sending message:", error);
+      console.error(JSON.stringify(error, null, 2));
       setStatusMessage("Failed to send the message. Please try again later.");
     }
   };

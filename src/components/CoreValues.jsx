@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import coreValueImage from "../assets/coreValue.png";
 
 const CoreValues = () => {
-  const [visibleCount, setVisibleCount] = useState(1); // Tracks how many core values are visible
+  const [visibleCount, setVisibleCount] = useState(1);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -41,11 +41,22 @@ const CoreValues = () => {
   };
 
   const handleShowLess = () => {
-    setVisibleCount(1); // Reset to show only the first core value
+    if (visibleCount > 1) {
+      const timer = setInterval(() => {
+        setVisibleCount((prev) => {
+          if (prev > 1) {
+            return prev - 1;
+          } else {
+            clearInterval(timer); // Stop when only one value remains
+            return prev;
+          }
+        });
+      }, 300); // Adjust delay for each item (in milliseconds)
+    }
   };
 
   return (
-    <div className="flex flex-col-reverse md:flex-row items-center mt-10">
+    <div className="flex flex-col-reverse md:flex-row items-center mt-32">
       <div className="md:w-1/2 space-y-10">
         <div>
           <h2 className="text-3xl text-[#720034] font-bold">Core Values</h2>
@@ -58,7 +69,9 @@ const CoreValues = () => {
                   <span className="text-2xl text-[#720034] font-bold">
                     {firstLetter}
                   </span>
-                  <span className="ml-2 text-lg text-justify  leading-6">{restOfText}</span>
+                  <span className="ml-2 text-lg text-justify">
+                    {restOfText}
+                  </span>
                 </li>
               );
             })}
@@ -119,7 +132,7 @@ const CoreValues = () => {
         <img
           src={coreValueImage}
           alt="Core Values"
-          className="w-full md:w-[85%] lg:w-[75%] h-auto object-cover rounded-[40px]"
+          className="w-full md:w-[85%] lg:w-[80%] h-auto object-cover rounded-[40px]"
         />
       </div>
     </div>
