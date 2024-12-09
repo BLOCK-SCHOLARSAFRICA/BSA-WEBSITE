@@ -6,10 +6,10 @@ class BrevoEmailService {
     this.apiKey = process.env.BREVO_API_KEY;
   }
 
-  createPayload(subject, templateName) {
+  createPayload(templateName) {
     return {
       sender: {
-        name: "New Email- BSA AFRICA",
+        name: "New Email- Block Scholars AFRICA",
         email: "blockscholarsafrica@gmail.com",
       },
       to: [
@@ -18,13 +18,13 @@ class BrevoEmailService {
           // name: receiverName,
         },
       ],
-      subject: subject || "Hello",
+      subject: "Hello",
       textContent: templateName,
     };
   }
 
-  async sendMail(subject, templateName) {
-    const emailPayload = this.createPayload(subject, templateName);
+  async sendMail(templateName) {
+    const emailPayload = this.createPayload(templateName);
 
     try {
       const response = await axios.post(this.apiUrl, emailPayload, {

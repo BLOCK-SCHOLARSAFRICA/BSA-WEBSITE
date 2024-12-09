@@ -2,16 +2,17 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const BrevoEmailService = require("./brevoMail"); // Example email service
 const dotenv = require("dotenv");
+const cors = require("cors");
 dotenv.config();
 
 const app = express();
 app.use(bodyParser.json());
+app.use(cors({ origin: "*" }));
 
 app.post("/api/contact-us", async (req, res) => {
-  const { name, email, subject, message } = req.body;
-
+  const { firstName, lastName, email, phone, message } = req.body
   // Validate input
-  if (!name || !email || !subject || !message) {
+  if (!firstName  || !lastName || !email || !phone || !message) {
     return res.status(400).json({ error: "All fields are required." });
   }
 
@@ -24,11 +25,12 @@ app.post("/api/contact-us", async (req, res) => {
     // Use email service to send the message
     const emailService = new BrevoEmailService();
     const template = `<h3>Contact Form Submission</h3>
-      <p><strong>Name:</strong> ${name}</p>
+      <p><strong>First Name:</strong> ${firstName}</p>
+      <p><strong>Last Name:</strong> ${lastName}</p>
       <p><strong>Email:</strong> ${email}</p>
       <p><strong>Message:</strong> ${message}</p>
       `;
-    await emailService.sendMail(subject, template);
+    await emailService.sendMail(template);
 
     return res.status(200).json({ message: "Message sent successfully." });
   } catch (error) {
