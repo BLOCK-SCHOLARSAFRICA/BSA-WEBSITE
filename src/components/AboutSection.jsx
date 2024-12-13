@@ -17,11 +17,11 @@ const AboutSection = () => {
         setDisplayedText((prev) => `${prev} ${words[index]}`.trim());
         index++;
       } else {
-        clearInterval(interval); // Stop the interval once the full text is displayed
+        clearInterval(interval);
       }
-    }, 200); // Adjust typing speed here
+    }, 200);
 
-    return () => clearInterval(interval); // Cleanup interval on component unmount
+    return () => clearInterval(interval);
   }, []);
 
   return (

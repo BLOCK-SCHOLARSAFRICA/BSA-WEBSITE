@@ -32,11 +32,11 @@ const CoreValues = () => {
           if (prev < coreValues.length) {
             return prev + 1;
           } else {
-            clearInterval(timer); // Stop when all values are visible
+            clearInterval(timer); 
             return prev;
           }
         });
-      }, 300); // Adjust delay for each item (in milliseconds)
+      }, 300); 
     }
   };
 
@@ -47,11 +47,11 @@ const CoreValues = () => {
           if (prev > 1) {
             return prev - 1;
           } else {
-            clearInterval(timer); // Stop when only one value remains
+            clearInterval(timer);
             return prev;
           }
         });
-      }, 300); // Adjust delay for each item (in milliseconds)
+      }, 300); 
     }
   };
 

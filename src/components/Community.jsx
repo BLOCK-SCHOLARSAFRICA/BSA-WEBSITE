@@ -25,7 +25,7 @@ const Community = () => {
           >
             {stat.isHeader ? (
               <>
-                <h1 className="text-3xl md:text-4xl font-bold text-white">
+                <h1 className="text-2xl md:text-2xl font-bold text-white">
                   {stat.label}
                 </h1>
                 <div className="w-1 h-20 bg-white"></div>

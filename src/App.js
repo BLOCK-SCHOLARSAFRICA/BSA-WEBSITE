@@ -15,7 +15,7 @@ import {
   RegisterSection,
   Footer,
 } from "./components/Section";
-import Team from "./pages/Team"; // Import the Team page
+import Team from "./pages/TeamPage"; // Import the Team page
 import "./App.css";
 
 function App() {

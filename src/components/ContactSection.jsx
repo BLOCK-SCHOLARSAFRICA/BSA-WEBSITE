@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import axios from "axios";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -10,50 +9,24 @@ const ContactSection = () => {
     message: "",
   });
 
-  const [statusMessage, setStatusMessage] = useState("");
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    const contactData = {
-      email: formData.email,
-      name: `${formData.firstName} ${formData.lastName}`,
-      phone: formData.phone,
-      message: formData.message,
-    };
+    // Construct the mailto link
+    const { firstName, lastName, phone, email, message } = formData;
+    const mailtoLink = `mailto:blockscholarsafrica@gmail.com?subject=Contact%20from%20${encodeURIComponent(
+      `${firstName} ${lastName}`
+    )}&body=${encodeURIComponent(
+      `Name: ${firstName} ${lastName}\nPhone: ${phone}\nEmail: ${email}\n\nMessage:\n${message}`
+    )}`;
 
-    try {
-      // Send POST request to the new API endpoint
-      const response = await axios.post(
-        "https://api-bsa.onrender.com/api/contact-us",
-        contactData,
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
-
-      if (response.status === 200 || response.status === 201) {
-         console.log("Server Response:", response.data);
-        setStatusMessage("Your message has been sent successfully!");
-        setFormData({
-          firstName: "",
-          lastName: "",
-          phone: "",
-          email: "",
-          message: "",
-        });
-      }
-    } catch (error) {
-      console.error(JSON.stringify(error, null, 2));
-      setStatusMessage("Failed to send the message. Please try again later.");
-    }
+    // Open the user's email client with the pre-filled mailto link
+    window.location.href = mailtoLink;
   };
 
   return (
@@ -154,11 +127,6 @@ const ContactSection = () => {
           </button>
         </div>
       </form>
-      {statusMessage && (
-        <p className="mt-4 text-center text-lg font-semibold text-[#720034]">
-          {statusMessage}
-        </p>
-      )}
     </section>
   );
 };

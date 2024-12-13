@@ -10,7 +10,7 @@ const AdvisoryBoard = () => {
     {
       image: board1,
       name: "Osinakachi Akum Kalu",
-      role: "Strategic Partner Advisor ",
+      role: "Strategic Partnership Advisor ",
       linkedin: "https://www.linkedin.com/in/osinakachi-akuma-kalu/",
     },
     {
@@ -33,8 +33,8 @@ const AdvisoryBoard = () => {
     },
     {
       image: board5,
-      name: "Rev. Bethel Nwakaku",
-      role: "Community Development ",
+      name: "Dr. Bethel Nwakaku",
+      role: "Community Development Advisor",
       linkedin: "",
     },
   ];

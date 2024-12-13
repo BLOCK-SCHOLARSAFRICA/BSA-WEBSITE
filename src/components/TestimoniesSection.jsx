@@ -73,14 +73,14 @@ const TestimoniesSection = () => {
       setIsTransitioning(true);
     }, 10000);
 
-    return () => clearInterval(interval); // Cleanup interval on unmount
+    return () => clearInterval(interval);
   }, []);
 
   useEffect(() => {
     if (!isTransitioning) {
       const timeout = setTimeout(() => {
         setIsTransitioning(true);
-      }, 100); // Re-enable transitions after resetting
+      }, 100); 
       return () => clearTimeout(timeout);
     }
   }, [isTransitioning]);
@@ -106,7 +106,7 @@ const TestimoniesSection = () => {
           onTransitionEnd={() => {
             if (currentIndex === testimonies.length) {
               setIsTransitioning(false);
-              setCurrentIndex(0); // Reset to first testimony
+              setCurrentIndex(0); 
             }
           }}
         >

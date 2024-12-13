@@ -25,7 +25,7 @@ const Objectives = () => {
             return prev;
           }
         });
-      }, 500); // Adjust the delay for adding each item
+      }, 500); 
     } else {
       // Gradually remove objectives
       const timer = setInterval(() => {
@@ -37,7 +37,7 @@ const Objectives = () => {
             return prev;
           }
         });
-      }, 500); // Adjust the delay for removing each item
+      }, 500); 
     }
   };
 

@@ -9,6 +9,7 @@ import team5 from "../assets/team7.png";
 import team8 from "../assets/team8.png";
 import team6 from "../assets/team9.png";
 import team10 from "../assets/team10.png";
+import team11 from "../assets/team11.png";
 import In from "../assets/In.png"; 
 import AdvisoryBoard from "../components/advisoryBoard";
 
@@ -76,6 +77,12 @@ const Team = () => {
       role: "Graphic Designer",
       linkedin: "https://www.linkedin.com/in/goodnessosei/",
     },
+    {
+      image: team11,
+      name: "Benefactor Emmanuel C.",
+      role: "Chief Information Officer (CIO)",
+      linkedin: "https://www.linkedin.com/in/?/",
+    },
   ];
 
   return (
@@ -121,6 +128,7 @@ const Team = () => {
         ))}
       </div>
       <AdvisoryBoard />
+      {/* <Footer /> */}
     </div>
   );
 };

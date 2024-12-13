@@ -10,8 +10,8 @@ const EventSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 8000); // Change every 8 seconds
-    return () => clearInterval(interval); // Cleanup on unmount
+    }, 8000); 
+    return () => clearInterval(interval); 
   }, [images.length]);
 
   return (

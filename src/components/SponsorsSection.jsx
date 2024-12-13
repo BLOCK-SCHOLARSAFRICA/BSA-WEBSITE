@@ -3,11 +3,11 @@ import { FaRegCopy } from "react-icons/fa";
 
 const SponsorsSection = () => {
   const [isSupportVisible, setIsSupportVisible] = useState(false);
-  const [activeSection, setActiveSection] = useState(null); // Tracks which section (bank/crypto) is active
+  const [activeSection, setActiveSection] = useState(null); 
 
   const toggleSupportVisibility = () => {
     setIsSupportVisible((prev) => !prev);
-    setActiveSection(null); // Reset the active section when toggling
+    setActiveSection(null); 
   };
 
   const copyToClipboard = (text) => {

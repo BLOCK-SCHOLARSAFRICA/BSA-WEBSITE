@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import scholarship1 from "../assets/scholarship1.png";
 import scholarship2 from "../assets/scholarship2.png";
 import scholarship3 from "../assets/scholarship3.png";
-import scholarship4 from "../assets/CampusTech 1.png";
+import scholarship4 from "../assets/Campus Tech 2.png";
 
 const RegisterSection = () => {
   const images = [scholarship1, scholarship2, scholarship3];
@@ -11,19 +11,19 @@ const RegisterSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 10000); // Change image every 10 seconds
-    return () => clearInterval(interval); // Cleanup on component unmount
+    }, 10000); 
+    return () => clearInterval(interval); 
   }, [images.length]);
 
   const handleRegisterClick1 = () => {
-    // Replace the URL below with your Google Form link
+    
     window.open(
       "https://forms.gle/5gHdnxQ9wxa83zYz8",
       "_blank"
     );
   };
   const handleRegisterClick2 = () => {
-    // Replace the URL below with your Google Form link
+
     window.open(
       "https:///forms.gle/Yn5QnMd2B4Lyz44V6",
       "_blank"
