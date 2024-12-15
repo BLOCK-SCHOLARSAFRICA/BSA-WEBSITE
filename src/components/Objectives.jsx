@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import aboutImage2 from "../assets/aboutImage2.png";
+import AOS from "aos"; // Import AOS
+import "aos/dist/aos.css"; // Import AOS styles
 
 const Objectives = () => {
   const [visibleObjectives, setVisibleObjectives] = useState(1);
@@ -25,7 +27,7 @@ const Objectives = () => {
             return prev;
           }
         });
-      }, 500); 
+      }, 500);
     } else {
       // Gradually remove objectives
       const timer = setInterval(() => {
@@ -37,14 +39,25 @@ const Objectives = () => {
             return prev;
           }
         });
-      }, 500); 
+      }, 500);
     }
   };
+
+  // Initialize AOS for animations
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      once: true, // Animate only once
+    });
+  }, []);
 
   return (
     <div className="flex flex-col md:flex-row items-center mt-32">
       {/* Image Section */}
-      <div className="md:w-1/2 flex justify-center md:justify-start mb-6 md:mb-0">
+      <div
+        className="md:w-1/2 flex justify-center md:justify-start mb-6 md:mb-0"
+        data-aos="fade-right"
+      >
         <img
           src={aboutImage2}
           alt="Objectives"
@@ -54,15 +67,21 @@ const Objectives = () => {
 
       {/* Objectives Section */}
       <div className="md:w-1/2 md:pl-10 space-y-6">
-        <h2 className="text-3xl text-[#720034] font-bold">Objectives</h2>
+        <h2 className="text-3xl text-[#720034] font-bold" data-aos="fade-up">
+          Objectives
+        </h2>
         <ul className="list-decimal pl-5 space-y-4">
           {objectives.slice(0, visibleObjectives).map((objective, index) => (
-            <li key={index}>{objective}</li>
+            <li key={index} data-aos="fade-up" data-aos-delay={index * 100}>
+              {objective}
+            </li>
           ))}
         </ul>
         <button
           onClick={handleButtonClick}
-          className="mt-4 px-6 py-2 bg-[#720034] text-white font-semibold rounded-lg hover:bg-[#470020]"
+          className="mt-4 px-6 py-2 bg-[#720034] text-white font-semibold rounded-lg hover:bg-[#470020] transition-all"
+          data-aos="fade-up"
+          data-aos-delay="300"
         >
           {visibleObjectives < objectives.length ? "Read More" : "Show Less"}
         </button>

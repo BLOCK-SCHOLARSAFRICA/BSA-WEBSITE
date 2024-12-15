@@ -16,3 +16,107 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Fade-in effect for the section */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s forwards;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s forwards;
+}
+
+.animate-fadeInUp.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.animate-fadeInUp.delay-200 {
+  animation-delay: 0.2s;
+}
+/* Slide-up effect for the whole support section */
+@keyframes slideUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* Expand and collapse animation */
+@keyframes expandCollapse {
+  0% {
+    max-height: 0;
+    opacity: 0;
+  }
+  100% {
+    max-height: 300px;
+    opacity: 1;
+  }
+}
+
+.max-h-0 {
+  max-height: 0;
+}
+
+.max-h-96 {
+  max-height: 300px; /* Adjust this value according to content height */
+}
+
+/* Optional: Add hover effect to question toggle icon */
+@keyframes hoverIcon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.text-lg:hover {
+  animation: hoverIcon 0.3s forwards;
+}
+.animate-slideUp {
+  animation: slideUp 1s ease-out;
+}
+
+/* Slide-in effect for the individual sections */
+@keyframes slideIn {
+  0% {
+    transform: translateY(20px);
+    transform: translateX(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.animate-slideIn {
+  animation: slideIn 0.8s ease-out;
+}
+.nav-link {
+  animation: slideIn 0.5s ease-out forwards;
+}

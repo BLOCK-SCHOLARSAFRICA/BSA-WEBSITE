@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import coreValueImage from "../assets/coreValue.png";
+import AOS from "aos"; 
+import "aos/dist/aos.css"; 
 
 const CoreValues = () => {
   const [visibleCount, setVisibleCount] = useState(1);
@@ -32,11 +34,11 @@ const CoreValues = () => {
           if (prev < coreValues.length) {
             return prev + 1;
           } else {
-            clearInterval(timer); 
+            clearInterval(timer);
             return prev;
           }
         });
-      }, 300); 
+      }, 300);
     }
   };
 
@@ -51,21 +53,34 @@ const CoreValues = () => {
             return prev;
           }
         });
-      }, 300); 
+      }, 300);
     }
   };
+
+  // Initialize AOS for animations
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+      once: true, 
+    });
+  }, []);
 
   return (
     <div className="flex flex-col-reverse md:flex-row items-center mt-32">
       <div className="md:w-1/2 space-y-10">
-        <div>
+        <div data-aos="fade-up">
           <h2 className="text-3xl text-[#720034] font-bold">Core Values</h2>
           <ul className="list-disc pl-5 mt-4 space-y-4">
             {coreValues.slice(0, visibleCount).map((value, index) => {
-              const firstLetter = value.charAt(0); // Extract the first letter
-              const restOfText = value.slice(1); // Extract the rest of the text
+              const firstLetter = value.charAt(0); 
+              const restOfText = value.slice(1); 
               return (
-                <li key={index} className="flex items-center">
+                <li
+                  key={index}
+                  className="flex "
+                  data-aos="fade-up"
+                  data-aos-delay={index * 100}
+                >
                   <span className="text-2xl text-[#720034] font-bold">
                     {firstLetter}
                   </span>
@@ -80,14 +95,18 @@ const CoreValues = () => {
             {visibleCount < coreValues.length ? (
               <button
                 onClick={handleReadMore}
-                className="px-6 py-2 bg-[#720034] text-white font-semibold rounded-lg hover:bg-[#470020]"
+                className="px-6 py-2 bg-[#720034] text-white font-semibold rounded-lg hover:bg-[#470020] transition-all"
+                data-aos="fade-up"
+                data-aos-delay="400"
               >
                 Read More
               </button>
             ) : (
               <button
                 onClick={handleShowLess}
-                className="px-6 py-2 bg-[#720034] text-white font-semibold rounded-lg hover:bg-[#470020]"
+                className="px-6 py-2 bg-[#720034] text-white font-semibold rounded-lg hover:bg-[#470020] transition-all"
+                data-aos="fade-up"
+                data-aos-delay="400"
               >
                 Show Less
               </button>
@@ -95,14 +114,19 @@ const CoreValues = () => {
             <div className="relative">
               <button
                 onClick={toggleDropdown}
-                className="px-6 py-2 bg-[#720034] rounded-lg text-white font-semibold hover:bg-[#5a0028]"
+                className="px-6 py-2 bg-[#720034] rounded-lg text-white font-semibold hover:bg-[#5a0028] transition-all"
+                data-aos="fade-up"
+                data-aos-delay="500"
               >
                 Become a member
               </button>
 
               {/* Dropdown Menu */}
               {isDropdownOpen && (
-                <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 bg-white shadow-lg rounded-lg w-52">
+                <div
+                  className="absolute left-1/2 transform -translate-x-1/2 mt-2 bg-white shadow-lg rounded-lg w-52"
+                  data-aos="fade-down"
+                >
                   <a
                     href="https://chat.whatsapp.com/FukMsAyCYLo6oryVEdQMTP"
                     target="_blank"
@@ -127,8 +151,11 @@ const CoreValues = () => {
         </div>
       </div>
 
-      {/* Image */}
-      <div className="md:w-1/2 flex justify-center md:justify-end mb-6 md:mb-0">
+      {/* Image Section */}
+      <div
+        className="md:w-1/2 flex justify-center md:justify-end mb-6 md:mb-0"
+        data-aos="fade-left" 
+      >
         <img
           src={coreValueImage}
           alt="Core Values"

@@ -3,11 +3,11 @@ import { FaRegCopy } from "react-icons/fa";
 
 const SponsorsSection = () => {
   const [isSupportVisible, setIsSupportVisible] = useState(false);
-  const [activeSection, setActiveSection] = useState(null); 
+  const [activeSection, setActiveSection] = useState(null);
 
   const toggleSupportVisibility = () => {
     setIsSupportVisible((prev) => !prev);
-    setActiveSection(null); 
+    setActiveSection(null);
   };
 
   const copyToClipboard = (text) => {
@@ -16,7 +16,10 @@ const SponsorsSection = () => {
   };
 
   return (
-    <section id="sponsors" className="py-20 px-6 bg-white">
+    <section
+      id="sponsors"
+      className="py-20 px-6 bg-white opacity-0 animate-fadeIn"
+    >
       <div className="text-center mb-10 py-5">
         <h1 className="text-4xl md:text-4xl text-[#720034] font-bold mb-2">
           Support
@@ -28,13 +31,13 @@ const SponsorsSection = () => {
         </p>
         <button
           onClick={toggleSupportVisibility}
-          className="px-6 py-3 mt-10 bg-[#720034] rounded-lg text-white font-semibold hover:bg-[#5a0028]"
+          className="px-6 py-3 mt-10 bg-[#720034] rounded-lg text-white font-semibold hover:bg-[#5a0028] transition-all duration-300"
         >
           {isSupportVisible ? "Hide Options" : "Get Involved"}
         </button>
       </div>
       {isSupportVisible && (
-        <div className="mt-10 bg-[#fcf5f5] text-[#720034] p-20 rounded-lg shadow-lg">
+        <div className="mt-10 bg-[#fcf5f5] text-[#720034] p-20 rounded-lg shadow-lg animate-slideUp">
           <div className="flex flex-col md:flex-row items-center justify-center gap-10">
             {/* Bank Transfer Section */}
             <div className="flex flex-col items-center w-full md:w-[30%]">
@@ -42,12 +45,12 @@ const SponsorsSection = () => {
                 onClick={() =>
                   setActiveSection((prev) => (prev === "bank" ? null : "bank"))
                 }
-                className="px-6 py-3 bg-[#720034] rounded-lg text-white font-semibold hover:bg-[#5a0028]"
+                className="px-6 py-3 bg-[#720034] rounded-lg text-white font-semibold hover:bg-[#5a0028] transition-all duration-300"
               >
                 Bank Transfer
               </button>
               {activeSection === "bank" && (
-                <div className="mt-5 text-center">
+                <div className="mt-5 text-center animate-slideIn">
                   <p className="text-lg font-medium">
                     Send money to Block-Scholars Africa LTD <br /> Moneipoint
                     Microfinance Bank
@@ -57,7 +60,7 @@ const SponsorsSection = () => {
                       6566764321
                     </span>
                     <FaRegCopy
-                      className="text-xl cursor-pointer hover:text-[#5a0028]"
+                      className="text-xl cursor-pointer hover:text-[#5a0028] transition-all duration-300"
                       onClick={() => copyToClipboard("6566764321")}
                     />
                   </div>
@@ -73,12 +76,12 @@ const SponsorsSection = () => {
                     prev === "crypto" ? null : "crypto"
                   )
                 }
-                className="px-6 py-3 bg-[#720034] rounded-lg text-white font-semibold hover:bg-[#5a0028]"
+                className="px-6 py-3 bg-[#720034] rounded-lg text-white font-semibold hover:bg-[#5a0028] transition-all duration-300"
               >
                 Cryptocurrency
               </button>
               {activeSection === "crypto" && (
-                <div className="mt-5 text-center">
+                <div className="mt-5 text-center animate-slideIn">
                   <p className="text-lg font-medium">
                     Wallet address: <br /> USDT/USDC ERC20 & BEP20 to this
                     address
@@ -88,7 +91,7 @@ const SponsorsSection = () => {
                       0xcebA4E2f29F53fC47775235094c5483EF864eB95
                     </span>
                     <FaRegCopy
-                      className="text-xl cursor-pointer hover:text-[#5a0028]"
+                      className="text-xl cursor-pointer hover:text-[#5a0028] transition-all duration-300"
                       onClick={() =>
                         copyToClipboard(
                           "0xcebA4E2f29F53fC47775235094c5483EF864eB95"

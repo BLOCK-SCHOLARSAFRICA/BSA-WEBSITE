@@ -1,19 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
+import CountUp from "react-countup";
 import team1 from "../assets/team1.png";
-import team3 from "../assets/team2.png";
-import team9 from "../assets/team3.png";
-import team2 from "../assets/team4.png";
-import team7 from "../assets/team5.png";
-import team4 from "../assets/team6.png";
-import team5 from "../assets/team7.png";
-import team8 from "../assets/team8.png";
-import team6 from "../assets/team9.png";
-import team10 from "../assets/team10.png";
-import team11 from "../assets/team11.png";
-import In from "../assets/In.png"; 
+import team4 from "../assets/team2.png";
+import team10 from "../assets/team3.png";
+import team3 from "../assets/team4.png";
+import team8 from "../assets/team5.png";
+import team5 from "../assets/team6.png";
+import team6 from "../assets/team7.png";
+import team9 from "../assets/team8.png";
+import team7 from "../assets/team9.png";
+import team11 from "../assets/team10.png";
+import team12 from "../assets/team11.png";
+import team2 from "../assets/team12.png";
+import In from "../assets/In.png";
 import AdvisoryBoard from "../components/advisoryBoard";
+import AOS from "aos"; 
+import "aos/dist/aos.css"; 
 
 const Team = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+      once: true, 
+    });
+  }, []);
+
   const teamMembers = [
     {
       image: team1,
@@ -23,62 +34,68 @@ const Team = () => {
     },
     {
       image: team2,
+      name: "Christopher Enyeribe.",
+      role: "Co-Founder/ (COO)",
+      linkedin: "https://www.linkedin.com/in/christopher-enyeribe-483823230/",
+    },
+    {
+      image: team3,
       name: "Onyenwe Annastessia ",
       role: "Board Secretary/CFO",
       linkedin: "https://www.linkedin.com/in/annastessia-c/",
     },
     {
-      image: team3,
+      image: team4,
       name: "Babatunde Maryam F.",
       role: "Chief Technology Officer (CTO)",
       linkedin: "https://www.linkedin.com/in/maryam-babatunde-659684198/",
     },
     {
-      image: team4,
+      image: team5,
       name: "Favourite Peter",
       role: "Chief Marketing Officer (CMO)",
       linkedin:
         "https://www.linkedin.com/in/favour-peter-1319982b5/?originalSubdomain=ng/",
     },
     {
-      image: team5,
+      image: team6,
       name: "Ezekiel O. Obasanya",
       role: "Chief Product Officer",
       linkedin: "https://www.linkedin.com/in/ezekielobasanya",
     },
     {
-      image: team6,
+      image: team7,
       name: "Osawaru Josephine O.",
       role: "Head Of Creativity & design",
       linkedin: "https://www.linkedin.com/in/osarumen-henry-398773336/",
     },
 
     {
-      image: team7,
+      image: team8,
       name: "Odion Emmanuel",
       role: "Content Writer",
       linkedin: "https://www.linkedin.com/in/odion-emmanuel-374a52320/",
     },
     {
-      image: team8,
+      image: team9,
       name: "Ufere Stephen U.",
       role: "Graphics Designer",
       linkedin: "https://www.linkedin.com/in/stephen-ugochukwu-008913203/",
     },
     {
-      image: team9,
+      image: team10,
       name: "Olaniran Samad B.",
       role: "Frontend Developer",
       linkedin: "https://www.linkedin.com/in/samad-olaniran-208b57335/",
     },
     {
-      image: team10,
+      image: team11,
       name: "Dickson Goodness.",
       role: "Graphic Designer",
       linkedin: "https://www.linkedin.com/in/goodnessosei/",
     },
     {
-      image: team11,
+      image: team12,
       name: "Benefactor Emmanuel C.",
       role: "Chief Information Officer (CIO)",
       linkedin: "https://www.linkedin.com/in/?/",
@@ -100,15 +117,21 @@ const Team = () => {
       </div>
       <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
         {teamMembers.map((member, index) => (
-          <div key={index} className="flex flex-col items-center">
-            <img
-              src={member.image}
-              alt={`Team member ${index + 1}`}
-              className="w-24 h-24 object-cover rounded-full border-2 border-[#720034]"
-            />
+          <div
+            key={index}
+            className="flex flex-col items-center"
+            data-aos="fade-up" 
+          >
+            <div className="transform transition-transform duration-300 hover:scale-110">
+              <img
+                src={member.image}
+                alt={`Team member ${index + 1}`}
+                className="w-24 h-24 object-cover rounded-full border-2 border-[#720034]"
+              />
+            </div>
             {/* Flex container to align name and LinkedIn icon side by side */}
-            <div className="flex items-center mt-3 ">
-              <h1 className="text-lg  font-semibold">{member.name}</h1>
+            <div className="flex items-center mt-3">
+              <h1 className="text-lg font-semibold">{member.name}</h1>
               {/* LinkedIn Icon */}
               <a
                 href={member.linkedin}

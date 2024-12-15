@@ -25,7 +25,7 @@ const Header = () => {
 
         {/* Hamburger Menu Icon */}
         <button
-          className="md:hidden focus:outline-none"
+          className="md:hidden focus:outline-none "
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <img
@@ -38,8 +38,10 @@ const Header = () => {
         {/* Navigation Links */}
         <nav
           className={`${
-            menuOpen ? "fixed" : "hidden"
-          } top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-40 text-white w-80 h-auto z-50 shadow-lg p-6 rounded-lg transition-all duration-300 ease-in-out md:static md:opacity-100 md:translate-x-0 md:translate-y-0 md:flex md:items-center md:space-x-6`}
+            menuOpen
+              ? "fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-40 text-white w-80 h-auto z-50 shadow-lg p-6 rounded-lg"
+              : "hidden"
+          } md:flex md:items-center md:space-x-6`}
         >
           <ul className="flex flex-col text-center space-y-4 md:flex-row md:space-y-0 md:space-x-6 text-sm cursor-pointer">
             {[
@@ -96,7 +98,7 @@ const Header = () => {
       {/* Background Overlay */}
       {menuOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-20 backdrop-blur-md z-40"
+          className="fixed inset-0 bg-black bg-opacity-20 backdrop-blur-md z-40 md:hidden"
           onClick={() => setMenuOpen(false)}
         ></div>
       )}

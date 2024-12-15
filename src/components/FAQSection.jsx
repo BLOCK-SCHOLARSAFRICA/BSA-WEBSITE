@@ -62,7 +62,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section id="faq" className="py-20 px-6 bg-white">
+    <section id="faq" className="py-20 px-6 bg-white opacity-0 animate-fadeIn">
       <div className="text-center mb-10 py-5">
         <h1 className="text-3xl md:text-4xl text-[#720034] font-bold mb-2">
           FAQ's
@@ -93,7 +93,7 @@ const FAQSection = () => {
                 {term.title}
               </h2>
               <span
-                className={`text-lg font-bold ${
+                className={`text-lg font-bold transition-transform duration-300 ${
                   expandedIndex === index ? "text-[#fcf9f9]" : "text-[#720034]"
                 }`}
               >
@@ -101,7 +101,12 @@ const FAQSection = () => {
               </span>
             </div>
 
-            {expandedIndex === index && (
+            {/* Smooth Expand/Collapse Animation */}
+            <div
+              className={`${
+                expandedIndex === index ? "max-h-96" : "max-h-0"
+              } overflow-hidden transition-all duration-500 ease-in-out`}
+            >
               <div className="mt-3 md:mt-4 text-lightGray font-normal text-sm md:text-base">
                 {Array.isArray(term.description) ? (
                   <>
@@ -116,7 +121,7 @@ const FAQSection = () => {
                   <p>{term.description}</p>
                 )}
               </div>
-            )}
+            </div>
           </div>
         ))}
       </div>
