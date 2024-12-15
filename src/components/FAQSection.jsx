@@ -64,21 +64,21 @@ const FAQSection = () => {
   return (
     <section id="faq" className="py-20 px-6 bg-white">
       <div className="text-center mb-10 py-5">
-        <h1 className="text-4xl md:text-4xl text-[#720034] font-bold mb-2">
+        <h1 className="text-3xl md:text-4xl text-[#720034] font-bold mb-2">
           FAQ's
         </h1>
-        <p className="text-lg md:text-lg text-[#720034]">
+        <p className="text-base md:text-lg text-[#720034]">
           Common questions you may want to ask.
         </p>
       </div>
-      <div className="flex flex-col items-center mx-auto w-1/2">
+      <div className="flex flex-col items-center mx-auto w-full md:w-3/4 lg:w-1/2">
         {helpAndFAQs.map((term, index) => (
           <div
             key={index}
-            className={`text-left w-full mb-3 px-5 border rounded-[40px] ${
+            className={`text-left w-full mb-3 px-5 border rounded-lg transition-all duration-300 ${
               expandedIndex === index
-                ? "bg-[#720034] text-[#fcf9f9] text-lg py-5 border rounded-[20px]"
-                : ""
+                ? "bg-[#720034] text-[#fcf9f9] py-5 border-[#720034]"
+                : "bg-white text-[#720034] border-gray-300"
             }`}
           >
             <div
@@ -86,7 +86,7 @@ const FAQSection = () => {
               onClick={() => toggleExpand(index)}
             >
               <h2
-                className={`font-medium text-sm md:text-xl lg:text-lg ${
+                className={`font-medium text-sm md:text-lg ${
                   expandedIndex === index ? "text-[#fcf9f9]" : "text-[#720034]"
                 }`}
               >
@@ -102,7 +102,7 @@ const FAQSection = () => {
             </div>
 
             {expandedIndex === index && (
-              <div className="mt-3 md:mt-5 text-lightGray font-normal text-sm md:text-base">
+              <div className="mt-3 md:mt-4 text-lightGray font-normal text-sm md:text-base">
                 {Array.isArray(term.description) ? (
                   <>
                     <p className="mb-3">{term.description[0]}</p>
