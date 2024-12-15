@@ -17,7 +17,6 @@ const ContactSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Construct the mailto link
     const { firstName, lastName, phone, email, message } = formData;
     const mailtoLink = `mailto:blockscholarsafrica@gmail.com?subject=Contact%20from%20${encodeURIComponent(
       `${firstName} ${lastName}`
@@ -25,19 +24,20 @@ const ContactSection = () => {
       `Name: ${firstName} ${lastName}\nPhone: ${phone}\nEmail: ${email}\n\nMessage:\n${message}`
     )}`;
 
-    // Open the user's email client with the pre-filled mailto link
     window.location.href = mailtoLink;
   };
 
   return (
     <section
       id="contact-us"
-      className="py-20 px-6 mx-10 my-20 md:px-14 bg-[#FBFBFB] border border-[#720034] rounded-[40px]"
+      className="py-10 px-4 mt-20 sm:px-6 md:px-14 bg-[#FBFBFB] border border-[#720034] rounded-[20px] sm:w-full md:max-w-4xl mx-auto"
     >
-      <h2 className="text-3xl text-[#720034] font-bold mb-6">Contact Us</h2>
+      <h2 className="text-3xl text-[#720034] font-bold mb-6 text-center">
+        Contact Us
+      </h2>
       <form
         onSubmit={handleSubmit}
-        className="grid grid-cols-1 md:grid-cols-2 gap-6"
+        className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6"
       >
         <div className="flex flex-col">
           <label
@@ -51,7 +51,7 @@ const ContactSection = () => {
             id="firstName"
             name="firstName"
             placeholder="Enter your first name"
-            className="mt-1 px-4 py-2 bg-[#f2f2f2] border rounded-[10px] focus:outline-none focus:ring-[#720034] focus:border-[#720034]"
+            className="mt-1 px-4 py-2 bg-[#f2f2f2] border rounded-[10px] w-full focus:outline-none focus:ring-[#720034] focus:border-[#720034]"
             value={formData.firstName}
             onChange={handleChange}
           />
@@ -68,7 +68,7 @@ const ContactSection = () => {
             id="lastName"
             name="lastName"
             placeholder="Enter your last name"
-            className="mt-1 px-4 py-2 bg-[#f2f2f2] border rounded-[10px] focus:outline-none focus:ring-[#720034] focus:border-[#720034]"
+            className="mt-1 px-4 py-2 bg-[#f2f2f2] border rounded-[10px] w-full focus:outline-none focus:ring-[#720034] focus:border-[#720034]"
             value={formData.lastName}
             onChange={handleChange}
           />
@@ -82,7 +82,7 @@ const ContactSection = () => {
             id="phone"
             name="phone"
             placeholder="Enter your phone number"
-            className="mt-1 px-4 py-2 bg-[#f2f2f2] border rounded-[10px] focus:outline-none focus:ring-[#720034] focus:border-[#720034]"
+            className="mt-1 px-4 py-2 bg-[#f2f2f2] border rounded-[10px] w-full focus:outline-none focus:ring-[#720034] focus:border-[#720034]"
             value={formData.phone}
             onChange={handleChange}
           />
@@ -96,7 +96,7 @@ const ContactSection = () => {
             id="email"
             name="email"
             placeholder="Enter your email"
-            className="mt-1 px-4 py-2 bg-[#f2f2f2] border rounded-[10px] focus:outline-none focus:ring-[#720034] focus:border-[#720034]"
+            className="mt-1 px-4 py-2 bg-[#f2f2f2] border rounded-[10px] w-full focus:outline-none focus:ring-[#720034] focus:border-[#720034]"
             value={formData.email}
             onChange={handleChange}
           />
@@ -113,15 +113,15 @@ const ContactSection = () => {
             name="message"
             rows="5"
             placeholder="Write your message here"
-            className="mt-1 px-4 py-2 bg-[#f2f2f2] border rounded-[10px] focus:outline-none focus:ring-[#720034] focus:border-[#720034]"
+            className="mt-1 px-4 py-2 bg-[#f2f2f2] border rounded-[10px] w-full focus:outline-none focus:ring-[#720034] focus:border-[#720034]"
             value={formData.message}
             onChange={handleChange}
           ></textarea>
         </div>
-        <div className="md:col-span-2">
+        <div className="md:col-span-2 flex justify-center">
           <button
             type="submit"
-            className="px-6 py-3 bg-[#720034] rounded-lg text-white font-semibold hover:bg-[#5a0028]"
+            className="px-6 py-3 bg-[#720034] rounded-lg text-white font-semibold hover:bg-[#5a0028] sm:w-full md:w-auto"
           >
             Submit
           </button>
