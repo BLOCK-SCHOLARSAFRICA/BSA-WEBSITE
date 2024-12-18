@@ -77,14 +77,14 @@ const CoreValues = () => {
               return (
                 <li
                   key={index}
-                  className="flex "
+                  className="flex hover:transform-none"
                   data-aos="fade-up"
                   data-aos-delay={index * 100}
                 >
-                  <span className="text-2xl text-[#720034] font-bold">
+                  <span className="text-2xl text-[#720034] font-bold transform-none">
                     {firstLetter}
                   </span>
-                  <span className="ml-2 text-lg text-justify">
+                  <span className="ml-2 text-lg text-justify transform-none">
                     {restOfText}
                   </span>
                 </li>

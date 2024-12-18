@@ -46,8 +46,8 @@ const Objectives = () => {
   // Initialize AOS for animations
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration
-      once: true, // Animate only once
+      duration: 1000, 
+      once: true, 
     });
   }, []);
 
