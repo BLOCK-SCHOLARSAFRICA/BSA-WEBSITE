@@ -116,7 +116,7 @@ const TestimoniesSection = () => {
               key={index}
               className="min-w-full flex justify-center items-center px-4"
             >
-              <div className="w-11/12 md:w-3/4 lg:w-1/2 bg-[#fcf9f9] border border-[#720034] shadow-lg rounded-[30px] p-6 md:p-8 mx-auto transition-all transform hover:scale-105 hover:shadow-xl">
+              <div className="w-11/12 md:w-3/4 lg:w-1/2 bg-[#fcf9f9] border border-[#720034] shadow-lg rounded-[30px] p-6 md:p-8 mx-auto transition-all transform hover:scale-90 hover:shadow-xl">
                 <img
                   src={testimony.image}
                   alt={testimony.name}
