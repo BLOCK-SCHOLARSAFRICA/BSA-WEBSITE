@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import aboutImage2 from "../assets/aboutImage2.png";
-import AOS from "aos"; // Import AOS
-import "aos/dist/aos.css"; // Import AOS styles
+import AOS from "aos"; 
+import "aos/dist/aos.css"; 
 
 const Objectives = () => {
   const [visibleObjectives, setVisibleObjectives] = useState(1);

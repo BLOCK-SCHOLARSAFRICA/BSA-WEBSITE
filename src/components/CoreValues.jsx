@@ -72,8 +72,8 @@ const CoreValues = () => {
           <h2 className="text-3xl text-[#720034] font-bold">Core Values</h2>
           <ul className="list-disc pl-5 mt-4 space-y-4">
             {coreValues.slice(0, visibleCount).map((value, index) => {
-              const firstLetter = value.charAt(0); 
-              const restOfText = value.slice(1); 
+              const firstLetter = value.charAt(0);
+              const restOfText = value.slice(1);
               return (
                 <li
                   key={index}
@@ -124,14 +124,14 @@ const CoreValues = () => {
               {/* Dropdown Menu */}
               {isDropdownOpen && (
                 <div
-                  className="absolute left-1/2 transform -translate-x-1/2 mt-2 bg-white shadow-lg rounded-lg w-52"
+                  className="absolute  transform -translate-x-1/2 mt-2 bg-white shadow-lg rounded-lg w-52"
                   data-aos="fade-down"
                 >
                   <a
                     href="https://chat.whatsapp.com/FukMsAyCYLo6oryVEdQMTP"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block px-4 py-2 text-[#720034] hover:bg-[#720034] hover:text-white"
+                    className="block px-4 py-2 text-[#720034] hover:bg-[#720034] hover:text-white border rounded-lg"
                   >
                     Join WhatsApp Group
                   </a>
@@ -140,7 +140,7 @@ const CoreValues = () => {
                     href="https://t.me/Block_Scholars_Africa"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block px-4 py-2 text-[#720034] hover:bg-[#720034] hover:text-white"
+                    className="block px-4 py-2 text-[#720034] hover:bg-[#720034] hover:text-white border rounded-lg"
                   >
                     Join Telegram Group
                   </a>
@@ -154,7 +154,7 @@ const CoreValues = () => {
       {/* Image Section */}
       <div
         className="md:w-1/2 flex justify-center md:justify-end mb-6 md:mb-0"
-        data-aos="fade-left" 
+        data-aos="fade-left"
       >
         <img
           src={coreValueImage}

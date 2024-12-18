@@ -1,9 +1,11 @@
 import React from "react";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaInstagram,
+} from "react-icons/fa";
 import logo from "../assets/BSA-Logo.png";
-import facebook from "../assets/facebook.png";
-import twitter from "../assets/twitter.png";
-import linkedin from "../assets/linkedin.png";
-import instagram from "../assets/instagram.png";
 
 const Footer = () => {
   return (
@@ -20,49 +22,41 @@ const Footer = () => {
             Follow Us
           </h1>
           <div className="flex flex-row gap-6 justify-center items-center">
+            {/* Facebook */}
             <a
               href="https://www.facebook.com/profile.php?id=100088750029788&mibextid=ZbWKwL"
               target="_blank"
               rel="noopener noreferrer"
+              className="text-white hover:text-[#720034] hover:bg-white transition-transform duration-300 transform hover:scale-110"
             >
-              <img
-                src={facebook}
-                alt="Facebook"
-                className="w-8 h-8 rounded-lg shadow-md hover:scale-110 transition-transform duration-300"
-              />
+              <FaFacebookF className="w-6 h-6" />
             </a>
+            {/* Twitter */}
             <a
               href="https://x.com/BlockScholars_A?t=v79CvnmGMEalSg_6PRvTbQ&s=09"
               target="_blank"
               rel="noopener noreferrer"
+              className="text-white hover:text-[#720034] hover:bg-white transition-transform duration-300 transform hover:scale-110"
             >
-              <img
-                src={twitter}
-                alt="Twitter"
-                className="w-8 h-8 rounded-lg shadow-md hover:scale-110 transition-transform duration-300"
-              />
+              <FaTwitter className="w-6 h-6" />
             </a>
+            {/* LinkedIn */}
             <a
               href="https://www.linkedin.com/company/block-scholars-africa/"
               target="_blank"
               rel="noopener noreferrer"
+              className="text-white hover:text-[#720034] hover:bg-white transition-transform duration-300 transform hover:scale-110"
             >
-              <img
-                src={linkedin}
-                alt="LinkedIn"
-                className="w-8 h-8 rounded-lg shadow-md hover:scale-110 transition-transform duration-300"
-              />
+              <FaLinkedinIn className="w-6 h-6" />
             </a>
+            {/* Instagram */}
             <a
               href="https://www.instagram.com/blockscholarsafrica/profilecard/?igsh=MXR3c24xMm41b2ZpaQ=="
               target="_blank"
               rel="noopener noreferrer"
+              className="text-white hover:text-[#720034] hover:bg-white transition-transform duration-300 transform hover:scale-110"
             >
-              <img
-                src={instagram}
-                alt="Instagram"
-                className="w-8 h-8 rounded-lg shadow-md hover:scale-110 transition-transform duration-300"
-              />
+              <FaInstagram className="w-6 h-6" />
             </a>
           </div>
         </div>
