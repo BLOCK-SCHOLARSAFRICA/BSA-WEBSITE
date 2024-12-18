@@ -67,7 +67,7 @@ const Team = () => {
       image: team7,
       name: "Osawaru Josephine O.",
       role: "Head Of Creativity & design",
-      linkedin: "https://www.linkedin.com/in/osarumen-henry-398773336/",
+      linkedin: "https://www.linkedin.com/in/osawaru-josephine-398773336/",
     },
 
     {
