@@ -80,11 +80,20 @@ const Header = () => {
               { to: "team", label: "Team" },
               { to: "register", label: "Register" },
             ].map(({ to, label }) => (
-              <li key={to} className="py-2 md:py-0">
+              <li
+                key={to}
+                className={`py-2 md:py-0 ${
+                  label === "Register"
+                    ? "bg-[#720034] text-white rounded-md px-6  "
+                    : ""
+                }`}
+              >
                 {label === "Team" || label === "Register" ? (
                   <NavLink
                     to={`/${to}`}
-                    className="hover:text-[#720034]"
+                    className={`hover:text-[#720034] ${
+                      label === "Register" ? "text-white hover:text-white" : ""
+                    }`}
                     onClick={() => setMenuOpen(false)}
                   >
                     {label}
