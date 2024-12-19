@@ -31,7 +31,7 @@ const RegisterSection = () => {
   };
 
   return (
-    <section id="register" className="py-20 px-6 bg-white mt-20">
+    <section  className="py-20 px-6 bg-white mt-20">
       <div className="text-center mb-8">
         <h1 className="text-3xl md:text-3xl text-[#720034] font-bold mb-4">
           Scholarship Programs & Campus Tech Program

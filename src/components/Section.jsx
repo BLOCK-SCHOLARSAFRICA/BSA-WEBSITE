@@ -9,5 +9,4 @@ export { default as TestimoniesSection } from "./TestimoniesSection";
 export { default as SponsorsSection } from "./SponsorsSection";
 export { default as FAQSection } from "./FAQSection";
 export { default as PartnersSection } from "./PartnersSection";
-export { default as RegisterSection } from "./RegisterSection";
 export { default as Footer } from "./Footer";

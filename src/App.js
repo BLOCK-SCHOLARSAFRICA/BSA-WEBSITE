@@ -12,10 +12,10 @@ import {
   SponsorsSection,
   PartnersSection,
   FAQSection,
-  RegisterSection,
   Footer,
 } from "./components/Section";
-import Team from "./pages/TeamPage"; // Import the Team page
+import Team from "./pages/TeamPage"; 
+import Register from "./pages/RegisterPage";
 import "./App.css";
 
 function App() {
@@ -38,13 +38,14 @@ function App() {
               <SponsorsSection />
               <PartnersSection />
               <FAQSection />
-              <RegisterSection />
               <Footer />
             </>
           }
         />
         {/* Team page */}
         <Route path="/team" element={<Team />} />
+        {/* Register page */}
+        <Route path="/register" element={<Register />} />
       </Routes>
     </div>
   );

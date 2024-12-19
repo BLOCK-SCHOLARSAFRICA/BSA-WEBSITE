@@ -13,7 +13,7 @@ import {
   SponsorsSection,
   FAQSection,
   PartnersSection,
-  RegisterSection,
+
 } from "../components/Section";
 
 const HomePage = () => {
@@ -29,7 +29,7 @@ const HomePage = () => {
     { name: "sponsors", component: <SponsorsSection /> },
     { name: "faq", component: <FAQSection /> },
     { name: "partners", component: <PartnersSection /> },
-    { name: "register", component: <RegisterSection /> },
+ 
   ];
 
   return (
