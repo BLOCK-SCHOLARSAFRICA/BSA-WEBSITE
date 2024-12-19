@@ -73,6 +73,7 @@ const RegisterSection = () => {
           </div>
           <div className="text-center mt-8">
             <button
+              id="campusTech"
               onClick={handleRegisterClick2}
               className="px-6 py-3 bg-[#720034] rounded-lg text-white font-semibold hover:bg-[#5a0028]"
             >

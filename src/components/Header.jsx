@@ -104,11 +104,8 @@ const Header = () => {
                     smooth={true}
                     duration={500}
                     onSetActive={handleSetActive}
-                    className={`${
-                      label === "Register"
-                        ? "bg-[#720034] text-white px-4 py-2 rounded-md hover:bg-[#470020] transition-all"
-                        : "hover:text-[#720034]"
-                    }`}
+                    className="hover:text-[#720034]"
+                    activeClass="font-bold"
                     onClick={() => setMenuOpen(false)}
                   >
                     {label}
