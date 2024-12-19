@@ -19,7 +19,7 @@ const AdvisoryBoard = () => {
   const boardMembers = [
     {
       image: board1,
-      name: "Osinakachi Akum Kalu",
+      name: "Osinakachi Akuma Kalu",
       role: "Strategic Partnership Advisor ",
       linkedin: "https://www.linkedin.com/in/osinakachi-akuma-kalu/",
     },
