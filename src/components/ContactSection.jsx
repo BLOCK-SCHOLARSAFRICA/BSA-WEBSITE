@@ -18,7 +18,7 @@ const ContactSection = () => {
     e.preventDefault();
 
     const { firstName, lastName, phone, email, message } = formData;
-    const mailtoLink = `mailto:blockscholarsafrica@gmail.com?subject=Contact%20from%20${encodeURIComponent(
+    const mailtoLink = `mailto:hello@block-scholars.africa?subject=Contact%20from%20${encodeURIComponent(
       `${firstName} ${lastName}`
     )}&body=${encodeURIComponent(
       `Name: ${firstName} ${lastName}\nPhone: ${phone}\nEmail: ${email}\n\nMessage:\n${message}`

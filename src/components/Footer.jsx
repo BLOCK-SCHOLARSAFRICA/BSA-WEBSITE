@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
         {/* Logo Section */}
         <div className="mb-6 md:mb-0">
-          <img src={logo} alt="BSA Logo" className="h-full w-auto" />
+          <img src={logo} alt="BSA Logo" className="h-[100px] w-auto bg-white" />
         </div>
 
         {/* Social Media Section */}

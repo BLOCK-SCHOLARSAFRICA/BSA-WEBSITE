@@ -82,7 +82,7 @@ code {
 }
 
 .max-h-96 {
-  max-height: 300px; /* Adjust this value according to content height */
+  max-height: 300px; 
 }
 
 /* Optional: Add hover effect to question toggle icon */
@@ -124,17 +124,17 @@ code {
 
 @keyframes scroll {
   0%, 20% {
-    transform: translateX(0); /* Center logos initially */
+    transform: translateX(0); 
   }
   80%, 100% {
-    transform: translateX(-50%); /* Scroll half the width */
+    transform: translateX(-100%); 
   }
 }
 
 .animate-scroll {
   display: flex;
    align-items: center;
-  animation: scroll 10s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+   animation: scroll 10s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
   animation-timing-function: ease-in-out;
 }
 .partner-logo {

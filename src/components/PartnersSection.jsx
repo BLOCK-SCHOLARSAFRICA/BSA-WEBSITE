@@ -14,48 +14,27 @@ const PartnersSection = () => {
 
         {/* Partners Logos */}
         <div className="overflow-hidden w-full relative">
-          <div className="flex flex-row flex-nowrap justify-center items-center animate-scroll w-max">
+          <div className="flex flex-row flex-nowrap justify-center items-center gap-6 animate-scroll ">
             {/* Original Logos */}
             <img
               src={MIBT}
               alt="MIBT"
-              className="w-16 sm:w-20 md:w-24 h-auto object-contain rounded-lg shadow-md mx-4"
+              className="w-16 sm:w-20 md:w-24 h-auto object-contain rounded-lg shadow-md bg-white"
             />
             <img
               src={DigitalSouth}
               alt="Digital South"
-              className="w-16 sm:w-20 md:w-24 h-auto object-contain rounded-lg shadow-md mx-4"
+              className="w-16 sm:w-20 md:w-24 h-auto object-contain rounded-lg shadow-md bg-white"
             />
             <img
               src={Optimus}
               alt="Optimus"
-              className="w-16 sm:w-20 md:w-24 h-auto object-contain rounded-lg shadow-md mx-4"
+              className="w-16 sm:w-20 md:w-24 h-auto object-contain rounded-lg shadow-md bg-white"
             />
             <img
               src={Bravpuls}
               alt="Bravpuls"
-              className="w-16 sm:w-20 md:w-24 h-auto object-contain rounded-lg shadow-md mx-4"
-            />
-            {/* Duplicate Logos for Seamless Scrolling */}
-            <img
-              src={MIBT}
-              alt="MIBT"
-              className="w-16 sm:w-20 md:w-24 h-auto object-contain rounded-lg shadow-md mx-4"
-            />
-            <img
-              src={DigitalSouth}
-              alt="Digital South"
-              className="w-16 sm:w-20 md:w-24 h-auto object-contain rounded-lg shadow-md mx-4"
-            />
-            <img
-              src={Optimus}
-              alt="Optimus"
-              className="w-16 sm:w-20 md:w-24 h-auto object-contain rounded-lg shadow-md mx-4"
-            />
-            <img
-              src={Bravpuls}
-              alt="Bravpuls"
-              className="w-16 sm:w-20 md:w-24 h-auto object-contain rounded-lg shadow-md mx-4"
+              className="w-16 sm:w-20 md:w-24 h-auto object-contain rounded-lg shadow-md"
             />
           </div>
         </div>
