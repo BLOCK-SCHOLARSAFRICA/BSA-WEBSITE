@@ -4,6 +4,8 @@ import {
   FaTwitter,
   FaLinkedinIn,
   FaInstagram,
+  FaTiktok,
+  FaYoutube,
 } from "react-icons/fa";
 import logo from "../assets/BSA-Logo.png";
 
@@ -13,7 +15,11 @@ const Footer = () => {
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
         {/* Logo Section */}
         <div className="mb-6 md:mb-0">
-          <img src={logo} alt="BSA Logo" className="h-[100px] w-auto bg-white" />
+          <img
+            src={logo}
+            alt="BSA Logo"
+            className="h-[100px] w-auto bg-white"
+          />
         </div>
 
         {/* Social Media Section */}
@@ -57,6 +63,24 @@ const Footer = () => {
               className="text-white hover:text-[#720034] hover:bg-white transition-transform duration-300 transform hover:scale-110"
             >
               <FaInstagram className="w-6 h-6" />
+            </a>
+            {/* TikTok */}
+            <a
+              href="https://www.tiktok.com/@blockscholarsafrica"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-[#720034] hover:bg-white transition-transform duration-300 transform hover:scale-110"
+            >
+              <FaTiktok className="w-6 h-6" />
+            </a>
+            {/* YouTube */}
+            <a
+              href="https://www.youtube.com/@Block_Scholars_Africa"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-[#720034] hover:bg-white transition-transform duration-300 transform hover:scale-110"
+            >
+              <FaYoutube className="w-6 h-6" />
             </a>
           </div>
         </div>
