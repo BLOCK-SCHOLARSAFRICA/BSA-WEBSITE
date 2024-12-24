@@ -31,15 +31,35 @@ const RegisterSection = () => {
   };
 
   return (
-    <section  className="py-20 px-6 bg-white mt-20">
+    <section className="py-20 px-6 bg-white mt-20">
       <div className="text-center mb-8">
         <h1 className="text-3xl md:text-3xl text-[#720034] font-bold mb-4">
-          Scholarship Programs & Campus Tech Program
+          Campus Tech Program & Scholarship Programs 
         </h1>
       </div>
 
       {/* Center the image sections */}
       <div className="flex flex-col md:flex-row justify-center items-center mt-24 gap-20">
+        {/* Static Image Section */}
+        <div className="flex flex-col items-center gap-6 md:w-1/3">
+          <div className="w-full h-auto rounded-[40px] shadow-md">
+            <img
+              src={scholarship4}
+              alt="Scholarship 4"
+              className="w-full h-auto object-cover rounded-[40px]"
+            />
+          </div>
+          <div className="text-center mt-8">
+            <button
+              id="campusTech"
+              onClick={handleRegisterClick2}
+              className="px-6 py-3 bg-[#720034] rounded-lg text-white font-semibold hover:bg-[#5a0028]"
+            >
+              Register Now
+            </button>
+          </div>
+        </div>
+
         {/* Flipping Images Section */}
         <div className="flex flex-col items-center gap-6 md:w-1/3">
           <div
@@ -55,26 +75,6 @@ const RegisterSection = () => {
           <div className="text-center mt-8">
             <button
               onClick={handleRegisterClick1}
-              className="px-6 py-3 bg-[#720034] rounded-lg text-white font-semibold hover:bg-[#5a0028]"
-            >
-              Register Now
-            </button>
-          </div>
-        </div>
-
-        {/* Static Image Section */}
-        <div className="flex flex-col items-center gap-6 md:w-1/3">
-          <div className="w-full h-auto rounded-[40px] shadow-md">
-            <img
-              src={scholarship4}
-              alt="Scholarship 4"
-              className="w-full h-auto object-cover rounded-[40px]"
-            />
-          </div>
-          <div className="text-center mt-8">
-            <button
-              id="campusTech"
-              onClick={handleRegisterClick2}
               className="px-6 py-3 bg-[#720034] rounded-lg text-white font-semibold hover:bg-[#5a0028]"
             >
               Register Now

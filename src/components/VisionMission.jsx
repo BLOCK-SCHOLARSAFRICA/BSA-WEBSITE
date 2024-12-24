@@ -39,9 +39,9 @@ const VisionMission = () => {
             a community of scholars, innovators, and leaders who advance
             education, develop innovative solutions, promote adoption, and drive
             positive impact through:
-            <br /> <br />- Blockchain technology <br />
-            - Web3 innovations <br />- Emerging technologies <br />- Artificial
-            intelligence applications
+            <br /> <br />- Blockchain technology. <br />
+            - Web3 innovations. <br />- Emerging technologies. <br />- Artificial
+            intelligence applications. <br />- Distributed Economy.
           </p>
         </div>
       </div>

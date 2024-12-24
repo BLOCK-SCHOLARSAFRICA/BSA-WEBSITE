@@ -116,6 +116,16 @@ const SponsorsSection = () => {
                   </div>
                 )}
               </div>
+
+              {/* Email Section */}
+              <div className="flex flex-col items-center w-full md:w-[30%]">
+                <a
+                  href="mailto:Sponsorship@block-scholars.africa"
+                  className="px-6 py-3 bg-[#720034] rounded-lg text-white font-semibold hover:bg-[#5a0028] transition-all duration-300 text-center"
+                >
+                  Email Us
+                </a>
+              </div>
             </div>
           </div>
         </div>
