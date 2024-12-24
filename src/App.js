@@ -12,6 +12,7 @@ import {
   SponsorsSection,
   PartnersSection,
   FAQSection,
+  Newsletter,
   Footer,
 } from "./components/Section";
 import Team from "./pages/TeamPage"; 
@@ -38,6 +39,7 @@ function App() {
               <SponsorsSection />
               <PartnersSection />
               <FAQSection />
+              <Newsletter />
               <Footer />
             </>
           }
