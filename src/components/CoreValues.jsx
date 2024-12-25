@@ -12,19 +12,19 @@ const CoreValues = () => {
   };
 
   const coreValues = [
-    "B - Brilliance: Embracing curiosity and creativity to achieve academic excellence.",
-    "L - Leadership: Empowering individuals to take charge of their learning and make a positive impact.",
-    "O - Originality: Fostering innovative thinking and unique perspectives.",
-    "C - Collaboration: Building a supportive community that values teamwork, mutual respect, open communication, and knowledge-sharing.",
-    "K - Knowledge: Pursuing wisdom and understanding with passion and dedication.",
-    "S - Scholarship: Striving for academic rigor, critical thinking, and intellectual growth.",
-    "C - Character: Developing integrity, resilience, and social responsibility.",
-    "H - Heritage: Honoring the past, celebrating diversity, and shaping a brighter future.",
-    "O - Opportunity: Creating access and inclusivity for all to reach their full potential.",
-    "L - Legacy: Striving to make a lasting, positive impact.",
-    "A - Aspiration: Inspiring individuals to set ambitious goals and strive for excellence.",
-    "R - Responsibility: Taking ownership, accountability, and stewardship.",
-    "S - Success: Celebrating achievements and progress along the academic journey.",
+    "B - Brilliance: Spark curiosity and excellence.",
+    "L - Leadership: Inspire positive change.",
+    "O - Originality: Think boldly, innovate.",
+    "C - Collaboration: Work together, grow stronger.",
+    "K - Knowledge: Pursue wisdom passionately.",
+    "S - Scholarship: Strive for intellectual growth.",
+    "C - Character: Build integrity and resilience.",
+    "H - Heritage: Honor diversity, shape the future.",
+    "O - Opportunity: Create access for all.",
+    "L - Legacy: Leave a lasting impact.",
+    "A - Aspiration: Dream big, achieve more.",
+    "R - Responsibility: Own actions, inspire trust.",
+    "S - Success: Celebrate growth and wins.",
   ];
 
   const handleReadMore = () => {
