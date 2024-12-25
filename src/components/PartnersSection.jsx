@@ -3,7 +3,7 @@ import DigitalSouth from "../assets/digital.png";
 import MIBT from "../assets/MIBTLogo.png";
 import Optimus from "../assets/OptimusLogo.png";
 import Bravpuls from "../assets/Bravpuls.png";
-import TennexAcademy from "../assets/tennexAcademy.png"; // Assuming you want to use this logo
+import TennexAcademy from "../assets/tennexAcademy.png";
 
 const PartnersSection = () => {
   return (
