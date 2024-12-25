@@ -7,12 +7,12 @@ const Objectives = () => {
   const [visibleObjectives, setVisibleObjectives] = useState(1);
 
   const objectives = [
-    "To provide world-class education and training programs in distributed ledger systems, Web3, and emerging technologies, empowering individuals and organizations with cutting-edge knowledge and skills.",
-    "To foster a vibrant community of innovators, entrepreneurs, and experts committed to driving sustainable development and economic growth through the application of decentralized technologies and other advanced digital solutions.",
-    "To promote the adoption and utilization of decentralized systems, Web3 innovations, and emerging tech solutions across Africa, aiming to enhance efficiency, transparency, and inclusivity in various sectors.",
-    "To support the development of innovative technological solutions that address real-world challenges, with a focus on digital transformation and next-generation infrastructure.",
-    "To facilitate collaboration and networking among enthusiasts and professionals in the decentralized tech space, encouraging knowledge sharing, partnerships, and the development of forward-thinking solutions.",
-    "To drive positive social and economic impact by leveraging decentralized technologies and digital innovations for initiatives that foster community development, financial inclusion, and sustainable growth.",
+    "Deliver cutting-edge education in Web3, blockchain, and emerging tech.",
+    "Build a vibrant community driving innovation and sustainable growth.",
+    "Promote decentralized solutions for efficiency and inclusivity in Africa.",
+    "Support impactful tech innovations for real-world challenges.",
+    "Foster collaboration and partnerships in the Web3 space.",
+    "Drive financial inclusion and community development through digital tech.",
   ];
 
   const handleButtonClick = () => {
