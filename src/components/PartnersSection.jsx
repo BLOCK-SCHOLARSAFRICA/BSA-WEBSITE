@@ -5,7 +5,7 @@ import Optimus from "../assets/OptimusLogo.png";
 import Bravpuls from "../assets/Bravpuls.png";
 import TennexAcademy from "../assets/tennexAcademy.png";
 import Turbo from "../assets/turbo.png";
-import BlockBridge from "../assets/BlockBridge-PNG[1] 1.png";
+import BlockBridge from "../assets/BlockBridge.png";
 
 const PartnersSection = () => {
   return (
