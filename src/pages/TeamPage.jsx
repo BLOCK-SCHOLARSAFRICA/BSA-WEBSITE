@@ -114,7 +114,7 @@ const Team = () => {
       image: team14,
       name: "Koffi Elom Josué T.",
       role: "Community manager Francophone Countries ",
-      linkedin: "https://www.linkedin.com/in/koffi-elom-josue-tonougba-915554158/",
+      linkedin: "https://www.linkedin.com/in/koffi-elom-josu%C3%A9-tonougba-915554158/",
     },
     {
       image: team15,
