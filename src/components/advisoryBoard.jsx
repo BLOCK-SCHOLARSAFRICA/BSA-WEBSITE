@@ -6,6 +6,7 @@ import board3 from "../assets/board3.png";
 import board4 from "../assets/board4.png";
 import board5 from "../assets/board5.png";
 import board6 from "../assets/board6.png";
+import board7 from "../assets/board7.png";
 import In from "../assets/In.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -53,6 +54,12 @@ const AdvisoryBoard = () => {
       name: "Dr. Sindhu Bhaskar",
       role: "Economic Development Advisor",
       linkedin: "https://www.linkedin.com/in/dr-sindhu-bhaskar-55a84568/",
+    },
+    {
+      image: board7,
+      name: "Grace Amarachi A.",
+      role: "Legal and Regulatory Advisor",
+      linkedin: "https://www.linkedin.com/in/grace-analaba-514b10151/",
     },
   ];
 
