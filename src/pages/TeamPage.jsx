@@ -124,8 +124,8 @@ const Team = () => {
     },
     {
       image: team16,
-      name: "Ectche Tine Antonio",
-      role: "Partnership manager",
+      name: "ETCHE Tine Antonio",
+      role: "Partnership manager Francophone Countries",
       linkedin: "https://www.linkedin.com/in/tine-antonio-etche-a017a5195/",
     },
   ];
