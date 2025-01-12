@@ -6,6 +6,8 @@ import Bravpuls from "../assets/Bravpuls.png";
 import TennexAcademy from "../assets/tennexAcademy.png";
 import Turbo from "../assets/turbo.png";
 import BlockBridge from "../assets/BlockBridge.png";
+import ActuateLogo from "../assets/Actuate_logo[1] 1.png";
+import Nobsaa from "../assets/Nobsaa.png";
 
 const PartnersSection = () => {
   return (
@@ -52,6 +54,16 @@ const PartnersSection = () => {
             <img
               src={BlockBridge}
               alt="BlockBridge"
+              className="w-16 sm:w-18 md:w-24 lg:w-36 h-auto object-contain rounded-lg shadow-md"
+            />
+            <img
+              src={ActuateLogo}
+              alt="ActuateLogo"
+              className="w-16 sm:w-18 md:w-24 lg:w-36 h-auto object-contain rounded-lg shadow-md"
+            />
+            <img
+              src={Nobsaa}
+              alt="Nobsaa"
               className="w-16 sm:w-18 md:w-24 lg:w-36 h-auto object-contain rounded-lg shadow-md"
             />
           </div>
