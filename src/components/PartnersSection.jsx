@@ -64,7 +64,7 @@ const PartnersSection = () => {
             <img
               src={Nobsaa}
               alt="Nobsaa"
-              className="w-16 sm:w-18 md:w-24 lg:w-36 h-auto object-contain rounded-lg shadow-md"
+              className="w-16 sm:w-18 md:w-24 lg:w-36 h-auto object-contain rounded-lg shadow-md bg-white"
             />
           </div>
         </div>
