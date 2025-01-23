@@ -16,6 +16,7 @@ import team13 from "../assets/team13.png";
 import team14 from "../assets/team14.png";
 import team15 from "../assets/team15.png";
 import team16 from "../assets/team16.png";
+import team17 from "../assets/team17.png";
 import In from "../assets/In.png";
 import AdvisoryBoard from "../components/advisoryBoard";
 import AOS from "aos"; 
@@ -114,7 +115,8 @@ const Team = () => {
       image: team14,
       name: "Koffi Elom Josué T.",
       role: "Community manager Francophone Countries ",
-      linkedin: "https://www.linkedin.com/in/koffi-elom-josu%C3%A9-tonougba-915554158/",
+      linkedin:
+        "https://www.linkedin.com/in/koffi-elom-josu%C3%A9-tonougba-915554158/",
     },
     {
       image: team15,
@@ -127,6 +129,12 @@ const Team = () => {
       name: "ETCHE Tine Antonio",
       role: "Partnership manager Francophone Countries",
       linkedin: "https://www.linkedin.com/in/tine-antonio-etche-a017a5195/",
+    },
+    {
+      image: team17,
+      name: "Kabiru Sunkanmi Kabirat",
+      role: "Social Media Manager",
+      linkedin: "https://www.linkedin.com/in/kabiru-kabirat-437b3b291/",
     },
   ];
 
