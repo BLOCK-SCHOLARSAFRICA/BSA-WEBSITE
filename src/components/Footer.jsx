@@ -6,6 +6,7 @@ import {
   FaInstagram,
   FaTiktok,
   FaYoutube,
+  FaWhatsapp, 
 } from "react-icons/fa";
 import logo from "../assets/BSA-Logo.png";
 
@@ -82,8 +83,28 @@ const Footer = () => {
             >
               <FaYoutube className="w-6 h-6" />
             </a>
+            {/* WhatsApp */}
+            <a
+              href="https://wa.me/8107865121" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-[#720034] hover:bg-white transition-transform duration-300 transform hover:scale-110"
+            >
+              <FaWhatsapp className="w-6 h-6" />
+            </a>
           </div>
         </div>
+      </div>
+      <div>
+        <hr className="mt-10" />
+      </div>
+
+      {/* Copyright Section */}
+      <div className="text-center mt-10">
+        <p className="text-white text-lg">
+          &copy; {new Date().getFullYear()} Block Scholars Africa. All rights
+          reserved.
+        </p>
       </div>
     </footer>
   );
