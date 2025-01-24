@@ -102,7 +102,7 @@ const Footer = () => {
       {/* Copyright Section */}
       <div className="text-center mt-10">
         <p className="text-white text-lg">
-          &copy; {new Date().getFullYear()} Block Scholars Africa. All rights
+          &copy; {new Date().getFullYear()} Block-Scholars Africa. All rights
           reserved.
         </p>
       </div>

@@ -6,10 +6,10 @@ import "aos/dist/aos.css";
 const Community = () => {
   const stats = [
     { label: "Our Reach So Far", value: null, isHeader: true },
-    { label: "Blockchain Cohorts", value: 1 },
-    { label: "Community Members", value: 5000 },
-    { label: "Scholarships Awarded", value: 200 },
-    { label: "African Countries", value: 4 },
+    { label: "Blockchain Cohorts", value: 2 },
+    { label: "Community Members", value: 6000 },
+    { label: "Scholarships Awarded", value: 500 },
+    { label: "African Countries", value: 6 },
   ];
 
   useEffect(() => {

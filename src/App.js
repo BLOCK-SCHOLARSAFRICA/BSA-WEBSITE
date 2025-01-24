@@ -12,6 +12,7 @@ import {
   SponsorsSection,
   PartnersSection,
   FAQSection,
+  Service,
   Newsletter,
   Footer,
 } from "./components/Section";
@@ -39,6 +40,7 @@ function App() {
               <SponsorsSection />
               <PartnersSection />
               <FAQSection />
+              <Service />
               <Newsletter />
               <Footer />
             </>
