@@ -78,7 +78,7 @@ const Service = () => {
             href="https://wa.me/8107865121"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-green-500 text-2xl md:text-4xl animate-bounce hover:text-white transition-colors duration-300 mt-4 md:mt-0"
+            className="text-green-500 text-6xl md:text-6xl animate-bounce hover:text-white transition-colors duration-300 mt-4 md:mt-0"
           >
             <FaWhatsapp />
           </a>
