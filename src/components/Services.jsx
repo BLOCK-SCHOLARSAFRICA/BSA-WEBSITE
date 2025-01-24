@@ -75,7 +75,7 @@ const Service = () => {
             className="animate-pulse w-full max-w-xs md:max-w-md mx-auto"
           />
           <a
-            href="https://wa.me/8107865121"
+            href="https://wa.me/2348107865121"
             target="_blank"
             rel="noopener noreferrer"
             className="text-green-500 text-6xl md:text-6xl animate-bounce hover:text-white transition-colors duration-300 mt-4 md:mt-0"
