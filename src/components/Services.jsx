@@ -67,14 +67,18 @@ const Service = () => {
   return (
     <section id="services" className="py-20 bg-[#720034]">
       <div className="container mx-auto px-6">
-        {/* image and WhatsApp Section */}
-        <div className="flex justify-between items-center mb-10">
-          <img src={BSAServices} alt="BSA Services" className="animate-pulse h-96 mx-auto  " />
+        {/* Responsive Image and WhatsApp Section */}
+        <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-10">
+          <img
+            src={BSAServices}
+            alt="BSA Services"
+            className="animate-pulse w-full max-w-xs md:max-w-md mx-auto"
+          />
           <a
             href="https://wa.me/8107865121"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-green-500 text-4xl animate-bounce hover:text-white transition-colors duration-300"
+            className="text-green-500 text-2xl md:text-4xl animate-bounce hover:text-white transition-colors duration-300 mt-4 md:mt-0"
           >
             <FaWhatsapp />
           </a>
@@ -97,7 +101,6 @@ const Service = () => {
           ))}
         </div>
       </div>
-      
     </section>
   );
 };
