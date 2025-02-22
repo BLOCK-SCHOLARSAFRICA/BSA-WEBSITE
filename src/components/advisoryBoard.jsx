@@ -27,13 +27,13 @@ const AdvisoryBoard = () => {
       image: board2,
       name: "Fredrick Nonde Jr.",
       role: "Innovation & Technology Advisor ",
-      linkedin: "https://www.linkedin.com/in/fredrick-nonde-jr-730b16105/",
+      linkedin: "https://www.linkedin.com/in/fredrick-nonde-jr-mba-csc-rbp-rbi-rbe-rba-730b16105/",
     },
     // {
     //   image: board2,
     //   name: "Prof Amando Boncales",
     //   role: "Blockchain & WEB3 Advisor ",
-    //   linkedin: "https://www.linkedin.com/in/",
+    //   linkedin: "https://www.linkedin.com/in/amando-boncales",
     // },
 
     {
