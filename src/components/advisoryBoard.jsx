@@ -2,11 +2,9 @@ import React, { useEffect } from "react";
 import CountUp from "react-countup";
 import board1 from "../assets/board1.png";
 import board2 from "../assets/board2.png";
-import board3 from "../assets/board3.png";
 import board4 from "../assets/board4.png";
 import board5 from "../assets/board5.png";
 import board6 from "../assets/board6.png";
-import board7 from "../assets/board7.png";
 import In from "../assets/In.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -32,11 +30,12 @@ const AdvisoryBoard = () => {
       linkedin: "https://www.linkedin.com/in/fredrick-nonde-jr-730b16105/",
     },
     {
-      image: board3,
-      name: "Sudhakar Lakshmanaraja",
-      role: "Social Impact Advisor ",
-      linkedin: "https://www.linkedin.com/in/sudhakarlakshman/ ",
+      // image: board2,
+      // name: "Prof Amando Boncales",
+      // role: "Blockchain & WEB3 Advisor ",
+      // linkedin: "https://www.linkedin.com/in/",
     },
+
     {
       image: board4,
       name: "Dr. Tammy Francis",
@@ -54,12 +53,6 @@ const AdvisoryBoard = () => {
       name: "Dr. Sindhu Bhaskar",
       role: "Economic Development Advisor",
       linkedin: "https://www.linkedin.com/in/dr-sindhu-bhaskar-55a84568/",
-    },
-    {
-      image: board7,
-      name: "Grace Amarachi A.",
-      role: "Legal and Regulatory Advisor",
-      linkedin: "https://www.linkedin.com/in/grace-analaba-514b10151/",
     },
   ];
 

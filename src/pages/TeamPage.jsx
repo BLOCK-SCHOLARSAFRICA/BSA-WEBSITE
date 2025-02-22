@@ -11,10 +11,8 @@ import team10 from "../assets/team8.png";
 import team8 from "../assets/team9.png";
 import team12 from "../assets/team10.png";
 import team6 from "../assets/team11.png";
-import team2 from "../assets/team12.png";
-import team13 from "../assets/team13.png";
+import team2 from "../assets/team12.png"; 
 import team14 from "../assets/team14.png";
-import team15 from "../assets/team15.png";
 import team16 from "../assets/team16.png";
 import team17 from "../assets/team17.png";
 import In from "../assets/In.png";
@@ -105,12 +103,7 @@ const Team = () => {
       role: "Graphic Designer",
       linkedin: "https://www.linkedin.com/in/goodnessosei/",
     },
-    {
-      image: team13,
-      name: "Ojo Victor Ayomide",
-      role: "Creative designer & Video editor ",
-      linkedin: "https://www.linkedin.com/in/smitz-grafix-061959343/",
-    },
+    
     {
       image: team14,
       name: "Koffi Elom Josué T.",
@@ -118,12 +111,7 @@ const Team = () => {
       linkedin:
         "https://www.linkedin.com/in/koffi-elom-josu%C3%A9-tonougba-915554158/",
     },
-    {
-      image: team15,
-      name: "Yusuf Al-amin B.",
-      role: "Community manager ",
-      linkedin: "https://www.linkedin.com/in/yusuf-al-amin-73a887255/",
-    },
+   
     {
       image: team16,
       name: "ETCHE Tine Antonio",
