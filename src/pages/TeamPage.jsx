@@ -4,7 +4,6 @@ import team1 from "../assets/team1.png";
 import team4 from "../assets/team2.png";
 import team11 from "../assets/team3.png";
 import team3 from "../assets/team4.png";
-import team9 from "../assets/team5.png";
 import team5 from "../assets/team6.png";
 import team7 from "../assets/team7.png";
 import team10 from "../assets/team8.png";
@@ -79,12 +78,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/osawaru-josephine-398773336/",
     },
 
-    {
-      image: team9,
-      name: "Odion Emmanuel",
-      role: "Content Writer",
-      linkedin: "https://www.linkedin.com/in/odion-emmanuel-374a52320/",
-    },
+    
     {
       image: team10,
       name: "Ufere Stephen U.",
