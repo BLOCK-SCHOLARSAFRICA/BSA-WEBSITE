@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import CountUp from "react-countup";
 import board1 from "../assets/board1.png";
 import board2 from "../assets/board2.png";
-import board4 from "../assets/board4.png";
-import board5 from "../assets/board5.png";
-import board6 from "../assets/board6.png";
+import board3 from "../assets/board4.png";
+import board4 from "../assets/board5.png";
+import board5 from "../assets/board6.png";
 import In from "../assets/In.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -29,27 +29,27 @@ const AdvisoryBoard = () => {
       role: "Innovation & Technology Advisor ",
       linkedin: "https://www.linkedin.com/in/fredrick-nonde-jr-730b16105/",
     },
-    {
-      // image: board2,
-      // name: "Prof Amando Boncales",
-      // role: "Blockchain & WEB3 Advisor ",
-      // linkedin: "https://www.linkedin.com/in/",
-    },
+    // {
+    //   image: board2,
+    //   name: "Prof Amando Boncales",
+    //   role: "Blockchain & WEB3 Advisor ",
+    //   linkedin: "https://www.linkedin.com/in/",
+    // },
 
     {
-      image: board4,
+      image: board3,
       name: "Dr. Tammy Francis",
       role: "Education & Training Advisor ",
       linkedin: "https://www.linkedin.com/in/drtammyfrancis/",
     },
     {
-      image: board5,
+      image: board4,
       name: "Dr. Bethel Nwakaku",
       role: "Community Development Advisor",
       linkedin: "",
     },
     {
-      image: board6,
+      image: board5,
       name: "Dr. Sindhu Bhaskar",
       role: "Economic Development Advisor",
       linkedin: "https://www.linkedin.com/in/dr-sindhu-bhaskar-55a84568/",
