@@ -1,122 +1,95 @@
 import React, { useEffect } from "react";
 import CountUp from "react-countup";
-import team1 from "../assets/team1.png";
-import team4 from "../assets/team2.png";
-import team11 from "../assets/team3.png";
-import team3 from "../assets/team4.png";
-import team5 from "../assets/team6.png";
-import team7 from "../assets/team7.png";
-import team10 from "../assets/team8.png";
-import team8 from "../assets/team9.png";
-import team12 from "../assets/team10.png";
-import team6 from "../assets/team11.png";
-import team2 from "../assets/team12.png"; 
-import team14 from "../assets/team14.png";
-import team16 from "../assets/team16.png";
-import team17 from "../assets/team17.png";
+import team7 from "../assets/team3.png";
+import team9 from "../assets/team11.png";
+import team11 from "../assets/team7.png";
+import team6 from "../assets/team8.png";
+import team10 from "../assets/team9.png";
+import team1 from "../assets/team10.png";
+import team5 from "../assets/team14.png";
+import team8 from "../assets/team16.png";
 import In from "../assets/In.png";
+import BoardOfDirectors from "../components/BoardOfDirectors";
 import AdvisoryBoard from "../components/advisoryBoard";
-import AOS from "aos"; 
-import "aos/dist/aos.css"; 
+import CoreExecutiveTeam from "../components/CoreExecutiveTeam";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Team = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, 
-      once: true, 
+      duration: 1000,
+      once: true,
     });
   }, []);
 
   const teamMembers = [
     {
       image: team1,
-      name: "Raphael Omochor",
-      role: "Founder & Board Chairman",
-      linkedin: "https://www.linkedin.com/in/raphael-omochor/",
-    },
-    {
-      image: team2,
-      name: "Christopher Enyeribe.",
-      role: "Co-Founder/ (COO)",
-      linkedin: "https://www.linkedin.com/in/christopher-enyeribe-483823230/",
-    },
-    {
-      image: team3,
-      name: "Onyenwe Annastessia ",
-      role: "Board Secretary/CFO",
-      linkedin: "https://www.linkedin.com/in/annastessia-c/",
-    },
-    {
-      image: team4,
-      name: "Babatunde Maryam F.",
-      role: "Chief Technology Officer (CTO)",
-      linkedin: "https://www.linkedin.com/in/maryam-babatunde-659684198/",
-    },
-    {
-      image: team5,
-      name: "Favour Peter",
-      role: "Chief Marketing Officer (CMO)",
-      linkedin:
-        "https://www.linkedin.com/in/favour-peter-1319982b5/?originalSubdomain=ng/",
-    },
-    {
-      image: team6,
-      name: "Benefactor Emmanuel C.",
-      role: "Chief Information Officer (CIO)",
-      linkedin: "https://www.linkedin.com/in/?/",
-    },
-    {
-      image: team7,
-      name: "Ezekiel O. Obasanya",
-      role: "Chief Product Officer",
-      linkedin: "https://www.linkedin.com/in/ezekielobasanya",
-    },
-    {
-      image: team8,
-      name: "Osawaru Josephine O.",
-      role: "Head Of Creativity & design",
-      linkedin: "https://www.linkedin.com/in/osawaru-josephine-398773336/",
-    },
-
-    
-    {
-      image: team10,
-      name: "Ufere Stephen U.",
-      role: "Graphics Designer",
-      linkedin: "https://www.linkedin.com/in/stephen-ugochukwu-008913203/",
-    },
-    {
-      image: team11,
-      name: "Olaniran Samad B.",
-      role: "Frontend Developer",
-      linkedin: "https://www.linkedin.com/in/samad-olaniran-208b57335/",
-    },
-    {
-      image: team12,
       name: "Dickson Goodness.",
-      role: "Graphic Designer",
+      role: "Executive Secretary Graphic Designer",
       linkedin: "https://www.linkedin.com/in/goodnessosei/",
     },
-    
+    // {
+    //   image: team2,
+    //   name: "Oluwatosin Adesoro A.",
+    //   role: "UI/UX Mobile App Designer",
+    //   linkedin: "https://www.linkedin.com/in/goodnessosei/",
+    // },
+    // {
+    //   image: team3,
+    //   name: "Timothy O. Olaniyan.",
+    //   role: "Content/Copywriter",
+    //   linkedin: "https://www.linkedin.com/in/goodnessosei/",
+    // },
+    // {
+    //   image: team4,
+    //   name: "Suleimon Attahiru.",
+    //   role: "Graphic Designer",
+    //   linkedin: "https://www.linkedin.com/in/goodnessosei/",
+    // },
     {
-      image: team14,
+      image: team5,
       name: "Koffi Elom Josué T.",
       role: "Community manager Francophone Countries ",
       linkedin:
         "https://www.linkedin.com/in/koffi-elom-josu%C3%A9-tonougba-915554158/",
     },
-   
     {
-      image: team16,
+      image: team6,
+      name: "Ufere Stephen U.",
+      role: "Graphics Designer",
+      linkedin: "https://www.linkedin.com/in/stephen-ugochukwu-008913203/",
+    },
+    {
+      image: team7,
+      name: "Olaniran Samad B.",
+      role: "Frontend Developer",
+      linkedin: "https://www.linkedin.com/in/samad-olaniran-208b57335/",
+    },
+    {
+      image: team8,
       name: "ETCHE Tine Antonio",
       role: "Partnership manager Francophone Countries",
       linkedin: "https://www.linkedin.com/in/tine-antonio-etche-a017a5195/",
     },
     {
-      image: team17,
-      name: "Kabiru Sunkanmi Kabirat",
-      role: "Social Media Manager",
-      linkedin: "https://www.linkedin.com/in/kabiru-kabirat-437b3b291/",
+      image: team9,
+      name: "Benefactor Emmanuel C.",
+      role: "Chief Information Officer (CIO)",
+      linkedin: "https://www.linkedin.com/in/?/",
+    },
+    {
+      image: team10,
+      name: "Osawaru Josephine O.",
+      role: "Head Of Creativity & design",
+      linkedin: "https://www.linkedin.com/in/osawaru-josephine-398773336/",
+    },
+    {
+      image: team11,
+      name: "Ezekiel O. Obasanya",
+      role: "UI/UX Mobile App Designer",
+      linkedin: "https://www.linkedin.com/in/ezekielobasanya",
     },
   ];
 
@@ -125,20 +98,21 @@ const Team = () => {
       <h1 className="text-4xl text-[#720034] text-center font-bold mb-8">
         Meet The Exceptional Team Members
       </h1>
+      <BoardOfDirectors />
+      <AdvisoryBoard />
+      <CoreExecutiveTeam />
+
       <div>
         <h1 className="text-4xl text-[#720034] text-center font-semibold mt-16">
-          Executive Board
+          Support & Staff Team
         </h1>
-        <p className="text-center mt-5">
-          Meet the Management and Staff of BSA.
-        </p>
       </div>
       <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
         {teamMembers.map((member, index) => (
           <div
             key={index}
             className="flex flex-col items-center"
-            data-aos="fade-up" 
+            data-aos="fade-up"
           >
             <div className="transform transition-transform duration-300 hover:scale-110">
               <img
@@ -168,7 +142,6 @@ const Team = () => {
           </div>
         ))}
       </div>
-      <AdvisoryBoard />
       {/* <Footer /> */}
     </div>
   );

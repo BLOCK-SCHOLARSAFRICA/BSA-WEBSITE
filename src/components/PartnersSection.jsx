@@ -1,9 +1,7 @@
 import React from "react";
-import DigitalSouth from "../assets/digital.png";
 import MIBT from "../assets/MIBTLogo.png";
 import Optimus from "../assets/OptimusLogo.png";
 import Bravpuls from "../assets/Bravpuls.png";
-import TennexAcademy from "../assets/tennexAcademy.png";
 import Turbo from "../assets/turbo.png";
 import BlockBridge from "../assets/BlockBridge.png";
 import ActuateLogo from "../assets/Actuate_logo[1] 1.png";
@@ -27,11 +25,6 @@ const PartnersSection = () => {
               className="w-16 sm:w-18 md:w-24 lg:w-36 h-auto object-contain rounded-lg shadow-md bg-white"
             />
             <img
-              src={DigitalSouth}
-              alt="Digital South"
-              className="w-16 sm:w-20 md:w-24 lg:w-48 h-auto object-contain rounded-lg shadow-md bg-white"
-            />
-            <img
               src={Optimus}
               alt="Optimus"
               className="w-16 sm:w-18 md:w-24 lg:w-36 h-auto object-contain rounded-lg shadow-md bg-white"
@@ -41,11 +34,7 @@ const PartnersSection = () => {
               alt="Bravpuls"
               className="w-16 sm:w-20 md:w-24 lg:w-48 h-auto object-contain rounded-lg shadow-md"
             />
-            <img
-              src={TennexAcademy}
-              alt="TennexAcademy"
-              className="w-16 sm:w-20 md:w-24 lg:w-48 h-auto object-contain rounded-lg shadow-md"
-            />
+
             <img
               src={Turbo}
               alt="Turbo"

@@ -27,7 +27,8 @@ const AdvisoryBoard = () => {
       image: board2,
       name: "Fredrick Nonde Jr.",
       role: "Innovation & Technology Advisor ",
-      linkedin: "https://www.linkedin.com/in/fredrick-nonde-jr-mba-csc-rbp-rbi-rbe-rba-730b16105/",
+      linkedin:
+        "https://www.linkedin.com/in/fredrick-nonde-jr-mba-csc-rbp-rbi-rbe-rba-730b16105/",
     },
     // {
     //   image: board2,
@@ -39,7 +40,7 @@ const AdvisoryBoard = () => {
     {
       image: board3,
       name: "Dr. Tammy Francis",
-      role: "Education & Training Advisor ",
+      role: "Education & Capacity Building Advisor ",
       linkedin: "https://www.linkedin.com/in/drtammyfrancis/",
     },
     {
@@ -54,6 +55,12 @@ const AdvisoryBoard = () => {
       role: "Economic Development Advisor",
       linkedin: "https://www.linkedin.com/in/dr-sindhu-bhaskar-55a84568/",
     },
+    // {
+    //   image: board7,
+    //   name: "Okemgbo S. Deborah Esq.",
+    //   role: "Regulatory & Compliance Advisor",
+    //   linkedin: "https://www.linkedin.com/in/dr-sindhu-bhaskar-55a84568/",
+    // },
   ];
 
   return (
