@@ -1,14 +1,14 @@
 import React from "react";
 import aboutImage from "../assets/aboutImage.png";
 import AOS from "aos";
-import "aos/dist/aos.css"; 
+import "aos/dist/aos.css";
 
 const VisionMission = () => {
   // Initialize AOS for animations
   React.useEffect(() => {
     AOS.init({
-      duration: 1000, 
-      once: true, 
+      duration: 1000,
+      once: true,
     });
   }, []);
 
@@ -21,28 +21,51 @@ const VisionMission = () => {
       <div className="md:w-1/2 space-y-10">
         {/* Vision */}
         <div data-aos="fade-up" data-aos-delay="200">
-          <h2 className="text-3xl text-[#720034] font-bold">Vision</h2>
+          <h2 className="text-3xl text-[#720034] font-bold">Who We Are</h2>
           <p className="mt-5">
-            Empowering Africa's future through blockchain, Web3, emerging
-            technologies, and artificial intelligence, creating a continent-wide
-            ecosystem of innovators, entrepreneurs, and experts who drive
-            sustainable development, economic growth, and social impact.
+            We are a community-driven, for-profit tech education initiative
+            committed to fostering a new generation of African innovators,
+            entrepreneurs, and experts. Through structured learning programs,
+            mentorship, and industry collaborations, we empower individuals to
+            create impactful solutions using decentralized technologies.
           </p>
         </div>
 
         {/* Mission */}
         <div data-aos="fade-up" data-aos-delay="400">
-          <h2 className="text-3xl text-[#720034] font-bold">Mission</h2>
-          <p className="mt-5">
-            Equipping young Africans with the knowledge, skills, and resources
-            to succeed in the blockchain and emerging tech industries, fostering
-            a community of scholars, innovators, and leaders who advance
-            education, develop innovative solutions, promote adoption, and drive
-            positive impact through:
-            <br /> <br />- Blockchain technology. <br />
-            - Web3 innovations. <br />- Emerging technologies. <br />- Artificial
-            intelligence applications. <br />- Distributed Economy.
-          </p>
+          <h2 className="text-3xl text-[#720034] font-bold">What We Do</h2>
+
+          <ul className="text-lg my-5     list-disc">
+            <li>
+              {" "}
+              Deliver cutting-edge education in blockchain, Web3, AI, and
+              emerging technologies.
+            </li>
+            <li>
+              {" "}
+              Establish campus communities across Africa to nurture young
+              talents.
+            </li>
+            <li>
+              {" "}
+              Organize events, hackathons, and tech summits to drive engagement.
+            </li>
+            <li>
+              {" "}
+              Provide mentorship, networking, and funding opportunities for
+              African innovators.
+            </li>
+            <li>
+              Develop a Learning Management System (LMS) for seamless digital
+              learning.
+            </li>
+            <li>
+              {" "}
+              Advocate for finance inclusion and decentralized solutions across
+              the continent.
+            </li>
+          </ul>
+         
         </div>
       </div>
 

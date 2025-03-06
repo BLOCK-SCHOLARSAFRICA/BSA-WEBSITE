@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 
 const AboutSection = () => {
   const fullText =
-    "Block-Scholars Africa is a pioneering organization dedicated to revolutionizing education and innovation in Africa through the power of blockchain, Web3, emerging technologies, distributed economy, and artificial intelligence. We aim to create a continent-wide ecosystem of experts, entrepreneurs, and innovators who can harness these technologies to drive sustainable development, economic growth, and social impact.";
+    "Block-Scholars Africa (BSA) is a pioneering organization dedicated to revolutionizing education and innovation in Africa through blockchain, Web3,  emerging technologies, the distributed economy, and artificial intelligence (AI). Our mission is to equip young Africans with the knowledge, skills, and opportunities needed to thrive in the global tech ecosystem.";
 
   useEffect(() => {
     // Initialize AOS for scroll animations
@@ -24,7 +24,7 @@ const AboutSection = () => {
       data-aos="fade-up"
     >
       <h2 className="text-3xl text-[#720034] font-bold" data-aos="fade-up">
-        Who We Are
+        About Us
       </h2>
       <p className="mt-6 text-[16px]" data-aos="fade-up" data-aos-delay="200">
         {fullText}
