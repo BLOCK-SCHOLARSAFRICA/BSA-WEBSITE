@@ -53,7 +53,7 @@ const BoardOfDirectors = () => {
         Our members of the management and staff.
       </p>
       
-      <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+      <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4">
         {teamMembers.map((member, index) => (
           <div
             key={index}

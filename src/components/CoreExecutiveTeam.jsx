@@ -1,10 +1,12 @@
 import React, { useEffect } from "react";
 import CountUp from "react-countup";
 import team1 from "../assets/team1.png";
-import team4 from "../assets/team2.png";
-import team5 from "../assets/team6.png";
+import team3 from "../assets/team2.png";
+import team6 from "../assets/team6.png";
 import team2 from "../assets/team12.png";
-import team17 from "../assets/team17.png";
+import team5 from "../assets/team14.png";
+import team4 from "../assets/team17.png";
+import team7 from "../assets/team10.png"
 import In from "../assets/In.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -32,23 +34,35 @@ const CoreExecutiveTeam = () => {
     },
 
     {
-      image: team4,
+      image: team3,
       name: "Babatunde Maryam F.",
       role: "Chief Technology Officer (CTO)",
       linkedin: "https://www.linkedin.com/in/maryam-babatunde-659684198/",
     },
     {
+      image: team4,
+      name: "Kabiru Sunkanmi Kabirat",
+      role: "Chief Diversity & Inclusion Officer (CDIO)",
+      linkedin: "https://www.linkedin.com/in/kabiru-kabirat-437b3b291/",
+    },
+    {
       image: team5,
+      name: "Favour Ogunmola",
+      role: "Chief Fin Officer (CFO)",
+      linkedin: "https://www.linkedin.com/in/favour-ogunmola-800b101b5/",
+    },
+    {
+      image: team6,
       name: "Favour Peter",
       role: "Chief Marketing Officer (CMO)",
       linkedin:
         "https://www.linkedin.com/in/favour-peter-1319982b5/?originalSubdomain=ng/",
     },
     {
-      image: team17,
-      name: "Kabiru Sunkanmi Kabirat",
-      role: "Chief Diversity & Inclusion Officer (CDIO)",
-      linkedin: "https://www.linkedin.com/in/kabiru-kabirat-437b3b291/",
+      image: team7,
+      name: "Dickson Goodness",
+      role: "Executive Secretary & Graphic Designer",
+      linkedin: "https://www.linkedin.com/in/goodnessosei/",
     },
   ];
 
@@ -62,7 +76,7 @@ const CoreExecutiveTeam = () => {
           Our executive team.
         </p>
       </div>
-      <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+      <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4">
         {teamMembers.map((member, index) => (
           <div
             key={index}
