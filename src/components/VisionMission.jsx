@@ -21,7 +21,7 @@ const VisionMission = () => {
       <div className="md:w-1/2 space-y-10">
         {/* Vision */}
         <div data-aos="fade-up" data-aos-delay="200">
-          <h2 className="text-3xl text-[#720034] font-bold">Who We Are</h2>
+          <h2 className="text-2xl text-[#720034] font-medium">Who We Are</h2>
           <p className="mt-5">
             We are a community-driven, for-profit tech education initiative
             committed to fostering a new generation of African innovators,
@@ -33,7 +33,7 @@ const VisionMission = () => {
 
         {/* Mission */}
         <div data-aos="fade-up" data-aos-delay="400">
-          <h2 className="text-3xl text-[#720034] font-bold">What We Do</h2>
+          <h2 className="text-2xl text-[#720034] font-medium">What We Do</h2>
 
           <ul className="text-lg my-5     list-disc">
             <li>

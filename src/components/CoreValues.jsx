@@ -46,7 +46,9 @@ const CoreValues = () => {
     <div className="flex flex-col-reverse md:flex-row items-center mt-32">
       <div className="md:w-1/2 space-y-10">
         <div data-aos="fade-up">
-          <h2 className="text-3xl text-[#720034] font-bold mb-5">Core Values</h2>
+          <h2 className="text-2xl text-[#720034] font-medium mb-5">
+            Core Values
+          </h2>
           <p className=" mb-6">
             At Block-Scholars Africa, our values define our mission and guide
             our impact across the continent.

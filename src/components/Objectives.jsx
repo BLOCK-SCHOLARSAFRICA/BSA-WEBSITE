@@ -31,7 +31,7 @@ const Objectives = () => {
 
       {/* Objectives Section */}
       <div className="md:w-1/2 md:pl-10 space-y-6">
-        <h2 className="text-3xl text-[#720034] font-bold" data-aos="fade-up">
+        <h2 className="text-2xl text-[#720034] font-medium" data-aos="fade-up">
           Vision
         </h2>
         <p>
@@ -39,7 +39,6 @@ const Objectives = () => {
           scholars who harness blockchain and emerging technologies for
           sustainable development, economic growth, and social impact in Africa.
         </p>
-        
       </div>
     </div>
   );
