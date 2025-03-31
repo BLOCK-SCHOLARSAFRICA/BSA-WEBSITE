@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import {
   HeroSection,
   AboutSection,
-  EventSection,
+  // EventSection,
   Community,
   ContactSection,
   Partnership,
@@ -32,7 +32,7 @@ function App() {
             <>
               <HeroSection />
               <AboutSection />
-              <EventSection />
+              {/* <EventSection /> */}
               <Community />
               <ContactSection />
               <Partnership />
