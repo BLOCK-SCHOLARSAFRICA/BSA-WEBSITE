@@ -1,55 +1,23 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import {
-  HeroSection,
-  AboutSection,
-  EventSection,
-  Community,
-  ContactSection,
-  Partnership,
-  TestimoniesSection,
-  SponsorsSection,
-  PartnersSection,
-  FAQSection,
-  Service,
-  Newsletter,
-  Footer,
-} from "./components/Section";
-import Team from "./pages/TeamPage"; 
-import Register from "./pages/RegisterPage";
 import "./App.css";
+import HomePage from "./pages/HomePage";
+import AppLayout from "./components/AppLayout";
+import AboutUs from "./pages/AboutUs";
+import Events from "./pages/Events";
+import Programs from "./pages/Programs";
 
 function App() {
   return (
     <div>
-      <Header />
       <Routes>
-        {/* Main sections */}
-        <Route
-          path="/"
-          element={
-            <>
-              <HeroSection />
-              <AboutSection />
-              <EventSection />
-              <Community />
-              <ContactSection />
-              <Partnership />
-              <TestimoniesSection />
-              <SponsorsSection />
-              <PartnersSection />
-              <FAQSection />
-              <Service />
-              <Newsletter />
-              <Footer />
-            </>
-          }
-        />
-        {/* Team page */}
-        <Route path="/team" element={<Team />} />
-        {/* Register page */}
-        <Route path="/register" element={<Register />} />
+        {/* app layout */}
+        <Route element={<AppLayout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/programs" element={<Programs />} />
+        </Route>
       </Routes>
     </div>
   );
