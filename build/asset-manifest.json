@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6587f643.css",
+    "main.js": "/static/js/main.0b74687e.js",
+    "static/js/453.e88d8a00.chunk.js": "/static/js/453.e88d8a00.chunk.js",
+    "static/media/heroImage.png": "/static/media/heroImage.05b2f93b9f0211d74dd0.png",
+    "static/media/scholarship1.png": "/static/media/scholarship1.b20ffed23b6194cdff3d.png",
+    "static/media/scholarship3.png": "/static/media/scholarship3.ac726545b5d219c39040.png",
+    "static/media/aboutImage.png": "/static/media/aboutImage.f54c7bcd3061be82377c.png",
+    "static/media/aboutImage2.png": "/static/media/aboutImage2.77423a573467ff867820.png",
+    "static/media/coreValue.png": "/static/media/coreValue.91b1132458d7e2c2f63f.png",
+    "static/media/Tech tour 1.png": "/static/media/Tech tour 1.964baf548836db33adb4.png",
+    "static/media/scholarship2.png": "/static/media/scholarship2.59520d6b89c24da8a1ec.png",
+    "static/media/Weekly engagement.png": "/static/media/Weekly engagement.8da399ac88fc58b8f3e3.png",
+    "static/media/Quiz Night.png": "/static/media/Quiz Night.62e3994fecc0ec2d15a3.png",
+    "service-worker.js": "/service-worker.js",
+    "static/media/image8.png": "/static/media/image8.f8763720b3c18fb0799d.png",
+    "static/media/image7.png": "/static/media/image7.ab0e20e51100f82826b5.png",
+    "static/media/image1.png": "/static/media/image1.0809957d4b87e0fedce5.png",
+    "static/media/image3.png": "/static/media/image3.0feeaab95078a450f3ca.png",
+    "static/media/image2.png": "/static/media/image2.b16236e656776d21ebb7.png",
+    "static/media/image6.png": "/static/media/image6.81e825d4fc748c6a74e6.png",
+    "index.html": "/index.html",
+    "main.6587f643.css.map": "/static/css/main.6587f643.css.map",
+    "main.0b74687e.js.map": "/static/js/main.0b74687e.js.map",
+    "453.e88d8a00.chunk.js.map": "/static/js/453.e88d8a00.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6587f643.css",
+    "static/js/main.0b74687e.js"
+  ]
+}
