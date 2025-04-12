@@ -2,9 +2,10 @@ import React, { useEffect } from "react";
 import CountUp from "react-countup";
 import board1 from "../assets/board1.png";
 import board2 from "../assets/board2.png";
-import board3 from "../assets/board3.png";
 import board4 from "../assets/board4.png";
 import board5 from "../assets/board5.png";
+import board3 from "../assets/board6.png";
+import board7 from "../assets/board8.png";
 import In from "../assets/In.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -27,18 +28,20 @@ const AdvisoryBoard = () => {
       image: board2,
       name: "Fredrick Nonde Jr.",
       role: "Innovation & Technology Advisor ",
-      linkedin: "https://www.linkedin.com/in/fredrick-nonde-jr-730b16105/",
+      linkedin:
+        "https://www.linkedin.com/in/fredrick-nonde-jr-mba-csc-rbp-rbi-rbe-rba-730b16105/",
     },
     {
       image: board3,
-      name: "Sudhakar Lakshmanaraja",
-      role: "Social Impact Advisor ",
-      linkedin: "https://www.linkedin.com/in/sudhakarlakshman/ ",
+      name: "Dr. Sindhu Bhaskar",
+      role: "Economic Development Advisor",
+      linkedin: "https://www.linkedin.com/in/dr-sindhu-bhaskar-55a84568/",
     },
+
     {
       image: board4,
       name: "Dr. Tammy Francis",
-      role: "Education & Training Advisor ",
+      role: "Education & Capacity Building Advisor ",
       linkedin: "https://www.linkedin.com/in/drtammyfrancis/",
     },
     {
@@ -46,6 +49,13 @@ const AdvisoryBoard = () => {
       name: "Dr. Bethel Nwakaku",
       role: "Community Development Advisor",
       linkedin: "",
+    },
+
+    {
+      image: board7,
+      name: "Okemgbo S. Deborah Esq.",
+      role: "Regulatory & Compliance Advisor",
+      linkedin: "https://www.linkedin.com/in/deborah-okemgbo/",
     },
   ];
 
@@ -59,7 +69,7 @@ const AdvisoryBoard = () => {
           Our board of Advisors.
         </p>
       </div>
-      <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+      <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4">
         {boardMembers.map((member, index) => (
           <div
             key={index}

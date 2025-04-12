@@ -1,8 +1,11 @@
 import React from "react";
-import DigitalSouth from "../assets/digital.png";
 import MIBT from "../assets/MIBTLogo.png";
 import Optimus from "../assets/OptimusLogo.png";
 import Bravpuls from "../assets/Bravpuls.png";
+import Turbo from "../assets/turbo.png";
+import BlockBridge from "../assets/BlockBridge.png";
+import ActuateLogo from "../assets/Actuate_logo[1] 1.png";
+import Nobsaa from "../assets/Nobsaa.png";
 
 const PartnersSection = () => {
   return (
@@ -13,28 +16,44 @@ const PartnersSection = () => {
         </h1>
 
         {/* Partners Logos */}
-        <div className="overflow-hidden w-full relative">
-          <div className="flex flex-row flex-nowrap justify-center items-center gap-6 animate-scroll ">
+        <div className="overflow-x-auto w-full relative">
+          <div className="flex flex-row gap-2 whitespace-nowrap justify-between animate-scroll">
             {/* Original Logos */}
             <img
               src={MIBT}
               alt="MIBT"
-              className="w-16 sm:w-20 md:w-24 h-auto object-contain rounded-lg shadow-md bg-white"
-            />
-            <img
-              src={DigitalSouth}
-              alt="Digital South"
-              className="w-16 sm:w-20 md:w-24 h-auto object-contain rounded-lg shadow-md bg-white"
+              className="w-16 sm:w-18 md:w-24 lg:w-36 h-auto object-contain rounded-lg shadow-md bg-white"
             />
             <img
               src={Optimus}
               alt="Optimus"
-              className="w-16 sm:w-20 md:w-24 h-auto object-contain rounded-lg shadow-md bg-white"
+              className="w-16 sm:w-18 md:w-24 lg:w-36 h-auto object-contain rounded-lg shadow-md bg-white"
             />
             <img
               src={Bravpuls}
               alt="Bravpuls"
-              className="w-16 sm:w-20 md:w-24 h-auto object-contain rounded-lg shadow-md"
+              className="w-16 sm:w-20 md:w-24 lg:w-48 h-auto object-contain rounded-lg shadow-md"
+            />
+
+            <img
+              src={Turbo}
+              alt="Turbo"
+              className="w-16 sm:w-18 md:w-24 lg:w-36 h-auto object-contain rounded-lg shadow-md"
+            />
+            <img
+              src={BlockBridge}
+              alt="BlockBridge"
+              className="w-16 sm:w-18 md:w-24 lg:w-36 h-auto object-contain rounded-lg shadow-md"
+            />
+            <img
+              src={ActuateLogo}
+              alt="ActuateLogo"
+              className="w-16 sm:w-18 md:w-24 lg:w-36 h-auto object-contain rounded-lg shadow-md"
+            />
+            <img
+              src={Nobsaa}
+              alt="Nobsaa"
+              className="w-16 sm:w-18 md:w-24 lg:w-36 h-auto object-contain rounded-lg shadow-md bg-white"
             />
           </div>
         </div>

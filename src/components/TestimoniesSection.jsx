@@ -1,63 +1,63 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 
 const testimonies = [
   {
     id: 1,
-    image: require("../assets/image1.png"),
+    image: "../assets/image1.png",
     name: "Olaniran Samad",
     text: "Block-Scholars Africa is an impactful initiative driving blockchain education across Africa. Their commitment to fostering knowledge and skill-building is invaluable to the growth of Africa's blockchain ecosystem.",
   },
   {
     id: 2,
-    image: require("../assets/image2.png"),
+    image: "../assets/image2.png",
     name: "Odion Emmanuel",
     text: "Being a part of this platform is a privilege to me. This institution has given to develop my skills in Community engagements, Marketing and BlockChain technology. There are ups and downs in start-ups but I believe BSA is going to be the next big thing.",
   },
   {
     id: 3,
-    image: require("../assets/image3.png"),
+    image: "../assets/image3.png",
     name: "Onyenwe Chinwendu A.",
     text: "BLOCK-SCHOLARS AFRICA has made me to understand what crypto and blockchain is all about. I did not regret joining this AMIABLE school of thought where Blockchain developer are raised through its affiliates",
   },
   {
     id: 4,
-    image: require("../assets/testimony.png"),
+    image:  "../assets/testimony.png",
     name: "Dickson Goodness",
     text: "Working as a graphic design intern at Block-Scholars Africa has been a valuable experience that has expanded my skills and deepened my understanding of the blockchain industry...",
   },
   {
     id: 5,
-    image: require("../assets/testimony.png"),
+    image: "../assets/testimony.png",
     name: "Haruna Isaac Ayowande",
     text: "My experience as a Blockchain student at Block-scholars Africa has been incredibly rewarding. The curriculum is well-structured, covering everything from blockchain fundamentals to advanced applications like smart contracts...",
   },
   {
     id: 6,
-    image: require("../assets/image6.png"),
+    image: "../assets/image6.png",
     name: "Edem-Essah Emmanuel",
     text: "I want to thank BLOCK-SCHOLARS Africa as a whole for the privilege to be part of this Blockchain scholarship program...",
   },
   {
     id: 7,
-    image: require("../assets/image7.png"),
+    image: "../assets/image7.png",
     name: "Akinyele Timileyin",
     text: "Block-scholars Africa has truly opened my eyes to the world of blockchain in ways I never expected. Their programs are not just educational, they're empowering...",
   },
   {
     id: 8,
-    image: require("../assets/image8.png"),
+    image: "../assets/image8.png",
     name: "Onyeabor Chukwudike Desire",
     text: "It was and will always be a privilege being a student of Block-Scholars Africa. This great institution provided me with an incredible foundation for my academic growth...",
   },
   {
     id: 9,
-    image: require("../assets/testimony.png"),
+    image: "../assets/testimony.png",
     name: "Muhammad Adediran",
     text: "BLOCK-SCHOLARS AFRICA has provided me with an excellent experience in their Blockchain Studies program...",
   },
   {
     id: 10,
-    image: require("../assets/testimony.png"),
+    image: "../assets/testimony.png",
     name: "Chidi Clinton",
     text: "It's an honor to be part of this academy. I experienced the warmth, friendliness and epitome of an online family...",
   },

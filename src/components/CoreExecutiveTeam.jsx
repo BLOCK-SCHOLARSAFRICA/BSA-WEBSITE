@@ -2,24 +2,16 @@ import React, { useEffect } from "react";
 import CountUp from "react-countup";
 import team1 from "../assets/team1.png";
 import team3 from "../assets/team2.png";
+import team6 from "../assets/team6.png";
 import team2 from "../assets/team12.png";
+import team5 from "../assets/team14.png";
 import team4 from "../assets/team17.png";
-import team6 from "../assets/team5.png";
-import team10 from "../assets/team3.png";
-import team7 from "../assets/team11.png";
-import team8 from "../assets/team13.png";
-import team12 from "../assets/team7.png";
-import team9 from "../assets/team8.png";
-import team11 from "../assets/team9.png";
-import team5 from "../assets/team10.png";
+import team7 from "../assets/team10.png"
 import In from "../assets/In.png";
-import BoardOfDirectors from "../components/BoardOfDirectors";
-import AdvisoryBoard from "../components/advisoryBoard";
-import CoreExecutiveTeam from "../components/CoreExecutiveTeam";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Team = () => {
+const CoreExecutiveTeam = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -31,13 +23,13 @@ const Team = () => {
     {
       image: team1,
       name: "Raphael Omochor",
-      role: " CEO",
+      role: "Executive Board Chairman & CEO",
       linkedin: "https://www.linkedin.com/in/raphael-omochor/",
     },
     {
       image: team2,
       name: "Christopher Enyeribe.",
-      role: "Chief Operating Officer (COO)",
+      role: "Chief Operating Officer(COO)",
       linkedin: "https://www.linkedin.com/in/christopher-enyeribe-483823230/",
     },
 
@@ -55,69 +47,34 @@ const Team = () => {
     },
     {
       image: team5,
-      name: "Dickson Goodness.",
-      role: "Executive Secretary Graphic Designer",
-      linkedin: "https://www.linkedin.com/in/goodnessosei/",
+      name: "Favour Ogunmola",
+      role: "Chief Fin Officer (CFO)",
+      linkedin: "https://www.linkedin.com/in/favour-ogunmola-800b101b5/",
     },
     {
       image: team6,
-      name: "Oluwatosin Adesoro A.",
-      role: "UI/UX Mobile App Designer",
-      linkedin: "https://www.linkedin.com/in/adesoro-oluwatosin/",
+      name: "Favour Peter",
+      role: "Chief Marketing Officer (CMO)",
+      linkedin:
+        "https://www.linkedin.com/in/favour-peter-1319982b5/?originalSubdomain=ng/",
     },
     {
       image: team7,
-      name: "Timothy O. Olaniyan.",
-      role: "Content/Copywriter",
+      name: "Dickson Goodness",
+      role: "Executive Secretary & Graphic Designer",
       linkedin: "https://www.linkedin.com/in/goodnessosei/",
-    },
-    {
-      image: team8,
-      name: "Suleimon Attahiru.",
-      role: "Graphic Designer",
-      linkedin: "https://www.linkedin.com/in/suleiman-attahiru/",
-    },
-
-    {
-      image: team9,
-      name: "Ufere Stephen U.",
-      role: "Graphics Designer",
-      linkedin: "https://www.linkedin.com/in/stephen-ugochukwu-008913203/",
-    },
-    {
-      image: team10,
-      name: "Olaniran Samad B.",
-      role: "Blockchain Developer",
-      linkedin: "https://www.linkedin.com/in/samad-olaniran-208b57335/",
-    },
-
-    {
-      image: team11,
-      name: "Osawaru Josephine O.",
-      role: "Head Of Creativity & design",
-      linkedin: "https://www.linkedin.com/in/osawaru-josephine-398773336/",
-    },
-    {
-      image: team12,
-      name: "Ezekiel O. Obasanya",
-      role: "UI/UX Mobile App Designer",
-      linkedin: "https://www.linkedin.com/in/ezekielobasanya",
     },
   ];
 
   return (
     <div className="py-20 px-6 bg-white">
-      <h1 className="text-4xl text-[#720034] text-center font-bold mb-8">
-        Meet The Exceptional Team Members
-      </h1>
-      <BoardOfDirectors />
-      <AdvisoryBoard />
-      <CoreExecutiveTeam />
-
       <div>
         <h1 className="text-4xl text-[#720034] text-center font-semibold mt-16">
-          Executive Management Team
+          Core Executive Team
         </h1>
+        <p className="text-center mt-5 opacity-0 animate-fadeIn delay-100">
+          Our executive team.
+        </p>
       </div>
       <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4">
         {teamMembers.map((member, index) => (
@@ -159,4 +116,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default CoreExecutiveTeam;

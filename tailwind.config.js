@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+export default {
+  content:  ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       animation: {
@@ -11,9 +11,10 @@ module.exports = {
           "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(-100%)" },
         },
+        
       },
     },
   },
   plugins: [],
-};
+}
 
