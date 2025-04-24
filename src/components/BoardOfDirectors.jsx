@@ -50,7 +50,7 @@ const BoardOfDirectors = () => {
         Board Of Directors
       </h1>
       <p className="text-center mt-5 opacity-0 animate-fadeIn delay-100">
-        Our members of the management and staff.
+      eca   Our members of the management and staff.
       </p>
       
       <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4">
