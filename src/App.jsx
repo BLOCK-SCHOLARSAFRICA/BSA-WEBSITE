@@ -6,8 +6,7 @@ import AppLayout from "./components/AppLayout";
 import AboutUs from "./pages/AboutUs";
 import Program from "./pages/Programs";
 import Events from "./pages/Events";
-import Programs from "./pages/Programs";
-import BLOCKchampions from "./pages/Blockchampions";
+import BLOCKchampions from "./pages/BLOCKchampions";
 
 function App() {
   return (
@@ -15,7 +14,7 @@ function App() {
       <Routes>
         {/* app layout */}
         <Route element={<AppLayout />}>
-          <Route path="/home-page" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/programs" element={<Program />} />
           <Route path="/events" element={<Events />} />
