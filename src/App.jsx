@@ -6,8 +6,7 @@ import AppLayout from "./components/AppLayout";
 import AboutUs from "./pages/AboutUs";
 import Program from "./pages/Programs";
 import Events from "./pages/Events";
-import Programs from "./pages/Programs";
-import BLOCKchampions from "./pages/Blockchampions";
+import BLOCKchampions from "./pages/BLOCKchampions";
 
 function App() {
   return (
