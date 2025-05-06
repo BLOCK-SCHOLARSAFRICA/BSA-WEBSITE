@@ -13,7 +13,7 @@ const Header = () => {
   const isHomePage = location.pathname === "/";
 
   const menuItems = [
-    { to: "/home-page", label: "Home" },
+    { to: "/", label: "Home" },
     { to: "/about-us", label: "About" },
     { to: "/programs", label: "Program" },
     { to: "/events", label: "Events" },
