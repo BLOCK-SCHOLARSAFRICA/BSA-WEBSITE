@@ -3,6 +3,9 @@ export default {
   content:  ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      colors : {
+        customBrown: "#720034",
+      },
       animation: {
         scroll: "scroll 40s linear infinite",
       },
