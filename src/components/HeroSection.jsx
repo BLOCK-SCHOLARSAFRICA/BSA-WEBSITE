@@ -19,10 +19,8 @@ const HeroSection = () => {
 
   return (
     <section id="home" className="relative  font-sans py-20">
-      {/* Content Container */}
       <div className="container mx-auto px-6 md:px-12 lg:px-20 relative z-10">
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10">
-          {/* Left: Text + Buttons */}
           <div className="md:w-1/2" data-aos="fade-right">
             <h1 className="text-[#242424] text-4xl md:text-5xl font-bold mb-6">
               Empowering Africa's Future Through Blockchain & Emerging Tech.
@@ -33,19 +31,20 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 relative">
-              <button
-                onClick={toggleDropdown}
-                className="px-6 py-3 text-white bg-[#720034] border-[#720034] rounded-full   transition-transform transform hover:scale-105"
+              <a
+                href="https://tinyurl.com/BSA-Innovation-Lab-Cohort-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 text-white bg-[#720034] border-[#720034] rounded-full text-center transition-transform transform hover:scale-105"
               >
                 APPLY NOW
-              </button>
-
-              <a
-                href="#learn-more"
+              </a>
+              <button
+                onClick={toggleDropdown}
                 className="px-6 py-3 border border-[#720034]  text-[#720034] rounded-full   transition-transform transform hover:scale-105"
               >
                 LEARN MORE
-              </a>
+              </button>
 
               {/* Dropdown */}
               {isDropdownOpen && (
@@ -60,7 +59,7 @@ const HeroSection = () => {
                   </a>
                   <hr />
                   <a
-                    href="https://t.me/Block_Scholars_Africa"
+                    href="https://t.me/BlockScholars_Africa"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block px-4 py-3 hover:bg-[#720034] hover:text-white"
@@ -72,7 +71,6 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right: Hero Image */}
           <div className="md:w-1/2 flex justify-center" data-aos="fade-left">
             <img
               src={heroImage}
