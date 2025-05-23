@@ -30,44 +30,46 @@ const HeroSection = () => {
               Access exclusive scholarships, internships, and top jobs.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 relative">
+            <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
               <a
                 href="https://tinyurl.com/BSA-Innovation-Lab-Cohort-1"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 text-white bg-[#720034] border-[#720034] rounded-full text-center transition-transform transform hover:scale-105"
+                className="w-full sm:w-auto px-6 py-3 text-white bg-[#720034] border-[#720034] rounded-full text-center transition-transform transform hover:scale-105"
               >
                 APPLY NOW
               </a>
-              <button
-                onClick={toggleDropdown}
-                className="px-6 py-3 border border-[#720034]  text-[#720034] rounded-full   transition-transform transform hover:scale-105"
-              >
-                LEARN MORE
-              </button>
 
-              {/* Dropdown */}
-              {isDropdownOpen && (
-                <div className="absolute top-16 w-52 bg-white text-[#720034] shadow-lg rounded-lg z-50">
-                  <a
-                    href="https://chat.whatsapp.com/FukMsAyCYLo6oryVEdQMTP"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block px-4 py-2 hover:bg-[#720034] hover:text-white"
-                  >
-                    Join WhatsApp Group
-                  </a>
-                  <hr />
-                  <a
-                    href="https://t.me/BlockScholars_Africa"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block px-4 py-3 hover:bg-[#720034] hover:text-white"
-                  >
-                    Join Telegram Group
-                  </a>
-                </div>
-              )}
+              <div className="relative w-full sm:w-auto">
+                <button
+                  onClick={toggleDropdown}
+                  className="w-full sm:w-auto px-6 py-3 border border-[#720034] text-[#720034] rounded-full transition-transform transform hover:scale-105"
+                >
+                  LEARN MORE
+                </button>
+
+                {isDropdownOpen && (
+                  <div className="absolute left-0 mt-2 w-full sm:w-52 bg-white text-[#720034] shadow-lg rounded-lg z-50 overflow-hidden">
+                    <a
+                      href="https://chat.whatsapp.com/FukMsAyCYLo6oryVEdQMTP"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block px-4 py-2 hover:bg-[#720034] hover:text-white"
+                    >
+                      Join WhatsApp Group
+                    </a>
+                    <hr />
+                    <a
+                      href="https://t.me/BlockScholars_Africa"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block px-4 py-3 hover:bg-[#720034] hover:text-white"
+                    >
+                      Join Telegram Group
+                    </a>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
 

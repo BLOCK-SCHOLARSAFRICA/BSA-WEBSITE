@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^6.6.3",
@@ -22,6 +22,7 @@
     "dotenv": "^16.4.7",
     "express": "^5.1.0",
     "framer-motion": "^12.6.2",
+    "lucide-react": "^0.511.0",
     "react": "^19.1.0",
     "react-countup": "^6.5.3",
     "react-dom": "^19.1.0",

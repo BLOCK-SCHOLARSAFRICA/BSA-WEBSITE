@@ -1,6 +1,7 @@
 import {
   HeroSection,
   AboutSection,
+  OurPrograms,
   EventSection,
   Community,
   ContactSection,
@@ -19,6 +20,7 @@ const HomePage = () => {
     <>
       <HeroSection />
       <AboutSection />
+      <OurPrograms/>
       <EventSection />
       <Community />
       <ContactSection />
