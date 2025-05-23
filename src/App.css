@@ -10,6 +10,16 @@
   height: 40vmin;
   pointer-events: none;
 }
+.card-gradient-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, #fc5c7d, #6a82fb);
+  opacity: 0.85;
+  border-radius: 1rem; /* matches Tailwind's rounded-2xl */
+  z-index: 0;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

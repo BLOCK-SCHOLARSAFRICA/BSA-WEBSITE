@@ -1,6 +1,7 @@
 // src/components/Sections.js
 export { default as HeroSection } from "./HeroSection";
 export { default as AboutSection } from "./AboutSection";
+export {default as OurPrograms} from "./OurPrograms";
 export { default as EventSection } from "./EventSection";
 export { default as Community } from "./Community";
 export { default as ContactSection } from "./ContactSection";

@@ -43,7 +43,6 @@ const Header = () => {
           <img src={logo} alt="BSA Logo" className="h-[100px] w-auto" />
         </div>
 
-        {/* Hamburger Menu Icon */}
         <button
           className="md:hidden focus:outline-none"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -55,7 +54,6 @@ const Header = () => {
           )}
         </button>
 
-        {/* Center Nav for desktop */}
         <ul className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center space-x-28 text-sm cursor-pointer">
           {menuItems.map(({ to, label }) => (
             <li key={to} className="hover:text-[#720034]">
@@ -70,7 +68,6 @@ const Header = () => {
           ))}
         </ul>
 
-        {/* Contact Button */}
         <ul className="hidden md:flex items-center space-x-6 text-sm cursor-pointer ml-auto">
           <li>
             {isHomePage ? (
@@ -94,17 +91,14 @@ const Header = () => {
         </ul>
       </div>
 
-      {/* Mobile Overlay + Sidebar */}
       {menuOpen && (
         <>
-          {/* Blurred Background */}
           <div
-            className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-40 md:hidden"
+            className="fixed inset-0  bg-[black] bg-opacity-50 backdrop-blur-lg z-40 md:hidden"
             onClick={() => setMenuOpen(false)}
           ></div>
 
-          {/* Slide-in Menu from Right */}
-          <div className="fixed top-0 right-0 w-64 h-full z-50 p-6 flex flex-col space-y-6 shadow-lg transition-transform transform translate-x-0 md:hidden bg-white">
+          <div className="fixed top-10 right-5 w-64  h-full z-50 p-6 flex flex-col space-y-4 shadow-lg transition-transform transform translate-x-0 md:hidden ">
             {menuItems.map(({ to, label }) => (
               <NavLink
                 key={to}
