@@ -1,6 +1,6 @@
 import BlockChampionsImage from "../assets/blockchamp.png";
 import blockHandImage from "../assets/blockhand.png";
-import polygon from "../assets/polygon.png";
+import blockImage2 from "../assets/blockImage2.png";
 
 const BLOCKchampions = () => {
   const championsList = [
@@ -46,50 +46,78 @@ const BLOCKchampions = () => {
           />
         </div>
       </div>
+      <div className="flex justify-center items-center py-12 px-4 md:px-8">
+        <div className="w-[90%] flex flex-col gap-y-16">
+          {/* Who is BLOCKChampions For? Section */}
+          <div>
+            {/* Title */}
+            <h2 className="text-2xl font-medium text-center text-black mb-4">
+              Who is BLOCKChampions For?
+            </h2>
 
-      <div className="flex justify-center items-center bg-white py-12 px-4 md:px-8">
-        <div>
-          {/* Title */}
-          <h2 className="text-2xl font-medium text-center text-black mb-4">
-            Who is BLOCKChampions For?
-          </h2>
+            {/* Content Container */}
+            <div className="flex flex-col md:flex-row items-center justify-center w-full">
+              {/* Text Section */}
+              <div className="w-full md:w-1/2 p-4">
+                <p className="text-lg font-medium text-[#242424] mb-4">
+                  BLOCKChampions is for anyone who believes in the power of
+                  technology, education, and Africa’s potential, including:
+                </p>
+                <ul className="list-none font-medium space-y-2 pl-6">
+                  {championsList.map((item, index) => (
+                    <li
+                      key={index}
+                      className="relative before:content-['✓'] before:absolute before:left-[-1.2em] before:text-customBrown before:text-lg"
+                    >
+                      <span className="text-[#242424]">{item}</span>{" "}
+                      {/* Fixed text color syntax */}
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-          {/* Content Container */}
-          <div className="flex flex-col md:flex-row items-center justify-center max-w-4xl w-full">
-            {/* Text Section */}
-            <div className="w-full md:w-1/2 p-4">
-              <p className="text-lg font-medium text-[#242424] mb-4">
-                BLOCKChampions is for anyone who believes in the power of
-                technology, education, and Africa’s potential, including:
-              </p>
-              <ul className="list-none font-medium space-y-2 pl-6">
-                {championsList.map((item, index) => (
-                  <li
-                    key={index}
-                    className="relative before:content-['✓'] before:absolute before:left-[-1.2em] before:text-customBrown before:text-lg"
-                  >
-                    <span className="text-text-[#242424]">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Image Section */}
-            <div className="w-full md:w-1/2 relative p-4">
-              <div className="relative w-96 h-96 mx-auto">
-                <img
-                  src={blockHandImage}
-                  alt="BLOCKChampions"
-                  className="w-full h-full object-cover rounded-full"
-                />
-                {/* Maroon Arrow Overlay */}
-                <div className="absolute bottom-4 right-4 w-32 h-32">
+              {/* Image Section */}
+              <div className="w-full md:w-1/2 p-4">
+                <div className="w-[473px] h-[473px] mx-auto">
                   <img
-                    src={polygon}
-                    alt="Polygon"
-                    className="w-full h-full object-cover"
+                    src={blockHandImage}
+                    alt="BLOCKChampions"
+                    className="w-full h-full object-cover rounded-full"
                   />
                 </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Why Become a BLOCKChampion? */}
+          <div>
+            {/* Title */}
+            <h2 className="text-2xl font-medium text-center text-black mb-4">
+              Why Become a BLOCKChampion?
+            </h2>
+
+            {/* Content Container */}
+            <div className="flex flex-col md:flex-row items-center justify-center w-full">
+              {/* Image Section */}
+              <div className="w-full md:w-1/2 p-4">
+                <div className="w-[473px] h-[473px] mx-auto">
+                  <img
+                    src={blockImage2}
+                    alt="BLOCKChampions"
+                    className="w-full h-full object-cover rounded-full"
+                  />
+                </div>
+              </div>
+
+              {/* Text Section */}
+              <div className="w-full md:w-1/2 p-4">
+                <p className="text-lg font-medium text-[#242424]">
+                  Joining BLOCKChampions isn’t just about sponsorship education
+                  - It’s about shaping Africa’s future in tech. Your support
+                  empowers young Africans gain in-demand skills, life-changing
+                  opportunities, and the chance to shape the future as industry
+                  leaders.
+                </p>
               </div>
             </div>
           </div>
