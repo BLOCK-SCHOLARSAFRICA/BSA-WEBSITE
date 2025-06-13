@@ -10,9 +10,9 @@ const BLOCKchampions = () => {
   const [openItems, setOpenItems] = useState({});
 
   const toggleItem = (index) => {
-    setOpenItems(prev => ({
+    setOpenItems((prev) => ({
       ...prev,
-      [index]: !prev[index]
+      [index]: !prev[index],
     }));
   };
 
@@ -66,11 +66,13 @@ const BLOCKchampions = () => {
   const faqs = [
     {
       question: "What is BLOCKChampions?",
-      answer: "BLOCKChampions is a transformative initiative by Block-Scholars Africa that connects individuals, professionals, and organizations with opportunities to sponsor and support young Africans in blockchain and emerging tech education, career mentorship, and real-world industry opportunities."
+      answer:
+        "BLOCKChampions is a transformative initiative by Block-Scholars Africa that connects individuals, professionals, and organizations with opportunities to sponsor and support young Africans in blockchain and emerging tech education, career mentorship, and real-world industry opportunities.",
     },
     {
       question: "Who can become a BLOCKChampion?",
-      answer: "BLOCKChampions welcomes individuals and organizations passionate about Africa's future in tech, including:",
+      answer:
+        "BLOCKChampions welcomes individuals and organizations passionate about Africa's future in tech, including:",
       list: [
         "Alumni of Block-Scholars Africa",
         "Tech & non-tech professionals",
@@ -80,120 +82,131 @@ const BLOCKchampions = () => {
         "African diaspora communities",
         "Youth empowerment enthusiasts",
         "Foundations & mission-aligned NGOs",
-        "Anyone passionate about emerging technologies"
-      ]
+        "Anyone passionate about emerging technologies",
+      ],
     },
     {
       question: "Why should I become a BLOCKChampion?",
-      answer: "Joining BLOCKChampions is more than sponsorship - it's about empowering Africa's next generation of tech leaders with the skills, guidance, and opportunities to thrive in emerging technologies."
+      answer:
+        "Joining BLOCKChampions is more than sponsorship - it's about empowering Africa's next generation of tech leaders with the skills, guidance, and opportunities to thrive in emerging technologies.",
     },
     {
       question: "What are the BLOCKChampion membership tiers?",
-      answer: "BLOCKChampions offers three tiers of sponsorship, allowing supporters to contribute at different levels:",
+      answer:
+        "BLOCKChampions offers three tiers of sponsorship, allowing supporters to contribute at different levels:",
       list: [
         "Starter Champion ₦8,000/$5 per month",
         "Core Champion ₦24,000/$15 per month",
-        "Elite Champion ₦40,000/$25 per month"
-      ]
+        "Elite Champion ₦40,000/$25 per month",
+      ],
     },
     {
       question: "What benefits do BLOCKChampions receive?",
-      answer: "Each tier comes with unique perks such as social media recognition, certificates, project discounts, exclusive events, impact reports, and personalized thank-you messages from sponsored scholars."
+      answer:
+        "Each tier comes with unique perks such as social media recognition, certificates, project discounts, exclusive events, impact reports, and personalized thank-you messages from sponsored scholars.",
     },
     {
       question: "How are scholars selected for sponsorship?",
-      answer: "Scholars are chosen based on their passion for blockchain and emerging technologies, dedication to learning, and potential to create impact within their communities."
+      answer:
+        "Scholars are chosen based on their passion for blockchain and emerging technologies, dedication to learning, and potential to create impact within their communities.",
     },
     {
       question: "Can businesses or organizations become BLOCKChampions?",
-      answer: "Absolutely! Organizations with strong Corporate Social Responsibility (CSR) goals are encouraged to participate and support African youth in tech."
+      answer:
+        "Absolutely! Organizations with strong Corporate Social Responsibility (CSR) goals are encouraged to participate and support African youth in tech.",
     },
     {
       question: "How does my sponsorship help young Africans?",
-      answer: "Your contribution provides scholars with tech education, career mentorship, networking, and real-world exposure to opportunities in blockchain and emerging technologies."
+      answer:
+        "Your contribution provides scholars with tech education, career mentorship, networking, and real-world exposure to opportunities in blockchain and emerging technologies.",
     },
     {
       question: "How can I track my impact as a BLOCKChampion?",
-      answer: "BLOCKChampions receive quarterly impact reports, monthly email updates, and stories showcasing how their support is changing lives."
+      answer:
+        "BLOCKChampions receive quarterly impact reports, monthly email updates, and stories showcasing how their support is changing lives.",
     },
     {
       question: "Are there networking opportunities for BLOCKChampions?",
-      answer: "Yes! Elite champions gain access to a private community of tech changemakers, VIP events, industry retreats, and conferences."
+      answer:
+        "Yes! Elite champions gain access to a private community of tech changemakers, VIP events, industry retreats, and conferences.",
     },
     {
       question: "How do I become a BLOCKChampion?",
-      answer: "You can join today by clicking on the get involved button"
+      answer: "You can join today by clicking on the get involved button",
     },
     {
       question: "Where can I follow BLOCKChampions online?",
-      answer: "Stay connected via our website and social media pages for updates, events, and impact stories."
+      answer:
+        "Stay connected via our website and social media pages for updates, events, and impact stories.",
     },
   ];
 
   return (
     <section>
-      <div className="flex flex-col md:flex-row justify-center items-center h-[825px] bg-customBrown">
+      {/* Hero Section */}
+      <div className="min-h-screen bg-customBrown flex flex-col lg:flex-row">
         {/* Text Section */}
-        <div className="w-full md:w-[639px] flex justify-center items-center">
-          <div className="text-white flex flex-col gap-y-8">
-            <h1 className="text-4xl md:text-5xl font-semibold">
+        <div className="w-full lg:w-1/2 flex justify-center items-center p-6 sm:p-8 lg:p-12">
+          <div className="text-white flex flex-col gap-y-6 sm:gap-y-8 max-w-lg lg:max-w-md xl:max-w-lg text-center lg:text-left">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-semibold leading-tight">
               BLOCKChampions
             </h1>
-            <p className="text-lg  max-w-md font-medium">
+            <p className="text-base sm:text-lg lg:text-xl font-medium leading-relaxed">
               BLOCKChampions, is an initiative by Block-Scholars Africa, that
               connects individuals, professionals, and organizations with the
               opportunity to sponsor and support young Africans in gaining
               access to blockchain and emerging tech education, career
               mentorship, and real-world opportunities.
             </p>
-            <button className="bg-white text-customBrown py-2 px-6 font-medium text-lg rounded-[60px] w-fit hover:bg-gray-200 transition">
+            <button className="bg-white text-[#242424] py-3 px-6 sm:py-4 sm:px-8 font-medium text-base sm:text-lg rounded-full w-fit mx-auto lg:mx-0 hover:bg-gray-200 transition-colors duration-300 shadow-lg">
               Become BLOCKChampions
             </button>
           </div>
         </div>
 
         {/* Image Section */}
-        <div className="w-full md:w-[639px] flex justify-center items-center">
-          <img
-            src={BlockChampionsImage}
-            alt="BLOCKChampions"
-            className="max-h-full max-w-full object-contain"
-          />
+        <div className="w-full lg:w-1/2 flex justify-center items-center p-6 sm:p-8 lg:p-12">
+          <div className="w-full max-w-lg lg:max-w-md xl:max-w-lg">
+            <img src={BlockChampionsImage} alt="" />
+          </div>
         </div>
       </div>
-      <div className="flex justify-center items-center py-12 px-4 md:px-8">
-        <div className="w-[90%] flex flex-col gap-y-16">
+      {/* Content Section */}
+      <div className="flex justify-center items-center py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
+        <div className="w-full max-w-7xl flex flex-col gap-y-12 sm:gap-y-16 lg:gap-y-20">
           {/* Who is BLOCKChampions For? Section */}
           <div>
             {/* Title */}
-            <h2 className="text-2xl font-medium text-center text-black mb-4">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-medium text-center text-black mb-6 sm:mb-8">
               Who is BLOCKChampions For?
             </h2>
 
             {/* Content Container */}
-            <div className="flex flex-col md:flex-row items-center justify-center w-full">
+            <div className="flex flex-col lg:flex-row items-center justify-center w-full gap-6 lg:gap-8">
               {/* Text Section */}
-              <div className="w-full md:w-1/2 p-4">
-                <p className="text-lg font-medium text-[#242424] mb-4">
+              <div className="w-full lg:w-1/2 order-2 lg:order-1">
+                <p className="text-base sm:text-lg font-medium text-[#242424] mb-4 sm:mb-6 text-center lg:text-left">
                   BLOCKChampions is for anyone who believes in the power of
-                  technology, education, and Africa’s potential, including:
+                  technology, education, and Africa's potential, including:
                 </p>
-                <ul className="list-none font-medium space-y-2 pl-6">
+                <ul className="list-none font-medium space-y-2 sm:space-y-3">
                   {championsList.map((item, index) => (
-                    <li
-                      key={index}
-                      className="relative before:content-['✓'] before:absolute before:left-[-1.2em] before:text-customBrown before:text-lg"
-                    >
-                      <span className="text-[#242424]">{item}</span>{" "}
-                      {/* Fixed text color syntax */}
+                    <li key={index} className="flex items-start gap-3">
+                      <Check
+                        className="w-5 h-5 sm:w-6 sm:h-6 mt-0.5 flex-shrink-0"
+                        style={{ color: "var(--custom-brown, #8B4513)" }}
+                      />
+                      <span className="text-[#242424] text-sm sm:text-base">
+                        {item}
+                      </span>
                     </li>
                   ))}
                 </ul>
               </div>
 
               {/* Image Section */}
-              <div className="w-full md:w-1/2 p-4">
-                <div className="w-[473px] h-[473px] mx-auto">
+              <div className="w-full lg:w-1/2 order-1 lg:order-2 flex justify-center">
+                <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-[400px] lg:h-[400px] xl:w-[473px] xl:h-[473px]">
                   <img
                     src={blockHandImage}
                     alt="BLOCKChampions"
@@ -204,18 +217,18 @@ const BLOCKchampions = () => {
             </div>
           </div>
 
-          {/* Why Become a BLOCKChampion? */}
+          {/* Why Become a BLOCKChampion? Section */}
           <div>
             {/* Title */}
-            <h2 className="text-2xl font-medium text-center text-black mb-4">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-medium text-center text-black mb-6 sm:mb-8">
               Why Become a BLOCKChampion?
             </h2>
 
             {/* Content Container */}
-            <div className="flex flex-col md:flex-row items-center justify-center w-full">
+            <div className="flex flex-col lg:flex-row items-center justify-center w-full gap-6 lg:gap-8">
               {/* Image Section */}
-              <div className="w-full md:w-1/2 p-4">
-                <div className="w-[473px] h-[473px] mx-auto">
+              <div className="w-full lg:w-1/2 order-1 flex justify-center">
+                <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-[400px] lg:h-[400px] xl:w-[473px] xl:h-[473px]">
                   <img
                     src={blockImage2}
                     alt="BLOCKChampions"
@@ -225,10 +238,10 @@ const BLOCKchampions = () => {
               </div>
 
               {/* Text Section */}
-              <div className="w-full md:w-1/2 p-4">
-                <p className="text-lg font-medium text-[#242424]">
-                  Joining BLOCKChampions isn’t just about sponsorship education
-                  - It’s about shaping Africa’s future in tech. Your support
+              <div className="w-full lg:w-1/2 order-2">
+                <p className="text-base sm:text-lg font-medium text-[#242424] text-center lg:text-left leading-relaxed">
+                  Joining BLOCKChampions isn't just about sponsorship education
+                  - It's about shaping Africa's future in tech. Your support
                   empowers young Africans gain in-demand skills, life-changing
                   opportunities, and the chance to shape the future as industry
                   leaders.
@@ -293,68 +306,72 @@ const BLOCKchampions = () => {
 
       {/* FAQ Section */}
       <div className="bg-white py-12 px-4">
-      <div className="max-w-4xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-semibold text-[#242424] mb-4">
-            FAQs
-          </h1>
-          <p className="text-lg text-[#242424] max-w-2xl mx-auto">
-            Common questions you may want to ask.
-          </p>
-        </div>
+        <div className="max-w-4xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-12">
+            <h1 className="text-4xl md:text-5xl font-semibold text-[#242424] mb-4">
+              FAQs
+            </h1>
+            <p className="text-lg text-[#242424] max-w-2xl mx-auto">
+              Common questions you may want to ask.
+            </p>
+          </div>
 
-        {/* FAQ Items */}
-        <div className="space-y-4">
-          {faqs.map((faq, index) => (
-            <div
-              key={index}
-              className="bg-white border border-gray-100 overflow-hidden transition-all duration-300"
-            >
-              {/* Question Header */}
-              <button
-                onClick={() => toggleItem(index)}
-                className={`w-full px-6 py-5 text-left flex items-center justify-between rounded-t-md hover:bg-gray-50 transition-colors duration-200 border ${openItems[index] ? 'border-[#720034]' : ''}`}  
+          {/* FAQ Items */}
+          <div className="space-y-4">
+            {faqs.map((faq, index) => (
+              <div
+                key={index}
+                className="bg-white border border-gray-100 overflow-hidden transition-all duration-300"
               >
-                <h3 className="text-lg font-medium text-[#242424] pr-4">
-                  {faq.question}
-                </h3>
-                <div className="flex-shrink-0">
-                  {openItems[index] ? (
-                    <Plus className="w-5 h-5 text-[#242424]" />
-                  ) : (
-                    <Minus className="w-5 h-5 text-[#242424]" />
-                  )}
-                </div>
-              </button>
-
-              {/* Answer Content */}
-              {openItems[index] && (
-                <div className="px-6 pb-6 bg-[#F5F5F5]">
-                  <div className="pt-4">
-                    <p className="text-[#242424] font-medium leading-relaxed mb-4 text-center">
-                      {faq.answer}
-                    </p>
-                    
-                    {/* List Items */}
-                    {faq.list && (
-                      <div className="space-y-3">
-                        {faq.list.map((item, listIndex) => (
-                          <div key={listIndex} className="flex items-start">
-                            <Check className="w-5 h-5 text-customBrown mt-0.5 mr-3 flex-shrink-0" />
-                            <span className="text-[#242424] font-medium">{item}</span>
-                          </div>
-                        ))}
-                      </div>
+                {/* Question Header */}
+                <button
+                  onClick={() => toggleItem(index)}
+                  className={`w-full px-6 py-5 text-left flex items-center justify-between rounded-t-md hover:bg-gray-50 transition-colors duration-200 border ${
+                    openItems[index] ? "border-[#720034]" : ""
+                  }`}
+                >
+                  <h3 className="text-lg font-medium text-[#242424] pr-4">
+                    {faq.question}
+                  </h3>
+                  <div className="flex-shrink-0">
+                    {openItems[index] ? (
+                      <Plus className="w-5 h-5 text-[#242424]" />
+                    ) : (
+                      <Minus className="w-5 h-5 text-[#242424]" />
                     )}
                   </div>
-                </div>
-              )}
-            </div>
-          ))}
+                </button>
+
+                {/* Answer Content */}
+                {openItems[index] && (
+                  <div className="px-6 pb-6 bg-[#F5F5F5]">
+                    <div className="pt-4">
+                      <p className="text-[#242424] font-medium leading-relaxed mb-4 text-center">
+                        {faq.answer}
+                      </p>
+
+                      {/* List Items */}
+                      {faq.list && (
+                        <div className="space-y-3">
+                          {faq.list.map((item, listIndex) => (
+                            <div key={listIndex} className="flex items-start">
+                              <Check className="w-5 h-5 text-customBrown mt-0.5 mr-3 flex-shrink-0" />
+                              <span className="text-[#242424] font-medium">
+                                {item}
+                              </span>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
     </section>
   );
 };
