@@ -1,6 +1,25 @@
 import AboutUsImage from "../assets/about-us.png";
 import VisionImage from "../assets/vision.png";
 import coreValue from "../assets/coreValue.png";
+import team1 from "../assets/team1.png";
+import team2 from "../assets/team2.png";
+import team3 from "../assets/team3.png";
+import team6 from "../assets/team6.png";
+import team8 from "../assets/team8.png";
+import team9 from "../assets/team9.png";
+import team10 from "../assets/team10.png";
+import team11 from "../assets/team11.png";
+import team12 from "../assets/team12.png";
+import team13 from "../assets/team13.png";
+import team17 from "../assets/team17.png";
+import team18 from "../assets/team18.png";
+import team19 from "../assets/team19.png";
+import board4 from "../assets/board4.png";
+import board5 from "../assets/board5.png";
+import board1 from "../assets/board1.png";
+import board6 from "../assets/board6.png";
+import board2 from "../assets/board2.png";
+import board8 from "../assets/board8.png";
 import {
   Star,
   Users,
@@ -9,16 +28,17 @@ import {
   BookOpen,
   Unlock,
   Target,
-  Code, 
-  Smartphone, 
-  FileText, 
-  Brush, 
-  PenTool, 
-  TrendingUp, 
-  Monitor, 
-  Settings 
+  Code,
+  Smartphone,
+  FileText,
+  Brush,
+  PenTool,
+  TrendingUp,
+  Monitor,
+  Settings,
+  Linkedin,
 } from "lucide-react";
-
+import mission from "../assets/mission.png";
 import blockImage2 from "../assets/blockImage2.png";
 
 const AboutUs = () => {
@@ -56,47 +76,180 @@ const AboutUs = () => {
   const services = [
     {
       icon: Code,
-      title: 'Web Development',
-      description: 'We provide top-notch web development services tailored to your business needs, delivering highly scalable and responsive website'
+      title: "Web Development",
+      description:
+        "We provide top-notch web development services tailored to your business needs, delivering highly scalable and responsive website",
     },
     {
       icon: Smartphone,
-      title: 'Mobile Application Development',
-      description: 'We design and develop intuitive mobile apps for Android and iOS platforms, tailored to meet user needs.'
+      title: "Mobile Application Development",
+      description:
+        "We design and develop intuitive mobile apps for Android and iOS platforms, tailored to meet user needs.",
     },
     {
       icon: FileText,
-      title: 'Website Hosting and Maintenance',
-      description: 'Our hosting and maintenance services ensure your website runs smoothly, stays secure, and remains up-to-date.'
+      title: "Website Hosting and Maintenance",
+      description:
+        "Our hosting and maintenance services ensure your website runs smoothly, stays secure, and remains up-to-date.",
     },
     {
       icon: Brush,
-      title: 'Graphics Design & Video Editing',
-      description: 'Creative designs and professional video editing to captivate young audience and enhance your brand.'
+      title: "Graphics Design & Video Editing",
+      description:
+        "Creative designs and professional video editing to captivate young audience and enhance your brand.",
     },
     {
       icon: PenTool,
-      title: 'Copywriting',
-      description: 'Engaging and persuasive copy to effectively communicate your message and boost conversions.'
+      title: "Copywriting",
+      description:
+        "Engaging and persuasive copy to effectively communicate your message and boost conversions.",
     },
     {
       icon: TrendingUp,
-      title: 'Digital Marketing & SEO',
-      description: 'Grow your online presence and drive traffic with targeted digital marketing and effective SEO strategies.'
+      title: "Digital Marketing & SEO",
+      description:
+        "Grow your online presence and drive traffic with targeted digital marketing and effective SEO strategies.",
     },
     {
       icon: Monitor,
-      title: 'Tech Training Programs',
-      description: 'We offer hands-on training programs to upskill your team in modern technologies and practices.'
+      title: "Tech Training Programs",
+      description:
+        "We offer hands-on training programs to upskill your team in modern technologies and practices.",
     },
     {
       icon: Settings,
-      title: 'Product Design & Management',
-      description: 'End-to-end product design and management to bring your vision to life and ensure successful delivery.'
-    }
+      title: "Product Design & Management",
+      description:
+        "End-to-end product design and management to bring your vision to life and ensure successful delivery.",
+    },
   ];
+
+  const teamMembers = [
+    {
+      name: "Raphael Omochor",
+      title: "Founder, Executive Board",
+      subtitle: "Chairman & CEO",
+      image: team1,
+      hasLinkedIn: true,
+    },
+    {
+      name: "Christopher Enyeribe",
+      title: "Co-founder & COO",
+      image: team12,
+      hasLinkedIn: true,
+    },
+    {
+      name: "Babatunde Maryam F.",
+      title: "Co-founder & CTO",
+      subtitle: "Co-founder & CTIO",
+      image: team2,
+      hasLinkedIn: true,
+    },
+    {
+      name: "Kabiru Sunkanmi",
+      title: "Kabirat",
+      image: team17,
+      hasLinkedIn: true,
+    },
+    {
+      name: "Favour I. Peter",
+      title: "Chief Marketing Officer (CMO)",
+      image: team6,
+      hasLinkedIn: true,
+    },
+    {
+      name: "Dickson Goodness",
+      title: "Executive Secretary & Graphic Designer",
+      image: team10,
+      hasLinkedIn: true,
+    },
+    {
+      name: "Rashidat Ayobami",
+      title: "Deputy",
+      subtitle: "Secretary & Director of BluesTalk & Future Tech Education",
+      image: team19,
+      hasLinkedIn: true,
+    },
+    {
+      name: "Olawatosin Adesoro A.",
+      title: "UI/UX & Mobile App Designer",
+      image: team18,
+      hasLinkedIn: true,
+    },
+    {
+      name: "Osawaru Josephine O.",
+      title: "Head of Creativity & design",
+      image: team9,
+      hasLinkedIn: true,
+    },
+    {
+      name: "Suleiman Attahiru",
+      title: "Graphic Designer",
+      image: team13,
+      hasLinkedIn: true,
+    },
+    {
+      name: "Ufere Stephen U.",
+      title: "Graphic Designer",
+      image: team8,
+      hasLinkedIn: true,
+    },
+    {
+      name: "Timothy O. Olaniyan",
+      title: "Content/Copywriter",
+      image: team11,
+      hasLinkedIn: true,
+    },
+    {
+      name: "Olaniran Samuel B.",
+      title: "Blockchain Developer",
+      image: team3,
+      hasLinkedIn: true,
+    },
+  ];
+
+  const advisoryBoard = [
+    {
+      name: "Osinakachi Akum Kalu",
+      title: "(PhD)",
+      role: "Strategic Partnership Advisor",
+      image: board1,
+      hasLinkedIn: true,
+    },
+    {
+      name: "Dr. Tammy Francis",
+      role: "Education & Capacity Building Advisor",
+      image: board4,
+      hasLinkedIn: true,
+    },
+    {
+      name: "Dr. Sindhu Bhaskar",
+      role: "Economic Development Advisor",
+      image: board6,
+      hasLinkedIn: true,
+    },
+    {
+      name: "Fredrick Nonde Jr.",
+      role: "Innovation & Technology Advisor",
+      image: board2,
+      hasLinkedIn: true,
+    },
+    {
+      name: "Dr. Bethel Nwakaku",
+      role: "Community Development Advisor",
+      image: board5,
+      hasLinkedIn: true,
+    },
+    {
+      name: "Okemgbo S. Deborah Esq.",
+      role: "Regulatory & Compliance Advisor",
+      image: board8,
+      hasLinkedIn: true,
+    },
+  ];
+
   return (
-    <section className="flex flex-col gp-y-10 bg-green-500">
+    <section className="flex flex-col">
       <header
         className="relative h-[495px] bg-center bg-cover flex items-center justify-center text-center"
         style={{
@@ -119,16 +272,16 @@ const AboutUs = () => {
 
       {/* card section */}
       <div className="py-20 px-4 md:px-28 bg-white">
-        {/* First card */}
-        <div className="relative ">
-          {/* Top circle */}
-          {/* <div className="absolute left-1/3 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 rounded-full border-8 border-customBrown bg-white z-10 hidden md:block" /> */}
+        <div className="flex flex-col gap-y-9">
+          {/* First card */}
 
-          <div className="flex flex-col md:flex-row items-center">
+          <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10">
             {/* Left Card */}
-            <div className="bg-customBrown text-white px-8 py-10 rounded-2xl w-full md:w-1/2 shadow-lg  flex flex-col ">
-              <h3 className="text-xl font-bold mb-8">VISION</h3>
-              <p>
+            <div className="bg-customBrown text-white px-6 sm:px-8 py-10 rounded-2xl w-full md:w-1/2 shadow-xl flex flex-col justify-center">
+              <h3 className="text-2xl font-semibold mb-4 tracking-tight">
+                VISION
+              </h3>
+              <p className="text-base leading-relaxed text-white/90">
                 To empower Africa’s future by creating a thriving economy of
                 blockchain and tech innovators during sustainable development
                 and economic growth.
@@ -136,17 +289,37 @@ const AboutUs = () => {
             </div>
 
             {/* Right Image Box */}
-            <div className="w-full md:w-1/2 rounded-2xl bg-[#d8ecff] flex items-center justify-center p-4">
+            <div className="hidden md:flex w-full md:w-1/2 rounded-2xl bg-[#d8ecff]  items-center justify-center p-6">
               <img
                 src={VisionImage}
                 alt="Vision"
-                className="object-cover max-h-[400px]"
+                className="object-contain max-h-[350px] w-full rounded-xl"
               />
             </div>
           </div>
+          {/* second card */}
+          <div className="flex flex-col md:flex-row-reverse items-center gap-6 md:gap-10">
+            {/* Left Card */}
+            <div className="bg-customBrown text-white px-6 sm:px-8 py-10 rounded-2xl w-full md:w-1/2 shadow-xl flex flex-col justify-center">
+              <h3 className="text-2xl font-semibold mb-4 tracking-tight">
+                MISSION
+              </h3>
+              <p className="text-base leading-relaxed text-white/90">
+                To educate, inspire, and connect young Africans through
+                cutting-edge blockchain and emerging tech programs, fostering
+                innovation and real-world impact.
+              </p>
+            </div>
 
-          {/* Bottom circle */}
-          {/* <div className="absolute bottom-0 right-1/3 transform -translate-x-1/2 translate-y-1/2 w-20 h-20 rounded-full border-8 border-customBrown bg-white z-10 hidden md:block" /> */}
+            {/* Right Image Box */}
+            <div className="hidden md:flex w-full md:w-1/2 rounded-2xl items-center justify-center">
+              <img
+                src={mission}
+                alt="mission"
+                className="object-contain max-h-[350px] w-full rounded-xl"
+              />
+            </div>
+          </div>
         </div>
 
         {/* core value */}
@@ -223,56 +396,175 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      
+
       {/* our expetional service */}
       <div className="bg-customBrown py-20 px-6 relative overflow-hidden">
-      <div className="max-w-6xl mx-auto relative z-10">
-        {/* Header Section */}
-        <div className="text-center mb-16">
-          <h1 className="text-2xl md:text-4xl  font-semibold text-white mb-3 leading-tight">
-            Our Exceptional Services to Drive
-            <br />
-            <span className="text-pink-200">Your Success</span>
-          </h1>
-          <p className="text-lg md:text-xl text-pink-100 max-w-4xl mx-auto leading-relaxed">
-            We offer innovation solutions designed to help you thrive. Our team has created groundbreaking products and provided expert
-          
-            consulting for businesses, delivering real impact.
-          </p>
-        </div>
+        <div className="max-w-6xl mx-auto relative z-10">
+          {/* Header Section */}
+          <div className="text-center mb-16">
+            <h1 className="text-2xl md:text-4xl  font-semibold text-white mb-3 leading-tight">
+              Our Exceptional Services to Drive
+              <br />
+              <span className="text-pink-200">Your Success</span>
+            </h1>
+            <p className="text-lg md:text-xl text-pink-100 max-w-4xl mx-auto leading-relaxed">
+              We offer innovation solutions designed to help you thrive. Our
+              team has created groundbreaking products and provided expert
+              consulting for businesses, delivering real impact.
+            </p>
+          </div>
 
-        {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((service, index) => {
-            const IconComponent = service.icon;
-            return (
-              <div 
-                key={index}
-                className="bg-white bg-opacity-95 flex flex-col gap-y-3  rounded-2xl p-6 hover:bg-opacity-100 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl group"
-              >
-                <div className="flex flex-col items-center justify-center">
-                  <div className="rounded-lg group-hover:scale-110 transition-transform duration-300">
-                    <IconComponent className="w-9 h-9 text-customBrown" />
+          {/* Services Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {services.map((service, index) => {
+              const IconComponent = service.icon;
+              return (
+                <div
+                  key={index}
+                  className="bg-white bg-opacity-95 flex flex-col gap-y-3  rounded-2xl p-6 hover:bg-opacity-100 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl group"
+                >
+                  <div className="flex flex-col items-center justify-center">
+                    <div className="rounded-lg group-hover:scale-110 transition-transform duration-300">
+                      <IconComponent className="w-9 h-9 text-customBrown" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-customBrown group-hover:text-customBrown/80 text-center transition-colors duration-300">
+                      {service.title}
+                    </h3>
                   </div>
-                  <h3 className="text-xl font-semibold text-customBrown group-hover:text-customBrown/80 text-center transition-colors duration-300">
-                    {service.title}
-                  </h3>
+                  <p className="text-[#242424] leading-relaxed text-sm font-medium text-center">
+                    {service.description}
+                  </p>
                 </div>
-                <p className="text-[#242424] leading-relaxed text-sm font-medium text-center">
-                  {service.description}
-                </p>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
+
+          {/* Bottom decorative elements */}
+          <div className="absolute bottom-10 left-10 w-20 h-20 bg-pink-300 rounded-full opacity-10 animate-pulse"></div>
+          <div className="absolute top-20 right-20 w-16 h-16 bg-purple-300 rounded-full opacity-10 animate-pulse delay-1000"></div>
+        </div>
+      </div>
+
+      {/* Meet Exceptional Team Members */}
+      <div className="bg-[#FFF6FA] py-8 sm:py-12 md:py-16 px-4 sm:px-6 md:px-12 lg:px-24 relative overflow-hidden">
+        {/* Large background text */}
+        <div className="absolute inset-0 flex items-start justify-center pt-10 sm:pt-16 md:pt-20 opacity-5">
+          <span className="text-4xl sm:text-6xl md:text-7xl lg:text-9xl font-bold text-purple-400 tracking-wider">
+            Our Team
+          </span>
         </div>
 
-        {/* Bottom decorative elements */}
-        <div className="absolute bottom-10 left-10 w-20 h-20 bg-pink-300 rounded-full opacity-10 animate-pulse"></div>
-        <div className="absolute top-20 right-20 w-16 h-16 bg-purple-300 rounded-full opacity-10 animate-pulse delay-1000"></div>
-       
-      </div>
-    </div>
+        <div className="max-w-7xl mx-auto relative z-10">
+          {/* Header Section */}
+          <div className="text-center mb-8 sm:mb-12 md:mb-16">
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-customBrown mb-2">
+              Meet The Exceptional Team Members
+            </h1>
+            <p className="text-base sm:text-lg md:text-xl text-[#242424] font-medium">
+              Core Executives, Management & Staff
+            </p>
+          </div>
 
+          {/* Team Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 mb-12 sm:mb-16 md:mb-20">
+            {teamMembers.map((member, index) => (
+              <div
+                key={index}
+                className="bg-white w-full sm:w-fit rounded-t-[40px] hover:shadow-xl transition-all duration-300 hover:scale-100 group"
+              >
+                {/* Profile Image */}
+                <div className="mb-4">
+                  <div className="w-full sm:w-72 h-48 sm:h-72 mx-auto rounded-t-[40px] rounded-bl-[80px] rounded-br-[40px] overflow-hidden">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+
+                {/* Member Info */}
+                <div className="text-center px-2 sm:px-4 py-2">
+                  <h3 className="font-semibold text-base sm:text-lg flex items-center justify-center gap-2 text-customBrown mb-2 group-hover:text-customBrown/80 transition-colors duration-300">
+                    {member.name}
+                    {member.hasLinkedIn && (
+                      <a
+                        href={member.linkedInUrl || "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-6 sm:w-8 h-6 sm:h-8 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors duration-200"
+                      >
+                        <Linkedin className="w-3 sm:w-4 h-3 sm:h-4 text-white" />
+                      </a>
+                    )}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-customBrown font-medium leading-relaxed mb-2">
+                    {member.title}
+                  </p>
+                  {member.subtitle && (
+                    <p className="text-xs text-customBrown leading-relaxed">
+                      {member.subtitle}
+                    </p>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Advisory Board Section */}
+          <div className="border-t border-customBrown pt-8 sm:pt-12 md:pt-16 flex flex-col gap-y-6 sm:gap-y-8">
+            <div className="text-center">
+              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-customBrown mb-2">
+                Advisory Board
+              </h2>
+              <p className="text-base sm:text-lg md:text-xl text-customBrown font-medium">
+                Our board of Advisors
+              </p>
+            </div>
+
+            {/* Advisory Board Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 mb-12 sm:mb-16 md:mb-20">
+              {advisoryBoard.map((member, index) => (
+                <div
+                  key={index}
+                  className="bg-white w-full sm:w-fit rounded-t-[40px] hover:shadow-xl transition-all duration-300 hover:scale-100 group"
+                >
+                  {/* Profile Image */}
+                  <div className="mb-4">
+                    <div className="w-full sm:w-72 h-48 sm:h-72 mx-auto rounded-t-[40px] rounded-bl-[80px] rounded-br-[40px] overflow-hidden">
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Member Info */}
+                  <div className="text-center px-2 sm:px-4 py-2">
+                    <h3 className="font-semibold text-base sm:text-lg flex items-center justify-center gap-2 text-customBrown mb-2 group-hover:text-customBrown/80 transition-colors duration-300">
+                      {member.name}
+                      {member.hasLinkedIn && (
+                        <a
+                          href={member.linkedInUrl || "#"}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-6 sm:w-8 h-6 sm:h-8 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors duration-200"
+                        >
+                          <Linkedin className="w-3 sm:w-4 h-3 sm:h-4 text-white" />
+                        </a>
+                      )}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-customBrown font-medium leading-relaxed mb-2">
+                      {member.role}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
