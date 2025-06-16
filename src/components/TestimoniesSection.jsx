@@ -87,13 +87,10 @@ const TestimoniesSection = () => {
 
   return (
     <section id="testimonies" className="py-20 md:px-10 px-0">
-      <div className="text-center mb-10 bg-[#720034] py-5 w-full">
-        <h1 className="text-2xl md:text-4xl text-white font-bold mb-2">
-          Reviews
-        </h1>
-        <p className="text-lg md:text-lg text-[#fcf5f5]">
+      <div className="text-center mb-10 py-5 w-full">
+        <h1 className="text-lg md:text-lg text-[#242424]">
           What People Say About Us
-        </p>
+        </h1>
       </div>
 
       <div className="relative w-full h-auto overflow-hidden">

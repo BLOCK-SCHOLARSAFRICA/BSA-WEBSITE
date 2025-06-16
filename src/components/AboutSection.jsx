@@ -31,7 +31,7 @@ const AboutSection = () => {
 
   return (
     <section
-      id="about-us"
+      
       className="py-16 px-6 md:px-14 bg-white mt-20 flex flex-col items-center text-center"
       data-aos="fade-up"
     >
