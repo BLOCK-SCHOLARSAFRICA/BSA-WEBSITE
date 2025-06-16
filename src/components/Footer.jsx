@@ -12,7 +12,7 @@ import logo from "../assets/BSA-Logo.png";
 
 const Footer = () => {
   return (
-    <footer id="partners" className="bg-[#720034] mt-20 py-10">
+    <footer id="partners" className="bg-[#720034] py-10">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
         {/* Logo Section */}
         <div className="mb-6 md:mb-0">
