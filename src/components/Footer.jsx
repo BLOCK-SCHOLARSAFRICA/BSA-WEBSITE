@@ -14,17 +14,7 @@ import logo from "../assets/BSA-Logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0f0f0f] text-white pt-12 px-6">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
-        {/* Logo & Mission */}
-        <div>
-          <img src={logo} alt="BSA Logo" className="h-[70px] mb-4" />
-          <p className="text-sm text-gray-300">
-            Block-Scholars Africa is not just a platform – It’s a movement
-            empowering young Africans through blockchain, web3, and emerging
-            tech.
-          </p>
-          <div className="flex gap-4 mt-4">
+
             <a
               href="https://www.facebook.com/profile.php?id=100088750029788&mibextid=ZbWKwL"
               target="_blank"
