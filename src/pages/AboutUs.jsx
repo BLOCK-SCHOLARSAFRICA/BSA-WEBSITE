@@ -3,7 +3,7 @@ import VisionImage from "../assets/vision.png";
 
 const AboutUs = () => {
   return (
-    <section className="flex flex-col gp-y-10 bg-green-500">
+    <section id="about-us" className="flex flex-col gp-y-10 bg-green-500">
       <header
         className="relative h-[495px] bg-center bg-cover flex items-center justify-center text-center"
         style={{
@@ -24,7 +24,7 @@ const AboutUs = () => {
         </div>
       </header>
 
-      <section >
+      <section>
         {/* First card */}
         <div className="relative py-20 px-4 md:px-28 bg-white">
           {/* Top circle */}
@@ -54,7 +54,6 @@ const AboutUs = () => {
           {/* Bottom circle */}
           <div className="absolute bottom-0 right-1/3 transform -translate-x-1/2 translate-y-1/2 w-20 h-20 rounded-full border-8 border-customBrown bg-white z-10 hidden md:block" />
         </div>
-        
       </section>
     </section>
   );
