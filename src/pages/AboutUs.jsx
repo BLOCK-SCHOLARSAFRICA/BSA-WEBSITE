@@ -39,7 +39,7 @@ import {
   Linkedin,
 } from "lucide-react";
 import mission from "../assets/mission.png";
-// import blockImage2 from "../assets/blockImage2.png";
+import blockImage2 from "../assets/blockimage2.png";
 
 const AboutUs = () => {
   const values = [
@@ -372,11 +372,11 @@ const AboutUs = () => {
             {/* Image Section */}
             <div className="w-full lg:w-1/2 order-1 flex justify-center">
               <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-[400px] lg:h-[400px] xl:w-[473px] xl:h-[473px]">
-                {/* <img
+                <img
                   src={blockImage2}
                   alt="BLOCKChampions"
                   className="w-full h-full object-cover rounded-full"
-                /> */}
+                />
               </div>
             </div>
 
