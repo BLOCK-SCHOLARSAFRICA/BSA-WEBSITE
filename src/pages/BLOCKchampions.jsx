@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import BlockChampionsImage from "../assets/blockchamp.png";
-import blockHandImage from "../assets/blockhand.png";
+import blockHandImage from "../assets/blockHand.png";
 import blockImage2 from "../assets/blockImage2.png";
 import PricingCard from "../components/PricingCard";
 import { useState } from "react";
