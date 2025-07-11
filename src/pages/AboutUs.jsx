@@ -249,7 +249,7 @@ const AboutUs = () => {
   ];
 
   return (
-
+    <section className="flex flex-col">
       <header
         className="relative h-[495px] bg-center bg-cover flex items-center justify-center text-center"
         style={{
@@ -270,7 +270,10 @@ const AboutUs = () => {
         </div>
       </header>
 
-
+      {/* card section */}
+      <div className="py-20 px-4 md:px-28 bg-white">
+        <div className="flex flex-col gap-y-9">
+          {/* First card */}
 
           <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10">
             {/* Left Card */}
@@ -561,7 +564,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-
+      </div>
     </section>
   );
 };
