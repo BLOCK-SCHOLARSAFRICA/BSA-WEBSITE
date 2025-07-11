@@ -4,7 +4,7 @@ import Optimus from "../assets/OptimusLogo.png";
 import Bravpuls from "../assets/Bravpuls.png";
 import Turbo from "../assets/turbo.png";
 import BlockBridge from "../assets/BlockBridge.png";
-import ActuateLogo from "../assets/Actuate_logo[1] 1.png";
+import ActuateLogo from "../assets/Actuate_logo.png";
 import Nobsaa from "../assets/Nobsaa.png";
 
 const PartnersSection = () => {
