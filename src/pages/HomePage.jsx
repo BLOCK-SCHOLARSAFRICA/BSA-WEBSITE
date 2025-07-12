@@ -12,7 +12,7 @@ import {
 
 const HomePage = () => {
   return (
-    <>
+    <div className="mb-4">
       <HeroSection />
       <AboutSection />
       <OurPrograms />
@@ -24,7 +24,7 @@ const HomePage = () => {
       <TestimoniesSection />
       <FAQSection />
       <Newsletter />
-    </>
+    </div>
   );
 };
 
