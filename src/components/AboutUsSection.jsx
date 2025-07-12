@@ -48,7 +48,7 @@ const AboutUsSection = () => {
   ];
 
   return (
-    <div className="py-20">
+    <div>
       {/* About Us Section */}
       <section className="px-6 pb-20">
         <div className="text-center mb-16">
