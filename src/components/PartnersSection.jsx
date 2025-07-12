@@ -2,7 +2,7 @@
 import Slider from "react-slick";
 import MIBT from "../assets/MIBTLogo.png";
 import Optimus from "../assets/OptimusLogo.png";
-// import Bravpuls from "../assets/Bravpuls.png";
+import Bravpuls from "../assets/Bravpuls.png";
 import Turbo from "../assets/turbo.png";
 import BlockBridge from "../assets/BlockBridge.png";
 import ActuateLogo from "../assets/Actuate_logo.png";
@@ -10,13 +10,13 @@ import Nobsaa from "../assets/Nobsaa.png";
 
 const PartnersSection = () => {
   const partners = [
-    { src: MIBT, alt: "MIBT", hasWhiteBg: true },
-    { src: Optimus, alt: "Optimus", hasWhiteBg: true },
-    // { src: Bravpuls, alt: "Bravpuls", hasWhiteBg: false },
+    { src: MIBT, alt: "MIBT", hasWhiteBg: false },
+    { src: Optimus, alt: "Optimus", hasWhiteBg: false },
+    { src: Bravpuls, alt: "Bravpuls", hasWhiteBg: true },
     { src: Turbo, alt: "Turbo", hasWhiteBg: false },
     { src: BlockBridge, alt: "BlockBridge", hasWhiteBg: false },
     { src: ActuateLogo, alt: "ActuateLogo", hasWhiteBg: false },
-    { src: Nobsaa, alt: "Nobsaa", hasWhiteBg: true },
+    { src: Nobsaa, alt: "Nobsaa", hasWhiteBg: false },
   ];
 
   const settings = {
@@ -65,7 +65,7 @@ const PartnersSection = () => {
             {partners.map((partner, index) => (
               <div key={index} className="px-2 flex justify-center items-center">
                 <div className={`w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 rounded-lg shadow-md flex items-center justify-center ${
-                  partner.hasWhiteBg ? 'bg-white' : 'bg-gray-50'
+                  partner.hasWhiteBg ? 'bg-[#1a1a1a]' : 'bg-gray-50'
                 }`}>
                   <img
                     src={partner.src}
