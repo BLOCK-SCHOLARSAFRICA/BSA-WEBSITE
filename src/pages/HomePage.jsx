@@ -9,15 +9,17 @@ import {
   PartnersSection,
   Newsletter,
 } from "../components/Section";
+import AboutUsSection from "../components/AboutUsSection";
 
 const HomePage = () => {
   return (
-    <div className="mb-4">
+    <div className="mb-4  max-w-7xl mx-auto px-6 md:px-10">
       <HeroSection />
       <AboutSection />
       <OurPrograms />
 
-      <Community />
+      {/* <Community /> */}
+      <AboutUsSection />
 
       <PartnersSection />
       <ContactSection />
