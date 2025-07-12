@@ -18,8 +18,8 @@ const HomePage = () => {
       <AboutSection />
       <OurPrograms />
 
-      {/* <Community /> */}
       <AboutUsSection />
+      <Community />
 
       <PartnersSection />
       <ContactSection />
