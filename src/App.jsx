@@ -7,6 +7,8 @@ import AboutUs from "./pages/AboutUs";
 import Program from "./pages/Programs";
 import Events from "./pages/Events";
 import BLOCKchampions from "./pages/BLOCKchampions";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (

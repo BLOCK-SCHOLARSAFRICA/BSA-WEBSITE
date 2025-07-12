@@ -1,61 +1,81 @@
-import React from "react";
+
+import Slider from "react-slick";
 import MIBT from "../assets/MIBTLogo.png";
 import Optimus from "../assets/OptimusLogo.png";
-import Bravpuls from "../assets/Bravpuls.png";
+// import Bravpuls from "../assets/Bravpuls.png";
 import Turbo from "../assets/turbo.png";
 import BlockBridge from "../assets/BlockBridge.png";
 import ActuateLogo from "../assets/Actuate_logo.png";
 import Nobsaa from "../assets/Nobsaa.png";
 
 const PartnersSection = () => {
+  const partners = [
+    { src: MIBT, alt: "MIBT", hasWhiteBg: true },
+    { src: Optimus, alt: "Optimus", hasWhiteBg: true },
+    // { src: Bravpuls, alt: "Bravpuls", hasWhiteBg: false },
+    { src: Turbo, alt: "Turbo", hasWhiteBg: false },
+    { src: BlockBridge, alt: "BlockBridge", hasWhiteBg: false },
+    { src: ActuateLogo, alt: "ActuateLogo", hasWhiteBg: false },
+    { src: Nobsaa, alt: "Nobsaa", hasWhiteBg: true },
+  ];
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 3000,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    pauseOnHover: true,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+        }
+      }
+    ]
+  };
+
   return (
-    <section id="partners" className="py-20 px-6 bg-white mt-20">
-      <div className="text-center mb-10 bg-[#720034] py-5 w-full">
-        <h1 className="text-2xl md:text-4xl text-white font-bold mb-4">
+    <section id="partners">
+      <div className="text-center bg-[#720034] py-20 w-full px-4">
+        <h1 className="text-3xl md:text-4xl text-white font-bold mb-10">
           Partners
         </h1>
 
-        {/* Partners Logos */}
-        <div className="overflow-x-auto w-full relative">
-          <div className="flex flex-row gap-2 whitespace-nowrap justify-between animate-scroll">
-            {/* Original Logos */}
-            <img
-              src={MIBT}
-              alt="MIBT"
-              className="w-16 sm:w-18 md:w-24 lg:w-36 h-auto object-contain rounded-lg shadow-md bg-white"
-            />
-            <img
-              src={Optimus}
-              alt="Optimus"
-              className="w-16 sm:w-18 md:w-24 lg:w-36 h-auto object-contain rounded-lg shadow-md bg-white"
-            />
-            <img
-              src={Bravpuls}
-              alt="Bravpuls"
-              className="w-16 sm:w-20 md:w-24 lg:w-48 h-auto object-contain rounded-lg shadow-md"
-            />
-
-            <img
-              src={Turbo}
-              alt="Turbo"
-              className="w-16 sm:w-18 md:w-24 lg:w-36 h-auto object-contain rounded-lg shadow-md"
-            />
-            <img
-              src={BlockBridge}
-              alt="BlockBridge"
-              className="w-16 sm:w-18 md:w-24 lg:w-36 h-auto object-contain rounded-lg shadow-md"
-            />
-            <img
-              src={ActuateLogo}
-              alt="ActuateLogo"
-              className="w-16 sm:w-18 md:w-24 lg:w-36 h-auto object-contain rounded-lg shadow-md"
-            />
-            <img
-              src={Nobsaa}
-              alt="Nobsaa"
-              className="w-16 sm:w-18 md:w-24 lg:w-36 h-auto object-contain rounded-lg shadow-md bg-white"
-            />
-          </div>
+        {/* Partners Logos Slider */}
+        <div className="w-full max-w-6xl mx-auto">
+          <Slider {...settings}>
+            {partners.map((partner, index) => (
+              <div key={index} className="px-2 flex justify-center items-center">
+                <div className={`w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 rounded-lg shadow-md flex items-center justify-center ${
+                  partner.hasWhiteBg ? 'bg-white' : 'bg-gray-50'
+                }`}>
+                  <img
+                    src={partner.src}
+                    alt={partner.alt}
+                    className="max-w-full max-h-full object-contain p-2"
+                  />
+                </div>
+              </div>
+            ))}
+          </Slider>
         </div>
       </div>
     </section>

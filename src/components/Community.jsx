@@ -65,7 +65,7 @@ const Community = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center py-8 sm:py-  px-4 sm:px-6 bg-gray-50">
+    <div className="flex flex-col items-center justify-center py-8  px-4 sm:px-6 bg-gray-50 w-full">
       {/* Stats Section */}
       <div id="community-stats" className="w-full max-w-7xl">
         {/* Mobile Layout */}
