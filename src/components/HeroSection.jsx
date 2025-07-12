@@ -18,8 +18,8 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="relative  font-sans py-20">
-      <div className="container mx-auto px-6 md:px-12 lg:px-20 relative z-10">
+    <section id="home" className="font-sans min-h-screen flex items-center pt-[132px] md:pt-[10px]">
+      <div className="">
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10">
           <div className="md:w-1/2" data-aos="fade-right">
             <h1 className="text-[#242424] text-4xl md:text-5xl font-bold mb-6">
