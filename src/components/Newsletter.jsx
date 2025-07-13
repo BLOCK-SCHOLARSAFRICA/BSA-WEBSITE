@@ -1,68 +1,69 @@
 import React, { useState } from "react";
 
-const Newsletter = () => {
+export default function Newsletter() {
   const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (email) {
-      setSubmitted(true);
-      window.location.href = `mailto:blockscholarsafrica@gmail.com?subject=Newsletter Subscription&body=Please add ${email} to the subscription list.`;
+      console.log("Email submitted:", email);
+      // You can integrate your API call here
+      setEmail("");
     }
   };
 
+  const features = [
+    "Exclusive Bootcamps",
+    "Expert-led Trainings",
+    "Insightful Webinars",
+    "Latest Tech Updates",
+  ];
+
   return (
-    <section
-      id="newsletter"
-      className="bg-[#720034] py-16 px-6 text-white text-center"
-    >
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold mb-4">Stay Ahead of the Curve!</h1>
-        <p className="text-lg mb-4 leading-relaxed">
-          <b>Be the first to know about our:</b>
+    <div className="bg-[#720034] py-12 px-4 sm:px-6 md:px-8">
+      <div className="max-w-7xl mx-auto text-center">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white mb-4 sm:mb-6">
+          Stay Ahead of the Curve!
+        </h2>
+        <p className="text-lg sm:text-xl md:text-2xl text-white mb-8 sm:mb-10 font-medium">
+          Be the first to know about our:
         </p>
 
-        {/* LIST FIXED TO DISPLAY BULLETS */}
-        <ul className="text-lg mb-6 list-disc list-inside text-left max-w-md mx-auto space-y-2">
-          <li>Exclusive Bootcamps</li>
-          <li>Expert-led Trainings and Programs</li>
-          <li>Insightful Webinars</li>
-          <li>Latest Tech Updates</li>
-        </ul>
+        {/* Features list */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-10 sm:mb-12 max-w-4xl mx-auto">
+          {features.map((feature, index) => (
+            <div key={index} className="text-white">
+              <div className="flex items-center justify-center sm:justify-start">
+                <div className="w-2 h-2 bg-white rounded-full mr-3 mt-1"></div>
+                <span className="text-sm sm:text-base md:text-lg font-medium">
+                  {feature}
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
 
-        <h2 className="text-2xl font-bold mb-6 animate-pulse">
-          Get the inside scoop and reserve your spot!
-        </h2>
-
-        {!submitted ? (
-          <form
-            onSubmit={handleSubmit}
-            className="flex flex-col sm:flex-row justify-center items-center gap-4"
+        {/* Email form */}
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-row flex-wrap gap-4 justify-center items-center max-w-xl mx-auto w-full"
+        >
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+            placeholder="Enter your email"
+            className="flex-grow px-4 py-3 rounded-lg text-gray-700 text-sm placeholder-gray-400 min-w-[180px] focus:outline-none  focus:ring-white"
+          />
+          <button
+            type="submit"
+            className="bg-white text-[#720034] px-6 py-3 rounded-lg text-sm font-semibold hover:bg-gray-100 transition-colors duration-200 whitespace-nowrap"
           >
-            <input
-              type="email"
-              placeholder="Enter your email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              className="px-4 py-3 w-full sm:w-2/3 md:w-1/2 rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-white"
-            />
-            <button
-              type="submit"
-              className="px-6 py-3 bg-white text-[#720034] rounded-lg font-semibold hover:bg-[#f5f5f5] transition-all duration-300 animate-bounce"
-            >
-              Shoot Now
-            </button>
-          </form>
-        ) : (
-          <p className="text-lg font-semibold mt-6">
-            Thank you for subscribing! 🎉
-          </p>
-        )}
+            Subscribe
+          </button>
+        </form>
       </div>
-    </section>
+    </div>
   );
-};
-
-export default Newsletter;
+}

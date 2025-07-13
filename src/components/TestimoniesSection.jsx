@@ -81,7 +81,7 @@ const TestimoniesSection = () => {
   };
 
   return (
-    <div className="bg-slate-50 py-20 px-4">
+    <div className="bg-slate-50 py-20 px-4 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">

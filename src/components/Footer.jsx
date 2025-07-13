@@ -1,113 +1,139 @@
-import React from "react";
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaLinkedinIn,
-  FaInstagram,
-  FaTiktok,
-  FaYoutube,
-  FaWhatsapp, 
-} from "react-icons/fa";
+import { Facebook, Linkedin, Youtube, Send, Phone, Mail } from "lucide-react";
+import { FaXTwitter, FaWhatsapp } from "react-icons/fa6";
+import { SiTiktok } from "react-icons/si";
+
 import logo from "../assets/BSA-Logo.png";
 
-const Footer = () => {
-  return (
-    <footer id="partners" className="bg-[#720034] py-10">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
-        {/* Logo Section */}
-        <div className="mb-6 md:mb-0">
-          <img
-            src={logo}
-            alt="BSA Logo"
-            className="h-[100px] w-auto bg-white"
-          />
-        </div>
+export default function Footer() {
+  const socialLinks = [
+    { href: "#", icon: Facebook },
+    { href: "#", icon: FaXTwitter },
+    { href: "#", icon: Linkedin },
+    { href: "#", icon: Youtube },
+    { href: "#", icon: FaWhatsapp },
+    { href: "#", icon: SiTiktok },
+    { href: "#", icon: Send },
+  ];
 
-        {/* Social Media Section */}
-        <div className="text-center">
-          <h1 className="text-2xl md:text-4xl text-white font-bold mb-4">
-            Follow Us
-          </h1>
-          <div className="flex flex-row gap-6 justify-center items-center">
-            {/* Facebook */}
-            <a
-              href="https://www.facebook.com/profile.php?id=100088750029788&mibextid=ZbWKwL"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-[#720034] hover:bg-white transition-transform duration-300 transform hover:scale-110"
-            >
-              <FaFacebookF className="w-6 h-6" />
-            </a>
-            {/* Twitter */}
-            <a
-              href="https://x.com/BlockScholars_A?t=v79CvnmGMEalSg_6PRvTbQ&s=09"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-[#720034] hover:bg-white transition-transform duration-300 transform hover:scale-110"
-            >
-              <FaTwitter className="w-6 h-6" />
-            </a>
-            {/* LinkedIn */}
-            <a
-              href="https://www.linkedin.com/company/block-scholars-africa/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-[#720034] hover:bg-white transition-transform duration-300 transform hover:scale-110"
-            >
-              <FaLinkedinIn className="w-6 h-6" />
-            </a>
-            {/* Instagram */}
-            <a
-              href="https://www.instagram.com/blockscholarsafrica/profilecard/?igsh=MXR3c24xMm41b2ZpaQ=="
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-[#720034] hover:bg-white transition-transform duration-300 transform hover:scale-110"
-            >
-              <FaInstagram className="w-6 h-6" />
-            </a>
-            {/* TikTok */}
-            <a
-              href="https://www.tiktok.com/@blockscholarsafrica"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-[#720034] hover:bg-white transition-transform duration-300 transform hover:scale-110"
-            >
-              <FaTiktok className="w-6 h-6" />
-            </a>
-            {/* YouTube */}
-            <a
-              href="https://www.youtube.com/@Block_Scholars_Africa"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-[#720034] hover:bg-white transition-transform duration-300 transform hover:scale-110"
-            >
-              <FaYoutube className="w-6 h-6" />
-            </a>
-            {/* WhatsApp */}
-            <a
-              href="https://wa.me/2348107865121" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-[#720034] hover:bg-white transition-transform duration-300 transform hover:scale-110"
-            >
-              <FaWhatsapp className="w-6 h-6" />
-            </a>
+  return (
+    <footer className="bg-[#222121] text-white py-12 px-6">
+      <div className="max-w-6xl mx-auto flex flex-col gap-12">
+        {/* Top Section */}
+        <div className="flex flex-col md:flex-row md:justify-between gap-10">
+          {/* Logo and About */}
+          <div className="md:w-1/2">
+            <div className="w-28 h-28 mb-4">
+              <img
+                src={logo}
+                alt="BSA Logo"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <p className="text-gray-300 text-base font-medium leading-relaxed max-w-md">
+              Block-Scholars Africa is not just a platform – it's a movement
+              empowering young Africans through blockchain, web3, and emerging
+              tech.
+            </p>
+
+            {/* Socials */}
+            <div className="hidden md:flex space-x-4 mt-6 flex-wrap">
+              {socialLinks.map((link, index) => {
+                const Icon = link.icon;
+                return (
+                  <a
+                    key={index}
+                    href={link.href}
+                    className="bg-[#720034] p-2 rounded-full hover:bg-[#720034]/80 transition-colors"
+                  >
+                    <Icon size={20} />
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Grid Links */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-white">
+            {/* Pages */}
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Pages</h3>
+              <ul className="space-y-2">
+                {["About Us", "Newsletter", "Blog", "FAQs", "Contact"].map(
+                  (item, i) => (
+                    <li key={i}>
+                      <a
+                        href="#"
+                        className="hover:text-gray-200 transition-colors"
+                      >
+                        {item}
+                      </a>
+                    </li>
+                  )
+                )}
+              </ul>
+            </div>
+
+            {/* Programs */}
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Programs</h3>
+              <ul className="space-y-2">
+                {["Innovation Lab", "Blockchain Scholarship", "BSACTP"].map(
+                  (item, i) => (
+                    <li key={i}>
+                      <a
+                        href="#"
+                        className="hover:text-gray-200 transition-colors"
+                      >
+                        {item}
+                      </a>
+                    </li>
+                  )
+                )}
+              </ul>
+            </div>
+
+            {/* Contact */}
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Contact</h3>
+              <div className="flex flex-col space-y-3">
+                <div className="flex items-center">
+                  <Phone size={18} className="mr-3 text-[#720034]" />
+                  <span className="text-gray-300">+234 810 786 5121</span>
+                </div>
+                <div className="flex items-center">
+                  <Mail size={18} className="mr-3 text-[#720034]" />
+                  <span className="text-white">
+                    hello@block-scholars.africa
+                  </span>
+                </div>
+              </div>
+            </div>
+            {/* Socials Mobile only */}
+            <div className="md:hidden flex justify-center space-x-4">
+              {socialLinks.map((link, index) => {
+                const Icon = link.icon;
+                return (
+                  <a
+                    key={index}
+                    href={link.href}
+                    className="bg-[#720034] p-2 rounded-full hover:bg-[#720034]/80 transition-colors"
+                  >
+                    <Icon size={20} />
+                  </a>
+                );
+              })}
+            </div>
           </div>
         </div>
-      </div>
-      <div>
-        <hr className="mt-10" />
-      </div>
 
-      {/* Copyright Section */}
-      <div className="text-center mt-10">
-        <p className="text-white text-lg">
-          &copy; {new Date().getFullYear()} Block-Scholars Africa. All rights
-          reserved.
-        </p>
+        {/* Divider */}
+        <div className="border-t border-gray-700"></div>
+
+        {/* Copyright */}
+        <div className="text-center text-white text-sm">
+          © 2025 - All Rights Reserved - Block-Scholars Africa
+        </div>
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}
