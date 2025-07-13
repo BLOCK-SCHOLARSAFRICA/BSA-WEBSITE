@@ -102,7 +102,7 @@ export default function Footer() {
                 </div>
                 <div className="flex items-center">
                   <Mail size={18} className="mr-3 text-[#720034]" />
-                  <span className="text-gray-300">
+                  <span className="text-white">
                     hello@block-scholars.africa
                   </span>
                 </div>
