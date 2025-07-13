@@ -1,136 +1,141 @@
-import  { useState, useEffect } from "react";
-
-const testimonies = [
-  {
-    id: 1,
-    image: "../assets/image1.png",
-    name: "Olaniran Samad",
-    text: "Block-Scholars Africa is an impactful initiative driving blockchain education across Africa. Their commitment to fostering knowledge and skill-building is invaluable to the growth of Africa's blockchain ecosystem.",
-  },
-  {
-    id: 2,
-    image: "../assets/image2.png",
-    name: "Odion Emmanuel",
-    text: "Being a part of this platform is a privilege to me. This institution has given to develop my skills in Community engagements, Marketing and BlockChain technology. There are ups and downs in start-ups but I believe BSA is going to be the next big thing.",
-  },
-  {
-    id: 3,
-    image: "../assets/image3.png",
-    name: "Onyenwe Chinwendu A.",
-    text: "BLOCK-SCHOLARS AFRICA has made me to understand what crypto and blockchain is all about. I did not regret joining this AMIABLE school of thought where Blockchain developer are raised through its affiliates",
-  },
-  {
-    id: 4,
-    image:  "../assets/testimony.png",
-    name: "Dickson Goodness",
-    text: "Working as a graphic design intern at Block-Scholars Africa has been a valuable experience that has expanded my skills and deepened my understanding of the blockchain industry...",
-  },
-  {
-    id: 5,
-    image: "../assets/testimony.png",
-    name: "Haruna Isaac Ayowande",
-    text: "My experience as a Blockchain student at Block-scholars Africa has been incredibly rewarding. The curriculum is well-structured, covering everything from blockchain fundamentals to advanced applications like smart contracts...",
-  },
-  {
-    id: 6,
-    image: "../assets/image6.png",
-    name: "Edem-Essah Emmanuel",
-    text: "I want to thank BLOCK-SCHOLARS Africa as a whole for the privilege to be part of this Blockchain scholarship program...",
-  },
-  {
-    id: 7,
-    image: "../assets/image7.png",
-    name: "Akinyele Timileyin",
-    text: "Block-scholars Africa has truly opened my eyes to the world of blockchain in ways I never expected. Their programs are not just educational, they're empowering...",
-  },
-  {
-    id: 8,
-    image: "../assets/image8.png",
-    name: "Onyeabor Chukwudike Desire",
-    text: "It was and will always be a privilege being a student of Block-Scholars Africa. This great institution provided me with an incredible foundation for my academic growth...",
-  },
-  {
-    id: 9,
-    image: "../assets/testimony.png",
-    name: "Muhammad Adediran",
-    text: "BLOCK-SCHOLARS AFRICA has provided me with an excellent experience in their Blockchain Studies program...",
-  },
-  {
-    id: 10,
-    image: "../assets/testimony.png",
-    name: "Chidi Clinton",
-    text: "It's an honor to be part of this academy. I experienced the warmth, friendliness and epitome of an online family...",
-  },
-];
+import React from "react";
+import Slider from "react-slick";
+import testimony from "../assets/testimony.png";
+import testimonial1 from "../assets/image8.png"
+import testimonial2 from "../assets/image9.png"
+import testimonial3 from "../assets/image6.png"
+import testimonial4 from "../assets/BSA-Logo.png"
+import testimonial5 from "../assets/image1.png"
 
 const TestimoniesSection = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(true);
+  const testimonials = [
+    {
+      id: 1,
+      name: "Linda Chikwe",
+      role: "Frontend Developer",
+      image: testimonial1,
+      testimonial:
+        "Block-Scholars Africa gave me the confidence to transition into frontend development. Their curriculum is practical, beginner-friendly, and empowering.",
+    },
+    {
+      id: 2,
+      name: "David Okoro",
+      role: "UI Designer",
+      image: testimonial2,
+      testimonial:
+        "From wireframes to polished interfaces, the design track helped me build a solid portfolio that got me noticed by top recruiters.",
+    },
+    {
+      id: 3,
+      name: "Grace Mbatha",
+      role: "UX Intern",
+      image: testimonial3,
+      testimonial:
+        "The hands-on design projects and feedback sessions made me a more thoughtful and user-focused designer.",
+    },
+    {
+      id: 4,
+      name: "Samuel Adegoke",
+      role: "Web3 Developer",
+      image: testimonial4,
+      testimonial:
+        "I learned how to build smart contracts and integrate blockchain into modern web apps. Block-Scholars Africa is where theory meets real-world Web3 skills.",
+    },
+    {
+      id: 5,
+      name: "Amina Yusuf",
+      role: "Frontend Engineer",
+      image: testimonial5,
+      testimonial:
+        "The frontend development track was top-notch. React, Tailwind, and real projects—everything I needed to level up fast.",
+    },
+  ];
+  
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonies.length);
-      setIsTransitioning(true);
-    }, 10000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  useEffect(() => {
-    if (!isTransitioning) {
-      const timeout = setTimeout(() => {
-        setIsTransitioning(true);
-      }, 100);
-      return () => clearTimeout(timeout);
-    }
-  }, [isTransitioning]);
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+    // eslint-disable-next-line no-unused-vars
+    customPaging: (i) => (
+      <button className="w-3 h-3 rounded-full transition-all duration-300" />
+    ),
+    appendDots: (dots) => (
+      <div>
+        <ul className="flex justify-center space-x-3 mt-12"> {dots} </ul>
+      </div>
+    ),
+  };
 
   return (
-    <section id="testimonies" className="py-20 md:px-10 px-0">
-      <div className="text-center mb-10 py-5 w-full">
-        <h1 className="text-lg md:text-lg text-[#242424]">
-          What People Say About Us
-        </h1>
-      </div>
+    <div className="min-h-screen bg-slate-50 py-16 px-4">
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h1 className="text-2xl md:text-4xl font-semibold text-[#242424] mb-2 tracking-tight">
+            What People{" "}
+            <span className="inline text-[#720034]">Say <br /> About Us</span>
+          </h1>
+          
+        </div>
 
-      <div className="relative w-full h-auto overflow-hidden">
-        <div
-          className={`flex transition-transform ${
-            isTransitioning ? "duration-1000 ease-in-out" : ""
-          }`}
-          style={{
-            transform: `translateX(-${currentIndex * 100}%)`,
-          }}
-          onTransitionEnd={() => {
-            if (currentIndex === testimonies.length) {
-              setIsTransitioning(false);
-              setCurrentIndex(0);
-            }
-          }}
-        >
-          {[...testimonies, testimonies[0]].map((testimony, index) => (
-            <div
-              key={index}
-              className="min-w-full flex justify-center items-center px-4"
-            >
-              <div className="w-11/12 md:w-3/4 lg:w-1/2 bg-[#fcf9f9] border border-[#720034] shadow-lg rounded-[30px] p-6 md:p-8 mx-auto transition-all transform hover:scale-90 hover:shadow-xl">
-                <img
-                  src={testimony.image}
-                  alt={testimony.name}
-                  className="w-16 h-16 md:w-20 md:h-20 rounded-full border border-[#720034] mb-4 object-cover"
-                />
-                <p className="text-sm md:text-base text-gray-700 mb-4">
-                  {testimony.text}
-                </p>
-                <h3 className="text-md md:text-lg font-bold text-[#720034]">
-                  {testimony.name}
-                </h3>
+        {/* Testimonials Slider */}
+        <Slider {...settings}>
+          {testimonials.map((testimonial) => (
+            <div key={testimonial.id} className="px-4">
+              <div className="flex flex-col h-full transform transition-all duration-500 ease-in-out">
+                {/* Testimonial Card */}
+                <div
+                  className={`flex-1 relative rounded-2xl p-8 border-2 border-[#720034]  transition-all duration-300 group min-h-[180px]`}
+                >
+                  {/* Quote Icon */}
+                  <div className="absolute top-4 right-4 text-6xl text-[#720034] font-serif opacity-50">
+                    <img src={testimony} alt="" />
+                  </div>
+
+                  {/* Testimonial Text */}
+                  <div className="relative z-10 mb-8">
+                    <p className="text-[#242424] leading-relaxed text-base font-medium">
+                      {testimonial.testimonial}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Profile Section */}
+                <div className="flex flex-col items-center mt-8">
+                  <div className="mb-4">
+                    <div className="w-20 h-20 rounded-full p-1">
+                      <div className="w-full h-full rounded-full bg-gray-300 flex items-center justify-center text-white font-bold text-2xl">
+                      <img src={testimonial.image} alt={testimonial.name} />
+                      </div>
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-semibold text-[#242424] mb-1">
+                    {testimonial.name}
+                  </h3>
+                  <p className="text-[#242424] font-medium">
+                    {testimonial.role}
+                  </p>
+                </div>
               </div>
             </div>
           ))}
-        </div>
+        </Slider>
       </div>
-    </section>
+    </div>
   );
 };
 

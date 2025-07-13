@@ -5,10 +5,10 @@ const Community = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const stats = [
-    { label: "Blockchain Cohorts", value: 2 },
+    { label: "Blockchain Cohorts", value: 3 },
     { label: "African Countries", value: 6 },
-    { label: "Community Members", value: 7000 },
-    { label: "Scholarships Awarded", value: 600 },
+    { label: "Community Members", value: 9000 },
+    { label: "Scholarships Awarded", value: 800 },
     { label: "Block-Scholars Africa Campus Tech Program (BSACTP)", value: 1 },
   ];
 
