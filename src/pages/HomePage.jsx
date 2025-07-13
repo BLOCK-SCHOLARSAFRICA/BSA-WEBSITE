@@ -21,12 +21,13 @@ const HomePage = () => {
         <AboutUsSection />
       </div>
       <Community />
-
       <PartnersSection />
-      <ContactSection />
-      <TestimoniesSection />
-      <FAQSection />
-      <Newsletter />
+      <div className="px-4 py-8">
+        <ContactSection />
+      </div>
+        <TestimoniesSection />
+        <FAQSection />
+        <Newsletter />
     </>
   );
 };
