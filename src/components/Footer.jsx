@@ -29,7 +29,7 @@ export default function Footer() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <p className="text-gray-300 text-base font-medium leading-relaxed max-w-md">
+            <p className="text-white text-base font-medium leading-relaxed max-w-md">
               Block-Scholars Africa is not just a platform – it's a movement
               empowering young Africans through blockchain, web3, and emerging
               tech.
@@ -98,7 +98,7 @@ export default function Footer() {
               <div className="flex flex-col space-y-3">
                 <div className="flex items-center">
                   <Phone size={18} className="mr-3 text-[#720034]" />
-                  <span className="text-gray-300">+234 810 786 5121</span>
+                  <span className="text-white">+234 810 786 5121</span>
                 </div>
                 <div className="flex items-center">
                   <Mail size={18} className="mr-3 text-[#720034]" />
