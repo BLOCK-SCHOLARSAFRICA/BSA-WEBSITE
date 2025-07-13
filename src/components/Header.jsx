@@ -42,7 +42,7 @@ const Header = () => {
           <img src={logo} alt="BSA Logo" className="h-[70px] w-[70px]" />
         </div>
 
-        {/* Mobile menu button */}
+        {/* Mobile menu  */}
         <button
           className="md:hidden focus:outline-none"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -61,7 +61,13 @@ const Header = () => {
               <li key={to} className="hover:text-[#720034]">
                 <NavLink
                   to={to}
-                  className="hover:text-[#720034] transition-colors"
+                  className={({ isActive }) =>
+                    `hover:text-[#720034] transition-colors ${
+                      isActive
+                        ? "text-[#720034] font-semibold border-b-2 border-[#720034] pb-1"
+                        : "text-gray-700"
+                    }`
+                  }
                   onClick={() => setMenuOpen(false)}
                 >
                   {label}
@@ -94,7 +100,7 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile menu overlay and content */}
+      {/* Mobile menu  content */}
       {menuOpen && (
         <>
           {/* Backdrop overlay */}
@@ -105,7 +111,7 @@ const Header = () => {
 
           {/* Mobile menu panel */}
           <div className="fixed top-0 right-0 w-64 h-full bg-white z-50 p-6 flex flex-col space-y-4 shadow-lg transition-transform transform translate-x-0 md:hidden">
-            {/* Close button inside mobile menu */}
+          
             <div className="flex justify-end mb-4">
               <button
                 onClick={() => setMenuOpen(false)}
@@ -121,7 +127,13 @@ const Header = () => {
                 key={to}
                 to={to}
                 onClick={() => setMenuOpen(false)}
-                className="text-[#720034] hover:text-[#470020] cursor-pointer text-lg transition-colors py-2"
+                className={({ isActive }) =>
+                  `hover:text-[#470020] cursor-pointer text-lg transition-colors py-2 ${
+                    isActive
+                      ? "text-[#720034] font-semibold border-l-4 border-[#720034] pl-4"
+                      : "text-[#720034]"
+                  }`
+                }
               >
                 {label}
               </NavLink>

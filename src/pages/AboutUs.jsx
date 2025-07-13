@@ -323,7 +323,7 @@ const AboutUs = () => {
         </div>
 
         {/* core value */}
-        <div className="my-10">
+        <div className="py-10 md:mt-20 mt-10">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             {/* Core Values List */}
             <div className="space-y-8">
