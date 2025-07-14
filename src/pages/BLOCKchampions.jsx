@@ -306,7 +306,7 @@ const BLOCKchampions = () => {
       </div>
 
       {/* FAQ Section */}
-      <div>
+      <div className="py-8">
         <FAQSection />
       </div>
     </section>

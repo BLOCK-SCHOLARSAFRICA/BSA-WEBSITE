@@ -62,7 +62,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section id="faq" className="py-20 px-6 bg-white opacity-0 animate-fadeIn">
+    <section id="faq" className="bg-white opacity-0 animate-fadeIn">
       <div className="text-center mb-10 py-5">
         <h1 className="text-3xl md:text-4xl text-[#720034] font-bold mb-2">
           FAQ's

@@ -26,7 +26,9 @@ const HomePage = () => {
         <ContactSection />
       </div>
         <TestimoniesSection />
-        <FAQSection />
+       <div className="px-4 py-10">
+       <FAQSection />
+       </div>
         <Newsletter />
     </>
   );

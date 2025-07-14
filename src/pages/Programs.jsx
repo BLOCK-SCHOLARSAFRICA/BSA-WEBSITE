@@ -14,6 +14,7 @@ import {
   Database,
   PenTool,
 } from "lucide-react";
+import FAQSection from "../components/FAQSection";
 
 const Programs = () => {
   const features = [
@@ -58,15 +59,13 @@ const Programs = () => {
     {
       icon: <Code className="w-10 h-10" />,
       title: "Web Development",
-      description: "Master frontend and backend technologies",
       color: "from-emerald-500 to-teal-600",
-      bgColor: "bg-emerald-50",
+      bgColor: "bg-[#71AC30]",
       borderColor: "border-emerald-200",
     },
     {
       icon: <Shield className="w-10 h-10" />,
       title: "Cyber Security/Ethical Hacking",
-      description: "Protect systems and networks from threats",
       color: "from-red-500 to-orange-600",
       bgColor: "bg-red-50",
       borderColor: "border-red-200",
@@ -74,7 +73,6 @@ const Programs = () => {
     {
       icon: <Palette className="w-10 h-10" />,
       title: "Product Design",
-      description: "Create user-centered digital experiences",
       color: "from-purple-500 to-indigo-600",
       bgColor: "bg-purple-50",
       borderColor: "border-purple-200",
@@ -82,7 +80,6 @@ const Programs = () => {
     {
       icon: <Image className="w-10 h-10" />,
       title: "Graphics Design",
-      description: "Visual communication and branding",
       color: "from-orange-500 to-red-600",
       bgColor: "bg-orange-50",
       borderColor: "border-orange-200",
@@ -90,7 +87,6 @@ const Programs = () => {
     {
       icon: <BarChart3 className="w-10 h-10" />,
       title: "Data Analysis",
-      description: "Transform data into actionable insights",
       color: "from-blue-500 to-cyan-600",
       bgColor: "bg-blue-50",
       borderColor: "border-blue-200",
@@ -98,7 +94,6 @@ const Programs = () => {
     {
       icon: <Briefcase className="w-10 h-10" />,
       title: "Product Management",
-      description: "Lead product strategy and development",
       color: "from-green-500 to-emerald-600",
       bgColor: "bg-green-50",
       borderColor: "border-green-200",
@@ -106,7 +101,6 @@ const Programs = () => {
     {
       icon: <Database className="w-10 h-10" />,
       title: "Data Science",
-      description: "Machine learning and predictive analytics",
       color: "from-cyan-500 to-blue-600",
       bgColor: "bg-cyan-50",
       borderColor: "border-cyan-200",
@@ -114,7 +108,6 @@ const Programs = () => {
     {
       icon: <PenTool className="w-10 h-10" />,
       title: "Content & Copywriting",
-      description: "Craft compelling content strategies",
       color: "from-yellow-500 to-orange-600",
       bgColor: "bg-yellow-50",
       borderColor: "border-yellow-200",
@@ -122,7 +115,6 @@ const Programs = () => {
     {
       icon: <TrendingUp className="w-10 h-10" />,
       title: "Digital Marketing",
-      description: "Grow brands through digital channels",
       color: "from-pink-500 to-rose-600",
       bgColor: "bg-pink-50",
       borderColor: "border-pink-200",
@@ -151,7 +143,7 @@ const Programs = () => {
         </div>
       </header>
 
-      <div className="max-w-7xl mx-auto py-16 px-4">
+      <div className="max-w-7xl mx-auto pt-16 px-4">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-2xl sm:text-3xl  font-bold text-[#242424] mb-6">
@@ -170,7 +162,7 @@ const Programs = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group bg-[#FAD1E4] rounded-tr-[50px] rounded-bl-[50px] p-6 sm:p-8 border border-gray-200 shadow-sm hover:shadow-md transition duration-300"
+              className="group bg-[#FAD1E4] rounded-tr-[50px] rounded-bl-[50px] p-6 sm:p-8 border border-gray-200 shadow-sm transition duration-300"
             >
               <div className="flex items-start gap-4">
                 {/* Icon */}
@@ -192,88 +184,87 @@ const Programs = () => {
           ))}
         </div>
 
-        <div className="text-center my-16">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-            Explore{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#720034] to-[#470020]">
-              Our Courses
-            </span>
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Unlock Your Future and Take Your Tech Career to the Next Level
-          </p>
-        </div>
+        {/* Our Courses */}
+        <div className="mt-16">
+          <div className="text-center mb-16">
+            <h2 className="text-2xl sm:text-4xl font-bold mb-4">
+              Explore{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#720034] to-[#470020]">
+                Our Courses
+              </span>
+            </h2>
+            <p className="text-lg text-[#242424] max-w-3xl mx-auto leading-relaxed">
+              Unlock Your Future and Take Your Tech Career to the Next Level
+            </p>
+          </div>
 
-        {/* Courses Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {courses.map((course, index) => (
-            <div
-              key={index}
-              className={`group bg-white rounded-2xl p-8 shadow overflow-hidden`}
-            >
-           
-
-              {/* Content */}
-              <div>
-                {/* Icon */}
-                <div
-                  className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${course.color} flex items-center justify-center text-white mb-6 shadow-lg`}
-                >
-                  {course.icon}
-                </div>
-
-                {/* Title */}
-                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#720034] transition-colors duration-300">
-                  {course.title}
-                </h3>
-
-                {/* Description */}
-                <p className="text-gray-600 leading-relaxed mb-6">
-                  {course.description}
-                </p>
-
-                {/* Learn More Link */}
-                <div className="flex items-center text-[#720034] font-semibold group-hover:text-[#470020] transition-colors duration-300">
-                  <span className="mr-2">Learn More</span>
-                  <svg
-                    className="w-4 h-4 transform group-hover:translate-x-2 transition-transform duration-300"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
+          {/* Courses Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            {courses.map((course, index) => (
+              <div
+                key={index}
+                className={`group bg-gradient-to-r from-[#720034] to-[#470020] rounded-2xl p-8 shadow overflow-hidden`}
+              >
+                {/* Content */}
+                <div>
+                  {/* Icon */}
+                  <div
+                    className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${course.color} flex items-center justify-center text-white mb-6 shadow-lg`}
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
+                    {course.icon}
+                  </div>
+
+                  {/* Title */}
+                  <h3 className="text-xl font-semibold text-white mb-4 transition-colors duration-300">
+                    {course.title}
+                  </h3>
+
+                  {/* Learn More Link */}
+                  <div className="flex items-center text-white group-hover:text-blue-700 font-semibold transition-colors duration-300">
+                    <span className="mr-2">Learn More</span>
+                    <svg
+                      className="w-4 h-4 transform group-hover:translate-x-2 transition-transform duration-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
+                  </div>
                 </div>
               </div>
+            ))}
+          </div>
 
-            </div>
-          ))}
+          {/* Call to Action */}
+          <div className="text-center">
+            <button className="group relative inline-flex items-center justify-center px-12 py-3 text-lg font-medium text-white bg-gradient-to-r from-[#720034] to-[#470020] rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-100 overflow-hidden">
+              <span className="relative z-10">APPLY NOW</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#470020] to-[#720034] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <svg
+                className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform duration-300 relative z-10"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
-
-        {/* Call to Action */}
-        <div className="text-center">
-          <button className="group relative inline-flex items-center justify-center px-12 py-4 text-lg font-semibold text-white bg-gradient-to-r from-[#720034] to-[#470020] rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 overflow-hidden">
-            <span className="relative z-10">APPLY NOW</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-[#470020] to-[#720034] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <svg
-              className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform duration-300 relative z-10"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M13 7l5 5m0 0l-5 5m5-5H6"
-              />
-            </svg>
-          </button>
+        {/* FAQ */}
+        <div className="mt-16 mb-8">
+          <FAQSection />
         </div>
       </div>
     </section>
