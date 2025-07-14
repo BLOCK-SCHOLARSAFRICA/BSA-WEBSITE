@@ -466,7 +466,7 @@ const AboutUs = () => {
           </div>
 
           {/* Team Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 mb-12 sm:mb-16 md:mb-20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6  mb-12 sm:mb-16 md:mb-20">
             {teamMembers.map((member, index) => (
               <div
                 key={index}
@@ -474,7 +474,7 @@ const AboutUs = () => {
               >
                 {/* Profile Image */}
                 <div className="mb-4">
-                  <div className="w-full sm:w-72 h-48 sm:h-72 mx-auto rounded-t-[40px] rounded-bl-[80px] rounded-br-[40px] overflow-hidden">
+                  <div className="w-full sm:w-64 h-48 sm:h-72 mx-auto rounded-t-[40px] rounded-bl-[80px] rounded-br-[40px] overflow-hidden">
                     <img
                       src={member.image}
                       alt={member.name}
@@ -523,7 +523,7 @@ const AboutUs = () => {
             </div>
 
             {/* Advisory Board Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 mb-12 sm:mb-16 md:mb-20">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 mb-12 sm:mb-16 md:mb-20">
               {advisoryBoard.map((member, index) => (
                 <div
                   key={index}
@@ -531,7 +531,7 @@ const AboutUs = () => {
                 >
                   {/* Profile Image */}
                   <div className="mb-4">
-                    <div className="w-full sm:w-72 h-48 sm:h-72 mx-auto rounded-t-[40px] rounded-bl-[80px] rounded-br-[40px] overflow-hidden">
+                    <div className="w-full sm:w-64 h-48 sm:h-72 mx-auto rounded-t-[40px] rounded-bl-[80px] rounded-br-[40px] overflow-hidden">
                       <img
                         src={member.image}
                         alt={member.name}

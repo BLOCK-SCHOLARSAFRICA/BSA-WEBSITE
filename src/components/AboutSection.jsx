@@ -12,22 +12,26 @@ const AboutSection = () => {
     {
       icon: <Briefcase size={36} />,
       title: "Startup Project Experience",
-      description: "Work on real startup projects and gain hands-on experience with cutting-edge technologies in a professional environment."
+      description:
+        "Work on real startup projects and gain hands-on experience with cutting-edge technologies in a professional environment.",
     },
     {
       icon: <Monitor size={36} />,
       title: "Comprehensive Virtual Training",
-      description: "Gain access to structured, industry-relevant courses delivered by top experts. Master blockchain, Web3, AI and other in-demand tech skills essential for success."
+      description:
+        "Gain access to structured, industry-relevant courses delivered by top experts. Master blockchain, Web3, AI and other in-demand tech skills essential for success.",
     },
     {
       icon: <Laptop2 size={36} />,
       title: "Hands-On Bootcamp",
-      description: "Participate in intensive bootcamp sessions that combine theoretical knowledge with practical application and peer collaboration."
+      description:
+        "Participate in intensive bootcamp sessions that combine theoretical knowledge with practical application and peer collaboration.",
     },
     {
       icon: <BookOpen size={36} />,
       title: "Post-Training Support",
-      description: "Access continued mentorship, career guidance, and networking opportunities to ensure long-term success in your tech journey."
+      description:
+        "Access continued mentorship, career guidance, and networking opportunities to ensure long-term success in your tech journey.",
     },
   ];
 
@@ -49,8 +53,8 @@ const AboutSection = () => {
         </h2>
         <p className="max-w-3xl text-[#242424] text-base md:text-lg mb-4 leading-relaxed mx-auto">
           Unlock your Tech Future with our dynamic training programs designed to
-          equip young Africans with the skills, experience, and network needed to
-          excel in the digital economy.
+          equip young Africans with the skills, experience, and network needed
+          to excel in the digital economy.
         </p>
       </div>
 
@@ -65,28 +69,21 @@ const AboutSection = () => {
           >
             {/* Background accent */}
             <div className="absolute top-0 right-0 w-20 h-20 bg-white/5 rounded-full -translate-y-8 translate-x-8 transition-all duration-300 group-hover:scale-150 group-hover:bg-white/10"></div>
-            
+
             {/* Icon */}
             <div className="text-white mb-2 relative z-10 transform transition-transform duration-300 group-hover:scale-110">
               {feature.icon}
             </div>
-            
+
             {/* Title */}
             <h3 className="text-xl font-bold mb-3 relative z-10 leading-tight">
               {feature.title}
             </h3>
-            
+
             {/* Description */}
             <p className="text-sm text-white/90 leading-relaxed flex-grow relative z-10 transition-all duration-300 group-hover:text-white">
               {feature.description}
             </p>
-            
-            {/* Arrow Button */}
-            <button className="self-start text-white hover:scale-110 transition-all duration-300 relative z-10 mt-auto p-2 rounded-full hover:bg-white/10">
-              <span className="text-xl transform transition-transform duration-300 group-hover:translate-x-1">
-                ➜
-              </span>
-            </button>
           </div>
         ))}
       </div>
