@@ -5,7 +5,7 @@ import checkIcon from "../assets/checkmark.png";
 
 const PricingCard = ({ title, price, nairaPrice, features,cardId, isHighlighted = false, buttonText = "GET INVOLVED", setHighlightedCard }) => {
     return (
-      <div className={`relative p-8 rounded-lg ${isHighlighted ? 'border-8 border-[#D50866] scale-105' : ''} text-white`} onClick={() => setHighlightedCard(cardId)}>
+      <div className={`relative p-8 rounded-lg ${isHighlighted ? 'border-4 border-[#D50866] scale-105' : ''} text-white`} onClick={() => setHighlightedCard(cardId)}>
         <h3 className="text-3xl font-semibold mb-8">{title}</h3>
         
         <div className="space-y-4 mb-8">

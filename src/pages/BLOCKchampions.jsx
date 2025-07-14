@@ -5,6 +5,7 @@ import blockImage2 from "../assets/blockimage2.png";
 import PricingCard from "../components/PricingCard";
 import { useState } from "react";
 import { Plus, Minus, Check } from "lucide-react";
+import FAQSection from "../components/FAQSection";
 const BLOCKchampions = () => {
   const [highlightedCard, setHighlightedCard] = useState("core");
   const [openItems, setOpenItems] = useState({});
@@ -305,72 +306,8 @@ const BLOCKchampions = () => {
       </div>
 
       {/* FAQ Section */}
-      <div className="bg-white py-12 px-4">
-        <div className="max-w-4xl mx-auto">
-          {/* Header */}
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-semibold text-[#242424] mb-4">
-              FAQs
-            </h1>
-            <p className="text-lg text-[#242424] max-w-2xl mx-auto">
-              Common questions you may want to ask.
-            </p>
-          </div>
-
-          {/* FAQ Items */}
-          <div className="space-y-4">
-            {faqs.map((faq, index) => (
-              <div
-                key={index}
-                className="bg-white border border-gray-100 overflow-hidden transition-all duration-300"
-              >
-                {/* Question Header */}
-                <button
-                  onClick={() => toggleItem(index)}
-                  className={`w-full px-6 py-5 text-left flex items-center justify-between rounded-t-md hover:bg-gray-50 transition-colors duration-200 border ${
-                    openItems[index] ? "border-[#720034]" : ""
-                  }`}
-                >
-                  <h3 className="text-lg font-medium text-[#242424] pr-4">
-                    {faq.question}
-                  </h3>
-                  <div className="flex-shrink-0">
-                    {openItems[index] ? (
-                      <Plus className="w-5 h-5 text-[#242424]" />
-                    ) : (
-                      <Minus className="w-5 h-5 text-[#242424]" />
-                    )}
-                  </div>
-                </button>
-
-                {/* Answer Content */}
-                {openItems[index] && (
-                  <div className="px-6 pb-6 bg-[#F5F5F5]">
-                    <div className="pt-4">
-                      <p className="text-[#242424] font-medium leading-relaxed mb-4 text-center">
-                        {faq.answer}
-                      </p>
-
-                      {/* List Items */}
-                      {faq.list && (
-                        <div className="space-y-3">
-                          {faq.list.map((item, listIndex) => (
-                            <div key={listIndex} className="flex items-start">
-                              <Check className="w-5 h-5 text-customBrown mt-0.5 mr-3 flex-shrink-0" />
-                              <span className="text-[#242424] font-medium">
-                                {item}
-                              </span>
-                            </div>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
+      <div className="py-8">
+        <FAQSection />
       </div>
     </section>
   );
