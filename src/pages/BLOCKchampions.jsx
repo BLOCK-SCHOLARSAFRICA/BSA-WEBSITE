@@ -8,14 +8,7 @@ import { Plus, Minus, Check } from "lucide-react";
 import FAQSection from "../components/FAQSection";
 const BLOCKchampions = () => {
   const [highlightedCard, setHighlightedCard] = useState("core");
-  const [openItems, setOpenItems] = useState({});
-
-  const toggleItem = (index) => {
-    setOpenItems((prev) => ({
-      ...prev,
-      [index]: !prev[index],
-    }));
-  };
+  
 
   const championsList = [
     "Alumni of Block-Scholars Africa",
@@ -64,88 +57,12 @@ const BLOCKchampions = () => {
     ],
   };
 
-  const faqs = [
-    {
-      question: "What is BLOCKChampions?",
-      answer:
-        "BLOCKChampions is a transformative initiative by Block-Scholars Africa that connects individuals, professionals, and organizations with opportunities to sponsor and support young Africans in blockchain and emerging tech education, career mentorship, and real-world industry opportunities.",
-    },
-    {
-      question: "Who can become a BLOCKChampion?",
-      answer:
-        "BLOCKChampions welcomes individuals and organizations passionate about Africa's future in tech, including:",
-      list: [
-        "Alumni of Block-Scholars Africa",
-        "Tech & non-tech professionals",
-        "Philanthropists & social impact advocates",
-        "Organizations with strong CSR goals",
-        "Mentors, coaches & community builders",
-        "African diaspora communities",
-        "Youth empowerment enthusiasts",
-        "Foundations & mission-aligned NGOs",
-        "Anyone passionate about emerging technologies",
-      ],
-    },
-    {
-      question: "Why should I become a BLOCKChampion?",
-      answer:
-        "Joining BLOCKChampions is more than sponsorship - it's about empowering Africa's next generation of tech leaders with the skills, guidance, and opportunities to thrive in emerging technologies.",
-    },
-    {
-      question: "What are the BLOCKChampion membership tiers?",
-      answer:
-        "BLOCKChampions offers three tiers of sponsorship, allowing supporters to contribute at different levels:",
-      list: [
-        "Starter Champion ₦8,000/$5 per month",
-        "Core Champion ₦24,000/$15 per month",
-        "Elite Champion ₦40,000/$25 per month",
-      ],
-    },
-    {
-      question: "What benefits do BLOCKChampions receive?",
-      answer:
-        "Each tier comes with unique perks such as social media recognition, certificates, project discounts, exclusive events, impact reports, and personalized thank-you messages from sponsored scholars.",
-    },
-    {
-      question: "How are scholars selected for sponsorship?",
-      answer:
-        "Scholars are chosen based on their passion for blockchain and emerging technologies, dedication to learning, and potential to create impact within their communities.",
-    },
-    {
-      question: "Can businesses or organizations become BLOCKChampions?",
-      answer:
-        "Absolutely! Organizations with strong Corporate Social Responsibility (CSR) goals are encouraged to participate and support African youth in tech.",
-    },
-    {
-      question: "How does my sponsorship help young Africans?",
-      answer:
-        "Your contribution provides scholars with tech education, career mentorship, networking, and real-world exposure to opportunities in blockchain and emerging technologies.",
-    },
-    {
-      question: "How can I track my impact as a BLOCKChampion?",
-      answer:
-        "BLOCKChampions receive quarterly impact reports, monthly email updates, and stories showcasing how their support is changing lives.",
-    },
-    {
-      question: "Are there networking opportunities for BLOCKChampions?",
-      answer:
-        "Yes! Elite champions gain access to a private community of tech changemakers, VIP events, industry retreats, and conferences.",
-    },
-    {
-      question: "How do I become a BLOCKChampion?",
-      answer: "You can join today by clicking on the get involved button",
-    },
-    {
-      question: "Where can I follow BLOCKChampions online?",
-      answer:
-        "Stay connected via our website and social media pages for updates, events, and impact stories.",
-    },
-  ];
+
 
   return (
     <section>
       {/* Hero Section */}
-      <div className="min-h-screen bg-customBrown flex flex-col lg:flex-row">
+      <div className="h-[550px] sm:min-h-screen bg-customBrown flex flex-row justify-center">
         {/* Text Section */}
         <div className="w-full lg:w-1/2 flex justify-center items-center p-6 sm:p-8 lg:p-12">
           <div className="text-white flex flex-col gap-y-6 sm:gap-y-8 max-w-lg lg:max-w-md xl:max-w-lg text-center lg:text-left">
@@ -166,7 +83,7 @@ const BLOCKchampions = () => {
         </div>
 
         {/* Image Section */}
-        <div className="w-full lg:w-1/2 flex justify-center items-center p-6 sm:p-8 lg:p-12">
+        <div className="w-full lg:w-1/2 justify-center items-center p-6 sm:p-8 lg:p-12 hidden lg:flex">
           <div className="w-full max-w-lg lg:max-w-md xl:max-w-lg">
             <img src={BlockChampionsImage} alt="" />
           </div>
