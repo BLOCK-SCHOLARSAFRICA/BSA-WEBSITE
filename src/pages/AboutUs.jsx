@@ -40,8 +40,15 @@ import {
 } from "lucide-react";
 import mission from "../assets/mission.png";
 import blockImage2 from "../assets/blockimage2.png";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const AboutUs = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   const values = [
     {
       icon: Star,
@@ -260,7 +267,10 @@ const AboutUs = () => {
         <div className="absolute inset-0 bg-black/60"></div>
 
         {/* Content */}
-        <div className="relative z-10 text-white px-4 max-w-6xl">
+        <div
+          className="relative z-10 text-white px-4 max-w-6xl"
+          data-aos="fade-up"
+        >
           <h2 className="text-2xl md:text-4xl font-bold mb-4">Who We Are</h2>
           <p className="md:text-lg text-sm">
             Block-Scholars Africa is a leading education and innovation platform
@@ -274,8 +284,10 @@ const AboutUs = () => {
       <div className="py-20 px-4 md:px-28 bg-white">
         <div className="flex flex-col gap-y-9">
           {/* First card */}
-
-          <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10">
+          <div
+            className="flex flex-col md:flex-row items-center gap-6 md:gap-10"
+            data-aos="fade-right"
+          >
             {/* Left Card */}
             <div className="bg-customBrown text-white px-6 sm:px-8 py-10 rounded-2xl w-full md:w-1/2 shadow-xl flex flex-col justify-center">
               <h3 className="text-2xl font-semibold mb-4 tracking-tight">
@@ -289,7 +301,10 @@ const AboutUs = () => {
             </div>
 
             {/* Right Image Box */}
-            <div className="hidden md:flex w-full md:w-1/2 rounded-2xl bg-[#d8ecff]  items-center justify-center p-6">
+            <div
+              className="hidden md:flex w-full md:w-1/2 rounded-2xl bg-[#d8ecff]  items-center justify-center p-6"
+              data-aos="fade-left"
+            >
               <img
                 src={VisionImage}
                 alt="Vision"
@@ -298,7 +313,10 @@ const AboutUs = () => {
             </div>
           </div>
           {/* second card */}
-          <div className="flex flex-col md:flex-row-reverse items-center gap-6 md:gap-10">
+          <div
+            className="flex flex-col md:flex-row-reverse items-center gap-6 md:gap-10"
+            data-aos="fade-left"
+          >
             {/* Left Card */}
             <div className="bg-customBrown text-white px-6 sm:px-8 py-10 rounded-2xl w-full md:w-1/2 shadow-xl flex flex-col justify-center">
               <h3 className="text-2xl font-semibold mb-4 tracking-tight">
@@ -312,7 +330,10 @@ const AboutUs = () => {
             </div>
 
             {/* Right Image Box */}
-            <div className="hidden md:flex w-full md:w-1/2 rounded-2xl items-center justify-center">
+            <div
+              className="hidden md:flex w-full md:w-1/2 rounded-2xl items-center justify-center"
+              data-aos="fade-right"
+            >
               <img
                 src={mission}
                 alt="mission"
@@ -326,7 +347,7 @@ const AboutUs = () => {
         <div className="py-10 md:mt-20 mt-10">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             {/* Core Values List */}
-            <div className="space-y-8">
+            <div className="space-y-8" data-aos="fade-up">
               <h2 className="text-2xl font-semibold text-customBrown">
                 Core Values
               </h2>
@@ -350,7 +371,10 @@ const AboutUs = () => {
             </div>
 
             {/* Image Section */}
-            <div className="rounded-2xl overflow-hidden shadow-lg">
+            <div
+              className="rounded-2xl overflow-hidden shadow-lg"
+              data-aos="zoom-in"
+            >
               <img
                 src={coreValue}
                 alt="Team collaboration - three professionals working together on a laptop"
@@ -361,7 +385,7 @@ const AboutUs = () => {
         </div>
 
         {/* our story */}
-        <div>
+        <div data-aos="fade-up">
           {/* Title */}
           <h2 className="text-xl sm:text-2xl lg:text-4xl font-medium text-center text-customBrown mb-6 sm:mb-8">
             Our Story
@@ -381,7 +405,7 @@ const AboutUs = () => {
             </div>
 
             {/* Text Section */}
-            <div className="w-full lg:w-1/2 order-2">
+            <div className="w-full lg:w-1/2 order-2" data-aos="fade-left">
               <p className="text-base md:text-lg font-medium text-[#242424] text-center lg:text-left leading-relaxed">
                 BLOCK-SCHOLARS AFRICA was founded on August 11, 2024, to bridge
                 the gap in blockchain and emerging tech education for young
@@ -401,7 +425,7 @@ const AboutUs = () => {
       <div className="bg-customBrown py-20 px-6 relative overflow-hidden">
         <div className="max-w-6xl mx-auto relative z-10">
           {/* Header Section */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-16" data-aos="fade-up">
             <h1 className="text-2xl md:text-4xl  font-semibold text-white mb-3 leading-tight">
               Our Exceptional Services to Drive
               <br />
@@ -420,6 +444,7 @@ const AboutUs = () => {
               const IconComponent = service.icon;
               return (
                 <div
+                  data-aos="zoom-in"
                   key={index}
                   className="bg-white bg-opacity-95 flex flex-col gap-y-3  rounded-2xl p-6 hover:bg-opacity-100 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl group"
                 >
@@ -456,7 +481,10 @@ const AboutUs = () => {
 
         <div className="max-w-7xl mx-auto relative z-10">
           {/* Header Section */}
-          <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          <div
+            className="text-center mb-8 sm:mb-12 md:mb-16"
+            data-aos="fade-up"
+          >
             <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-customBrown mb-2">
               Meet The Exceptional Team Members
             </h1>
@@ -470,6 +498,7 @@ const AboutUs = () => {
             {teamMembers.map((member, index) => (
               <div
                 key={index}
+                data-aos="zoom-in"
                 className="bg-white w-full sm:w-fit rounded-t-[40px] hover:shadow-xl transition-all duration-300 hover:scale-100 group"
               >
                 {/* Profile Image */}
@@ -512,7 +541,10 @@ const AboutUs = () => {
           </div>
 
           {/* Advisory Board Section */}
-          <div className="border-t border-customBrown pt-8 sm:pt-12 md:pt-16 flex flex-col gap-y-6 sm:gap-y-8">
+          <div
+            className="border-t border-customBrown pt-8 sm:pt-12 md:pt-16 flex flex-col gap-y-6 sm:gap-y-8"
+            data-aos="fade-up"
+          >
             <div className="text-center">
               <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-customBrown mb-2">
                 Advisory Board
@@ -527,6 +559,9 @@ const AboutUs = () => {
               {advisoryBoard.map((member, index) => (
                 <div
                   key={index}
+                  data-aos="zoom-in-up"
+                  data-aos-delay={index * 100}
+                  data-aos-duration="800"
                   className="bg-white w-full sm:w-fit rounded-t-[40px] hover:shadow-xl transition-all duration-300 hover:scale-100 group"
                 >
                   {/* Profile Image */}

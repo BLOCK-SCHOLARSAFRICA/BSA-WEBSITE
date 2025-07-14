@@ -15,8 +15,15 @@ import {
   PenTool,
 } from "lucide-react";
 import FAQSection from "../components/FAQSection";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Programs = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
   const features = [
     {
       icon: <Code className="w-8 h-8" />,
@@ -133,7 +140,10 @@ const Programs = () => {
         <div className="absolute inset-0 bg-black/30"></div>
 
         {/* Content */}
-        <div className="relative z-10 text-white px-4 sm:px-6 lg:px-8 max-w-sm sm:max-w-2xl md:max-w-4xl lg:max-w-5xl mx-auto flex flex-col items-center justify-center space-y-6 sm:space-y-8 md:space-y-10 lg:space-y-11 text-center">
+        <div
+          className="relative z-10 text-white px-4 sm:px-6 lg:px-8 max-w-sm sm:max-w-2xl md:max-w-4xl lg:max-w-5xl mx-auto flex flex-col items-center justify-center space-y-6 sm:space-y-8 md:space-y-10 lg:space-y-11 text-center"
+          data-aos="fade-up"
+        >
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold leading-tight sm:leading-tight md:leading-tight lg:leading-tight">
             Innovation Lab (Master In-Demand Tech Skills)
           </h2>
@@ -145,7 +155,7 @@ const Programs = () => {
 
       <div className="max-w-7xl mx-auto pt-16 px-4">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16"  data-aos="fade-up"  data-aos-duration="800">
           <h2 className="text-2xl sm:text-3xl  font-bold text-[#242424] mb-6">
             Innovation Lab (Master In-Demand Tech Skills)
           </h2>
@@ -162,6 +172,7 @@ const Programs = () => {
           {features.map((feature, index) => (
             <div
               key={index}
+               data-aos="zoom-in"
               className="group bg-[#FAD1E4] rounded-tr-[50px] rounded-bl-[50px] p-6 sm:p-8 border border-gray-200 shadow-sm transition duration-300"
             >
               <div className="flex items-start gap-4">
@@ -185,7 +196,7 @@ const Programs = () => {
         </div>
 
         {/* Our Courses */}
-        <div className="mt-16">
+        <div className="mt-16" data-aos="fade-up" >
           <div className="text-center mb-16">
             <h2 className="text-2xl sm:text-4xl font-bold mb-4">
               Explore{" "}
@@ -202,6 +213,7 @@ const Programs = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {courses.map((course, index) => (
               <div
+              data-aos="fade-up"
                 key={index}
                 className={`group bg-gradient-to-r from-[#720034] to-[#470020] rounded-2xl p-8 shadow overflow-hidden`}
               >
@@ -242,7 +254,7 @@ const Programs = () => {
           </div>
 
           {/* Call to Action */}
-          <div className="text-center">
+          <div className="text-center" data-aos="zoom-in">
             <button className="group relative inline-flex items-center justify-center px-12 py-3 text-lg font-medium text-white bg-gradient-to-r from-[#720034] to-[#470020] rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-100 overflow-hidden">
               <span className="relative z-10">APPLY NOW</span>
               <div className="absolute inset-0 bg-gradient-to-r from-[#470020] to-[#720034] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -263,7 +275,7 @@ const Programs = () => {
           </div>
         </div>
         {/* FAQ */}
-        <div className="mt-16 mb-8">
+        <div className="mt-16 mb-8" data-aos="fade-up">
           <FAQSection />
         </div>
       </div>
