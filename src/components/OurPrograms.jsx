@@ -63,7 +63,7 @@ const OurPrograms = () => {
           >
             {/* Content */}
             <div className="relative z-10 flex flex-col h-full">
-              <div className="mb-6 transform transition-transform duration-300 group-hover:scale-110">
+              <div className="mb-6 transform transition-transform duration-300 group-hover:scale-110 flex justify-center">
                 {program.icon}
               </div>
 
