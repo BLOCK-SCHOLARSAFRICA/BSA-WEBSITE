@@ -62,9 +62,9 @@ const BLOCKchampions = () => {
   return (
     <section>
       {/* Hero Section */}
-      <div className="h-[550px] sm:min-h-screen bg-customBrown flex flex-row justify-center">
+      <header className="h-[550px] lg:min-h-screen bg-customBrown flex flex-row justify-center">
         {/* Text Section */}
-        <div className="w-full lg:w-1/2 flex justify-center items-center p-6 sm:p-8 lg:p-12">
+        <div className="w-full lg:w-1/2 flex justify-center items-center p-6 md:p-8 lg:p-12">
           <div className="text-white flex flex-col gap-y-6 sm:gap-y-8 max-w-lg lg:max-w-md xl:max-w-lg text-center lg:text-left">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-semibold leading-tight">
               BLOCKChampions
@@ -88,7 +88,7 @@ const BLOCKchampions = () => {
             <img src={BlockChampionsImage} alt="" />
           </div>
         </div>
-      </div>
+      </header>
       {/* Content Section */}
       <div className="flex justify-center items-center py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
         <div className="w-full max-w-7xl flex flex-col gap-y-12 sm:gap-y-16 lg:gap-y-20">

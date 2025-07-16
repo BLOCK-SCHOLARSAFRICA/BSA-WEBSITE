@@ -43,6 +43,7 @@ import blockImage2 from "../assets/blockimage2.png";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import TeamCard from "../components/TeamCard";
 
 const AboutUs = () => {
   useEffect(() => {
@@ -281,7 +282,7 @@ const AboutUs = () => {
       </header>
 
       {/* card section */}
-      <div className="py-20 px-4 md:px-28 bg-white">
+      <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 bg-white">
         <div className="flex flex-col gap-y-9">
           {/* First card */}
           <div
@@ -422,8 +423,8 @@ const AboutUs = () => {
       </div>
 
       {/* our expetional service */}
-      <div className="bg-customBrown py-20 px-6 relative overflow-hidden">
-        <div className="max-w-6xl mx-auto relative z-10">
+      <div className="bg-customBrown py-20  relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-8 relative z-10">
           {/* Header Section */}
           <div className="text-center mb-16" data-aos="fade-up">
             <h1 className="text-2xl md:text-4xl  font-semibold text-white mb-3 leading-tight">
@@ -471,15 +472,8 @@ const AboutUs = () => {
       </div>
 
       {/* Meet Exceptional Team Members */}
-      <div className="bg-[#FFF6FA] py-8 sm:py-12 md:py-16 px-4 sm:px-6 md:px-12 lg:px-24 relative overflow-hidden">
-        {/* Large background text */}
-        <div className="absolute inset-0 flex items-start justify-center pt-10 sm:pt-16 md:pt-20 opacity-5">
-          <span className="text-4xl sm:text-6xl md:text-7xl lg:text-9xl font-bold text-purple-400 tracking-wider">
-            Our Team
-          </span>
-        </div>
-
-        <div className="max-w-7xl mx-auto relative z-10">
+      <section className="bg-[#FFF6FA] py-8 sm:py-12 md:py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
           {/* Header Section */}
           <div
             className="text-center mb-8 sm:mb-12 md:mb-16"
@@ -494,49 +488,9 @@ const AboutUs = () => {
           </div>
 
           {/* Team Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6  mb-12 sm:mb-16 md:mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12 sm:mb-16 md:mb-20">
             {teamMembers.map((member, index) => (
-              <div
-                key={index}
-                data-aos="zoom-in"
-                className="bg-white w-full sm:w-fit rounded-t-[40px] hover:shadow-xl transition-all duration-300 hover:scale-100 group"
-              >
-                {/* Profile Image */}
-                <div className="mb-4">
-                  <div className="w-full sm:w-64 h-48 sm:h-72 mx-auto rounded-t-[40px] rounded-bl-[80px] rounded-br-[40px] overflow-hidden">
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-
-                {/* Member Info */}
-                <div className="text-center px-2 sm:px-4 py-2">
-                  <h3 className="font-semibold text-base sm:text-lg flex items-center justify-center gap-2 text-customBrown mb-2 group-hover:text-customBrown/80 transition-colors duration-300">
-                    {member.name}
-                    {member.hasLinkedIn && (
-                      <a
-                        href={member.linkedInUrl || "#"}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-6 sm:w-8 h-6 sm:h-8 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors duration-200"
-                      >
-                        <Linkedin className="w-3 sm:w-4 h-3 sm:h-4 text-white" />
-                      </a>
-                    )}
-                  </h3>
-                  <p className="text-xs sm:text-sm text-customBrown font-medium leading-relaxed mb-2">
-                    {member.title}
-                  </p>
-                  {member.subtitle && (
-                    <p className="text-xs text-customBrown leading-relaxed">
-                      {member.subtitle}
-                    </p>
-                  )}
-                </div>
-              </div>
+              <TeamCard member={member} index={index} animation={"fade-up"} />
             ))}
           </div>
 
@@ -546,7 +500,7 @@ const AboutUs = () => {
             data-aos="fade-up"
           >
             <div className="text-center">
-              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-customBrown mb-2">
+              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-customBrown mb-2">
                 Advisory Board
               </h2>
               <p className="text-base sm:text-lg md:text-xl text-customBrown font-medium">
@@ -555,51 +509,19 @@ const AboutUs = () => {
             </div>
 
             {/* Advisory Board Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 mb-12 sm:mb-16 md:mb-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               {advisoryBoard.map((member, index) => (
-                <div
+                <TeamCard
                   key={index}
-                  data-aos="zoom-in-up"
-                  data-aos-delay={index * 100}
-                  data-aos-duration="800"
-                  className="bg-white w-full sm:w-fit rounded-t-[40px] hover:shadow-xl transition-all duration-300 hover:scale-100 group"
-                >
-                  {/* Profile Image */}
-                  <div className="mb-4">
-                    <div className="w-full sm:w-64 h-48 sm:h-72 mx-auto rounded-t-[40px] rounded-bl-[80px] rounded-br-[40px] overflow-hidden">
-                      <img
-                        src={member.image}
-                        alt={member.name}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  </div>
-
-                  {/* Member Info */}
-                  <div className="text-center px-2 sm:px-4 py-2">
-                    <h3 className="font-semibold text-base sm:text-lg flex items-center justify-center gap-2 text-customBrown mb-2 group-hover:text-customBrown/80 transition-colors duration-300">
-                      {member.name}
-                      {member.hasLinkedIn && (
-                        <a
-                          href={member.linkedInUrl || "#"}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="w-6 sm:w-8 h-6 sm:h-8 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors duration-200"
-                        >
-                          <Linkedin className="w-3 sm:w-4 h-3 sm:h-4 text-white" />
-                        </a>
-                      )}
-                    </h3>
-                    <p className="text-xs sm:text-sm text-customBrown font-medium leading-relaxed mb-2">
-                      {member.role}
-                    </p>
-                  </div>
-                </div>
+                  member={member}
+                  index={index}
+                  animation="zoom-in-up"
+                />
               ))}
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </section>
   );
 };

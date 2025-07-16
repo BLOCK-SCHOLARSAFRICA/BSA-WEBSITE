@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import emailjs from 'emailjs-com';
-
-const SERVICE_ID = "service_pht0h0j";
-const TEMPLATE_ID = "template_76eaqsm";
-const PUBLIC_KEY = "E6a2t18abv5zZSkoN";
+import emailjs from "emailjs-com";
 
 const ContactSection = () => {
+  const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -15,7 +15,7 @@ const ContactSection = () => {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null); // 'success', 'error', or null
+  const [submitStatus, setSubmitStatus] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -28,19 +28,17 @@ const ContactSection = () => {
     setSubmitStatus(null);
 
     try {
+      console.log("Form Data:", formData);
 
-      console.log('Form Data:', formData);
-      
       // Prepare template parameters
       const templateParams = {
         firstName: `${formData.firstName} ${formData.lastName}`,
         from_email: formData.email,
         phone: formData.phone,
         message: formData.message,
-        to_name: 'Block Scholars Team', // You can customize this
+        to_name: "Block Scholars Team",
       };
 
-      // Send email using EmailJS
       const result = await emailjs.send(
         SERVICE_ID,
         TEMPLATE_ID,
@@ -48,10 +46,9 @@ const ContactSection = () => {
         PUBLIC_KEY
       );
 
-      console.log('Email sent successfully:', result.text);
-      setSubmitStatus('success');
-      
-      // Reset form after successful submission
+      console.log("Email sent successfully:", result.text);
+      setSubmitStatus("success");
+
       setFormData({
         firstName: "",
         lastName: "",
@@ -59,10 +56,9 @@ const ContactSection = () => {
         email: "",
         message: "",
       });
-
     } catch (error) {
-      console.error('Error sending email:', error);
-      setSubmitStatus('error');
+      console.error("Error sending email:", error);
+      setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
     }
@@ -77,19 +73,27 @@ const ContactSection = () => {
         <h2 className="text-3xl text-[#720034] font-bold text-center">
           Contact Us
         </h2>
-        <p className="text-center text-[#242424]">We're here for you - reach out anytime.</p>
+        <p className="text-center text-[#242424]">
+          We're here for you - reach out anytime.
+        </p>
       </div>
 
       {/* Status Messages */}
-      {submitStatus === 'success' && (
+      {submitStatus === "success" && (
         <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
-          <p className="text-center">Thank you! Your message has been sent successfully. We'll get back to you soon.</p>
+          <p className="text-center">
+            Thank you! Your message has been sent successfully. We'll get back
+            to you soon.
+          </p>
         </div>
       )}
 
-      {submitStatus === 'error' && (
+      {submitStatus === "error" && (
         <div className="mb-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg">
-          <p className="text-center">Sorry, there was an error sending your message. Please try again or contact us directly.</p>
+          <p className="text-center">
+            Sorry, there was an error sending your message. Please try again or
+            contact us directly.
+          </p>
         </div>
       )}
 
@@ -185,12 +189,12 @@ const ContactSection = () => {
             type="submit"
             disabled={isSubmitting}
             className={`px-6 py-3 rounded-lg text-white font-semibold sm:w-full md:w-auto transition-colors ${
-              isSubmitting 
-                ? 'bg-gray-400 cursor-not-allowed' 
-                : 'bg-[#720034] hover:bg-[#5a0028]'
+              isSubmitting
+                ? "bg-gray-400 cursor-not-allowed"
+                : "bg-[#720034] hover:bg-[#5a0028]"
             }`}
           >
-            {isSubmitting ? 'Sending...' : 'Submit'}
+            {isSubmitting ? "Sending..." : "Submit"}
           </button>
         </div>
       </form>

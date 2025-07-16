@@ -42,7 +42,7 @@ const HeroSection = () => {
       <div className="w-full">
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10">
           {/* Left Text Content */}
-          <div className="md:w-1/2 px-4" data-aos="fade-right">
+          <div className="md:w-1/2 " data-aos="fade-right">
             <h1 className="text-[#242424] text-4xl md:text-5xl font-bold mb-6">
               Empowering Africa's Future Through Blockchain & Emerging Tech.
             </h1>

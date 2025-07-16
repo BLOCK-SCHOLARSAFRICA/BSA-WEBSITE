@@ -1,4 +1,5 @@
 import ProgramImage from "../assets/program.png";
+import courses from "../data/courses"; 
 import {
   Code,
   Users,
@@ -18,11 +19,11 @@ import FAQSection from "../components/FAQSection";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Programs = () => {
-
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({ duration: 800, once: true });
   }, []);
   const features = [
     {
@@ -62,71 +63,17 @@ const Programs = () => {
     },
   ];
 
-  const courses = [
-    {
-      icon: <Code className="w-10 h-10" />,
-      title: "Web Development",
-      color: "from-emerald-500 to-teal-600",
-      bgColor: "bg-[#71AC30]",
-      borderColor: "border-emerald-200",
-    },
-    {
-      icon: <Shield className="w-10 h-10" />,
-      title: "Cyber Security/Ethical Hacking",
-      color: "from-red-500 to-orange-600",
-      bgColor: "bg-red-50",
-      borderColor: "border-red-200",
-    },
-    {
-      icon: <Palette className="w-10 h-10" />,
-      title: "Product Design",
-      color: "from-purple-500 to-indigo-600",
-      bgColor: "bg-purple-50",
-      borderColor: "border-purple-200",
-    },
-    {
-      icon: <Image className="w-10 h-10" />,
-      title: "Graphics Design",
-      color: "from-orange-500 to-red-600",
-      bgColor: "bg-orange-50",
-      borderColor: "border-orange-200",
-    },
-    {
-      icon: <BarChart3 className="w-10 h-10" />,
-      title: "Data Analysis",
-      color: "from-blue-500 to-cyan-600",
-      bgColor: "bg-blue-50",
-      borderColor: "border-blue-200",
-    },
-    {
-      icon: <Briefcase className="w-10 h-10" />,
-      title: "Product Management",
-      color: "from-green-500 to-emerald-600",
-      bgColor: "bg-green-50",
-      borderColor: "border-green-200",
-    },
-    {
-      icon: <Database className="w-10 h-10" />,
-      title: "Data Science",
-      color: "from-cyan-500 to-blue-600",
-      bgColor: "bg-cyan-50",
-      borderColor: "border-cyan-200",
-    },
-    {
-      icon: <PenTool className="w-10 h-10" />,
-      title: "Content & Copywriting",
-      color: "from-yellow-500 to-orange-600",
-      bgColor: "bg-yellow-50",
-      borderColor: "border-yellow-200",
-    },
-    {
-      icon: <TrendingUp className="w-10 h-10" />,
-      title: "Digital Marketing",
-      color: "from-pink-500 to-rose-600",
-      bgColor: "bg-pink-50",
-      borderColor: "border-pink-200",
-    },
-  ];
+  const iconMap = {
+    Code,
+    Shield,
+    Palette,
+    Image,
+    BarChart3,
+    Briefcase,
+    Database,
+    PenTool,
+    TrendingUp,
+  };
 
   return (
     <section>
@@ -153,9 +100,13 @@ const Programs = () => {
         </div>
       </header>
 
-      <div className="max-w-7xl mx-auto pt-16 px-4">
+      <div className="max-w-7xl mx-auto pt-16 px-4 md:px-8">
         {/* Header */}
-        <div className="text-center mb-16"  data-aos="fade-up"  data-aos-duration="800">
+        <div
+          className="text-center mb-16"
+          data-aos="fade-up"
+          data-aos-duration="800"
+        >
           <h2 className="text-2xl sm:text-3xl  font-bold text-[#242424] mb-6">
             Innovation Lab (Master In-Demand Tech Skills)
           </h2>
@@ -172,7 +123,7 @@ const Programs = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-               data-aos="zoom-in"
+              data-aos="zoom-in"
               className="group bg-[#FAD1E4] rounded-tr-[50px] rounded-bl-[50px] p-6 sm:p-8 border border-gray-200 shadow-sm transition duration-300"
             >
               <div className="flex items-start gap-4">
@@ -196,7 +147,7 @@ const Programs = () => {
         </div>
 
         {/* Our Courses */}
-        <div className="mt-16" data-aos="fade-up" >
+        <div className="mt-16" data-aos="fade-up">
           <div className="text-center mb-16">
             <h2 className="text-2xl sm:text-4xl font-bold mb-4">
               Explore{" "}
@@ -211,46 +162,49 @@ const Programs = () => {
 
           {/* Courses Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            {courses.map((course, index) => (
-              <div
-              data-aos="fade-up"
-                key={index}
-                className={`group bg-gradient-to-r from-[#720034] to-[#470020] rounded-2xl p-8 shadow overflow-hidden`}
-              >
-                {/* Content */}
-                <div>
-                  {/* Icon */}
-                  <div
-                    className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${course.color} flex items-center justify-center text-white mb-6 shadow-lg`}
-                  >
-                    {course.icon}
-                  </div>
-
-                  {/* Title */}
-                  <h3 className="text-xl font-semibold text-white mb-4 transition-colors duration-300">
-                    {course.title}
-                  </h3>
-
-                  {/* Learn More Link */}
-                  <div className="flex items-center text-white group-hover:text-blue-700 font-semibold transition-colors duration-300">
-                    <span className="mr-2">Learn More</span>
-                    <svg
-                      className="w-4 h-4 transform group-hover:translate-x-2 transition-transform duration-300"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
+            {courses.map((course, index) => {
+              const Icon = iconMap[course.icon]; 
+              return (
+                <div
+                  data-aos="fade-up"
+                  key={index}
+                  className={`group bg-gradient-to-r from-[#720034] to-[#470020] rounded-2xl p-8 shadow overflow-hidden`}
+                >
+                  {/* Content */}
+                  <div>
+                    {/* Icon */}
+                    <div
+                      className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${course.color} flex items-center justify-center text-white mb-6 shadow-lg`}
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
+                      {Icon && <Icon className="w-8 h-8" />}
+                    </div>
+
+                    {/* Title */}
+                    <h3 className="text-xl font-semibold text-white mb-4 transition-colors duration-300">
+                      {course.title}
+                    </h3>
+
+                    {/* Learn More Link */}
+                    <Link  to={`/courses/${course.slug}`} className="flex items-center text-white group-hover:text-blue-700 font-semibold transition-colors duration-300">
+                      <span className="mr-2">Learn More</span>
+                      <svg
+                        className="w-4 h-4 transform group-hover:translate-x-2 transition-transform duration-300"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </Link>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
           {/* Call to Action */}

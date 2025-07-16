@@ -9,6 +9,7 @@ import Events from "./pages/Events";
 import BLOCKchampions from "./pages/BLOCKchampions";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import CourseDetails from "./pages/CourseDetails";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/programs" element={<Program />} />
           <Route path="/events" element={<Events />} />
           <Route path="/block-champions" element={<BLOCKchampions />} />
+          <Route path="/courses/:slug" element={<CourseDetails />} />
         </Route>
       </Routes>
     </div>
