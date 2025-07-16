@@ -1,0 +1,316 @@
+[
+    {
+      "id": 1,
+      "icon": "Code",
+      "color": "from-emerald-500 to-teal-600",
+      "title": "Web Development Starter",
+      "slug": "web-development-starter",
+      "description": "Master the fundamentals of web development from HTML, CSS, and Bootstrap to JavaScript and version control. Build a strong foundation and take your first step toward becoming a web developer.",
+      "image": "/webdev.png",
+      "rating": 4.7,
+      "reviews": 265,
+      "enrolled": 1456,
+      "duration": "12 weeks",
+      "level": "Beginner to mid-level",
+      "certification": true,
+      "track": "Web Development Starter Track",
+      "overview": [
+        "Introduction to web development",
+        "HTML – Structure of Web Pages",
+        "CSS – Styling the Web",
+        "JavaScript Basics",
+        "Version Control with Git & GitHub",
+        "Project"
+      ],
+      "benefits": [
+        "Industry-Recognized Certificate",
+        "Portfolio Projects",
+        "Internship Opportunities",
+        "Global Networking",
+        "Expert Mentorship",
+        "Exclusive Job Access",
+        "Real-World Experience",
+        "Lifetime Course Access"
+      ],
+      "insight": {
+        "jobOfferRate": 75,
+        "globalDemand": "200,000+",
+        "globalDemandDetails": "web development positions available globally"
+      }
+    },
+    {
+        "id": 2,
+        "icon": "Code",
+        "color": "from-yellow-500 to-teal-600",
+        "title": "Web Development Pro",
+        "slug": "web-development-Pro",
+        "description": "Elevate your web development skills and master building top-tier, dynamic web applications using tools like ReactJS, Tailwind CSS, Git, GitHub, and beyond.",
+        "image": "/webdev.png",
+        "rating": 4.7,
+        "reviews": 265,
+        "enrolled": 1456,
+        "duration": "12 weeks",
+        "level": "Beginner to mid-level",
+        "certification": true,
+        "track": "Web Development Pro Track",
+        "overview": [
+          "Advanced JavaScript & ES6+ Features",
+          "Modern Frontend Development Tools",
+          "Introduction to React.js",
+          "Responsive UI with Tailwind CSS",
+          "Deploying Web Applications",
+          "Final Project & Portfolio Building"
+        ],
+        "benefits": [
+          "Industry-Recognized Certificate",
+          "Portfolio Projects",
+          "Internship Opportunities",
+          "Global Networking",
+          "Expert Mentorship",
+          "Exclusive Job Access",
+          "Real-World Experience",
+          "Lifetime Course Access"
+        ],
+        "insight": {
+          "jobOfferRate": 75,
+          "globalDemand": "200,000+",
+          "globalDemandDetails": "web development positions available globally"
+        }
+      },
+    {
+      "id": 3,
+      "icon": "Shield",
+      "color": "from-red-500 to-orange-600",
+      "title": "Cyber Security/Ethical Hacking",
+      "slug": "cyber-security-ethical-hacking",
+      "description": "Elevate your web development skills and master building top-tier, dynamic web applications using tools like ReactJS, Tailwind CSS, Git, GitHub, and beyond",
+      "image": "/cyber.png",
+      "rating": 4.7,
+      "reviews": 265,
+      "enrolled": 1456,
+      "duration": "12 weeks",
+      "level": "Beginner to mid-level",
+      "certification": true,
+      "track": "Cyber Security/Ethical Hacking Track",
+      "overview": [
+        "Introduction to Cybersecurity",
+        "Networking Basics",
+        "Operating Systems and Security",
+        "Introduction to Ethical Hacking",
+        "Cybersecurity Tools",
+        "Vulnerability Assessment"
+      ],
+      "benefits": [
+        "Industry-Recognized Certificate",
+        "Portfolio Projects",
+        "Internship Opportunities",
+        "Global Networking",
+        "Expert Mentorship",
+        "Exclusive Job Access",
+        "Real-World Experience",
+        "Lifetime Course Access"
+      ],
+      "insight": {
+        "jobOfferRate": 75,
+        "globalDemand": "200,000+",
+        "globalDemandDetails": "web development positions available globally"
+      }
+    },
+    {
+        "id": 4,
+        "icon": "Shield",
+        "color": "from-blue-500 to-orange-600",
+        "title": "Cyber Security/Ethical Hacking intermidate",
+        "slug": "cyber-security-ethical-hacking intermidate",
+        "description": "Elevate your web development skills and master building top-tier, dynamic web applications using tools like ReactJS, Tailwind CSS, Git, GitHub, and beyond",
+        "image": "/cyberPro.png",
+        "rating": 4.7,
+        "reviews": 265,
+        "enrolled": 1456,
+        "duration": "12 weeks",
+        "level": "Beginner to mid-level",
+        "certification": true,
+        "track": "Cyber Security/Ethical Hacking intermidate Track",
+        "overview": [
+          "Introduction to Ethical Hacking",
+          "Networking Basics",
+          "Operating Systems and Security",
+          "Hacking Methodologies",
+          "Cybersecurity Tools",
+          "Hands-On Labsimage.png"
+        ],
+        "benefits": [
+          "Industry-Recognized Certificate",
+          "Portfolio Projects",
+          "Internship Opportunities",
+          "Global Networking",
+          "Expert Mentorship",
+          "Exclusive Job Access",
+          "Real-World Experience",
+          "Lifetime Course Access"
+        ],
+        "insight": {
+          "jobOfferRate": 75,
+          "globalDemand": "200,000+",
+          "globalDemandDetails": "web development positions available globally"
+        }
+      },
+    {
+      "id": 5,
+      "icon": "Palette",
+      "color": "from-orange-500 to-indigo-600",
+      "title": "UIUX Design Starter Track",
+      "slug": "UIUX Design Starter Track",
+      "description": "Start your UI/UX design journey from scratch with Block-Scholars Africa! Master the essentials of User Experience (UX) and User Interface (UI) design, learning to decode user needs, craft interactive designs, and partner with developers to bring your vison to life. Join a dynamic community of young African Innovators and build the skills to excel in digital design.",
+      "image": "/starterDesign.png",
+      "rating": 4.7,
+      "reviews": 265,
+      "enrolled": 1456,
+      "duration": "12 weeks",
+      "level": "Beginner to mid-level",
+      "certification": true,
+      "track": "UIUX Design Starter Track",
+      "overview": [
+        "Introduction to UIUX Design",
+        "UX Research & Strategy",
+        "UI Design Fundamentals",
+        "Prototyping & User Testing",
+        "Collaboration & Handoff",
+        "Project"
+      ],
+      "benefits": [
+        "Industry-Recognized Certificate",
+        "Portfolio Projects",
+        "Internship Opportunities",
+        "Global Networking",
+        "Expert Mentorship",
+        "Exclusive Job Access",
+        "Real-World Experience",
+        "Lifetime Course Access"
+      ],
+      "insight": {
+        "jobOfferRate": 75,
+        "globalDemand": "200,000+",
+        "globalDemandDetails": "web development positions available globally"
+      }
+    },
+    {
+        "id": 6,
+        "icon": "Palette",
+        "color": "from-red-500 to-indigo-600",
+        "title": "UIUX Design Pro Track",
+        "slug": "UIUX Design Pro Track",
+        "description": "Start your UI/UX design journey from scratch with Block-Scholars Africa! Master the essentials of User Experience (UX) and User Interface (UI) design, learning to decode user needs, craft interactive designs, and partner with developers to bring your vison to life. Join a dynamic community of young African Innovators and build the skills to excel in digital design.",
+        "image": "/design.png",
+        "rating": 4.7,
+        "reviews": 265,
+        "enrolled": 1456,
+        "duration": "12 weeks",
+        "level": "Beginner to mid-level",
+        "certification": true,
+        "track": "UIUX Design Pro Track",
+        "overview": [
+          "Advanced UX Research & Psychology",
+          "Advanced UI Design & Animation",
+          "UX Writing & Microcopy",
+          "Design Collaboration & Development Handoff",
+          "Portfolio & Career Development",
+          "Final Project & Portfolio Building"
+        ],
+        "benefits": [
+          "Industry-Recognized Certificate",
+          "Portfolio Projects",
+          "Internship Opportunities",
+          "Global Networking",
+          "Expert Mentorship",
+          "Exclusive Job Access",
+          "Real-World Experience",
+          "Lifetime Course Access"
+        ],
+        "insight": {
+          "jobOfferRate": 75,
+          "globalDemand": "200,000+",
+          "globalDemandDetails": "web development positions available globally"
+        }
+      },
+    {
+      "id": 7,
+      "icon": "BarChart3",
+      "color": "from-orange-500 to-red-600",
+      "title": "Data Science Starter",
+      "slug": "Data-science-starter",
+      "description": "Elevate your web development skills and master building top-tier, dynamic web applications using tools like ReactJS, Tailwind CSS, Git, GitHub, and beyond",
+      "image": "/dataStater.png",
+      "rating": 4.7,
+      "reviews": 265,
+      "enrolled": 1456,
+      "duration": "12 weeks",
+      "level": "Beginner to mid-level",
+      "certification": true,
+      "track": "Data Science Starter Track",
+      "overview": [
+        "Introduction to Data Science & Its Application",
+        "SQL Basics for Data Science",
+        "Data Visualization with Matplotlib & Seaborn",
+        "Dashboarding with Power BI/Tableau",
+        "Descriptive Statistics",
+        "Inferential Statistics"
+      ],
+      "benefits": [
+        "Industry-Recognized Certificate",
+        "Portfolio Projects",
+        "Internship Opportunities",
+        "Global Networking",
+        "Expert Mentorship",
+        "Exclusive Job Access",
+        "Real-World Experience",
+        "Lifetime Course Access"
+      ],
+      "insight": {
+        "jobOfferRate": 75,
+        "globalDemand": "200,000+",
+        "globalDemandDetails": "web development positions available globally"
+      }
+      
+    },
+    {
+      "id": 8,
+      "icon": "BarChart3",
+      "color": "from-blue-500 to-cyan-600",
+      "title": "Data Science Pro",
+      "slug": "data-science-pro",
+      "description": "Elevate your web development skills and master building top-tier, dynamic web applications using tools like ReactJS, Tailwind CSS, Git, GitHub, and beyond",
+      "image": "/dataPro.png",
+      "rating": 4.7,
+      "reviews": 265,
+      "enrolled": 1456,
+      "duration": "12 weeks",
+      "level": "Beginner to mid-level",
+      "certification": true,
+      "track": "Data Science Starter Track",
+      "overview": [
+        "Introduction to Machine Learning",
+        "Decision Trees & Random Forests",
+        "Feature Engineering & Dimensionality Reduction",
+        "Introduction to Deep Learning & Neutral Networks",
+        "Introduction to Big Data & Spark",
+        "Cloud Computing for Data Science (AWS, Google Cloud)"
+      ],
+      "benefits": [
+        "Industry-Recognized Certificate",
+        "Portfolio Projects",
+        "Internship Opportunities",
+        "Global Networking",
+        "Expert Mentorship",
+        "Exclusive Job Access",
+        "Real-World Experience",
+        "Lifetime Course Access"
+      ],
+      "insight": {
+        "jobOfferRate": 75,
+        "globalDemand": "200,000+",
+        "globalDemandDetails": "web development positions available globally"
+      }
+    }
+  ]
+  

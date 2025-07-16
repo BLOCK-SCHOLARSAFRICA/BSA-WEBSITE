@@ -16,8 +16,8 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-[#222121] text-white py-12 px-6">
-      <div className="max-w-6xl mx-auto flex flex-col gap-12">
+    <footer className="bg-[#222121] text-white py-12">
+      <div className="max-w-7xl mx-auto flex flex-col gap-12 px-6">
         {/* Top Section */}
         <div className="flex flex-col md:flex-row md:justify-between gap-10">
           {/* Logo and About */}

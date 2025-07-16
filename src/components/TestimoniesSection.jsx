@@ -81,8 +81,8 @@ const TestimoniesSection = () => {
   };
 
   return (
-    <div className="bg-slate-50 py-20 px-4 overflow-hidden">
-      <div className="max-w-7xl mx-auto">
+    <div className="bg-slate-50 py-20  overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-2xl md:text-4xl font-semibold text-[#242424] mb-2 tracking-tight">
