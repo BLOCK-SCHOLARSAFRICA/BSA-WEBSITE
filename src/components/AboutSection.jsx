@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Laptop2, Monitor, BookOpen, Briefcase } from "lucide-react";
+import {  Monitor, BookOpen, Briefcase, Handshake } from "lucide-react";
 
 const AboutSection = () => {
   useEffect(() => {
@@ -10,28 +10,28 @@ const AboutSection = () => {
 
   const features = [
     {
-      icon: <Briefcase size={36} />,
-      title: "Startup Project Experience",
-      description:
-        "Work on real startup projects and gain hands-on experience with cutting-edge technologies in a professional environment.",
-    },
-    {
       icon: <Monitor size={36} />,
       title: "Comprehensive Virtual Training",
       description:
-        "Gain access to structured, industry-relevant courses delivered by top experts. Master blockchain, Web3, AI and other in-demand tech skills essential for success.",
+        "Gain access to structured, industry-relevant courses delivered by top experts. Master blockchain, Web3, AI, and other in-demand tech skills essential for success.",
     },
     {
-      icon: <Laptop2 size={36} />,
-      title: "Hands-On Bootcamp",
+      icon: <Briefcase size={36} />,
+      title: "Startup Project Experience",
       description:
-        "Participate in intensive bootcamp sessions that combine theoretical knowledge with practical application and peer collaboration.",
+        "Work on real-world startup projects, collaborate with peers, and develop innovative solutions-nurturing creativity, teamwork, and an entrepreneurial mindset.",
+    },
+    {
+      icon: <Handshake size={36} />,
+      title: "Post-Training Support",
+      description:
+        "Access continuous mentorship, internship opportunities, and a powerful network of partners and sponsors committed to helping you thrive in the tech industry.",
     },
     {
       icon: <BookOpen size={36} />,
-      title: "Post-Training Support",
+      title: "Hands-On Bootcamp",
       description:
-        "Access continued mentorship, career guidance, and networking opportunities to ensure long-term success in your tech journey.",
+        "Engage in immersive monthly bootcamps that blend theoretical learning with real-world applications, ensuring you gain practical expertise in cutting-edge technologies.",
     },
   ];
 

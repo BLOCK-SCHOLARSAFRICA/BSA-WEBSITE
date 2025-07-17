@@ -10,10 +10,13 @@ import BLOCKchampions from "./pages/BLOCKchampions";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CourseDetails from "./pages/CourseDetails";
+import ScrollToTop from "./components/ScrollToTop";
+import BlockchainScholarshipBanner from "./pages/BlockchainScholarshipBanner";
 
 function App() {
   return (
-    <div>
+    <>
+    <ScrollToTop />
       <Routes>
         {/* app layout */}
         <Route element={<AppLayout />}>
@@ -23,9 +26,10 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/block-champions" element={<BLOCKchampions />} />
           <Route path="/courses/:slug" element={<CourseDetails />} />
+          <Route path="b" element={<BlockchainScholarshipBanner />} />
         </Route>
       </Routes>
-    </div>
+    </>
   );
 }
 

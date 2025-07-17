@@ -37,7 +37,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="font-sans min-h-screen flex items-center pt-[100px] md:pt-[10px]"
+      className="font-sans min-h-screen flex items-center pt-[100px] md:pt-[50px]"
     >
       <div className="w-full">
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10">

@@ -38,13 +38,13 @@ const Header = () => {
     <header className="bg-white fixed top-0 left-0 right-0 z-50 shadow-sm">
       <div className="container mx-auto flex items-center justify-between py-2 px-4 sm:px-6 lg:px-8">
         {/* Logo */}
-        <div className="flex-shrink-0">
+        <NavLink to={'/'} className="flex-shrink-0">
           <img 
             src={logo} 
             alt="BSA Logo" 
             className="h-12 w-12 sm:h-14 sm:w-14 lg:h-16 lg:w-16 xl:h-[70px] xl:w-[70px]" 
           />
-        </div>
+        </NavLink>
 
         {/* Mobile menu button */}
         <button
@@ -91,14 +91,14 @@ const Header = () => {
               className="border border-[#720034] text-[#720034] px-3 py-1.5 lg:px-4 lg:py-2 xl:px-5 xl:py-2.5 rounded-full hover:bg-[#720034] hover:text-white transition-all cursor-pointer text-sm lg:text-base whitespace-nowrap"
               onClick={() => setMenuOpen(false)}
             >
-              Contact
+              Contact Us
             </Link>
           ) : (
             <span
               onClick={() => handleNavigateToSection("contact-us")}
               className="border border-[#720034] text-[#720034] px-3 py-1.5 lg:px-4 lg:py-2 xl:px-5 xl:py-2.5 rounded-full hover:bg-[#720034] hover:text-white cursor-pointer transition-all text-sm lg:text-base whitespace-nowrap"
             >
-              Contact
+              Contact Us
             </span>
           )}
         </div>
@@ -153,14 +153,14 @@ const Header = () => {
                   className="border border-[#720034] text-[#720034] px-4 py-2 sm:px-6 sm:py-3 rounded-full hover:bg-[#720034] hover:text-white transition-all cursor-pointer block text-center text-sm sm:text-base"
                   onClick={() => setMenuOpen(false)}
                 >
-                  Contact
+                  Contact Us
                 </Link>
               ) : (
                 <span
                   onClick={() => handleNavigateToSection("contact-us")}
                   className="border border-[#720034] text-[#720034] px-4 py-2 sm:px-6 sm:py-3 rounded-full hover:bg-[#720034] hover:text-white cursor-pointer transition-all block text-center text-sm sm:text-base"
                 >
-                  Contact
+                  Contact Us
                 </span>
               )}
             </div>

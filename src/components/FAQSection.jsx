@@ -1,56 +1,91 @@
+import { Check } from "lucide-react";
 import React, { useState } from "react";
 
 const helpAndFAQs = [
   {
     title: "What is Block-Scholars Africa?",
     description:
-      "Block-Scholars Africa is a blockchain education and training program designed for African students and young professionals. The program aims to equip participants with the knowledge and skills needed to build a successful career in blockchain technology.",
+      "Block-Scholars Africa is a transformative initiative empowering young Africans through blockchain and emerging tech education, career mentorship, and real-world industry opportunities.",
+    list: [],
   },
   {
-    title: "Who is eligible to apply for Block-Scholars Africa programs?",
+    title: "Who can become a BLOCKChampion?",
     description:
-      "Students and young professionals interested in blockchain technology can apply for the Block-Scholars Africa program. This includes university students, recent graduates, and young professionals looking to transition into a blockchain career.",
-  },
-  {
-    title: "Can I participate in the program remotely?",
-    description:
-      "Yes, our program is designed to be flexible and can be completed remotely.",
-  },
-  {
-    title: "Do I need prior knowledge to join Block-Scholars Africa?",
-    description:
-      "No, prior knowledge of blockchain technology is not required to join Block-Scholars Africa. The program is designed to take participants from beginner to advanced levels, covering the fundamentals of blockchain technology and its applications.",
-  },
-  {
-    title:
-      "What kind of support does Block-Scholars Africa provide after the training?",
-    description: [
-      "Block-Scholars Africa provides ongoing support to alumni, including:",
-      "Access to resources and tools",
-      "Mentorship and coaching",
-      "Networking opportunities with industry professionals",
-      "Job placement assistance",
-      "Community engagement and support",
+      "BLOCKChampions welcomes individuals and organizations passionate about Africa’s future in tech, including:",
+    list: [
+      "Alumni of Block–Scholars Africa",
+      "Tech & non-tech professionals",
+      "Philanthropists & social impact advocates",
+      "Organizations with strong CSR goals",
+      "Mentors, coaches & community builders",
+      "African diaspora communities",
+      "Youth empowerment enthusiasts",
+      "Foundations & mission-aligned NGOs",
+      "Anyone passionate about emerging technologies",
     ],
   },
   {
-    title: "Is there certification after the program?",
+    title: "Why should I become a BLOCKChampion?",
     description:
-      "Yes, participants who complete the program will receive a certificate.",
+      "Joining BLOCKChampions is more than sponsorship – It’s about empowering Africa’s next generation of tech leaders with the skills, guidance, and opportunities to thrive in emerging technologies.",
+    list: [],
   },
   {
-    title: "How long does the program take?",
+    title: "What are the BLOCKChampion membership tiers?",
     description:
-      "The duration of the Block-Scholars Africa program varies depending on the specific program. However, most programs typically last 4 weeks or 6 months.",
+      "BLOCKChampions offers three tiers of sponsorship, allowing supporters to contribute at different levels:",
+    list: [
+      "Starter Champion ₦8,000/$5 per month",
+      "Core Champion ₦24,000/$15 per month",
+      "Elite Champion ₦40,000/$25 per month",
+    ],
   },
   {
-    title: "How do I apply for Block-Scholars Africa program?",
-    description: "You can apply through our website.",
+    title: "What benefits do BLOCKChampions receive?",
+    description:
+      "Each tier comes with unique perks such as social media recognition, certificates, project discounts, exclusive events, impact reports, and personalized thank-you messages from sponsored scholars.",
+    list: [],
   },
   {
-    title: "How do the bootcamps work and who can attend?",
+    title: "How are scholars selected for sponsorship?",
     description:
-      "The bootcamps are intensive training programs that cover various aspects of blockchain technology, including development, architecture, and innovation. The bootcamps are open to selected applicants who have gone through the application process.",
+      "Scholars are chosen based on their passion for blockchain and emerging technologies, dedication to learning, and potential to create impact within their communities.",
+    list: [],
+  },
+  {
+    title: "Can businesses or organizations become BLOCKChampions?",
+    description:
+      "Absolutely! Organizations with strong Corporate Social Responsibility (CSR) goals are encouraged to participate and support African youth in tech.",
+    list: [],
+  },
+  {
+    title: "How does my sponsorship help young Africans?",
+    description:
+      "Your contribution provides scholars with tech education, career mentorship, networking, and real-world exposure to opportunities in blockchain and emerging technologies.",
+    list: [],
+  },
+  {
+    title: "How can I track my impact as a BLOCKChampion?",
+    description:
+      "BLOCKChampions receive quarterly impact reports, monthly email updates, and stories showcasing how their support is changing lives.",
+    list: [],
+  },
+  {
+    title: "Are there networking opportunities for BLOCKChampions?",
+    description:
+      "Yes! Elite champions gain access to a private community of tech changemakers, VIP events, industry retreats, and conferences.",
+    list: [],
+  },
+  {
+    title: "How do I become a BLOCKChampion?",
+    description: "You can join today by clicking on the get involved button.",
+    list: [],
+  },
+  {
+    title: "Where can I follow BLOCKChampions online?",
+    description:
+      "Stay connected via our website and social media pages for updates, events, and impact stories.",
+    list: [],
   },
 ];
 
@@ -75,26 +110,28 @@ const FAQSection = () => {
         {helpAndFAQs.map((term, index) => (
           <div
             key={index}
-            className={`text-left w-full mb-3 px-5 border rounded-lg transition-all duration-300 ${
-              expandedIndex === index
-                ? "bg-[#720034] text-[#fcf9f9] py-5 border-[#720034]"
-                : "bg-white text-[#720034] border-gray-300"
+            className={`text-left w-full mb-3  ${
+              expandedIndex === index ? "" : ""
             }`}
           >
             <div
-              className="flex justify-between items-center cursor-pointer py-3 md:py-4"
+              className="flex justify-between items-center cursor-pointer py-3 md:py-4 bg-white   transition-all duration-300 px-5 border border-customBrown"
               onClick={() => toggleExpand(index)}
             >
               <h2
                 className={`font-medium text-sm md:text-lg ${
-                  expandedIndex === index ? "text-[#fcf9f9]" : "text-[#720034]"
+                  expandedIndex === index
+                    ? "text-[#242424]"
+                    : "text-customBrown"
                 }`}
               >
                 {term.title}
               </h2>
               <span
                 className={`text-lg font-bold transition-transform duration-300 ${
-                  expandedIndex === index ? "text-[#fcf9f9]" : "text-[#720034]"
+                  expandedIndex === index
+                    ? "text-[#242424]"
+                    : "text-customBrown"
                 }`}
               >
                 {expandedIndex === index ? "-" : "+"}
@@ -104,21 +141,27 @@ const FAQSection = () => {
             {/* Smooth Expand/Collapse Animation */}
             <div
               className={`${
-                expandedIndex === index ? "max-h-96" : "max-h-0"
-              } overflow-hidden transition-all duration-500 ease-in-out`}
+                expandedIndex === index
+                  ? "max-h-96 bg-[#F2F2F2] text-[#242424] pb-8"
+                  : "max-h-0"
+              } overflow-hidden transition-all duration-500 ease-in-out px-5`}
             >
-              <div className="mt-3 md:mt-4 text-lightGray font-normal text-sm md:text-base">
-                {Array.isArray(term.description) ? (
-                  <>
-                    <p className="mb-3">{term.description[0]}</p>
-                    <ul className="list-disc ml-5">
-                      {term.description.slice(1).map((item, i) => (
-                        <li key={i}>{item}</li>
-                      ))}
-                    </ul>
-                  </>
-                ) : (
-                  <p>{term.description}</p>
+              <div className="mt-3 md:mt-4 text-[#242424] font-medium text-sm md:text-base">
+                <p className="mb-2">{term.description}</p>
+                {term.list.length > 0 && (
+                  <ul className="space-y-3">
+                    {term.list.map((item, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <Check
+                          className="w-5 h-5 sm:w-6 sm:h-6 mt-0.5 flex-shrink-0"
+                          style={{ color: "var(--custom-brown, #8B4513)" }}
+                        />
+                        <span className="text-[#242424] text-sm sm:text-base">
+                          {item}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
                 )}
               </div>
             </div>
