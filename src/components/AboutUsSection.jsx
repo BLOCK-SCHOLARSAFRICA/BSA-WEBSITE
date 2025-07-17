@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AboutUsSection = () => {
 
@@ -60,9 +61,9 @@ const AboutUsSection = () => {
             dedicated to equipping young Africans with knowledge and skills
             needed to excel in blockchain, Web3, and emerging technologies
           </p>
-          <button className="mt-8 px-8 py-3 bg-[#720034] text-white rounded-full font-semibold hover:bg-[#8B0042] transition-colors duration-300 shadow-lg hover:shadow-xl">
+          <Link to={'/about-us'} className="inline-block mt-8 px-8 py-3 bg-[#720034] text-white rounded-full font-semibold hover:bg-[#8B0042] transition-colors duration-300 shadow-lg hover:shadow-xl">
             READ MORE
-          </button>
+          </Link>
         </div>
       </section>
 

@@ -1,12 +1,11 @@
 
 import Slider from "react-slick";
-import MIBT from "../assets/MIBTLogo.png";
-import Optimus from "../assets/OptimusLogo.png";
-import Bravpuls from "../assets/Bravpuls.png";
-import Turbo from "../assets/turbo.png";
-import BlockBridge from "../assets/BlockBridge.png";
-import ActuateLogo from "../assets/Actuate_logo.png";
-import Nobsaa from "../assets/Nobsaa.png";
+import MIBT from "../assets/partnerLogo1.png";
+import Optimus from "../assets/partnerLogo2.png";
+import Bravpuls from "../assets/partnerLogo4.png";
+import Turbo from "../assets/partnerLogo3.png";
+import BlockBridge from "../assets/partnerLogo5.png";
+import ActuateLogo from "../assets/partnerLogo6.png";
 
 const PartnersSection = () => {
   const partners = [
@@ -16,7 +15,6 @@ const PartnersSection = () => {
     { src: Turbo, alt: "Turbo", hasWhiteBg: false },
     { src: BlockBridge, alt: "BlockBridge", hasWhiteBg: false },
     { src: ActuateLogo, alt: "ActuateLogo", hasWhiteBg: false },
-    { src: Nobsaa, alt: "Nobsaa", hasWhiteBg: false },
   ];
 
   const settings = {

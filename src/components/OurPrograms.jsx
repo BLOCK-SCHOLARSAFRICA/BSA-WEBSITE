@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { ArrowRight, Code, GraduationCap, Blocks } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const OurPrograms = () => {
   useEffect(() => {
@@ -15,7 +16,7 @@ const OurPrograms = () => {
       description:
         "Comprehensive training in cutting-edge technologies including AI, blockchain, and web development with hands-on projects.",
       icon: <Code size={32} />,
-      link: "#",
+      link: "programs",
     },
     {
       title: "Blockchain Scholarship",
@@ -47,8 +48,7 @@ const OurPrograms = () => {
           <span className="text-[#242424]">Our</span> Programs
         </h4>
         <p className="text-lg text-[#242424] max-w-2xl mx-auto leading-relaxed">
-          Shaping Africa's Future Tech Leaders through innovative training
-          programs
+          Shaping Africa’s Future Tech Leaders
         </p>
       </div>
 
@@ -80,8 +80,8 @@ const OurPrograms = () => {
               </p>
 
               <div className="mt-auto">
-                <a
-                  href={program.link}
+                <Link
+                  to={program.link}
                   className="inline-flex items-center gap-2 px-6 py-3 bg-white/20 backdrop-blur-sm rounded-full text-sm font-semibold hover:bg-white/30 transition-all duration-300 transform hover:scale-105 group-hover:translate-x-1"
                 >
                   VIEW MORE
@@ -89,7 +89,7 @@ const OurPrograms = () => {
                     size={16}
                     className="transition-transform duration-300 group-hover:translate-x-1"
                   />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
