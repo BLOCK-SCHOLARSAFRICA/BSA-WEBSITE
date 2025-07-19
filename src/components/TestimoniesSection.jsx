@@ -84,36 +84,41 @@ const TestimoniesSection = () => {
       name: "Chidi Clinton",
       role: "Student",
       image: testimonial10,
-      testimonial: "It's an honor to be part of this academy. I experienced the warmth, friendliness and epitome of an online family. BSA exposed me to opportunities of which I am forever grateful for.As if that's not enough, they went further to assist students through data gifting, reminders for classes, schedules and bonuses held regularly to help students beat their academic goals.",
+      testimonial:
+        "It's an honor to be part of this academy. I experienced the warmth, friendliness and epitome of an online family. BSA exposed me to opportunities of which I am forever grateful for.As if that's not enough, they went further to assist students through data gifting, reminders for classes, schedules and bonuses held regularly to help students beat their academic goals.",
     },
     {
       id: 10,
       name: "Muhammed Adeniran",
       role: "Student",
       image: testimonial4,
-      testimonial: "BLOCK-SCHOLARS AFRICA has provided me with an excellent experience in their Blockchain Studies program. This course was thoroughly focused on necessary subjects such as cryptography and with the help of Professor Armando made topics less complicated. The way the program illustrates blockchain usage with real-world applications was extremely influential on me personally. The learning materials itself was fairly good, they focused on networking and teamwork which are two major keys in this area.",
+      testimonial:
+        "BLOCK-SCHOLARS AFRICA has provided me with an excellent experience in their Blockchain Studies program. This course was thoroughly focused on necessary subjects such as cryptography and with the help of Professor Armando made topics less complicated. The way the program illustrates blockchain usage with real-world applications was extremely influential on me personally. The learning materials itself was fairly good, they focused on networking and teamwork which are two major keys in this area.",
     },
     {
       id: 11,
       name: "Haruna Isaac Ayowande",
       role: "Student",
       image: testimonial4,
-      testimonial: "My experience as a Blockchain student at Block-scholars Africa has been incredibly rewarding. The curriculum is well-structured, covering everything from blockchain fundamentals to advanced applications like smart contracts and decentralized apps. The supportive faculty and collaborative environment make learning engaging and practical, allowing me to build real-world skills with confidence.",
+      testimonial:
+        "My experience as a Blockchain student at Block-scholars Africa has been incredibly rewarding. The curriculum is well-structured, covering everything from blockchain fundamentals to advanced applications like smart contracts and decentralized apps. The supportive faculty and collaborative environment make learning engaging and practical, allowing me to build real-world skills with confidence.",
     },
     {
       id: 12,
       name: "Abdoul Salam SORE",
       role: "Student, Burkina Faso",
       image: testimonial9,
-      testimonial: "As a proud student of Block-Scholars Africa, I want to express my heartfelt gratitude to this remarkable institution and its dedicated team. Through their programs, I ‘ve gained valuable skills in areas like web development and blockchain technology - skills that are essential in today’s fast-paced digital world Block-Scholars Africa provides incredible opportunities for learning and growth, making it possible to stay informed and ahead in an ever-evolving tech landscape. Whether you are just starting out or already experienced, I highly encourage you to join the upcoming INNOVATION Lab Cohort. It’s a journey worth taking.",
+      testimonial:
+        "As a proud student of Block-Scholars Africa, I want to express my heartfelt gratitude to this remarkable institution and its dedicated team. Through their programs, I ‘ve gained valuable skills in areas like web development and blockchain technology - skills that are essential in today’s fast-paced digital world Block-Scholars Africa provides incredible opportunities for learning and growth, making it possible to stay informed and ahead in an ever-evolving tech landscape. Whether you are just starting out or already experienced, I highly encourage you to join the upcoming INNOVATION Lab Cohort. It’s a journey worth taking.",
     },
     {
       id: 13,
       name: "Olasupo Mary Olamide",
       role: "",
       image: testimonial11,
-      testimonial: "Being part of the Block-Scholars Africa has been a transformative experience for me. The platform didn’t just teach me about blockchain and emerging technologies. It helped me build real-world skills, grow my confidence, and connect with a vibrant community of innovators across the continent. Every session, project, and mentorship moment has added value to my personal and professional journey. I’m truly grateful for the opportunity and proud to be part of this movement shaping Africa’s tech future.",
-    }
+      testimonial:
+        "Being part of the Block-Scholars Africa has been a transformative experience for me. The platform didn’t just teach me about blockchain and emerging technologies. It helped me build real-world skills, grow my confidence, and connect with a vibrant community of innovators across the continent. Every session, project, and mentorship moment has added value to my personal and professional journey. I’m truly grateful for the opportunity and proud to be part of this movement shaping Africa’s tech future.",
+    },
   ];
 
   const settings = {
@@ -161,37 +166,43 @@ const TestimoniesSection = () => {
         <Slider {...settings}>
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="px-4">
-              <div className="flex flex-col h-full transform transition-all duration-500 ease-in-out">
+              <div className="flex flex-col transform transition-all duration-500 ease-in-out">
                 {/* Testimonial Card */}
-                <div
-                  className={`flex-1 relative rounded-2xl p-8 border-2 border-[#720034]  transition-all duration-300 group min-h-[350px]`}
-                >
+                <div className="relative rounded-2xl p-6 md:p-8 border-2 border-[#720034] transition-all duration-300 group min-h-[280px] md:min-h-[350px]">
                   {/* Quote Icon */}
                   <div className="absolute top-4 right-4 text-6xl text-[#720034] font-serif opacity-50">
-                    <img src={testimony} alt="" />
+                    <img
+                      src={testimony}
+                      alt=""
+                      className="w-8 h-8 md:w-12 md:h-12"
+                    />
                   </div>
 
                   {/* Testimonial Text */}
-                  <div className="relative z-10 mb-8 text-center">
-                    <p className="text-[#242424] leading-relaxed text-base font-medium">
+                  <div className="relative z-10 mb-4 md:mb-6 text-center">
+                    <p className="text-[#242424] leading-relaxed text-sm md:text-base font-medium">
                       {testimonial.testimonial}
                     </p>
                   </div>
                 </div>
 
                 {/* Profile Section */}
-                <div className="flex flex-col items-center mt-8">
-                  <div className="mb-4">
-                    <div className="w-20 h-20 rounded-full p-1">
-                      <div className="w-full h-full rounded-full bg-gray-300 flex items-center justify-center text-white font-bold text-2xl">
-                        <img src={testimonial.image} alt={testimonial.name} />
+                <div className="flex flex-col items-center mt-4 md:mt-6">
+                  <div className="mb-3 md:mb-4">
+                    <div className="w-16 h-16 md:w-20 md:h-20 rounded-full p-1">
+                      <div className="w-full h-full rounded-full bg-gray-300 flex items-center justify-center overflow-hidden">
+                        <img
+                          src={testimonial.image}
+                          alt={testimonial.name}
+                          className="w-full h-full object-cover rounded-full"
+                        />
                       </div>
                     </div>
                   </div>
-                  <h3 className="text-xl font-semibold text-[#242424] mb-1">
+                  <h3 className="text-lg md:text-xl font-semibold text-[#242424] mb-1">
                     {testimonial.name}
                   </h3>
-                  <p className="text-[#242424] font-medium">
+                  <p className="text-sm md:text-base text-[#242424] font-medium">
                     {testimonial.role}
                   </p>
                 </div>

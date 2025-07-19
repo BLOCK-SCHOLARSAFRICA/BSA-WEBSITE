@@ -42,7 +42,7 @@ const Header = () => {
           <img 
             src={logo} 
             alt="BSA Logo" 
-            className="h-12 w-12 sm:h-14 sm:w-14 lg:h-16 lg:w-16 xl:h-[70px] xl:w-[70px]" 
+            className="h-auto w-20 sm:h-14 sm:w-14 lg:h-16 lg:w-16 xl:h-[70px] xl:w-[70px]" 
           />
         </NavLink>
 
@@ -52,9 +52,9 @@ const Header = () => {
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? (
-            <AiOutlineClose className="h-6 w-6 sm:h-8 sm:w-8 text-[#720034] hover:text-[#470020] transition-all" />
+            <AiOutlineClose className="h-8 w-8 text-[#720034] hover:text-[#470020] transition-all" />
           ) : (
-            <FiMenu className="h-6 w-6 sm:h-8 sm:w-8 text-[#720034] hover:text-[#470020] transition-all" />
+            <FiMenu className="h-8 w-8 text-[#720034] hover:text-[#470020] transition-all" />
           )}
         </button>
 
