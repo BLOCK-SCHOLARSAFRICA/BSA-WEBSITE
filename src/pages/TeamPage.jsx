@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import CountUp from "react-countup";
 import team1 from "../assets/team1.png";
 import team3 from "../assets/team2.png";
-import team2 from "../assets/team12.png";
 import team4 from "../assets/team17.png";
 import team6 from "../assets/team5.png";
 import team10 from "../assets/team3.png";
@@ -33,12 +32,6 @@ const Team = () => {
       name: "Raphael Omochor",
       role: " CEO",
       linkedin: "https://www.linkedin.com/in/raphael-omochor/",
-    },
-    {
-      image: team2,
-      name: "Christopher Enyeribe.",
-      role: "Chief Operating Officer (COO)",
-      linkedin: "https://www.linkedin.com/in/christopher-enyeribe-483823230/",
     },
 
     {

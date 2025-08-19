@@ -5,15 +5,11 @@ import team1 from "../assets/team1.png";
 import team2 from "../assets/team2.png";
 import team3 from "../assets/team3.png";
 import team6 from "../assets/team6.png";
-import team8 from "../assets/team8.png";
+import team8 from "../assets/team20.png";
 import team9 from "../assets/team9.png";
-import team10 from "../assets/team10.png";
+import team10 from "../assets/team21.png";
 import team11 from "../assets/team11.png";
-import team12 from "../assets/team12.png";
-import team13 from "../assets/team13.png";
-import team17 from "../assets/team17.png";
 import team18 from "../assets/team18.png";
-import team19 from "../assets/team19.png";
 import board4 from "../assets/board4.png";
 import board5 from "../assets/board5.png";
 import board1 from "../assets/board1.png";
@@ -140,12 +136,7 @@ const AboutUs = () => {
       image: team1,
       hasLinkedIn: true,
     },
-    {
-      name: "Christopher Enyeribe",
-      title: "Co-founder & COO",
-      image: team12,
-      hasLinkedIn: true,
-    },
+
     {
       name: "Babatunde Maryam F.",
       title: "Co-founder & CTO",
@@ -153,29 +144,11 @@ const AboutUs = () => {
       image: team2,
       hasLinkedIn: true,
     },
-    {
-      name: "Kabiru Sunkanmi",
-      title: "Kabirat",
-      image: team17,
-      hasLinkedIn: true,
-    },
+
     {
       name: "Favour I. Peter",
       title: "Chief Marketing Officer (CMO)",
       image: team6,
-      hasLinkedIn: true,
-    },
-    {
-      name: "Dickson Goodness",
-      title: "Executive Secretary & Graphic Designer",
-      image: team10,
-      hasLinkedIn: true,
-    },
-    {
-      name: "Rashidat Ayobami",
-      title: "Deputy",
-      subtitle: "Secretary & Director of BluesTalk & Future Tech Education",
-      image: team19,
       hasLinkedIn: true,
     },
     {
@@ -191,18 +164,6 @@ const AboutUs = () => {
       hasLinkedIn: true,
     },
     {
-      name: "Suleiman Attahiru",
-      title: "Graphic Designer",
-      image: team13,
-      hasLinkedIn: true,
-    },
-    {
-      name: "Ufere Stephen U.",
-      title: "Graphic Designer",
-      image: team8,
-      hasLinkedIn: true,
-    },
-    {
       name: "Timothy O. Olaniyan",
       title: "Content/Copywriter",
       image: team11,
@@ -212,6 +173,18 @@ const AboutUs = () => {
       name: "Olaniran Samuel B.",
       title: "Blockchain Developer",
       image: team3,
+      hasLinkedIn: true,
+    },
+    {
+      name: "Abdoul Salam SORE.",
+      role: "National Representative",
+      image: team8,
+      hasLinkedIn: true,
+    },
+    {
+      name: "Ankou Josue K..",
+      role: "National Representative",
+      image: team10,
       hasLinkedIn: true,
     },
   ];
@@ -254,6 +227,7 @@ const AboutUs = () => {
       image: board8,
       hasLinkedIn: true,
     },
+   
   ];
 
   return (
