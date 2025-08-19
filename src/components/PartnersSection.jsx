@@ -6,6 +6,7 @@ import Bravpuls from "../assets/partnerLogo4.png";
 import Turbo from "../assets/partnerLogo3.png";
 import BlockBridge from "../assets/partnerLogo5.png";
 import ActuateLogo from "../assets/partnerLogo6.png";
+import Arb from "../assets/arb.png";
 
 const PartnersSection = () => {
   const partners = [
@@ -15,6 +16,7 @@ const PartnersSection = () => {
     { src: Turbo, alt: "Turbo", hasWhiteBg: false },
     { src: BlockBridge, alt: "BlockBridge", hasWhiteBg: false },
     { src: ActuateLogo, alt: "ActuateLogo", hasWhiteBg: false },
+    { src: Arb, alt: "arb", hasWhiteBg: false },
   ];
 
   const settings = {
