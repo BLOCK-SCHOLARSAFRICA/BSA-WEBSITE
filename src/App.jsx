@@ -12,6 +12,7 @@ import "slick-carousel/slick/slick-theme.css";
 import CourseDetails from "./pages/CourseDetails";
 import ScrollToTop from "./components/ScrollToTop";
 import BlockchainScholarshipBanner from "./pages/BlockchainScholarshipBanner";
+import AbiaState from './pages/AbiaStateEvent'
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/courses/:slug" element={<CourseDetails />} />
           <Route path="b" element={<BlockchainScholarshipBanner />} />
         </Route>
+        <Route path="/events/abiastate" element={<AbiaState /> } />
       </Routes>
     </>
   );

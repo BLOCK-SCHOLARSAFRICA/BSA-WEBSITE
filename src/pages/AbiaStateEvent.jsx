@@ -1,0 +1,35 @@
+import banner from "../assets/abia.png";
+import EventNav from "../components/EventNav";
+import EventHero from "../components/EventHero";
+import CountdownTimer from "../components/CountdownTimer";
+import EventMainContent from "../components/EventMainContent";
+
+
+const AbiaStateEvent = () => {
+  return (
+    <div className="relative min-h-screen">
+      {/* Hero Section with overlay */}
+      <div
+        className="relative h-screen bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${banner})` }}
+      >
+        {/* Overlay only for hero + nav */}
+        <div className="absolute inset-0 bg-black/50"></div>
+
+        <div className="relative z-10">
+          <EventNav />
+          <EventHero />
+        </div>
+      </div>
+
+      {/* Main content without overlay */}
+      <div className="relative z-10 bg-white text-gray-900">
+        <CountdownTimer />
+        <EventMainContent />
+       
+      </div>
+    </div>
+  );
+};
+
+export default AbiaStateEvent;

@@ -1,6 +1,6 @@
-import React from "react";
-import { Plane } from "lucide-react";
+import { Link } from "react-router-dom";
 import banner from "../assets/abiaEvent.png";
+
 
 const Events = () => {
   return (
@@ -20,9 +20,11 @@ const Events = () => {
           <p className="text-[#242424] text-sm mb-2">Venue</p>
 
           <div className="flex items-center justify-center">
-            <button className="bg-customBrown text-white font-semibold py-3 px-8 rounded-full transition-colors duration-300 shadow-lg hover:shadow-xl">
+            <Link
+            to={'/events/abiastate'} 
+            className="bg-customBrown text-white font-semibold py-3 px-8 rounded-full transition-colors duration-300 shadow-lg hover:shadow-xl">
               Become a volunteer
-            </button>
+            </Link>
           </div>
         </div>
       </div>
