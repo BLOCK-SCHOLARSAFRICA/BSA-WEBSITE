@@ -1,5 +1,5 @@
 import React from "react";
-import Button from ".../../components/ui/Button";
+import TransparentButton from "../Ui/TransparentButton";
 
 const CallToAction = () => {
   return (
@@ -20,10 +20,9 @@ const CallToAction = () => {
 
             {/* Right Section - Button */}
             <div className="w-full sm:w-auto">
-              <Button
-                text="Register"
-               
-              />
+              <TransparentButton onClick={() => console.log("clicked")}>
+                Register
+              </TransparentButton>
             </div>
           </div>
         </div>

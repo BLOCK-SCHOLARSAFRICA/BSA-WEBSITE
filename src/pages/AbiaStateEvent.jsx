@@ -9,6 +9,7 @@ import Speakers from "../components/conference/Speakers";
 import Statistics from "../components/conference/Statistics";
 import Sponsors from "../components/conference/Sponsors";
 import CallToAction from "../components/conference/CallToAction";
+import Footer from "../components/conference/Footer";
 
 
 const AbiaStateEvent = () => {
@@ -44,7 +45,9 @@ const AbiaStateEvent = () => {
         
         <Sponsors />
         
-        <CallToAction/>
+        <CallToAction />
+        
+        <Footer/>
       </div>
     </div>
   );
