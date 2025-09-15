@@ -3,6 +3,13 @@ import EventNav from "../components/EventNav";
 import EventHero from "../components/EventHero";
 import CountdownTimer from "../components/CountdownTimer";
 import EventMainContent from "../components/EventMainContent";
+import EventDetails from "../components/conference/EventDetails";
+import Features from "../components/conference/Features";
+import Speakers from "../components/conference/Speakers";
+import Statistics from "../components/conference/Statistics";
+import Sponsors from "../components/conference/Sponsors";
+import CallToAction from "../components/conference/CallToAction";
+import Footer from "../components/conference/Footer";
 
 
 const AbiaStateEvent = () => {
@@ -25,8 +32,22 @@ const AbiaStateEvent = () => {
       {/* Main content without overlay */}
       <div className="relative z-10 bg-white text-gray-900">
         <CountdownTimer />
-        <EventMainContent />
-       
+        {/* <EventMainContent /> */}
+        <EventDetails />
+
+        {/* speakers */}
+        <Statistics />
+        {/* Statistics */}
+        <Speakers />
+
+        {/* features */}
+        <Features />
+        
+        <Sponsors />
+        
+        <CallToAction />
+        
+        <Footer/>
       </div>
     </div>
   );
