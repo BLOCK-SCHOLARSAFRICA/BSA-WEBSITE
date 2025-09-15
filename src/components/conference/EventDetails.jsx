@@ -1,11 +1,13 @@
 import React from "react";
 import Button from "../Ui/Button";
-import eventImg1  from "../../assets/images/main-event1.png"
+import eventImg1 from "../../assets/images/main-event1.png"
+
+
 
 
 const EventDetails = () => {
   return (
-    <section className="w-full bg-background-primary">
+    <section className="min-h-screen bg-black text-white">
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14 py-16 md:py-24 lg:py-[180px]">
         <div className="bg-text-white rounded-[24px] p-8 sm:p-12 md:p-16 lg:p-[68px] shadow-lg">
           {/* Section Header */}
@@ -76,50 +78,7 @@ const EventDetails = () => {
 
           {/* CTA Button */}
           <div className="mt-8 lg:mt-12">
-            {/* <Button
-              text="Confirm Your Seat"
-              text_font_size="18"
-              text_font_family="Poppins"
-              text_font_weight="500"
-              text_line_height="27px"
-              text_text_align="center"
-              text_color="#ffffff"
-              fill_background_color="#fe6906"
-              border_border_radius="26px"
-              padding="14px 18px"
-              layout_align_self="flex-start"
-              layout_width="auto"
-              position="relative"
-              margin="0"
-              variant="primary"
-              size="medium"
-              onClick={() => {}}
-              className="hover:bg-opacity-90 transition-all duration-200"
-            /> */}
-            <Button
-              text="Confirm Your Seat"
-              text_font_size="18"
-              text_font_family="Poppins"
-              text_font_weight="500"
-              text_line_height="27px"
-              text_text_align="center"
-              text_color="#ffffff"
-              fill_background_color="#fe6906"
-              border_border_radius="26px"
-              padding="14px 18px"
-              layout_align_self="flex-start"
-              layout_width="auto"
-              position="relative"
-              margin="0"
-              variant="primary"
-              size="medium"
-              onClick={() => {}}
-              className="transition-all duration-200 hover:opacity-90"
-              style={{
-                padding: "14px 18px", 
-                boxShadow: "0px 2px 4px #6c00313f", 
-              }}
-            />
+            <Button text={"Confirm Your Seat"} />
           </div>
         </div>
       </div>
