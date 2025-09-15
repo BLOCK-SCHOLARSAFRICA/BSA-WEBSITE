@@ -1,5 +1,7 @@
 import React from "react";
 import Button from "../Ui/Button";
+import eventImg1  from "../../assets/images/main-event1.png"
+
 
 const EventDetails = () => {
   return (
@@ -65,7 +67,7 @@ const EventDetails = () => {
             {/* Image */}
             <div className="w-full lg:w-[40%] flex justify-center lg:justify-end">
               <img
-                src="/images/img_image.png"
+                src={eventImg1}
                 alt="Conference participants discussing digital innovation"
                 className="w-full max-w-[468px] h-auto rounded-[16px] object-cover"
               />
@@ -74,7 +76,7 @@ const EventDetails = () => {
 
           {/* CTA Button */}
           <div className="mt-8 lg:mt-12">
-            <Button
+            {/* <Button
               text="Confirm Your Seat"
               text_font_size="18"
               text_font_family="Poppins"
@@ -93,6 +95,30 @@ const EventDetails = () => {
               size="medium"
               onClick={() => {}}
               className="hover:bg-opacity-90 transition-all duration-200"
+            /> */}
+            <Button
+              text="Confirm Your Seat"
+              text_font_size="18"
+              text_font_family="Poppins"
+              text_font_weight="500"
+              text_line_height="27px"
+              text_text_align="center"
+              text_color="#ffffff"
+              fill_background_color="#fe6906"
+              border_border_radius="26px"
+              padding="14px 18px"
+              layout_align_self="flex-start"
+              layout_width="auto"
+              position="relative"
+              margin="0"
+              variant="primary"
+              size="medium"
+              onClick={() => {}}
+              className="transition-all duration-200 hover:opacity-90"
+              style={{
+                padding: "14px 18px", 
+                boxShadow: "0px 2px 4px #6c00313f", 
+              }}
             />
           </div>
         </div>

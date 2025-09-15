@@ -3,6 +3,7 @@ import EventNav from "../components/EventNav";
 import EventHero from "../components/EventHero";
 import CountdownTimer from "../components/CountdownTimer";
 import EventMainContent from "../components/EventMainContent";
+import EventDetails from "../components/conference/EventDetails";
 
 
 const AbiaStateEvent = () => {
@@ -25,7 +26,8 @@ const AbiaStateEvent = () => {
       {/* Main content without overlay */}
       <div className="relative z-10 bg-white text-gray-900">
         <CountdownTimer />
-        <EventMainContent />
+        {/* <EventMainContent /> */}
+        <EventDetails/>
        
       </div>
     </div>
