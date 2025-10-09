@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 export default function CountdownTimer() {
   const [timeLeft, setTimeLeft] = useState({
@@ -6,12 +6,12 @@ export default function CountdownTimer() {
     days: 0,
     hours: 0,
     minutes: 0,
-    seconds: 0
+    seconds: 0,
   });
 
   useEffect(() => {
     // Set target date - November 21, 2025 at 9 AM WAT
-    const targetDate = new Date('2025-11-21T09:00:00+01:00').getTime();
+    const targetDate = new Date("2025-11-27T09:00:00+01:00").getTime();
 
     const updateCountdown = () => {
       const now = new Date().getTime();
@@ -19,9 +19,15 @@ export default function CountdownTimer() {
 
       if (difference > 0) {
         const weeks = Math.floor(difference / (1000 * 60 * 60 * 24 * 7));
-        const days = Math.floor((difference % (1000 * 60 * 60 * 24 * 7)) / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        const days = Math.floor(
+          (difference % (1000 * 60 * 60 * 24 * 7)) / (1000 * 60 * 60 * 24)
+        );
+        const hours = Math.floor(
+          (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor(
+          (difference % (1000 * 60 * 60)) / (1000 * 60)
+        );
         const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
         setTimeLeft({
@@ -29,7 +35,7 @@ export default function CountdownTimer() {
           days,
           hours,
           minutes,
-          seconds
+          seconds,
         });
       } else {
         setTimeLeft({
@@ -37,7 +43,7 @@ export default function CountdownTimer() {
           days: 0,
           hours: 0,
           minutes: 0,
-          seconds: 0
+          seconds: 0,
         });
       }
     };
@@ -56,7 +62,7 @@ export default function CountdownTimer() {
     <div className="flex flex-col items-center">
       <div className="bg-[#660431] rounded-2xl px-6 py-4 shadow-lg border border-[#D50967]">
         <div className="text-3xl md:text-4xl font-bold text-white text-center">
-          {String(value).padStart(2, '0')}
+          {String(value).padStart(2, "0")}
         </div>
       </div>
       <div className="text-white font-bold text-sm md:text-base mt-4 uppercase tracking-wide">
@@ -72,7 +78,7 @@ export default function CountdownTimer() {
         <h2 className="text-2xl md:text-3xl font-semibold text-white mb-12">
           Countdown to AWDEC2025
         </h2>
-        
+
         {/* Countdown Display */}
         <div className="flex flex-wrap justify-center gap-6 md:gap-8">
           <CountdownBox value={timeLeft.weeks} label="WEEKS" />
