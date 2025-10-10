@@ -9,7 +9,7 @@ const EventDetails = () => {
   return (
     <section id="About" className="min-h-screen bg-black text-white">
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14 py-16 md:py-24 lg:py-[180px]">
-        <div className="bg-text-white rounded-[24px] p-8 sm:p-12 md:p-16 lg:p-[68px] shadow-lg">
+        <div className=" flex flex-col bg-text-white rounded-[24px] p-8 sm:p-12 md:p-16 lg:p-[68px] shadow-lg">
           {/* Section Header */}
           <div className="mb-6 md:mb-8 lg:mb-[24px]">
             <h2
@@ -77,7 +77,7 @@ const EventDetails = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="mt-8 lg:mt-12">
+          <div className="mt-8 lg:mt-12 text-center md:text-left">
             <Button text={"Confirm Your Seat"} />
           </div>
         </div>

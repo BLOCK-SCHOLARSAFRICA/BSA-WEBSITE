@@ -19,7 +19,7 @@ const CallToAction = () => {
             </div>
 
             {/* Right Section - Button */}
-            <div className="w-full sm:w-auto">
+            <div className="w-full sm:w-auto text-center">
               <TransparentButton onClick={() => console.log("clicked")}>
                 Register
               </TransparentButton>

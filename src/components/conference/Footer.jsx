@@ -9,7 +9,7 @@ import conferenImg from "../../assets/images/conference-logo.png";
 
 const Footer = () => {
   return (
-    <footer id="Contact Us" className="w-full bg-black">
+    <footer className="w-full bg-black">
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14">
         <div className="flex flex-col gap-[46px] justify-start items-center py-8 md:py-12">
           {/* Main Footer Content */}

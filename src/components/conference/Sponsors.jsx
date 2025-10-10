@@ -12,6 +12,9 @@ import partner3 from "../../assets/images/partners/block-logo.png";
 import partner4 from "../../assets/images/partners/teen-logo.PNG";
 import partner5 from "../../assets/images/partners/syncthesis-logo.png";
 import partner6 from "../../assets/images/partners/ibom.png";
+import partner7 from "../../assets/images/partners/velopay-logo.png";
+import partner8 from "../../assets/images/partners/log1.png";
+
 
 
 
@@ -80,6 +83,20 @@ const Sponsors = () => {
 
     {
       src: partner6,
+      alt: "Partner 4",
+      width: "146px",
+      height: "134px",
+    },
+
+    {
+      src: partner7,
+      alt: "Partner 4",
+      width: "146px",
+      height: "134px",
+    },
+
+    {
+      src: partner8,
       alt: "Partner 4",
       width: "146px",
       height: "134px",
