@@ -30,40 +30,40 @@ const EventDetails = () => {
                   className="text-lg sm:text-xl font-normal leading-[27px] sm:leading-[30px] text-text-primary w-full"
                   style={{ fontFamily: "Poppins" }}
                 >
-                  The Abia Web3 & Digital Economy Conference (AWDEC 2025) will
-                  be a landmark gathering positioning Abia as a hub for
-                  blockchain, Web3, fintech, and digital innovation in Africa.
+                  Abia Web3 & Digital Economy Conference (AWDEC) is one of
+                  Africa’s biggest landmark gatherings-uniting voices, ideas,
+                  and innovations from across the continent. It positions Abia
+                  State, Nigeria as a central hub for blockchain, Web3, fintech,
+                  and digital transformation, bringing together visionaries who
+                  are shaping Africa’s tech-driven future. This one-day
+                  conference will bring together delegates from over five
+                  countries, including government leaders, tech founders,
+                  investors, startups, developers, students, educators, and
+                  young innovators, to explore how the digital economy can drive
+                  inclusive growth, create new opportunities, and power Africa’s
+                  sustainable development. Through keynotes, exhibitions, panel
+                  discussions, fireside chat, workshops, and networking
+                  sessions, participants will engage in meaningful conversations
+                  and collaborations that inspire progress and long-term impact.
+                  Hosted in Aba, Abia State, Nigeria, and streamed live
+                  worldwide, AWDEC is not just an event-it’s a continental
+                  movement driving innovation, partnership, and transformation.
+                  The digital future of Africa starts here-in Abia.
                 </p>
-                <p
-                  className="text-lg sm:text-xl font-normal leading-[27px] sm:leading-[30px] text-text-primary w-full"
-                  style={{ fontFamily: "Poppins" }}
-                >
-                  This one-day event will bring together government leaders,
-                  investors, startups, developers, academics, and students to
-                  explore how the digital economy can:
-                </p>
+              
               </div>
 
-              {/* Key Points List */}
-              <div
-                className="text-lg sm:text-xl font-normal leading-[27px] sm:leading-[30px] text-text-primary"
-                style={{ fontFamily: "Poppins" }}
-              >
-                <p>Drive inclusive growth</p>
-                <p>Create jobs and opportunities</p>
-                <p>Foster sustainable development</p>
-                <p>Attract global investment</p>
-              </div>
+             
 
               {/* Closing Paragraph */}
-              <p
+              {/* <p
                 className="text-lg sm:text-xl font-normal leading-[27px] sm:leading-[30px] text-text-primary w-full"
                 style={{ fontFamily: "Poppins" }}
               >
                 The conference will be hosted in Aba and streamed live
                 worldwide. AWDEC2025 is not just an event - it is the start of a
                 recurring movement shaping Africa's digital future.
-              </p>
+              </p> */}
             </div>
 
             {/* Image */}

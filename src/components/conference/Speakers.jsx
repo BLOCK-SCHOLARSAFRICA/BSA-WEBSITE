@@ -3,12 +3,12 @@ import speaker1 from "../../assets/images/speaker1.png";
 
 const Speakers = () => {
   // Generate 20 speaker placeholders
-  const speakers = Array.from({ length: 20 }, (_, index) => ({
+  const speakers = Array.from({ length: 4 }, (_, index) => ({
     id: index + 1,
     name: "John Doe",
     title: "Convener",
     organization: "AWDEC",
-    image: index === 0 ?  speaker1: null,
+    // image: index === 0 ?  speaker1: null,
   }));
 
   return (

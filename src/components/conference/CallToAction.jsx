@@ -3,7 +3,7 @@ import TransparentButton from "../Ui/TransparentButton";
 
 const CallToAction = () => {
   return (
-    <section className="w-full bg-[#720034]">
+    <section className="w-full bg-[#1059FC]">
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14">
         <div className="py-16 md:py-20 lg:py-[80px]">
           {/* Content Container */}

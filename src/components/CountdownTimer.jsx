@@ -60,7 +60,7 @@ export default function CountdownTimer() {
 
   const CountdownBox = ({ value, label }) => (
     <div className="flex flex-col items-center">
-      <div className="bg-[#660431] rounded-2xl px-6 py-4 shadow-lg border border-[#D50967]">
+      <div className="bg-[#00DEEF] rounded-2xl px-6 py-4 shadow-lg border border-2 border-white">
         <div className="text-3xl md:text-4xl font-bold text-white text-center">
           {String(value).padStart(2, "0")}
         </div>
@@ -72,7 +72,7 @@ export default function CountdownTimer() {
   );
 
   return (
-    <div className="w-full bg-[#FE6906] py-10 px-6 border-b-4 border-white">
+    <div className="w-full bg-[#1059FC] py-10 px-6 border-b-4 border-white">
       <div className="max-w-4xl mx-auto text-center">
         {/* Title */}
         <h2 className="text-2xl md:text-3xl font-semibold text-white mb-12">

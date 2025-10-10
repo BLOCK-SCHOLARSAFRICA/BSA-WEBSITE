@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo from "../assets/eventlogo.png";
+import logo from "../assets/images/conference-logo.png";
 import { Menu, X } from "lucide-react";
 
 const EventNav = () => {
@@ -21,13 +21,15 @@ const EventNav = () => {
     <nav className="fixed w-full top-0 left-0 z-50">
       <div
         className={`max-w-7xl mx-auto px-6 lg:px-8 py-4 transition-colors duration-300 ${
-          isScrolled ? "bg-black/40 backdrop-blur-md shadow-md" : "bg-transparent"
+          isScrolled
+            ? "bg-black/40 backdrop-blur-md shadow-md"
+            : "bg-transparent"
         }`}
       >
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <img src={logo} alt="logo" className="h-20 w-auto" />
+            <img src={logo} alt="logo" className="h-[258px] w-auto" />
           </div>
 
           {/* Desktop Navigation */}
@@ -56,10 +58,10 @@ const EventNav = () => {
           {/* Register Button (Desktop) */}
           <div className="hidden md:block">
             <button
-              className="px-8 py-2 rounded-full bg-[#FE6906] text-white font-semibold shadow-lg 
-             border-2 border-white 
+              className="px-8 py-2 rounded-full bg-[#791EEB] text-white font-semibold shadow-lg 
+             
              transition-all duration-300 
-             hover:bg-[#e45c05] hover:scale-105 hover:shadow-xl"
+             hover:bg-[#00DEEF] hover:scale-105 hover:shadow-xl"
             >
               Register
             </button>
@@ -121,7 +123,7 @@ const EventNav = () => {
               {/* Mobile Register Button */}
               <div className="pt-4">
                 <button
-                  className="w-full px-6 py-3 rounded-full bg-[#FE6906] text-white font-semibold shadow-lg 
+                  className="w-full px-6 py-3 rounded-full bg-[#791EEB] text-white font-semibold shadow-lg 
                  border-2 border-white 
                  transition-all duration-300 
                  hover:bg-[#e45c05] hover:scale-105 hover:shadow-xl"

@@ -2,6 +2,10 @@ import { Calendar, Clock, MapPin } from "lucide-react";
 import CountdownTimer from "./CountdownTimer";
 
 const EventHero = () => {
+  const reserveLink = () => {
+    // window.location.href ="https://luma.com/tdrxynqv"
+    window.open("https://luma.com/tdrxynqv", "_blank");
+  }
   return (
     <section className="px-6 pt-10 text-white">
       {/* Background overlay */}
@@ -17,7 +21,7 @@ const EventHero = () => {
           {/* Main title */}
           <div className="space-y-4">
             <h1 className="text-5xl md:text-6xl font-semibold text-white leading-tight">
-              ABIA <span className="text-orange-500">WEB3</span> & DIGITAL
+              ABIA <span className="text-[#791EEB]">WEB3 & </span>DIGITAL
             </h1>
             <h2 className="text-4xl md:text-6xl font-semibold text-white">
               ECONOMY Conference
@@ -25,22 +29,22 @@ const EventHero = () => {
           </div>
 
           {/* Hashtag */}
-          <div className="text-2xl md:text-4xl font-medium text-orange-500">
+          <div className="text-2xl md:text-4xl font-medium text-[#00DEEF]">
             #AWDEC2025
           </div>
 
           {/* Event details */}
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-white/90 text-lg font-medium">
             <div className="flex items-center gap-3">
-              <Calendar className="w-6 h-6 text-orange-500" />
-              <span>November 21, 2025</span>
+              <Calendar className="w-6 h-6  text-[#00DEEF]" />
+              <span>November 27, 2025</span>
             </div>
             <div className="flex items-center gap-3">
-              <Clock className="w-6 h-6 text-orange-500" />
+              <Clock className="w-6 h-6 text-[#00DEEF]" />
               <span>9 am WAT</span>
             </div>
             <div className="flex items-center gap-3">
-              <MapPin className="w-6 h-6 text-orange-500" />
+              <MapPin className="w-6 h-6 text-[#00DEEF]" />
               <span>ABA TOWN HALL (EXECUTIVE CHAMBER)</span>
             </div>
           </div>
@@ -65,10 +69,11 @@ const EventHero = () => {
           {/* CTA Button */}
           <div className="pt-4">
             <button
-              className=" px-16 py-3 rounded-full bg-[#FE6906] text-white font-semibold shadow-lg 
-             border-2 border-white 
+              onClick={reserveLink}
+              className=" px-16 py-3 rounded-full bg-[#791EEB] text-white font-semibold shadow-lg 
+             
              transition-all duration-300 
-             hover:bg-[#e45c05]"
+             hover:bg-[#00DEEF] "
             >
               Reserve a seat
             </button>
@@ -76,7 +81,7 @@ const EventHero = () => {
         </div>
       </div>
 
-        {/* <CountdownTimer /> */}
+      {/* <CountdownTimer /> */}
     </section>
   );
 };

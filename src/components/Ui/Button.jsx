@@ -3,12 +3,12 @@
 const Button = (props) => {
   return (
     <button
-      className=" px-16 py-3 rounded-full bg-[#FE6906] text-white font-semibold shadow-lg 
-             border-2 border-white 
+      className=" px-16 py-3 rounded-full bg-[#791EEB] text-white font-semibold shadow-lg 
+            
              transition-all duration-300 
-             hover:bg-[#e45c05]"
+             hover:bg-[#00DEEF] "
     >
-     {props.text}
+      {props.text}
     </button>
   );
 }
