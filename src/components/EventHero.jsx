@@ -7,7 +7,7 @@ const EventHero = () => {
     window.open("https://luma.com/tdrxynqv", "_blank");
   }
   return (
-    <section className="px-6 pt-10 text-white">
+    <section id="Home" className="px-6 pt-10 text-white">
       {/* Background overlay */}
       <div className="absolute inset-0 bg-black/40"></div>
 

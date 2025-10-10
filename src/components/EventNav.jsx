@@ -17,6 +17,14 @@ const EventNav = () => {
 
   const navItems = ["Home", "About", "Speakers", "Contact Us"];
 
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+    setActiveItem(id);
+  };
+
   return (
     <nav className="fixed w-full top-0 left-0 z-50">
       <div
@@ -38,7 +46,7 @@ const EventNav = () => {
               {navItems.map((item) => (
                 <button
                   key={item}
-                  onClick={() => setActiveItem(item)}
+                  onClick={() => scrollToSection(item)}
                   className={`relative px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 group ${
                     activeItem === item
                       ? "text-white bg-white/20 shadow-lg"
@@ -103,7 +111,7 @@ const EventNav = () => {
                 <button
                   key={item}
                   onClick={() => {
-                    setActiveItem(item);
+                   scrollToSection(item);
                     setIsMenuOpen(false);
                   }}
                   className={`relative block w-full text-left px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 group ${

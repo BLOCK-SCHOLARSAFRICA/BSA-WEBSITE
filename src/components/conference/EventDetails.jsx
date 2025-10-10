@@ -7,7 +7,7 @@ import eventImg1 from "../../assets/images/main-event1.png"
 
 const EventDetails = () => {
   return (
-    <section className="min-h-screen bg-black text-white">
+    <section id="About" className="min-h-screen bg-black text-white">
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14 py-16 md:py-24 lg:py-[180px]">
         <div className="bg-text-white rounded-[24px] p-8 sm:p-12 md:p-16 lg:p-[68px] shadow-lg">
           {/* Section Header */}

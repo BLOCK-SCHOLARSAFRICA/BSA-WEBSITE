@@ -12,7 +12,7 @@ const Speakers = () => {
   }));
 
   return (
-    <section className="w-full bg-background-primary">
+    <section id="Speakers" className="w-full bg-background-primary">
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14 py-16 md:py-24 lg:py-[94px]">
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16 lg:mb-[90px]">
