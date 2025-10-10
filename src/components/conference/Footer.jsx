@@ -2,7 +2,7 @@ import React from "react";
 import phoneIcon from "../../assets/icons/phone.svg";
 import partnerIcon from "../../assets/icons/partner.svg";
 import copyrightIcon from "../../assets/icons/copyright.svg"
-import conferenImg from "../../assets/images/conferenceimage.png";
+import conferenImg from "../../assets/images/conference-logo.png";
 
 
 
@@ -20,7 +20,7 @@ const Footer = () => {
                 <img
                   src={conferenImg}
                   alt="ABIA Web3 Conference Logo"
-                  className="w-[122px] h-[182px] object-contain"
+                  className="w-[258px] h-[182px] object-contain"
                 />
                 <p
                   className="text-lg sm:text-xl font-medium leading-[26px] text-center text-text-white opacity-90 mt-[-18px]"

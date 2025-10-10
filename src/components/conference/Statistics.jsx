@@ -42,7 +42,7 @@ const Statistics = () => {
   ];
 
   return (
-    <section className="w-full bg-secondary-orange border-b-4 border-text-white">
+    <section className="w-full bg-[#791EEB] border-b-4 border-text-white">
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-8 md:py-[34px]">
           {/* Statistics Grid */}
@@ -64,7 +64,6 @@ const Statistics = () => {
                         height: stat?.iconHeight,
                       }}
                     />
-                   
                   </div>
 
                   {/* Value */}

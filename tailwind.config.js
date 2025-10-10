@@ -60,7 +60,7 @@ export default {
         "border-accent": "#d50966",
         "border-white": "#ffffff",
         // Component Specific Colors (keep your customBrown if needed)
-        "customBrown": "#720034",
+        customBrown: "#720034",
         "button-primary-bg": "#720034",
         "button-secondary-bg": "#fe6906",
         "button-tertiary-bg": "#6c0031",
@@ -139,11 +139,27 @@ export default {
       // Your existing animation and keyframes
       animation: {
         scroll: "scroll 40s linear infinite",
+        slideInLeft: "slideInLeft 0.7s ease-out",
+        slideInRight: "slideInRight 0.7s ease-out",
+        slideInBottom: "slideInBottom 0.7s ease-out",
       },
       keyframes: {
         scroll: {
           "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(-100%)" },
+        },
+
+        slideInLeft: {
+          "0%": { transform: "translateX(-100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
+        slideInRight: {
+          "0%": { transform: "translateX(100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
+        slideInBottom: {
+          "0%": { transform: "translateY(50px)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
         },
       },
     },
