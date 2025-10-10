@@ -6,10 +6,10 @@ import sponsor2 from "../../assets/images/sponsor2.png";
 import sponsor3 from "../../assets/images/sponsor3.png";
 import sponsor4 from "../../assets/images/sponsor4.png";
 
-import partner1 from "../../assets/images/partners/kether-logo.PNG";
+import partner1 from "../../assets/images/partners/kether-logo.png";
 import partner2 from "../../assets/images/partners/theGenesis-logo.png";
 import partner3 from "../../assets/images/partners/block-logo.png";
-import partner4 from "../../assets/images/partners/teen-logo.png";
+import partner4 from "../../assets/images/partners/teen-logo.PNG";
 import partner5 from "../../assets/images/partners/syncthesis-logo.png";
 import partner6 from "../../assets/images/partners/ibom.png";
 
