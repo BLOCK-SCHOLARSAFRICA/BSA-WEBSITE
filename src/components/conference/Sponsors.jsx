@@ -15,7 +15,7 @@ import partner4 from "../../assets/images/partners/teen-logo.PNG";
 import partner5 from "../../assets/images/partners/syncthesis-logo.png";
 import partner6 from "../../assets/images/partners/ibom.png";
 import partner7 from "../../assets/images/partners/velo-logo.png";
-import partner8 from "../../assets/images/partners/log1.png";
+import partner8 from "../../assets/images/partners/fem-logo.png";
 
 
  const settings = {
