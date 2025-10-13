@@ -7,7 +7,7 @@ const EventHero = () => {
     window.open("https://luma.com/tdrxynqv", "_blank");
   }
   return (
-    <section id="Home" className="px-6 pt-20 text-white md:pt-18">
+    <section id="Home" className="px-6 pt-8 text-white md:pt-18">
       {/* Background overlay */}
       <div className="absolute inset-0 bg-black/40"></div>
 
@@ -16,8 +16,8 @@ const EventHero = () => {
       <div className="absolute bottom-20 right-10 w-40 h-40 bg-blue-500/10 rounded-full blur-xl"></div>
 
       {/* Main content */}
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-6 text-center">
-        <div className="max-w-4xl mx-auto space-y-8">
+      <div className="relative z-10 flex flex-col  items-center justify-center min-h-screen px-6 text-center">
+        <div className="max-w-4xl mx-auto space-y-4 md:space-y-8 ">
           {/* Main title */}
           <div className="space-y-4">
             <h1 className="text-5xl md:text-6xl font-semibold text-white leading-tight">
@@ -67,7 +67,7 @@ const EventHero = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="pt-4">
+          <div className="">
             <button
               onClick={reserveLink}
               className=" px-16 py-3 rounded-full bg-[#791EEB] text-white font-semibold shadow-lg 

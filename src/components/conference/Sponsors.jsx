@@ -1,6 +1,8 @@
 import React from "react";
 import Button from "../../components/Ui/Button";
 
+import Slider from "react-slick";
+
 import sponsor1 from "../../assets/images/sponsor1.png";
 import sponsor2 from "../../assets/images/sponsor2.png";
 import sponsor3 from "../../assets/images/sponsor3.png";
@@ -12,9 +14,42 @@ import partner3 from "../../assets/images/partners/block-logo.png";
 import partner4 from "../../assets/images/partners/teen-logo.PNG";
 import partner5 from "../../assets/images/partners/syncthesis-logo.png";
 import partner6 from "../../assets/images/partners/ibom.png";
-import partner7 from "../../assets/images/partners/velopay-logo.png";
+import partner7 from "../../assets/images/partners/velo-logo.png";
 import partner8 from "../../assets/images/partners/log1.png";
 
+
+ const settings = {
+   dots: false,
+   infinite: true,
+   speed: 3000,
+   slidesToShow: 3,
+   slidesToScroll: 1,
+   autoplay: true,
+   autoplaySpeed: 0,
+   cssEase: "linear",
+   pauseOnHover: true,
+   arrows: false,
+   responsive: [
+     {
+       breakpoint: 1024,
+       settings: {
+         slidesToShow: 4,
+       },
+     },
+     {
+       breakpoint: 768,
+       settings: {
+         slidesToShow: 3,
+       },
+     },
+     {
+       breakpoint: 480,
+       settings: {
+         slidesToShow: 2,
+       },
+     },
+   ],
+ };
 
 
 
@@ -29,9 +64,8 @@ const Sponsors = () => {
     {
       src: sponsor2,
       alt: "Droom Logo",
-      width: "264px",
-      height: "74px",
-      margin: "30px 0",
+      width: "136px",
+      height: "134px",
     },
     {
       src: sponsor3,
@@ -51,55 +85,54 @@ const Sponsors = () => {
     {
       src: partner1,
       alt: "Partner 1",
-      width: "136px",
-      height: "134px",
+      width: "200px",
+      height: "200px",
     },
     {
       src: partner2,
       alt: "Droom Logo",
-      width: "264px",
-      height: "74px",
-      margin: "30px 0",
+      width: "200px",
+      height: "200px",
     },
     {
       src: partner3,
       alt: "Partner 3",
-      width: "134px",
-      height: "134px",
+      width: "200px",
+      height: "200px",
     },
     {
       src: partner4,
       alt: "Partner 4",
-      width: "146px",
-      height: "134px",
+      width: "200px",
+      height: "200px",
     },
 
     {
       src: partner5,
       alt: "Partner 4",
-      width: "146px",
-      height: "134px",
+      width: "200px",
+      height: "200px",
     },
 
     {
       src: partner6,
       alt: "Partner 4",
-      width: "146px",
-      height: "134px",
+      width: "200px",
+      height: "200px",
     },
 
     {
       src: partner7,
       alt: "Partner 4",
-      width: "146px",
-      height: "134px",
+      width: "200px",
+      height: "200px",
     },
 
     {
       src: partner8,
       alt: "Partner 4",
-      width: "146px",
-      height: "134px",
+      width: "200px",
+      height: "200px",
     },
   ];
 
@@ -146,15 +179,27 @@ const Sponsors = () => {
               </h3>
 
               {/* Partners Logos */}
-              <div className="flex flex-wrap justify-center items-center gap-8 animate-slideInRight sm:gap-2 md:gap-16 lg:gap-[9px] w-full md:justify-between">
-                {partnerLogos?.map((logo, index) => (
-                  <img
-                    key={index}
-                    src={logo?.src}
-                    alt={logo?.alt}
-                    className="object-contain hover:scale-105 transition-transform duration-200 w-[300px] h-[150px] "
-                  />
-                ))}
+              <div className="w-full max-w-7xl px-4">
+                <Slider {...settings}>
+                  {partnerLogos.map((logo, index) => (
+                    <div
+                      key={index}
+                      className="flex justify-center items-center p-4"
+                    >
+                      <img
+                        src={logo.src}
+                        alt={logo.alt}
+                        loading="lazy"
+                        className="object-contain hover:scale-105 transition-transform duration-300 "
+                        style={{
+                          width: logo?.width,
+                          height: logo?.height,
+                          margin: logo?.margin || "0",
+                        }}
+                      />
+                    </div>
+                  ))}
+                </Slider>
               </div>
 
               {/* CTA Button */}
