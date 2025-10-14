@@ -13,14 +13,14 @@ const Footer = () => {
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14">
         <div className="flex flex-col gap-[46px] justify-start items-center py-8 md:py-12">
           {/* Main Footer Content */}
-          <div className="flex flex-col lg:flex-row justify-between items-start w-full gap-8 lg:gap-0">
+          <div className="flex flex-col md:flex-row justify-start md:justify-evenly items-start  md w-full gap-8 lg:gap-0 ">
             {/* Left Section - Logo and Event Info */}
-            <div className="flex flex-col gap-2 justify-start items-start w-full lg:w-[32%]">
-              <div className="flex flex-col justify-start items-start w-full">
+            <div className="flex flex-col gap-2 justify-start  items-start w-full lg:w-[32%] md:mt-[-40px] ">
+              <div className="flex flex-col justify-start  w-full">
                 <img
                   src={conferenImg}
                   alt="ABIA Web3 Conference Logo"
-                  className="w-[258px] h-[182px] object-contain"
+                  className="w-[258px] h-[220px] object-contain ml-[-58px] md:ml-0 "
                 />
                 <p
                   className="text-lg sm:text-xl font-medium leading-[26px] text-center text-text-white opacity-90 mt-[-18px]"

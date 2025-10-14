@@ -10,6 +10,7 @@ import Statistics from "../components/conference/Statistics";
 import Sponsors from "../components/conference/Sponsors";
 import CallToAction from "../components/conference/CallToAction";
 import Footer from "../components/conference/Footer";
+import HeroSection from "../components/conference/Hero";
 
 
 const AbiaStateEvent = () => {
@@ -25,7 +26,8 @@ const AbiaStateEvent = () => {
 
         <div className="relative z-10">
           <EventNav />
-          <EventHero />
+          {/* <EventHero /> */}
+          <HeroSection/>
         </div>
       </div>
 
