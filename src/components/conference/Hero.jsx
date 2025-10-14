@@ -66,7 +66,7 @@ const HeroSection = () => {
           <div className="flex  justify-center items-center gap-2 text-center">
             <MapPin className="w-6 h-6 text-[#00DEEF]" />
             <span
-              className="text-base text-[13px]  sm:text-lg md:text-lg font-medium text-text-white"
+              className="text-base text-[13px]  md:text-lg font-medium text-text-white"
               style={{ fontFamily: "Poppins" }}
             >
               ABA TOWN HALL (EXECUTIVE CHAMBER)
