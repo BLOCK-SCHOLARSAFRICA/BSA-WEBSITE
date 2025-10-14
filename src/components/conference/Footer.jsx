@@ -23,7 +23,7 @@ const Footer = () => {
                   className="w-[258px] h-[220px] object-contain ml-[-58px] md:ml-0 "
                 />
                 <p
-                  className="text-lg sm:text-xl font-medium leading-[26px] text-center text-text-white opacity-90 mt-[-18px]"
+                  className="text-lg sm:text-xl font-medium leading-[26px] md:text-center text-text-white opacity-90 mt-[-18px]"
                   style={{ fontFamily: "Poligon" }}
                 >
                   Abia Web3 & digital economy conference 2025
