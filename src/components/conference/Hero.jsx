@@ -63,7 +63,7 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="flex  justify-center items-center md:gap-2 text-center">
+          <div className="flex  justify-center items-center gap-2 text-center">
             <MapPin className="w-6 h-6 text-[#00DEEF]" />
             <span
               className="text-base text-sm  md:text-lg font-medium text-text-white"
