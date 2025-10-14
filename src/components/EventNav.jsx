@@ -36,7 +36,7 @@ const EventNav = () => {
       >
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 ml-[-35px]">
             <img src={logo} alt="logo" className="h-[258px] w-auto" />
           </div>
 
