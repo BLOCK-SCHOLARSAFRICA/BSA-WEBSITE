@@ -43,7 +43,7 @@ const HeroSection = () => {
         </div>
 
         {/* Event Details */}
-        <div className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-8 justify-center items-center">
+        <div className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-8 justify-center items-center mt-8">
           <div className="flex gap-2 justify-center items-center p-2">
             <Calendar className="w-6 h-6  text-[#00DEEF]" />
             <span
@@ -77,7 +77,7 @@ const HeroSection = () => {
         {/* Quote */}
         {/* Quote */}
         <div className="max-w-3xl mx-auto">
-          <blockquote className="text-xl md:text-2xl text-white/90 italic leading-relaxed font-medium">
+          <blockquote className="text-lg md:text-2xl text-white/90 italic leading-relaxed font-medium mt-8">
             "Africa is shaping the future of digital innovation, driving
             solutions that leapfrog growth and development"
           </blockquote>
@@ -85,7 +85,7 @@ const HeroSection = () => {
 
         {/* Description */}
         <p
-          className="text-sm sm:text-base md:text-lg text-[#ffffffe5] max-w-3xl leading-relaxed"
+          className="text-sm sm:text-base md:text-lg text-[#ffffffe5] max-w-3xl leading-relaxed mt-8"
           style={{ fontFamily: "Poppins" }}
         >
           Be part of the conversation at AWDEC 2025 — a one-day conference on
@@ -94,7 +94,7 @@ const HeroSection = () => {
         </p>
 
         {/* CTA Button */}
-        <div className="mt-6">
+        <div className="mt-8">
           <button
             onClick={() => window.open("https://luma.com/tdrxynqv", "_blank")}
             className="px-10 py-3 rounded-full bg-[#791EEB] text-white font-semibold shadow-lg hover:bg-[#00DEEF] transition-all duration-300"
