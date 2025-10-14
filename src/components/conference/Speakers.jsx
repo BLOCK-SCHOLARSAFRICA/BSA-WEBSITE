@@ -32,7 +32,10 @@ const Speakers = () => {
               className="flex flex-col justify-start items-center w-full border-b-2 border-r-2 border-[#939191] p-3 md:p-[14px] hover:shadow-lg transition-shadow duration-200"
             >
               {/* Speaker Image */}
-              <div className="w-full flex justify-center mb-6 md:mb-8">
+              <div
+                className="w-full flex justify-center mb-6 md:mb-8"
+                data-aos="fade-right"
+              >
                 {speaker?.image ? (
                   <img
                     src={speaker?.image}

@@ -1,6 +1,9 @@
 import React from "react";
 import abiaImg from "../../assets/abia.png";
 import { Calendar, Clock, MapPin } from "lucide-react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
   const reserveLink = () => {
     // window.location.href ="https://luma.com/tdrxynqv"
@@ -9,10 +12,14 @@ import { Calendar, Clock, MapPin } from "lucide-react";
   
 
 
+
 const HeroSection = () => {
+    useEffect(() => {
+       AOS.init({ duration: 1000, once: true });
+     }, []);
   return (
-      <section
-          id="Home"
+    <section
+      id="Home"
       className="w-full bg-[#0c1725] relative flex items-center justify-center min-h-screen md:h-screen pt-8 "
       style={{
         fontFamily: "Poppins",
@@ -28,7 +35,10 @@ const HeroSection = () => {
       {/* Content Container */}
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14 flex flex-col items-center justify-center text-center gap-6 md:gap-2">
         {/* Main Title and Hashtag */}
-        <div className="flex flex-col gap-2 md:gap-3 items-center w-full max-w-[726px] md:mt-8">
+        <div
+          className="flex flex-col gap-2 md:gap-3 items-center w-full max-w-[726px] md:mt-8 "
+          data-aos="fade-left"
+        >
           <div className="space-y-4">
             <h1 className="text-5xl md:text-6xl font-semibold text-white leading-tight">
               ABIA <span className="text-[#791EEB]">WEB3 & </span>DIGITAL
@@ -43,7 +53,10 @@ const HeroSection = () => {
         </div>
 
         {/* Event Details */}
-        <div className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-8 justify-center items-center mt-8">
+        <div
+          className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-8 justify-center items-center mt-8"
+          data-aos="fade-up"
+        >
           <div className="flex gap-2 justify-center items-center p-2">
             <Calendar className="w-6 h-6  text-[#00DEEF]" />
             <span
@@ -98,6 +111,7 @@ const HeroSection = () => {
           <button
             onClick={() => window.open("https://luma.com/tdrxynqv", "_blank")}
             className="px-10 py-3 rounded-full bg-[#791EEB] text-white font-semibold shadow-lg hover:bg-[#00DEEF] transition-all duration-300"
+            data-aos="zoom-in"
           >
             Reserve a seat
           </button>

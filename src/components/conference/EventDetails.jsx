@@ -1,11 +1,18 @@
 import React from "react";
 import Button from "../Ui/Button";
 import eventImg1 from "../../assets/images/main-event1.png"
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 
 
 
 
 const EventDetails = () => {
+  useEffect(() => {
+         AOS.init({ duration: 1000, once: true });
+       }, []);
   return (
     <section id="About" className="min-h-screen bg-black text-white">
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14 py-16 md:py-24 lg:py-[180px]">
@@ -50,10 +57,7 @@ const EventDetails = () => {
                   movement driving innovation, partnership, and transformation.
                   The digital future of Africa starts here-in Abia.
                 </p>
-              
               </div>
-
-             
 
               {/* Closing Paragraph */}
               {/* <p
@@ -72,6 +76,7 @@ const EventDetails = () => {
                 src={eventImg1}
                 alt="Conference participants discussing digital innovation"
                 className="w-full max-w-[468px] h-auto rounded-[16px] object-cover"
+                data-aos="fade-up"
               />
             </div>
           </div>
