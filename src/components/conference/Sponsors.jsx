@@ -2,6 +2,9 @@ import React from "react";
 import Button from "../../components/Ui/Button";
 
 import Slider from "react-slick";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 import sponsor1 from "../../assets/images/sponsor1.png";
 import sponsor2 from "../../assets/images/sponsor2.png";
@@ -54,6 +57,10 @@ import partner8 from "../../assets/images/partners/fem-logo.png";
 
 
 const Sponsors = () => {
+useEffect(() => {
+         AOS.init({ duration: 1000, once: true });
+       }, []);
+
   const sponsorLogos = [
     {
       src: sponsor1,
@@ -203,7 +210,9 @@ const Sponsors = () => {
               </div>
 
               {/* CTA Button */}
-              <Button text="Become A Sponsor" />
+              <div data-aos="zoom-in">
+                <Button text="Become A Sponsor" />
+              </div>
             </div>
           </div>
         </div>

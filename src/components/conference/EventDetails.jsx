@@ -32,7 +32,10 @@ const EventDetails = () => {
             {/* Text Content */}
             <div className="flex flex-col gap-6 justify-start items-start w-full lg:w-[52%]">
               {/* Introduction Paragraphs */}
-              <div className="flex flex-col gap-6 justify-start items-center w-full">
+              <div
+                className="flex flex-col gap-6 justify-start items-center w-full"
+                data-aos="fade-left"
+              >
                 <p
                   className="text-lg sm:text-xl font-normal leading-[27px] sm:leading-[30px] text-text-primary w-full"
                   style={{ fontFamily: "Poppins" }}

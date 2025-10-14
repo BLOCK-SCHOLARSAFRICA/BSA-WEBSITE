@@ -33,7 +33,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-[#191919bf]"></div>
 
       {/* Content Container */}
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14 flex flex-col items-center justify-center text-center gap-6 md:gap-2">
+      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14 flex flex-col items-center justify-center text-center gap-6 md:gap-2 md:mt-8">
         {/* Main Title and Hashtag */}
         <div
           className="flex flex-col gap-2 md:gap-3 items-center w-full max-w-[726px] md:mt-8 "
@@ -89,7 +89,7 @@ const HeroSection = () => {
 
         {/* Quote */}
         {/* Quote */}
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl mx-auto" data-aos="fade-left">
           <blockquote className="text-lg md:text-2xl text-white/90 italic leading-relaxed font-medium mt-8">
             "Africa is shaping the future of digital innovation, driving
             solutions that leapfrog growth and development"
@@ -100,6 +100,7 @@ const HeroSection = () => {
         <p
           className="text-sm sm:text-base md:text-lg text-[#ffffffe5] max-w-3xl leading-relaxed mt-8"
           style={{ fontFamily: "Poppins" }}
+          data-aos="fade-up"
         >
           Be part of the conversation at AWDEC 2025 — a one-day conference on
           collaboration, innovation, and opportunities in Web3 and the digital
