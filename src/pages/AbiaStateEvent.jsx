@@ -45,7 +45,7 @@ const AbiaStateEvent = () => {
         {/* features */}
         <Features />
         
-        <Sponsors />
+        <Sponsors />v
         
         <CallToAction />
         

@@ -1,7 +1,13 @@
 import React from "react";
 import speaker1 from "../../assets/images/speaker1.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Speakers = () => {
+  useEffect(() => {
+       AOS.init({ duration: 1000, once: true });
+     }, []);
   // Generate 20 speaker placeholders
   const speakers = Array.from({ length: 4 }, (_, index) => ({
     id: index + 1,
@@ -25,7 +31,10 @@ const Speakers = () => {
         </div>
 
         {/* Speakers Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 mb-8 md:mb-12 lg:mb-[118px]">
+        <div
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 mb-8 md:mb-12 lg:mb-[118px]"
+          data-aos="fade-right"
+        >
           {speakers?.map((speaker) => (
             <div
               key={speaker?.id}
@@ -34,7 +43,7 @@ const Speakers = () => {
               {/* Speaker Image */}
               <div
                 className="w-full flex justify-center mb-6 md:mb-8"
-                data-aos="fade-right"
+                
               >
                 {speaker?.image ? (
                   <img

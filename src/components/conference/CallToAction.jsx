@@ -18,7 +18,7 @@ const CallToAction = () => {
             {/* Left Section - Text */}
             <div
               className="w-full sm:w-auto flex-1 text-center sm:text-left"
-              data-aos="fade-left"
+              data-aos="fade-up"
             >
               <p
                 className="text-[18px] sm:text-[19px] md:text-[20px] lg:text-[21px] font-medium leading-[27px] sm:leading-[29px] md:leading-[30px] lg:leading-[32px] text-text-white"

@@ -57,9 +57,7 @@ import partner8 from "../../assets/images/partners/fem-logo.png";
 
 
 const Sponsors = () => {
-useEffect(() => {
-         AOS.init({ duration: 1000, once: true });
-       }, []);
+
 
   const sponsorLogos = [
     {

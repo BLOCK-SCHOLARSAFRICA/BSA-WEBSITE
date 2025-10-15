@@ -10,17 +10,15 @@ import { useEffect } from "react";
 
 
 const EventDetails = () => {
-  useEffect(() => {
-         AOS.init({ duration: 1000, once: true });
-       }, []);
+  
   return (
-    <section id="About" className="min-h-screen bg-black text-white">
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14 py-16 md:py-24 lg:py-[180px]">
-        <div className=" flex flex-col bg-text-white rounded-[24px] p-8 sm:p-12 md:p-16 lg:p-[68px] shadow-lg">
+    <section id="About" className="min-h-screen bg-white text-white">
+      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14 py-16 md:py-24 lg:py-[180px] ">
+        <div className=" flex flex-col items-left  bg-[#407AFB] rounded-[24px] p-8 sm:p-12 md:p-16 lg:p-[68px] shadow-lg ">
           {/* Section Header */}
-          <div className="mb-6 md:mb-8 lg:mb-[24px]">
+          <div className="mb-6 md:mb-8 lg:mb-[24px] ml-[-48.5px] md:ml-0">
             <h2
-              className="text-[24px] sm:text-[28px] md:text-[30px] lg:text-[32px] font-semibold leading-[36px] sm:leading-[42px] md:leading-[45px] lg:leading-[48px] text-center text-text-primary"
+              className=" text-[20px] md:text-[24px]  text-left text-white  sm:text-[28px] md:text-[30px] lg:text-[32px] font-semibold leading-[36px] sm:leading-[42px] md:leading-[45px] lg:leading-[48px] text-center text-text-primary"
               style={{ fontFamily: "Poppins" }}
             >
               ABOUT THE CONFERENCE
@@ -34,10 +32,10 @@ const EventDetails = () => {
               {/* Introduction Paragraphs */}
               <div
                 className="flex flex-col gap-6 justify-start items-center w-full"
-                data-aos="fade-left"
+                
               >
                 <p
-                  className="text-lg sm:text-xl font-normal leading-[27px] sm:leading-[30px] text-text-primary w-full"
+                  className="text-white text-[17px] md:text-[20px] sm:text-xl font-normal leading-[27px] sm:leading-[30px] text-text-primary w-full"
                   style={{ fontFamily: "Poppins" }}
                 >
                   Abia Web3 & Digital Economy Conference (AWDEC) is one of
