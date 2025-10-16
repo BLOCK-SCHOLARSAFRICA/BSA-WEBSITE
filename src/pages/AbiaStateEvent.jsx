@@ -11,6 +11,7 @@ import Sponsors from "../components/conference/Sponsors";
 import CallToAction from "../components/conference/CallToAction";
 import Footer from "../components/conference/Footer";
 import HeroSection from "../components/conference/Hero";
+import SponsorSpeakers from "../components/conference/SponsorSpeakers";
 
 
 const AbiaStateEvent = () => {
@@ -45,7 +46,9 @@ const AbiaStateEvent = () => {
         <Speakers />
         {/* features */}
         <Features />
-        <Sponsors />v
+        {/* <Sponsors /> */}
+        <SponsorSpeakers />
+        
         <CallToAction />
         <Footer />
       </div>

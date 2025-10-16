@@ -1,4 +1,4 @@
-import React from "react";
+
 import Button from "../../components/Ui/Button";
 
 import Slider from "react-slick";
