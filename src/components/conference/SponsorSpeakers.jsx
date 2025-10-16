@@ -9,14 +9,15 @@ import comm4 from "../../assets/images/partners/block-logo.png";
 import offi1 from "../../assets/images/partners/teen-logo.PNG";
 import comm5 from "../../assets/images/partners/syncthesis-logo.png";
 import eco1 from "../../assets/images/partners/ibom.png";
-import partner7 from "../../assets/images/partners/velo-logo.png";
+import eco2 from "../../assets/images/partners/eth-logo.png";
 import comm2 from "../../assets/images/partners/fem-logo.png";
+
 
 const communityLogos = [comm1, comm2, comm3, comm4];
 
 const officialLogo = [offi1];
 
-const ecosystemLogo = [eco1];
+const ecosystemLogo = [eco1, eco2];
 
 const SponsorSpeakers = (prop) => {
   const [current, setCurrent] = useState(0);
