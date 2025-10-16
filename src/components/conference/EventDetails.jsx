@@ -35,7 +35,7 @@ const EventDetails = () => {
               {/* Introduction Paragraphs */}
               <div className="flex flex-col gap-6 justify-start items-center w-full">
                 <p
-                  className="text-white text-[17px] md:text-[20px] sm:text-xl font-normal leading-[27px] sm:leading-[30px] text-text-primary w-full"
+                  className="text-white text-[17px] md:text-[20px]  font-normal leading-[27px] sm:leading-[30px] text-text-primary w-full"
                   style={{ fontFamily: "Poppins" }}
                 >
                   Abia Web3 & Digital Economy Conference (AWDEC) is one of
