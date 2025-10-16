@@ -1,10 +1,12 @@
 import React from "react";
 
 
-import attendeeIcon from "../../assets/icons/attendee.svg";
-import countryIon from "../../assets/icons/country.svg";
+import attendeeIcon from "../../assets/icons/attend-svg.svg";
+import countryIon from "../../assets/icons/country-svg.svg";
 
-import schoolIcon from "../../assets/icons/school.svg";
+import schoolIcon from "../../assets/icons/school-svg.svg";
+import speakerIcon from "../../assets/icons/speaker-svg.svg"
+
 
 // "/images/img_vector_white_a700_44x58.svg",
 
@@ -22,27 +24,27 @@ const Statistics = () => {
       icon: schoolIcon,
       value: "200+",
       label: "Schools represented",
-      iconWidth: "50px",
+      iconWidth: "63px",
       iconHeight: "44px",
     },
     {
-      icon: attendeeIcon,
+      icon: speakerIcon,
       value: "20",
       label: "Speakers & Panelists",
-      iconWidth: "58px",
+      iconWidth: "63px",
       iconHeight: "44px",
     },
     {
       icon: countryIon,
       value: "7",
       label: "Countries",
-      iconWidth: "40px",
-      iconHeight: "40px",
+      iconWidth: "63px",
+      iconHeight: "44px",
     },
   ];
 
   return (
-    <section className="w-full bg-[#791EEB] border-b-4 border-text-white">
+    <section className="w-full bg-white border-b-4 border-text-white md:mt-[-55px]" >
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-8 md:py-[34px]">
           {/* Statistics Grid */}
@@ -68,7 +70,7 @@ const Statistics = () => {
 
                   {/* Value */}
                   <h3
-                    className="text-[32px] sm:text-[36px] md:text-[40px] font-semibold leading-[48px] sm:leading-[54px] md:leading-[60px] text-center text-text-white"
+                    className="text-[25px]  md:text-[30px] font-semibold leading-[48px] sm:leading-[54px] md:leading-[60px] text-center text-[#A306E4]"
                     style={{ fontFamily: "Poppins" }}
                   >
                     {stat?.value}
@@ -77,7 +79,7 @@ const Statistics = () => {
 
                 {/* Label */}
                 <p
-                  className="text-lg sm:text-xl font-medium leading-[27px] sm:leading-[30px] text-center text-text-white"
+                  className="text-lg sm:text-xl font-medium leading-[27px] sm:leading-[30px] text-center text-[#242424]"
                   style={{ fontFamily: "Poppins" }}
                 >
                   {stat?.label}

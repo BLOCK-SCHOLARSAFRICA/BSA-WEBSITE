@@ -27,29 +27,27 @@ const AbiaStateEvent = () => {
         <div className="relative z-10">
           <EventNav />
           {/* <EventHero /> */}
-          <HeroSection/>
+          <HeroSection />
         </div>
       </div>
 
       {/* Main content without overlay */}
       <div className="relative z-10 bg-white text-gray-900">
-        <CountdownTimer />
         {/* <EventMainContent /> */}
         <EventDetails />
-
         {/* speakers */}
         <Statistics />
         {/* Statistics */}
-        <Speakers />
 
+        {/* CountdownTimer */}
+        <CountdownTimer />
+
+        <Speakers />
         {/* features */}
         <Features />
-        
         <Sponsors />v
-        
         <CallToAction />
-        
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );
