@@ -9,7 +9,7 @@ import xicon from "../../assets/icons/x.svg";
 import tiktok from "../../assets/icons/tiktok.svg";
 import telegram from "../../assets/icons/telegram.svg";
 import indIcon from "../../assets/icons/ind.svg";
-import youtubeIcon from "../../assets/icons/youtube.svg";
+import igIcon from "../../assets/icons/youtube.svg";
 
 const Footer = () => {
   return (
@@ -77,6 +77,14 @@ const Footer = () => {
                       "https://www.linkedin.com/company/abia-web3-digital-economy-conference/",
                       "_blank"
                     )
+                  }
+                />
+
+                <img
+                  src={igIcon}
+                  className="object-contain"
+                  onClick={() =>
+                    window.open("https://www.instagram.com/abia_web3", "_blank")
                   }
                 />
               </div>
@@ -198,6 +206,13 @@ const Footer = () => {
                   "https://www.linkedin.com/company/abia-web3-digital-economy-conference/",
                   "_blank"
                 )
+              }
+            />
+            <img
+              src={igIcon}
+              className="object-contain"
+              onClick={() =>
+                window.open("https://www.instagram.com/abia_web3", "_blank")
               }
             />
           </div>
