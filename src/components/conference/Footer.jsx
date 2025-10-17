@@ -170,7 +170,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex gap-4 items-left ml-[-170px] md:hidden">
+          <div className="flex gap-4 items-left ml-[-136px] md:hidden">
             <img
               src={facebookIcon}
               className="object-contain cursor-pointer"
