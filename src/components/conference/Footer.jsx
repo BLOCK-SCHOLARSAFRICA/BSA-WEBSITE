@@ -42,7 +42,7 @@ const Footer = () => {
               <div className=" gap-4 items-left  hidden md:flex">
                 <img
                   src={facebookIcon}
-                  className="object-contain"
+                  className="object-contain cursor-pointer"
                   onClick={() =>
                     window.open(
                       "https://www.facebook.com/share/19uY8DwvcH/",
@@ -52,26 +52,26 @@ const Footer = () => {
                 />
                 <img
                   src={xicon}
-                  className="object-contain"
+                  className="object-contain cursor-pointer"
                   onClick={() =>
                     window.open("https://x.com/abia_web3", "_blank")
                   }
                 />
                 <img
                   src={tiktok}
-                  className="object-contain"
+                  className="object-contain cursor-pointer"
                   onClick={() =>
                     window.open("https://www.tiktok.com/@awdec_", "_blank")
                   }
                 />
                 <img
                   src={telegram}
-                  className="object-contain"
+                  className="object-contain cursor-pointer "
                   onClick={() => window.open("https://t.me/AWDEC25", "_blank")}
                 />
                 <img
                   src={indIcon}
-                  className="object-contain"
+                  className="object-contain cursor-pointer"
                   onClick={() =>
                     window.open(
                       "https://www.linkedin.com/company/abia-web3-digital-economy-conference/",
@@ -82,7 +82,7 @@ const Footer = () => {
 
                 <img
                   src={igIcon}
-                  className="object-contain"
+                  className="object-contain cursor-pointer"
                   onClick={() =>
                     window.open("https://www.instagram.com/abia_web3", "_blank")
                   }
@@ -173,7 +173,7 @@ const Footer = () => {
           <div className="flex gap-4 items-left ml-[-170px] md:hidden">
             <img
               src={facebookIcon}
-              className="object-contain"
+              className="object-contain cursor-pointer"
               onClick={() =>
                 window.open(
                   "https://www.facebook.com/share/19uY8DwvcH/",
@@ -183,24 +183,24 @@ const Footer = () => {
             />
             <img
               src={xicon}
-              className="object-contain"
+              className="object-contain cursor-pointer"
               onClick={() => window.open("https://x.com/abia_web3", "_blank")}
             />
             <img
               src={tiktok}
-              className="object-contain"
+              className="object-contain cursor-pointer"
               onClick={() =>
                 window.open("https://www.tiktok.com/@awdec_", "_blank")
               }
             />
             <img
               src={telegram}
-              className="object-contain"
+              className="object-contain cursor-pointer"
               onClick={() => window.open("https://t.me/AWDEC25", "_blank")}
             />
             <img
               src={indIcon}
-              className="object-contain"
+              className="object-contain cursor-pointer"
               onClick={() =>
                 window.open(
                   "https://www.linkedin.com/company/abia-web3-digital-economy-conference/",
@@ -210,7 +210,7 @@ const Footer = () => {
             />
             <img
               src={igIcon}
-              className="object-contain"
+              className="object-contain cursor-pointer"
               onClick={() =>
                 window.open("https://www.instagram.com/abia_web3", "_blank")
               }
