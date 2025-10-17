@@ -170,7 +170,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex gap-4 items-left ml-[-136px] md:hidden">
+          <div className="flex gap-4 items-left ml-[-135px] md:hidden">
             <img
               src={facebookIcon}
               className="object-contain cursor-pointer"
@@ -223,7 +223,7 @@ const Footer = () => {
 
           {/* Copyright Section */}
           <div className="flex gap-1 justify-center items-center p-1">
-            <img src={copyrightIcon} alt="Copyright" className="w-3 h-3" />
+            <img src={copyrightIcon} alt="Copyright" className="w-8 h-8" />
             <p
               className="text-base font-medium leading-[24px] text-text-lighter"
               style={{ fontFamily: "DM Sans" }}
