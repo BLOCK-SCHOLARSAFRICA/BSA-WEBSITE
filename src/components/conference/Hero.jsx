@@ -20,7 +20,7 @@ const HeroSection = () => {
   return (
     <section
       id="Home"
-      className="w-full bg-[#0c1725] relative flex items-center justify-center min-h-screen md:h-screen pt-8 "
+      className="w-full bg-[#0c1725] relative flex items-center justify-center min-h-screen  pt-8 "
       style={{
         fontFamily: "Poppins",
         backgroundImage: `url(${abiaImg})`,
@@ -33,7 +33,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-[#191919bf]"></div>
 
       {/* Content Container */}
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14 flex flex-col items-center justify-center text-center gap-6 md:gap-2 md:mt-8">
+      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14 flex flex-col items-center justify-center text-center gap-6 md:gap-2 md:my-20">
         {/* Main Title and Hashtag */}
         <div
           className="flex flex-col gap-2 md:gap-3 items-center w-full max-w-[726px] md:mt-8 "

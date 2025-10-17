@@ -33,7 +33,7 @@ const AbiaStateEvent = () => {
       </div>
 
       {/* Main content without overlay */}
-      <div className="relative z-10 bg-white text-gray-900">
+      <div className="relative  bg-white text-gray-900">
         {/* <EventMainContent /> */}
         <EventDetails />
         {/* speakers */}

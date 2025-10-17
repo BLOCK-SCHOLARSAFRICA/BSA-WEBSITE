@@ -10,13 +10,15 @@ import { useEffect } from "react";
 
 
 const EventDetails = () => {
-  
+    useEffect(() => {
+          AOS.init({ duration: 1000, once: true });
+        }, []);
   return (
     <section
       id="About"
-      className="min-h-screen bg-white text-white md:mt[-100px]"
+      className="min-h-screen bg-white text-white "
     >
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14 py-16 md:py-24  md:mt[-100px] ">
+      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14 py-16 md:py-24  md:mt-20 ">
         <div className=" flex flex-col items-left  bg-[#407AFB] rounded-[24px] p-8 sm:p-12 md:p-16 lg:p-[68px] shadow-lg ">
           {/* Section Header */}
           <div className="mb-6 md:mb-8 lg:mb-[24px] ml-[-48.5px] md:ml-0">
@@ -35,7 +37,7 @@ const EventDetails = () => {
               {/* Introduction Paragraphs */}
               <div className="flex flex-col gap-6 justify-start items-center w-full">
                 <p
-                  className="text-white text-[17px] md:text-[20px]  font-normal leading-[27px] sm:leading-[30px] text-text-primary w-full"
+                  className="text-white text-[17px] md:text-[px]  font-normal leading-[27px]  text-text-primary w-full"
                   style={{ fontFamily: "Poppins" }}
                 >
                   Abia Web3 & Digital Economy Conference (AWDEC) is one of

@@ -40,7 +40,7 @@ const Features = () => {
   ];
 
   return (
-    <section className="w-full bg-[#407AFB] border-b-4 border-text-white">
+    <section className="w-full bg-[#407AFB] border-b-4 border-text-white md:mt-[-70px]">
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14">
         <div className="py-12 md:py-16 lg:py-[68px]">
           {/* Content Container */}

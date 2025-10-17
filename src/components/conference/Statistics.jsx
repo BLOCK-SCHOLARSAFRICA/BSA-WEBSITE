@@ -1,5 +1,9 @@
 import React from "react";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 
 import attendeeIcon from "../../assets/icons/attend-svg.svg";
 import countryIon from "../../assets/icons/country-svg.svg";
@@ -12,12 +16,15 @@ import speakerIcon from "../../assets/icons/speaker-svg.svg"
 
 
 const Statistics = () => {
+  useEffect(() => {
+         AOS.init({ duration: 1000, once: true });
+       }, []);
   const stats = [
     {
       icon: attendeeIcon,
       value: "3000+",
       label: "Attendees (onsite & virtual)",
-      iconWidth: "58px",
+      iconWidth: "80px",
       iconHeight: "44px",
     },
     {
@@ -44,7 +51,7 @@ const Statistics = () => {
   ];
 
   return (
-    <section className="w-full bg-white border-b-4 border-text-white md:mt-[-55px]" >
+    <section className="w-full bg-white border-b-4 border-text-white md:mt-[-55px]">
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-8 md:py-[34px]">
           {/* Statistics Grid */}
@@ -55,7 +62,10 @@ const Statistics = () => {
                 className="flex flex-col gap-2 justify-start items-center w-full max-w-[278px]"
               >
                 {/* Icon Container */}
-                <div className="flex flex-col gap-2 justify-start items-center w-full px-8 sm:px-12 md:px-14">
+                <div
+                  className="flex flex-col gap-2 justify-start items-center w-full px-8 sm:px-12 md:px-14"
+                  data-aos="fade-up"
+                >
                   <div className="flex justify-center items-center border-3 border-text-white rounded-[50px] p-6 sm:p-7 md:p-[28px] bg-transparent">
                     <img
                       src={stat?.icon}
