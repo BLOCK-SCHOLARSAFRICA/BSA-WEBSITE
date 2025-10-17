@@ -106,17 +106,30 @@ const HeroSection = () => {
           collaboration, innovation, and opportunities in Web3 and the digital
           economy.
         </p>
-
-        {/* CTA Button */}
-        <div className="mt-8">
-          <button
-            onClick={() => window.open("https://luma.com/tdrxynqv", "_blank")}
-            className="px-10 py-3 rounded-full bg-[#791EEB] text-white font-semibold shadow-lg hover:bg-[#00DEEF] transition-all duration-300"
-            data-aos="zoom-in"
-          >
-            Reserve a seat
-          </button>
+        <div className="flex flex-col md:flex-row md:gap-20">
+          <div className="mt-8">
+            <button
+              onClick={() => window.open("https://luma.com/tdrxynqv", "_blank")}
+              className="px-10 py-3 rounded-full bg-[#791EEB] text-white font-semibold shadow-lg hover:bg-[#00DEEF] transition-all duration-300"
+              data-aos="zoom-in "
+            >
+              Reserve a seat
+            </button>
+          </div>
+          {/* CTA Button */}
+          <div className="mt-8">
+            <button
+              onClick={() =>
+                window.open("https://forms.gle/axt39VxJPqpChKaX8", "_blank")
+              }
+              className="px-10 py-3 rounded-full bg-[#407AFB] text-white font-semibold shadow-lg hover:bg-[#00DEEF] transition-all duration-300"
+              data-aos="zoom-in"
+            >
+              Become a Sponsor
+            </button>
+          </div>
         </div>
+        {/* CTA Button */}
       </div>
     </section>
   );
