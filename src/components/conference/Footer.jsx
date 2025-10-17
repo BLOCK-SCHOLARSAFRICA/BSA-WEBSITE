@@ -1,11 +1,15 @@
 import React from "react";
 import phoneIcon from "../../assets/icons/phone.svg";
 import partnerIcon from "../../assets/icons/partner.svg";
-import copyrightIcon from "../../assets/icons/copyright.svg"
+import copyrightIcon from "../../assets/icons/copyright.svg";
 import conferenImg from "../../assets/images/conference-logo.png";
 
-
-
+import facebookIcon from "../../assets/icons/facebook.svg";
+import xicon from "../../assets/icons/x.svg";
+import tiktok from "../../assets/icons/tiktok.svg";
+import telegram from "../../assets/icons/telegram.svg";
+import indIcon from "../../assets/icons/ind.svg";
+import youtubeIcon from "../../assets/icons/youtube.svg";
 
 const Footer = () => {
   return (
@@ -35,6 +39,47 @@ const Footer = () => {
               >
                 Aba Town hall (Executive chamber)
               </p>
+              <div className=" gap-4 items-left  hidden md:flex">
+                <img
+                  src={facebookIcon}
+                  className="object-contain"
+                  onClick={() =>
+                    window.open(
+                      "https://www.facebook.com/share/19uY8DwvcH/",
+                      "_blank"
+                    )
+                  }
+                />
+                <img
+                  src={xicon}
+                  className="object-contain"
+                  onClick={() =>
+                    window.open("https://x.com/abia_web3", "_blank")
+                  }
+                />
+                <img
+                  src={tiktok}
+                  className="object-contain"
+                  onClick={() =>
+                    window.open("https://www.tiktok.com/@awdec_", "_blank")
+                  }
+                />
+                <img
+                  src={telegram}
+                  className="object-contain"
+                  onClick={() => window.open("https://t.me/AWDEC25", "_blank")}
+                />
+                <img
+                  src={indIcon}
+                  className="object-contain"
+                  onClick={() =>
+                    window.open(
+                      "https://www.linkedin.com/company/abia-web3-digital-economy-conference/",
+                      "_blank"
+                    )
+                  }
+                />
+              </div>
             </div>
 
             {/* Right Section - Contact and Thanks */}
@@ -100,7 +145,7 @@ const Footer = () => {
               </div>
 
               {/* Thanks Section */}
-              <div className="flex flex-col gap-[14px] justify-start items-end w-auto">
+              <div className=" flex-col gap-[14px] justify-start items-end w-auto hidden md:flex">
                 <h3
                   className="text-2xl font-semibold leading-[29px] text-right text-text-white"
                   style={{ fontFamily: "DM Sans" }}
@@ -117,16 +162,53 @@ const Footer = () => {
             </div>
           </div>
 
+          <div className="flex gap-4 items-left ml-[-170px] md:hidden">
+            <img
+              src={facebookIcon}
+              className="object-contain"
+              onClick={() =>
+                window.open(
+                  "https://www.facebook.com/share/19uY8DwvcH/",
+                  "_blank"
+                )
+              }
+            />
+            <img
+              src={xicon}
+              className="object-contain"
+              onClick={() => window.open("https://x.com/abia_web3", "_blank")}
+            />
+            <img
+              src={tiktok}
+              className="object-contain"
+              onClick={() =>
+                window.open("https://www.tiktok.com/@awdec_", "_blank")
+              }
+            />
+            <img
+              src={telegram}
+              className="object-contain"
+              onClick={() => window.open("https://t.me/AWDEC25", "_blank")}
+            />
+            <img
+              src={indIcon}
+              className="object-contain"
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/company/abia-web3-digital-economy-conference/",
+                  "_blank"
+                )
+              }
+            />
+          </div>
+
           {/* Divider Line */}
-          <div className="w-full h-[1px] bg-line-primaryBg"></div>
+
+          <div className="w-full h-[1px] bg-white"></div>
 
           {/* Copyright Section */}
           <div className="flex gap-1 justify-center items-center p-1">
-            <img
-              src={copyrightIcon}
-              alt="Copyright"
-              className="w-3 h-3"
-            />
+            <img src={copyrightIcon} alt="Copyright" className="w-3 h-3" />
             <p
               className="text-base font-medium leading-[24px] text-text-lighter"
               style={{ fontFamily: "DM Sans" }}
