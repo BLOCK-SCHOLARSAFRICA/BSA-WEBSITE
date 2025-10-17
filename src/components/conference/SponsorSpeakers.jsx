@@ -11,13 +11,17 @@ import comm5 from "../../assets/images/partners/syncthesis-logo.png";
 import eco1 from "../../assets/images/partners/ibom.png";
 import eco2 from "../../assets/images/partners/eth-logo.png";
 import comm2 from "../../assets/images/partners/fem-logo.png";
+import media2 from "../../assets/images/partners/coingaba-logo.png";
+import offi2 from "../../assets/images/partners/bsa-logo.png";
 
-const communityLogos = [comm1, comm2, comm3, comm4];
 
-const officialLogo = [offi1,comm1 ];
+const communityLogos = [comm1, comm2, comm3, comm4, comm5];
+
+const officialLogo = [offi1,offi2 ];
 
 const ecosystemLogo = [eco1, eco2];
-const mediaLogo = [media1, comm1];
+
+const mediaLogo = [media1, media2];
 
 const SponsorSpeakers = (prop) => {
   const [current, setCurrent] = useState(0);
