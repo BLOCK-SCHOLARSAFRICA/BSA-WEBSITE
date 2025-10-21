@@ -111,7 +111,7 @@ const HeroSection = () => {
             <button
               onClick={() => window.open("https://luma.com/tdrxynqv", "_blank")}
               className="px-10 py-3 rounded-full bg-[#791EEB] text-white font-semibold shadow-lg hover:bg-[#00DEEF] transition-all duration-300"
-              data-aos="zoom-in "
+              data-aos="zoom-in"
             >
               Reserve a seat
             </button>
@@ -123,6 +123,7 @@ const HeroSection = () => {
                 window.open("https://forms.gle/axt39VxJPqpChKaX8", "_blank")
               }
               className="px-10 py-3 rounded-full border border-[#B28BFF] text-[#E0D4FF] font-semibold shadow-lg hover:bg-[#791EEB] hover:text-white transition-all duration-300"
+              data-aos="zoom-in"
             >
               Become a Sponsor
             </button>
