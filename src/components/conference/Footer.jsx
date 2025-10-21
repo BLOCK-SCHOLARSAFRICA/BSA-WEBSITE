@@ -10,6 +10,7 @@ import tiktok from "../../assets/icons/tiktok.svg";
 import telegram from "../../assets/icons/telegram.svg";
 import indIcon from "../../assets/icons/ind.svg";
 import igIcon from "../../assets/icons/youtube.svg";
+import logo from "../../assets/icons/logosvg.svg";
 
 const Footer = () => {
   return (
@@ -19,13 +20,11 @@ const Footer = () => {
           {/* Main Footer Content */}
           <div className="flex flex-col md:flex-row justify-start md:justify-evenly items-start  md w-full gap-8 lg:gap-0 ">
             {/* Left Section - Logo and Event Info */}
-            <div className="flex flex-col gap-2 justify-start  items-start w-full lg:w-[32%] md:mt-[-40px] ">
-              <div className="flex flex-col justify-start  w-full">
-                <img
-                  src={conferenImg}
-                  alt="ABIA Web3 Conference Logo"
-                  className="w-[258px] h-[220px] object-contain ml-[-58px] md:ml-0 "
-                />
+            <div className="flex flex-col gap-2 justify-start  items-start w-full lg:w-[32%]  ">
+              <div className="flex flex-col justify-start gap-8  ">   
+                <div className="flex-shrink-0 ml-[-15px]">
+                            <img src={logo} alt="logo"  />  
+                          </div>
                 <p
                   className="text-lg sm:text-xl font-medium leading-[26px] mdtext-center text-text-white opacity-90 mt-[-18px]"
                   style={{ fontFamily: "Poligon" }}
@@ -107,7 +106,7 @@ const Footer = () => {
                       href="tel:+2348032741940"
                       className="flex gap-[6px] justify-center items-center hover:text-secondary-orange transition-colors duration-200"
                     >
-                      <img src={phoneIcon} alt="Phone" className="w-3 h-3" />
+                      <img src={phoneIcon} alt="Phone" className="w-6 h-6" />
                       <span
                         className="text-base font-medium leading-[24px] text-text-lightest"
                         style={{ fontFamily: "DM Sans" }}
@@ -121,7 +120,7 @@ const Footer = () => {
                       href="tel:+2348107865121"
                       className="flex gap-[6px] justify-center items-center hover:text-secondary-orange transition-colors duration-200"
                     >
-                      <img src={phoneIcon} alt="Phone" className="w-3 h-3" />
+                      <img src={phoneIcon} alt="Phone" className="w-6 h-6" />
                       <span
                         className="text-base font-medium leading-[24px] text-text-lightest"
                         style={{ fontFamily: "DM Sans" }}
@@ -139,7 +138,7 @@ const Footer = () => {
                       <img
                         src={partnerIcon}
                         alt="Email"
-                        className="w-4 h-3 mt-1"
+                        className="w-6 h-6 mt-1"
                       />
                       <span
                         className="text-base font-medium leading-[24px] text-text-lightest"

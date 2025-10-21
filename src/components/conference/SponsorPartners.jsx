@@ -13,22 +13,20 @@ import eco2 from "../../assets/images/partners/eth-logo.png";
 import comm2 from "../../assets/images/partners/fem-logo.png";
 import media2 from "../../assets/images/partners/coingaba-logo.png";
 import offi2 from "../../assets/images/partners/bsa-logo.png";
+import eco3 from "../../assets/images/partners/cyberchain-logo.png";
+import eco4 from "../../assets/images/partners/nobsaa-logo.png";
 
 
 const communityLogos = [comm1, comm2, comm3, comm4, comm5];
-
+const ecosystemLogo = [eco1, eco2, eco3, eco4];
 const officialLogo = [offi1,offi2 ];
-
-const ecosystemLogo = [eco1, eco2];
-
 const mediaLogo = [media1, media2];
 
-const SponsorSpeakers = (prop) => {
+const SponsorPartners = (prop) => {   
   const [current, setCurrent] = useState(0);
   const [ecosystem, setEcosystem] = useState(0);
   const [office, setOffice] = useState(0);
-  
-    const [media, setMedia] = useState(0);
+  const [media, setMedia] = useState(0);
 
   // Auto-change logo every 3 seconds
   useEffect(() => {
@@ -36,7 +34,7 @@ const SponsorSpeakers = (prop) => {
     // const ecosystemInt = setInterval(() => {
     //   setEcosystem((prev) => (prev + 1) % officialLogo.length);
     // }, 1000);
-
+ 
     // const intOfficial = setInterval(() => {
     //   setOffice((prev) => (prev + 1) % officialLogo.length);
     // }, 1000);
@@ -50,13 +48,13 @@ const SponsorSpeakers = (prop) => {
       setCurrent((prev) => (prev + 1) % communityLogos.length);
       setMedia((prev) => (prev + 1) % mediaLogo.length);
       setOffice((prev) => (prev + 1) % officialLogo.length);
-      setEcosystem((prev) => (prev + 1) % officialLogo.length);
+      setEcosystem((prev) => (prev + 1) % ecosystemLogo.length);
     }, 2000);
 
 
     return () => clearInterval(interval);
-  }, []);
-
+  }, []);          
+ 
   console.log(media, current)
 
   return (
@@ -225,6 +223,6 @@ const SponsorSpeakers = (prop) => {
   );
 };
 
-export default SponsorSpeakers;
+export default SponsorPartners
 
 /* Frame 1000003195 */

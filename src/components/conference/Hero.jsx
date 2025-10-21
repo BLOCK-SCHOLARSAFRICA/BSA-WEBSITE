@@ -122,8 +122,7 @@ const HeroSection = () => {
               onClick={() =>
                 window.open("https://forms.gle/axt39VxJPqpChKaX8", "_blank")
               }
-              className="px-10 py-3 rounded-full bg-[#407AFB] text-white font-semibold shadow-lg hover:bg-[#00DEEF] transition-all duration-300"
-              data-aos="zoom-in"
+              className="px-10 py-3 rounded-full border border-[#B28BFF] text-[#E0D4FF] font-semibold shadow-lg hover:bg-[#791EEB] hover:text-white transition-all duration-300"
             >
               Become a Sponsor
             </button>
