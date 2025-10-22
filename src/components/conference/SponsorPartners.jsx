@@ -22,7 +22,7 @@ const communityLogos = [comm1, comm2, comm3, comm4, comm5, comm6];
 const ecosystemLogo = [eco1, eco2, eco3, eco4];
 const officialLogo = [offi1, offi2];
 const mediaLogo = [media1, media2];
-const sponsors = [spon1];
+const sponsors = [spon1, spon1];
 
 const SponsorPartners = (prop) => {
   const [current, setCurrent] = useState(0);
@@ -133,7 +133,7 @@ const SponsorPartners = (prop) => {
                 key={index}
                 src={logo}
                 className={`absolute w-[199px] h-[180px] object-contain transition-opacity duration-1000 md:w-[250px] md:h-[200px] ${
-                  index === current ? "opacity-100" : "opacity-0 "
+                  index === sponsor ? "opacity-100" : "opacity-0 "
                 }`}
               />
             ))}
