@@ -63,7 +63,7 @@ const SponsorPartners = (prop) => {
       <div className="flex flex-col items-center ">
         {/* main event host */}
         <div
-          className="flex flex-col justify-center gap-[20px] px-6 items-center bg-[#407AFB] text-white rounded rounded-3xl w-[340px]
+          className="flex flex-col justify-center gap-[40px] px-6 items-center bg-[#407AFB] text-white rounded rounded-3xl w-[340px]
          mx-10  my-10 h-[560px] md:flex-row md:w-5/6 md:h-96 md:justify-between"
         >
           <div className="flex flex-col items-center  gap-6 md:items-start md:pl[200px] md:pl-10 ">
@@ -142,10 +142,10 @@ const SponsorPartners = (prop) => {
         </div>
         {/* sponsors */}
         <div
-          className="flex flex-col justify-center gap-[70px] px-6 items-center bg-[#407AFB] text-white rounded rounded-3xl w-[340px]
+          className="flex flex-col justify-center gap-[40px] px-6 items-center bg-[#407AFB] text-white rounded rounded-3xl w-[340px]
          mx-10  my-10 h-[560px] md:flex-row md:w-5/6 md:h-96 md:justify-between"
         >
-          <div className="flex flex-col items-center  gap-6 md:items-start md:pl[200px] md:pl-10 ">
+          <div className="flex flex-col items-center  gap-2 md:items-start md:pl[200px] md:pl-10 ">
             <p
               className="text-[26px]  font-extrabold md:text-left md:text-[35px] "
               style={{ fontFamily: "Poppins" }}
@@ -183,7 +183,7 @@ const SponsorPartners = (prop) => {
 
         {/* Ecosystem Partners */}
         <div
-          className="flex flex-col justify-center gap-[70px] px-6 items-center bg-[#407AFB] text-white rounded rounded-3xl w-[340px]
+          className="flex flex-col justify-center gap-[40px] px-6 items-center bg-[#407AFB] text-white rounded rounded-3xl w-[340px]
          mx-10  my-10 h-[560px] md:flex-row md:w-5/6 md:h-96 md:justify-between"
         >
           <div className="flex flex-col items-center  gap-6 md:items-start md:pl[200px] md:pl-10 ">
@@ -222,7 +222,7 @@ const SponsorPartners = (prop) => {
         </div>
         {/* Ecosystem Partners */}
         <div
-          className="flex flex-col justify-center gap-[70px] px-6  items-center bg-[#407AFB] text-white rounded rounded-3xl w-[340px]
+          className="flex flex-col justify-center gap-[40px] px-6  items-center bg-[#407AFB] text-white rounded rounded-3xl w-[340px]
          mx-10  my-10 h-[560px] md:flex-row md:w-5/6 md:h-96 md:justify-between"
         >
           <div className="flex flex-col items-center  gap-6 md:items-start md:pl[200px] md:pl-10 ">
