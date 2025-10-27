@@ -2,8 +2,7 @@ import React, { useState } from "react";
 
 export default function Newsletter() {
   const [email, setEmail] = useState("");
-
-  const handleSubmit = (e) => {
+   const handleSubmit = (e) => {
     e.preventDefault();
     if (email) {
       console.log("Email submitted:", email);

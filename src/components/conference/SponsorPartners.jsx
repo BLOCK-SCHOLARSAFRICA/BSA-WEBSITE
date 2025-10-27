@@ -18,7 +18,7 @@ import eco4 from "../../assets/images/partners/nobsaa-logo.png";
 import spon1 from "../../assets/images/partners/boundpay-logo.png";
 import comm6 from "../../assets/images/partners/hive-logo.png";
 
-const communityLogos = [comm1, comm2, comm3, comm4, comm5, comm6];
+const communityLogos = [comm1, comm2, comm3, comm4, comm5];
 const ecosystemLogo = [eco1, eco2, eco3, eco4];
 const officialLogo = [offi1, offi2];
 const mediaLogo = [media1, media2];
@@ -63,7 +63,7 @@ const SponsorPartners = (prop) => {
       <div className="flex flex-col items-center ">
         {/* main event host */}
         <div
-          className="flex flex-col justify-center gap-[40px] px-6 items-center bg-[#407AFB] text-white rounded rounded-3xl w-[340px]
+          className="flex flex-col justify-center gap-[4 0px] px-6 items-center bg-[#407AFB] text-white rounded rounded-3xl w-[340px]
          mx-10  my-10 h-[560px] md:flex-row md:w-5/6 md:h-96 md:justify-between"
         >
           <div className="flex flex-col items-center  gap-6 md:items-start md:pl[200px] md:pl-10 ">
