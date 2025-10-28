@@ -61,7 +61,8 @@ const Speakers = () => {
     {
       id: 4,
       name: "Rume Ophi",
-      title: "Founder & Lead Educator CryptoPreacher Blockchain Academy",
+      title: "Foremost Crypto Market Analyst, Convener Decentralized Nigeria Conference ",
+                                           
       // organization:
       //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
       image: rume,
@@ -114,13 +115,13 @@ const Speakers = () => {
                   {speaker?.name}
                 </h3>
                 <p
-                  className="text-lg sm:text-xl font-medium leading-[27px] sm:leading-[30px] text-[#242424b2]"
+                  className="text-sm sm:text-sm font-medium leading-[27px] sm:leading-[30px] text-[#242424b2]"
                   style={{ fontFamily: "Poppins" }}
                 >
                   {speaker?.title}
                 </p>
                 <p
-                  className="text-lg sm:text-xl font-medium leading-[27px] sm:leading-[30px] text-[#242424b2]"
+                  className="text-sm sm:text-sm font-medium leading-[27px] sm:leading-[30px] text-[#242424b2]"
                   style={{ fontFamily: "Poppins" }}
                 >
                   {speaker?.organization}
