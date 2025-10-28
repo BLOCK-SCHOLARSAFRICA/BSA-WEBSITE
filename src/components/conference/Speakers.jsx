@@ -20,9 +20,9 @@ const Speakers = () => {
   const speakers = Array.from({ length: 2 }, (_, index) => ({
     id: index + 1,
     name: "Lucky Uwakwe",
-    title: " Cofounder Dexpay and CEO of SaBipay",
+    title: " Cofounder Dexpay & CEO of SaBipay",
     organization:
-      "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
+      "Chairman,  BICCoN ",
     // image: index === 0 ?  speaker1: null,
   }));
 
@@ -30,9 +30,9 @@ const Speakers = () => {
     {
       id: 1,
       name: "Lucky Uwakwe",
-      title: " Cofounder Dexpay and CEO of SaBipay",
+      title: " Cofounder Dexpay & CEO  SaBipay",
       organization:
-        "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
+        "Chairman, BICCoN. Founder, NOBSAA",
       image: lucky,
       link: "https://www.linkedin.com/in/lucky-uwakwe-a66949b7",
     },
@@ -40,7 +40,7 @@ const Speakers = () => {
     {
       id: 2,
       name: "Franklin Peters",
-      title: "Founder and CEO of Boundlesspay",
+      title: "Founder & CEO  Boundlesspay",
       // organization:
       //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
       image: franklin,
@@ -99,7 +99,7 @@ const Speakers = () => {
                   <img
                     src={speaker?.image}
                     alt={`${speaker?.name} - ${speaker?.title}`}
-                    className="w-[200px] sm:w-[240px] md:w-[286px] h-[200px] sm:h-[240px] md:h-[286px] rounded-full object-cover"
+                    className="w-[240px] sm:w-[240px] md:w-[286px] h-[240px] sm:h-[240px] md:h-[286px] rounded-full object-cover object-top "
                   />
                 ) : (
                   <div className="w-[200px] sm:w-[240px] md:w-[286px] h-[200px] sm:h-[240px] md:h-[286px] rounded-full bg-[#ccc4c4]"></div>
@@ -115,22 +115,20 @@ const Speakers = () => {
                   {speaker?.name}
                 </h3>
                 <p
-                  className="text-sm sm:text-sm font-medium leading-[27px] sm:leading-[30px] text-[#242424b2]"
+                  className="text-sm sm:text-sm font- leading-[27px] sm:leading-[30px] text-[#242424b2]"
                   style={{ fontFamily: "Poppins" }}
                 >
                   {speaker?.title}
                 </p>
                 <p
-                  className="text-sm sm:text-sm font-medium leading-[27px] sm:leading-[30px] text-[#242424b2]"
+                  className="text-sm sm:text-sm font-medi leading-[27px] sm:leading-[30px] text-[#242424b2]"
                   style={{ fontFamily: "Poppins" }}
                 >
                   {speaker?.organization}
                 </p>
               </div>
               <button
-                onClick={() =>
-                  window.open(`${speaker.link}`, "_blank")
-                }
+                onClick={() => window.open(`${speaker.link}`, "_blank")}
                 class="flex items-center gap-2 mt-10 bg-[#791EEB] hover:bg-[#6a1bd3] text-white px-4 py-2 rounded-sm font-medium transition duration-200"
               >
                 <svg
