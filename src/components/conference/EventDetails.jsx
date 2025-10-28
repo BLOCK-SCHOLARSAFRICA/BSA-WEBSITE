@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../Ui/Button";
-import eventImg1 from "../../assets/images/main-event1.png"
+import eventImg1 from "../../assets/images/speakers/group-img.jfif"
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";

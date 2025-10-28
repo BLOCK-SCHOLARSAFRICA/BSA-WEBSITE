@@ -1,21 +1,72 @@
 import React from "react";
-import speaker1 from "../../assets/images/speaker1.png";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+
+
+import lucky from "../../assets/images/speakers/lucky.jfif";
+
+import franklin from "../../assets/images/speakers/franklin.jfif";
+
+import Kingsley from "../../assets/images/speakers/kingsley.jfif";
+
+import rume from "../../assets/images/speakers/rume.jfif";
+
+
 
 const Speakers = () => {
   useEffect(() => {
        AOS.init({ duration: 1000, once: true });
      }, []);
   // Generate 20 speaker placeholders
-  const speakers = Array.from({ length: 4 }, (_, index) => ({
+  const speakers = Array.from({ length: 2 }, (_, index) => ({
     id: index + 1,
-    name: "John Doe",
-    title: "Convener",
-    organization: "AWDEC",
+    name: "Lucky Uwakwe",
+    title: " Cofounder Dexpay and CEO of SaBipay",
+    organization:
+      "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
     // image: index === 0 ?  speaker1: null,
   }));
+
+  const speakerss = [
+    {
+      id: 1,
+      name: "Lucky Uwakwe",
+      title: " Cofounder Dexpay and CEO of SaBipay",
+      organization:
+        "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
+      image: lucky,
+    },
+
+    {
+      id: 2,
+      name: "Franklin Peters",
+      title: "Founder and CEO of Boundlesspay",
+      // organization:
+      //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
+       image: franklin,
+    },
+
+    {
+      id: 3,
+      name: "Kingsley Ekwuruke",
+      title:
+        "Founder Network Of Blockchain Solutions Advocates Association(NOBSAA)",
+      // organization:
+      //   "Founder Network Of Blockchain Solutions Advocates Association(NOBSAA)",
+      image: Kingsley,
+    },
+
+    {
+      id: 4,
+      name: "Rume Ophi",
+      title: "Founder & Lead Educator CryptoPreacher Blockchain Academy",
+      // organization:
+      //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
+      image: rume,
+    },
+  ];
 
   return (
     <section id="Speakers" className="w-full bg-background-primary">
@@ -35,7 +86,7 @@ const Speakers = () => {
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 mb-8 md:mb-12 lg:mb-[118px]"
           data-aos="fade-right"
         >
-          {speakers?.map((speaker) => (
+          {speakerss?.map((speaker) => (
             <div
               key={speaker?.id}
               className="flex flex-col justify-start items-center w-full border-b-2 border-r-2 border-[#939191] p-3 md:p-[14px] hover:shadow-lg transition-shadow duration-200"
