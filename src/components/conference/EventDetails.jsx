@@ -14,10 +14,7 @@ const EventDetails = () => {
           AOS.init({ duration: 1000, once: true });
         }, []);
   return (
-    <section
-      id="About"
-      className="min-h-screen bg-white text-white "
-    >
+    <section id="About" className="min-h-screen bg-white text-white ">
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14 py-16 md:py-24  md:mt-20 ">
         <div className=" flex flex-col items-left  bg-[#407AFB] rounded-[24px] p-8 sm:p-12 md:p-16 lg:p-[68px] shadow-lg ">
           {/* Section Header */}
@@ -78,14 +75,19 @@ const EventDetails = () => {
               <img
                 src={eventImg1}
                 alt="Conference participants discussing digital innovation"
-                className="w-full max-w-[468px] h-auto rounded-[16px] object-cover"
+                className="w-full max-w-[468px] h-auto rounded-[16px] object-cover "
                 data-aos="fade-up"
               />
             </div>
           </div>
 
           {/* CTA Button */}
-          <div className="mt-8 lg:mt-12 text-center md:text-left">
+          <div
+            className="mt-8 lg:mt-12 text-center md:text-left"
+            onClick={() =>
+              window.open("https://forms.gle/axt39VxJPqpChKaX8", "_blank")
+            }
+          >
             <Button text={"Confirm Your Seat"} />
           </div>
         </div>
