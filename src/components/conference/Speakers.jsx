@@ -32,7 +32,7 @@ const Speakers = () => {
       name: "Lucky Uwakwe",
       title: " Cofounder Dexpay & CEO  SaBipay",
       organization:
-        "Chairman, BICCoN. Founder, NOBSAA",
+        "Chairman, BICCoN",
       image: lucky,
       link: "https://www.linkedin.com/in/lucky-uwakwe-a66949b7",
     },
@@ -61,7 +61,7 @@ const Speakers = () => {
     {
       id: 4,
       name: "Rume Ophi",
-      title: "Foremost Crypto Market Analyst, Convener Decentralized Nigeria Conference ",
+      title: "Foremost Crypto Market Analyst. Convener Decentralized Nigeria Conference ",
                                            
       // organization:
       //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
