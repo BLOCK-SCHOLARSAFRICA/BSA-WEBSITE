@@ -4,7 +4,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-
 import lucky from "../../assets/images/speakers/lucky.jfif";
 
 import franklin from "../../assets/images/speakers/franklin.jfif";
@@ -13,12 +12,10 @@ import Kingsley from "../../assets/images/speakers/kingsley.jfif";
 
 import rume from "../../assets/images/speakers/rume.jfif";
 
-
-
 const Speakers = () => {
   useEffect(() => {
-       AOS.init({ duration: 1000, once: true });
-     }, []);
+    AOS.init({ duration: 1000, once: true });
+  }, []);
   // Generate 20 speaker placeholders
   const speakers = Array.from({ length: 2 }, (_, index) => ({
     id: index + 1,
@@ -37,6 +34,7 @@ const Speakers = () => {
       organization:
         "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
       image: lucky,
+      link: "https://www.linkedin.com/in/lucky-uwakwe-a66949b7",
     },
 
     {
@@ -45,7 +43,8 @@ const Speakers = () => {
       title: "Founder and CEO of Boundlesspay",
       // organization:
       //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
-       image: franklin,
+      image: franklin,
+      link: "https://www.linkedin.com/in/franklin-peters-fims-b5452795",
     },
 
     {
@@ -56,6 +55,7 @@ const Speakers = () => {
       // organization:
       //   "Founder Network Of Blockchain Solutions Advocates Association(NOBSAA)",
       image: Kingsley,
+      link: "https://www.linkedin.com/in/kingsley-ekwuruke-85392a109",
     },
 
     {
@@ -65,6 +65,7 @@ const Speakers = () => {
       // organization:
       //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
       image: rume,
+      link: "https://www.linkedin.com/in/rume-ophi-252a3aa4",
     },
   ];
 
@@ -92,10 +93,7 @@ const Speakers = () => {
               className="flex flex-col justify-start items-center w-full border-b-2 border-r-2 border-[#939191] p-3 md:p-[14px] hover:shadow-lg transition-shadow duration-200"
             >
               {/* Speaker Image */}
-              <div
-                className="w-full flex justify-center mb-6 md:mb-8"
-                
-              >
+              <div className="w-full flex justify-center mb-6 md:mb-8">
                 {speaker?.image ? (
                   <img
                     src={speaker?.image}
@@ -128,6 +126,22 @@ const Speakers = () => {
                   {speaker?.organization}
                 </p>
               </div>
+              <button
+                onClick={() =>
+                  window.open(`${speaker.link}`, "_blank")
+                }
+                class="flex items-center gap-2 mt-10 bg-[#791EEB] hover:bg-[#6a1bd3] text-white px-4 py-2 rounded-sm font-medium transition duration-200"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  class="w-5 h-5"
+                >
+                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.473 0 16 .513 16 1.146v13.708c0 .633-.527 1.146-1.175 1.146H1.175A1.163 1.163 0 0 1 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.214c.837 0 1.358-.554 1.358-1.248-.015-.708-.52-1.248-1.342-1.248-.822 0-1.357.54-1.357 1.248 0 .694.52 1.248 1.326 1.248h.015zM13.458 13.394v-3.996c0-2.137-1.14-3.128-2.662-3.128-1.225 0-1.774.676-2.082 1.15v-0.985H6.313c.03.647 0 7.225 0 7.225h2.401v-4.035c0-.216.015-.431.08-.586.174-.431.57-.878 1.235-.878.87 0 1.22.662 1.22 1.634v3.865h2.209z" />
+                </svg>
+                Connect
+              </button>
             </div>
           ))}
         </div>
