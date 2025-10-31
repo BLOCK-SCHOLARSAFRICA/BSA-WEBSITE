@@ -15,6 +15,7 @@ import raph from "../../assets/images/speakers/raph.jfif";
 import emma from "../../assets/images/speakers/emma.jfif";
 import ekene from "../../assets/images/speakers/ekene.jfif";
 import ibekwe from "../../assets/images/speakers/ibekwe.jfif";
+import chukwu from "../../assets/images/speakers/chukwu.jfif";
 
 
 const Speakers = () => {
@@ -52,6 +53,17 @@ const Speakers = () => {
       //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
       image: ekene,
       link: "https://www.linkedin.com/in/ekenekamchukwu-ezeala-6710b9274",
+    },
+
+    {
+      id: 9,
+      name: "Comr. Onyebuchi Chukwu",
+      title: "SSA Youth Development Abia State",
+
+      // organization:
+      //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
+      image: chukwu,
+      link: "#",
     },
 
     {
