@@ -67,13 +67,12 @@ const Speakers = () => {
     },
 
     {
-      id: 2,
-      name: "Franklin Peters",
-      title: "Founder & CEO  Boundlesspay",
-      // organization:
-      //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
-      image: franklin,
-      link: "https://www.linkedin.com/in/franklin-peters-fims-b5452795",
+      id: 1,
+      name: "Lucky Uwakwe",
+      title: " Cofounder Dexpay & CEO  SaBipay",
+      organization: "Chairman, BICCoN",
+      image: lucky,
+      link: "https://www.linkedin.com/in/lucky-uwakwe-a66949b7",
     },
 
     {
@@ -85,6 +84,16 @@ const Speakers = () => {
       //   "Founder Network Of Blockchain Solutions Advocates Association(NOBSAA)",
       image: Kingsley,
       link: "https://www.linkedin.com/in/kingsley-ekwuruke-85392a109",
+    },
+
+    {
+      id: 2,
+      name: "Franklin Peters",
+      title: "Founder & CEO  Boundlesspay",
+      // organization:
+      //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
+      image: franklin,
+      link: "https://www.linkedin.com/in/franklin-peters-fims-b5452795",
     },
 
     {
@@ -100,12 +109,14 @@ const Speakers = () => {
     },
 
     {
-      id: 1,
-      name: "Lucky Uwakwe",
-      title: " Cofounder Dexpay & CEO  SaBipay",
-      organization: "Chairman, BICCoN",
-      image: lucky,
-      link: "https://www.linkedin.com/in/lucky-uwakwe-a66949b7",
+      id: 7,
+      name: "Ibekwe Onyedikachi",
+      title: "Lead Ambassador Lambatoken. Panelist ",
+
+      // organization:
+      //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
+      image: ibekwe,
+      link: "https://www.linkedin.com/in/dikachi-ibekwe-b3b918161",
     },
 
     {
@@ -117,17 +128,6 @@ const Speakers = () => {
       //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
       image: emma,
       link: "https://www.linkedin.com/in/emmanuelelchijo",
-    },
-
-    {
-      id: 7,
-      name: "Ibekwe Onyedikachi",
-      title: "Lead Ambassador Lambatoken. Panelist ",
-
-      // organization:
-      //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
-      image: ibekwe,
-      link: "https://www.linkedin.com/in/dikachi-ibekwe-b3b918161",
     },
   ];
 
