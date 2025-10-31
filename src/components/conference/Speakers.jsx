@@ -11,6 +11,11 @@ import franklin from "../../assets/images/speakers/franklin.jfif";
 import Kingsley from "../../assets/images/speakers/kingsley.jfif";
 
 import rume from "../../assets/images/speakers/rume.jfif";
+import raph from "../../assets/images/speakers/raph.jfif";
+import emma from "../../assets/images/speakers/emma.jfif";
+import ekene from "../../assets/images/speakers/ekene.jfif";
+import ibekwe from "../../assets/images/speakers/ibekwe.jfif";
+
 
 const Speakers = () => {
   useEffect(() => {
@@ -29,12 +34,13 @@ const Speakers = () => {
   const speakers = [
     {
       id: 1,
-      name: "Lucky Uwakwe",
-      title: " Cofounder Dexpay & CEO  SaBipay",
-      organization:
-        "Chairman, BICCoN",
-      image: lucky,
-      link: "https://www.linkedin.com/in/lucky-uwakwe-a66949b7",
+      name: "Raphael Omochor",
+      title: "Convener AWDEC2025",
+
+      // organization:
+      //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
+      image: raph,
+      link: "https://www.linkedin.com/in/raphael-omochor",
     },
 
     {
@@ -61,12 +67,54 @@ const Speakers = () => {
     {
       id: 4,
       name: "Rume Ophi",
-      title: "Foremost Crypto Market Analyst. Convener Decentralized Nigeria Conference ",
-                                           
+      title:
+        "Foremost Crypto Market Analyst. Convener Decentralized Nigeria Conference ",
+
       // organization:
       //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
       image: rume,
       link: "https://www.linkedin.com/in/rume-ophi-252a3aa4",
+    },
+
+    {
+      id: 1,
+      name: "Lucky Uwakwe",
+      title: " Cofounder Dexpay & CEO  SaBipay",
+      organization: "Chairman, BICCoN",
+      image: lucky,
+      link: "https://www.linkedin.com/in/lucky-uwakwe-a66949b7",
+    },
+
+    {
+      id: 6,
+      name: "Dr. Emmanuel Elchijo Joseph",
+      title: "Broadcaster/ Youth Advocate",
+
+      // organization:
+      //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
+      image: emma,
+      link: "https://www.linkedin.com/in/emmanuelelchijo",
+    },
+
+    {
+      id: 7,
+      name: "Ibekwe Onyedikachi",
+      title: "Lead Ambassador Lambatoken. Panelist ",
+
+      // organization:
+      //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
+      image: ibekwe,
+      link: "https://www.linkedin.com/in/dikachi-ibekwe-b3b918161",
+    },
+    {
+      id: 8,
+      name: "Ekenekamchukwu Ezeala",
+      title: "Co-convener AWDEC2025",
+
+      // organization:
+      //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
+      image: ekene,
+      link: "#",
     },
   ];
 
@@ -92,6 +140,7 @@ const Speakers = () => {
             <div
               key={speaker?.id}
               className="flex flex-col justify-start items-center w-full border-b-2 border-r-2 border-[#939191] p-3 md:p-[14px] hover:shadow-lg transition-shadow duration-200"
+              data-aos="fade-up"
             >
               {/* Speaker Image */}
               <div className="w-full flex justify-center mb-6 md:mb-8">
