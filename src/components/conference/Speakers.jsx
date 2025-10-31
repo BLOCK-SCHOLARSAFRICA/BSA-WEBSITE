@@ -44,6 +44,17 @@ const Speakers = () => {
     },
 
     {
+      id: 8,
+      name: "Ekenekamchukwu Ezeala",
+      title: "Co-convener AWDEC2025",
+
+      // organization:
+      //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
+      image: ekene,
+      link: "https://www.linkedin.com/in/ekenekamchukwu-ezeala-6710b9274",
+    },
+
+    {
       id: 2,
       name: "Franklin Peters",
       title: "Founder & CEO  Boundlesspay",
@@ -105,16 +116,6 @@ const Speakers = () => {
       //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
       image: ibekwe,
       link: "https://www.linkedin.com/in/dikachi-ibekwe-b3b918161",
-    },
-    {
-      id: 8,
-      name: "Ekenekamchukwu Ezeala",
-      title: "Co-convener AWDEC2025",
-
-      // organization:
-      //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
-      image: ekene,
-      link: "https://www.linkedin.com/in/ekenekamchukwu-ezeala-6710b9274",
     },
   ];
 
