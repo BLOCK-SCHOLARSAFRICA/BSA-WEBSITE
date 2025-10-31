@@ -114,7 +114,7 @@ const Speakers = () => {
       // organization:
       //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
       image: ekene,
-      link: "#",
+      link: "https://www.linkedin.com/in/ekenekamchukwu-ezeala-6710b9274",
     },
   ];
 
