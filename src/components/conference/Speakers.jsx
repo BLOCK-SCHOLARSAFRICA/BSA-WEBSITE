@@ -16,6 +16,7 @@ import emma from "../../assets/images/speakers/emma.jfif";
 import ekene from "../../assets/images/speakers/ekene.jfif";
 import ibekwe from "../../assets/images/speakers/ibekwe.jfif";
 import chukwu from "../../assets/images/speakers/chukwu.jfif";
+import grace from "../../assets/images/speakers/grace.jfif";
 
 
 const Speakers = () => {
@@ -128,6 +129,16 @@ const Speakers = () => {
       //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
       image: emma,
       link: "https://www.linkedin.com/in/emmanuelelchijo",
+    },
+    {
+      id: 6,
+      name: "HARRISON GRACE IZUCHUKWU",
+      title: "Content Writer | Founder. The Forge Community. Panelist",
+
+      // organization:
+      //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
+      image: grace,
+      link: "https://www.linkedin.com/in/grace-harrison-izuchukwu",
     },
   ];
 
