@@ -17,6 +17,8 @@ import ekene from "../../assets/images/speakers/ekene.jfif";
 import ibekwe from "../../assets/images/speakers/ibekwe.jfif";
 import chukwu from "../../assets/images/speakers/chukwu.jfif";
 import grace from "../../assets/images/speakers/grace.jfif";
+import john from "../../assets/images/speakers/john.jfif";
+import joshua from "../../assets/images/speakers/joshua.jfif";
 
 
 const Speakers = () => {
@@ -140,6 +142,22 @@ const Speakers = () => {
     //   image: grace ,
     //   link: "https://www.linkedin.com/in/grace-harrison-izuchukwu",
     // },
+
+    {
+      id: 6,
+      name: "Onyedikachi John ",
+      title: "Founder & CEO iTele Media",
+
+      image: john,
+      link: "https://www.linkedin.com/in/onyedikachi-john-0a8aa0328",
+    },
+    {
+      id: 10,
+      name: "Joshua Ehizibue Mo’jeezy",
+      title: "Founder & CEO Streamlivr. Panelistt  ",
+      image: joshua,
+      link: "https://www.linkedin.com/in/joshua-ehizibue-cco-4b604a150",
+    },
   ];
 
   return (
