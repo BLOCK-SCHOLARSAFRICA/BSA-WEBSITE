@@ -112,17 +112,6 @@ const Speakers = () => {
     },
 
     {
-      id: 7,
-      name: "Ibekwe Onyedikachi",
-      title: "Lead Ambassador Lambatoken. Panelist ",
-
-      // organization:
-      //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
-      image: ibekwe,
-      link: "https://www.linkedin.com/in/dikachi-ibekwe-b3b918161",
-    },
-
-    {
       id: 6,
       name: "Dr. Emmanuel Elchijo Joseph",
       title: "Broadcaster/ Youth Advocate",
@@ -132,16 +121,17 @@ const Speakers = () => {
       image: emma,
       link: "https://www.linkedin.com/in/emmanuelelchijo",
     },
-    // {
-    //   id: 6,
-    //   name: "HARRISON GRACE IZUCHUKWU",
-    //   title: "Content Writer | Founder. The Forge Community. Panelist",
 
-    //   // organization:
-    //   //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
-    //   image: grace ,
-    //   link: "https://www.linkedin.com/in/grace-harrison-izuchukwu",
-    // },
+    {
+      id: 7,
+      name: "Ibekwe Onyedikachi",
+      title: "Lead Ambassador Lambatoken. Panelist ",
+
+      // organization:
+      //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
+      image: ibekwe,
+      link: "https://www.linkedin.com/in/dikachi-ibekwe-b3b918161",
+    },
 
     {
       id: 6,

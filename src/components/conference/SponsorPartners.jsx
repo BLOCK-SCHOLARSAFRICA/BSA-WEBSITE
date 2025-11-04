@@ -17,8 +17,9 @@ import eco3 from "../../assets/images/partners/cyberchain-logo.png";
 import eco4 from "../../assets/images/partners/nobsaa-logo.png";
 import spon1 from "../../assets/images/partners/boundpay-logo.png";
 import comm6 from "../../assets/images/partners/hive-logo.png";
+import comm7 from "../../assets/images/partners/chain-logo.jfif";
 
-const communityLogos = [comm1, comm2, comm3, comm4, comm5];
+const communityLogos = [comm1, comm2, comm3, comm4, comm5, comm7];
 const ecosystemLogo = [eco1, eco2, eco3, eco4];
 const officialLogo = [offi1, offi2];
 const mediaLogo = [media1, media2];
