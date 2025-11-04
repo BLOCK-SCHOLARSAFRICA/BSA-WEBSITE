@@ -130,16 +130,16 @@ const Speakers = () => {
       image: emma,
       link: "https://www.linkedin.com/in/emmanuelelchijo",
     },
-    {
-      id: 6,
-      name: "HARRISON GRACE IZUCHUKWU",
-      title: "Content Writer | Founder. The Forge Community. Panelist",
+    // {
+    //   id: 6,
+    //   name: "HARRISON GRACE IZUCHUKWU",
+    //   title: "Content Writer | Founder. The Forge Community. Panelist",
 
-      // organization:
-      //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
-      image: grace,
-      link: "https://www.linkedin.com/in/grace-harrison-izuchukwu",
-    },
+    //   // organization:
+    //   //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
+    //   image: grace ,
+    //   link: "https://www.linkedin.com/in/grace-harrison-izuchukwu",
+    // },
   ];
 
   return (
