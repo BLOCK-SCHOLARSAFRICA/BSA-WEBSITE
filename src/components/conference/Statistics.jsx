@@ -41,13 +41,13 @@ const Statistics = () => {
       iconWidth: "63px",
       iconHeight: "44px",
     },
-    {
-      icon: countryIon,
-      value: "7",
-      label: "Countries",
-      iconWidth: "63px",
-      iconHeight: "44px",
-    },
+    // {
+    //   icon: countryIon,
+    //   value: "7",
+    //   label: "Countries",
+    //   iconWidth: "63px",
+    //   iconHeight: "44px",
+    // },
   ];
 
   return (
@@ -55,7 +55,7 @@ const Statistics = () => {
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-8 md:py-[34px]">
           {/* Statistics Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 md:gap-16 lg:gap-[146px] justify-items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 md:gap-16 lg:gap-[146px] justify-items-center">
             {stats?.map((stat, index) => (
               <div
                 key={index}
