@@ -19,6 +19,7 @@ import chukwu from "../../assets/images/speakers/chukwu.jfif";
 import grace from "../../assets/images/speakers/grace.jfif";
 import john from "../../assets/images/speakers/john.jfif";
 import joshua from "../../assets/images/speakers/joshua.jfif";
+import mbakwe from "../../assets/images/speakers/mbakwe.jfif"
 
 
 const Speakers = () => {
@@ -48,7 +49,7 @@ const Speakers = () => {
     },
 
     {
-      id: 8,
+      id: 2,
       name: "Ekenekamchukwu Ezeala",
       title: "Co-convener AWDEC2025",
 
@@ -59,7 +60,18 @@ const Speakers = () => {
     },
 
     {
-      id: 9,
+      id: 3,
+      name: "HON. GODSLIGHT C. MBAKWE",
+      title: "YOUTH ADVOCATE/ PRESIDENT ESEBE JNR FOUNDATION",
+
+      // organization:
+      //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
+      image: mbakwe,
+      link: "https://www.linkedin.com/in/godslight-c-mbakwe-b37864395",
+    },
+
+    {
+      id: 4,
       name: "Comr. Onyebuchi Chukwu",
       title: "SSA Youth Development Abia State",
 
@@ -70,7 +82,7 @@ const Speakers = () => {
     },
 
     {
-      id: 1,
+      id: 5,
       name: "Lucky Uwakwe",
       title: " Cofounder Dexpay & CEO  SaBipay",
       organization: "Chairman, BICCoN",
@@ -79,7 +91,7 @@ const Speakers = () => {
     },
 
     {
-      id: 3,
+      id: 6,
       name: "Kingsley Ekwuruke",
       title:
         "Founder Network Of Blockchain Solutions Advocates Association(NOBSAA)",
@@ -90,7 +102,7 @@ const Speakers = () => {
     },
 
     {
-      id: 2,
+      id: 7,
       name: "Franklin Peters",
       title: "Founder & CEO  Boundlesspay",
       // organization:
@@ -100,7 +112,16 @@ const Speakers = () => {
     },
 
     {
-      id: 4,
+      id: 8,
+      name: "Onyedikachi John ",
+      title: "Founder & CEO iTele Media",
+
+      image: john,
+      link: "https://www.linkedin.com/in/onyedikachi-john-0a8aa0328",
+    },
+
+    {
+      id: 9,
       name: "Rume Ophi",
       title:
         "Foremost Crypto Market Analyst. Convener Decentralized Nigeria Conference ",
@@ -109,6 +130,17 @@ const Speakers = () => {
       //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
       image: rume,
       link: "https://www.linkedin.com/in/rume-ophi-252a3aa4",
+    },
+
+    {
+      id: 10,
+      name: "Ibekwe Onyedikachi",
+      title: "Lead Ambassador Lambatoken. Panelist ",
+
+      // organization:
+      //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
+      image: ibekwe,
+      link: "https://www.linkedin.com/in/dikachi-ibekwe-b3b918161",
     },
 
     {
@@ -122,25 +154,6 @@ const Speakers = () => {
       link: "https://www.linkedin.com/in/emmanuelelchijo",
     },
 
-    {
-      id: 7,
-      name: "Ibekwe Onyedikachi",
-      title: "Lead Ambassador Lambatoken. Panelist ",
-
-      // organization:
-      //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
-      image: ibekwe,
-      link: "https://www.linkedin.com/in/dikachi-ibekwe-b3b918161",
-    },
-
-    {
-      id: 6,
-      name: "Onyedikachi John ",
-      title: "Founder & CEO iTele Media",
-
-      image: john,
-      link: "https://www.linkedin.com/in/onyedikachi-john-0a8aa0328",
-    },
     {
       id: 10,
       name: "Joshua Ehizibue Mo’jeezy",
