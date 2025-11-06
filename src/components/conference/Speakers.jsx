@@ -19,7 +19,11 @@ import chukwu from "../../assets/images/speakers/chukwu.jfif";
 import grace from "../../assets/images/speakers/grace.jfif";
 import john from "../../assets/images/speakers/john.jfif";
 import joshua from "../../assets/images/speakers/joshua.jfif";
-import mbakwe from "../../assets/images/speakers/mbakwe.jfif"
+import mbakwe from "../../assets/images/speakers/mbakwe.jfif";
+
+import ebere from "../../assets/images/speakers/ebere.jfif";
+import chidi from "../../assets/images/speakers/chidi.jfif";
+
 
 
 const Speakers = () => {
@@ -144,7 +148,7 @@ const Speakers = () => {
     },
 
     {
-      id: 6,
+      id: 11,
       name: "Dr. Emmanuel Elchijo Joseph",
       title: "Broadcaster/ Youth Advocate",
 
@@ -155,11 +159,27 @@ const Speakers = () => {
     },
 
     {
-      id: 10,
+      id: 12,
       name: "Joshua Ehizibue Mo’jeezy",
       title: "Founder & CEO Streamlivr. Panelistt  ",
       image: joshua,
       link: "https://www.linkedin.com/in/joshua-ehizibue-cco-4b604a150",
+    },
+
+    {
+      id: 13,
+      name: "Ebere Chiemela ",
+      title: "Founder TechRookies & Convener, Edtech Xperience ",
+      image: ebere,
+      link: "https://www.linkedin.com/in/ebere-chiemela-199893a7",
+    },
+
+    {
+      id: 14,
+      name: "Vindicated Chidi",
+      title: "Global Ambassador Asset Chain and Founder of Shalom Movement ",
+      image: chidi,
+      link: "https://www.linkedin.com/in/vindicated-chidi-ab5175165",
     },
   ];
 
