@@ -55,7 +55,7 @@ const Speakers = () => {
     {
       id: 2,
       name: "Ekenekamchukwu Ezeala",
-      title: "Co-convener AWDEC2025",
+      title: "Founder  Teen Girls in Blockchain",
 
       // organization:
       //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
