@@ -115,14 +115,14 @@ const Speakers = () => {
       link: "https://www.linkedin.com/in/franklin-peters-fims-b5452795",
     },
 
-    {
-      id: 8,
-      name: "Onyedikachi John ",
-      title: "Founder & CEO iTele Media",
+    // {
+    //   id: 8,
+    //   name: "Onyedikachi John ",
+    //   title: "Founder & CEO iTele Media",
 
-      image: john,
-      link: "https://www.linkedin.com/in/onyedikachi-john-0a8aa0328",
-    },
+    //   image: john,
+    //   link: "https://www.linkedin.com/in/onyedikachi-john-0a8aa0328",
+    // },
 
     {
       id: 9,
