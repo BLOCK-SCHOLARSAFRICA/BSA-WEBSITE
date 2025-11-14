@@ -24,6 +24,9 @@ import mbakwe from "../../assets/images/speakers/mbakwe.jfif";
 import ebere from "../../assets/images/speakers/ebere.jfif";
 import chidi from "../../assets/images/speakers/chidi.jfif";
 
+import maryan from "../../assets/images/speakers/block-co.jfif";
+import precious from "../../assets/images/speakers/precious.jfif";
+
 
 
 const Speakers = () => {
@@ -115,14 +118,14 @@ const Speakers = () => {
       link: "https://www.linkedin.com/in/franklin-peters-fims-b5452795",
     },
 
-    // {
-    //   id: 8,
-    //   name: "Onyedikachi John ",
-    //   title: "Founder & CEO iTele Media",
+    {
+      id: 8,
+      name: "Maryam Babatunde",
+      title: "Frontend Enginee & Co-founder of Block-Scholars Africa",
 
-    //   image: john,
-    //   link: "https://www.linkedin.com/in/onyedikachi-john-0a8aa0328",
-    // },
+      image: maryan,
+      link: "https://www.linkedin.com/in/maryam-babatunde-659684198",
+    },
 
     {
       id: 9,
@@ -156,6 +159,17 @@ const Speakers = () => {
       //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
       image: emma,
       link: "https://www.linkedin.com/in/emmanuelelchijo",
+    },
+
+    {
+      id: 14,
+      name: "Precious Ifechukwu Chinweani",
+      title: "Founder, She Leads Global & Global Presh Consults",
+
+      // organization:
+      //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
+      image: emma,
+      link: "",
     },
 
     {
