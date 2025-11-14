@@ -21,6 +21,7 @@ import comm7 from "../../assets/images/partners/chain-logo.jfif";
 import eco5 from "../../assets/images/partners/shalom.jfif";
 import eco6 from "../../assets/images/partners/bawa.png";
 
+
 const communityLogos = [comm1, comm2, comm3, comm4, comm5, comm7];
 const ecosystemLogo = [eco1, eco2, eco3, eco4, eco5, eco6];
 const officialLogo = [offi1, offi2];

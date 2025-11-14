@@ -27,6 +27,7 @@ import chidi from "../../assets/images/speakers/chidi.jfif";
 import maryan from "../../assets/images/speakers/block-co.jfif";
 import precious from "../../assets/images/speakers/precious.jfif";
 
+import jude from "../../assets/images/speakers/jude.jfif";
 
 
 const Speakers = () => {
@@ -188,12 +189,20 @@ const Speakers = () => {
       link: "https://www.linkedin.com/in/ebere-chiemela-199893a7",
     },
 
+    // {
+    //   id: 14,
+    //   name: "Vindicated Chidi",
+    //   title: "Global Ambassador Asset Chain and Founder of Shalom Movement ",
+    //   image: chidi,
+    //   link: "https://www.linkedin.com/in/vindicated-chidi-ab5175165",
+    // },
+
     {
       id: 14,
-      name: "Vindicated Chidi",
-      title: "Global Ambassador Asset Chain and Founder of Shalom Movement ",
-      image: chidi,
-      link: "https://www.linkedin.com/in/vindicated-chidi-ab5175165",
+      name: "Jude Ozinegbe",
+      title: "Founder/Convener Cyberchain ",
+      image: jude,
+      link: "#",
     },
   ];
 
