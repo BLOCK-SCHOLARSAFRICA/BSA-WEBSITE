@@ -162,13 +162,13 @@ const Speakers = () => {
     },
 
     {
-      id: 14,
+      id: 15,
       name: "Precious Ifechukwu Chinweani",
       title: "Founder, She Leads Global & Global Presh Consults",
 
       // organization:
       //   "Chairman Blockchain Industry Coordinating Committee of Nigeria (BICCoN)",
-      image: emma,
+      image: precious,
       link: "",
     },
 

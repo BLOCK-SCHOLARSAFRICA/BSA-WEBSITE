@@ -103,7 +103,7 @@ const SponsorPartners = (prop) => {
           </div>
         </div>
         {/* sponsors */}
-        {/* <div
+        <div
           className="flex flex-col justify-center gap-[40px] px-6 items-center bg-[#407AFB] text-white rounded rounded-3xl w-[340px]
          mx-10  my-10 h-[560px] md:flex-row md:w-5/6 md:h-96 md:justify-between"
         >
@@ -142,7 +142,7 @@ const SponsorPartners = (prop) => {
             ))}
          
           </div>
-        </div> */}
+        </div>
         {/* sponsors */}
         <div
           className="flex flex-col justify-center gap-[40px] px-6 items-center bg-[#407AFB] text-white rounded rounded-3xl w-[340px]
