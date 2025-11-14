@@ -122,7 +122,7 @@ const Speakers = () => {
     {
       id: 8,
       name: "Maryam Babatunde",
-      title: "Frontend Enginee & Co-founder of Block-Scholars Africa",
+      title: "Frontend Engineer & Co-founder of Block-Scholars Africa",
 
       image: maryan,
       link: "https://www.linkedin.com/in/maryam-babatunde-659684198",
