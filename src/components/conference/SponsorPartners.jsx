@@ -20,13 +20,17 @@ import comm6 from "../../assets/images/partners/hive-logo.png";
 import comm7 from "../../assets/images/partners/chain-logo.jfif";
 import eco5 from "../../assets/images/partners/shalom.jfif";
 import eco6 from "../../assets/images/partners/bawa.png";
+import spon2 from "../../assets/images/partners/minara.png";
+import eco7 from "../../assets/images/partners/biccon.png";
+
+
 
 
 const communityLogos = [comm1, comm2, comm3, comm4, comm5, comm7];
-const ecosystemLogo = [eco1, eco2, eco3, eco4, eco5, eco6];
+const ecosystemLogo = [eco1, eco2, eco3, eco4, eco5, eco6, eco7];
 const officialLogo = [offi1, offi2];
 const mediaLogo = [media1, media2];
-const sponsors = [spon1, spon1];
+const sponsors = [spon1, spon2];
 
 const SponsorPartners = (prop) => {
   const [current, setCurrent] = useState(0);
