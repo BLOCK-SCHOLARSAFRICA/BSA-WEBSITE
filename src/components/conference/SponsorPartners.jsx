@@ -27,7 +27,7 @@ import spon3 from "../../assets/images/partners/lamba.png"
 
 
 
-const communityLogos = [comm1, comm2, comm3, comm4, comm5, comm7];
+const communityLogos = [comm1, comm2, comm3, comm4, comm5, comm7, comm6];
 const ecosystemLogo = [eco1, eco2, eco3, eco4, eco5, eco6, eco7];
 const officialLogo = [offi1, offi2];
 const mediaLogo = [media1, media2];
